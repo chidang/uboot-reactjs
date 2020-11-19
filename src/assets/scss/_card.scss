@@ -1,0 +1,101 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Card
+*/
+
+.card {
+  background-color: var(--surface-background);
+  position: relative;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.card-header,
+.card-footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--thirtary-background);
+
+  &.card-reverse {
+    background: #000;
+    color: $white;
+  }
+}
+
+.card-widgets {
+  text-align: right;
+
+  a {
+    margin-right: 3px;
+  }
+
+  .btn {
+    padding: 0;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+
+    i {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.card-box-color {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow: hidden;
+
+  &.bg-warning {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+  }
+
+  &.bg-danger {
+    background: linear-gradient(60deg, #e15553, #c91d19);
+  }
+
+  &.bg-success {
+    background: linear-gradient(60deg, #16bc1e, #227b36);
+  }
+
+  &.bg-info {
+    background: linear-gradient(60deg, #41cdbd, #0aa695);
+  }
+
+  .card-box-color-content {
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-box-color-bedge {
+    position: relative;
+    bottom: 1rem;
+    right: 0px;
+  }
+
+  .card-box-icon {
+    position: absolute;
+    font-size: 128px;
+    color: #fff;
+    top: 15px;
+    right: 0;
+    width: 128px;
+    height: 50px;
+    opacity: .15;
+  }
+
+  .progress {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+

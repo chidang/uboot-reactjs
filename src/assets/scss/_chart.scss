@@ -1,0 +1,51 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Chart
+*/
+
+.britechart-legend,
+.britechart.donut-chart {
+  fill: var(--secondary-text);
+}
+
+.chart-sm {
+  min-height: 250px;
+}
+
+// nvd3
+.nv-pieLabels text {
+  fill: $dark !important;
+}
+
+.nv-x .tick line {
+  display: none;
+}
+
+.nv-y .tick line {
+  display: none;
+}
+
+.nv-axis-y-hide {
+  .nv-y {
+    .nv-axis{
+      display: none;
+    }
+  }
+
+}
+
+body[data-theme-mode="dark-mode"] {
+  .tick text,
+  .nvd3 .nv-legend-text,
+  .nvd3 .nv-axisMaxMin text,
+  .nvd3 .nv-discretebar .nv-groups text,
+  .nvd3 .nv-multibarHorizontal .nv-groups text {
+    fill: rgba(255, 255, 255, .75);
+  }
+
+  .nvd3 .nv-axis line {
+    stroke: #312f2f;
+  }
+}

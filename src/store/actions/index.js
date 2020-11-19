@@ -1,0 +1,3 @@
+export { 
+    shrinkLeftSidebar
+} from './leftSidebar';

@@ -1,0 +1,467 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Colors (theme colors)
+*/
+
+$anchor-100: rgba($anchor, .2);
+$anchor-200: rgba($anchor, .4);
+$anchor-300: rgba($anchor, .6);
+$anchor-400: rgba($anchor, .8);
+$anchor-500: $anchor;
+$anchor-600: shade-color($anchor, 2);
+$anchor-700: shade-color($anchor, 4);
+$anchor-800: shade-color($anchor, 6);
+$anchor-900: shade-color($anchor, 8);
+
+$anchors: ("100": $anchor-100,
+"200": $anchor-200,
+"300": $anchor-300,
+"400": $anchor-400,
+"500": $anchor-500,
+"600": $anchor-600,
+"700": $anchor-700,
+"800": $anchor-800,
+"900": $anchor-900);
+
+@each $color,
+$value in $anchors {
+  .bg-anchor-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-anchor-#{$color} {
+    color: #{$value};
+  }
+}
+
+$maroon-100: rgba($maroon, .2);
+$maroon-200: rgba($maroon, .4);
+$maroon-300: rgba($maroon, .6);
+$maroon-400: rgba($maroon, .8);
+$maroon-500: $maroon;
+$maroon-600: shade-color($maroon, 2);
+$maroon-700: shade-color($maroon, 4);
+$maroon-800: shade-color($maroon, 6);
+$maroon-900: shade-color($maroon, 8);
+
+$maroons: ("100": $maroon-100,
+"200": $maroon-200,
+"300": $maroon-300,
+"400": $maroon-400,
+"500": $maroon-500,
+"600": $maroon-600,
+"700": $maroon-700,
+"800": $maroon-800,
+"900": $maroon-900);
+
+@each $color,
+$value in $maroons {
+  .bg-maroon-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-maroon-#{$color} {
+    color: #{$value};
+  }
+}
+
+$carrot-100: rgba($carrot, .2);
+$carrot-200: rgba($carrot, .4);
+$carrot-300: rgba($carrot, .6);
+$carrot-400: rgba($carrot, .8);
+$carrot-500: $carrot;
+$carrot-600: shade-color($carrot, 2);
+$carrot-700: shade-color($carrot, 4);
+$carrot-800: shade-color($carrot, 6);
+$carrot-900: shade-color($carrot, 8);
+
+$carrots: ("100": $carrot-100,
+"200": $carrot-200,
+"300": $carrot-300,
+"400": $carrot-400,
+"500": $carrot-500,
+"600": $carrot-600,
+"700": $carrot-700,
+"800": $carrot-800,
+"900": $carrot-900);
+
+@each $color,
+$value in $carrots {
+  .bg-carrot-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-carrot-#{$color} {
+    color: #{$value};
+  }
+}
+
+$lollipop-100: rgba($lollipop, .2);
+$lollipop-200: rgba($lollipop, .4);
+$lollipop-300: rgba($lollipop, .6);
+$lollipop-400: rgba($lollipop, .8);
+$lollipop-500: $lollipop;
+$lollipop-600: shade-color($lollipop, 2);
+$lollipop-700: shade-color($lollipop, 4);
+$lollipop-800: shade-color($lollipop, 6);
+$lollipop-900: shade-color($lollipop, 8);
+
+$lollipops: ("100": $lollipop-100,
+"200": $lollipop-200,
+"300": $lollipop-300,
+"400": $lollipop-400,
+"500": $lollipop-500,
+"600": $lollipop-600,
+"700": $lollipop-700,
+"800": $lollipop-800,
+"900": $lollipop-900);
+
+@each $color,
+$value in $lollipops {
+  .bg-lollipop-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-lollipop-#{$color} {
+    color: #{$value};
+  }
+}
+
+$gold-100: rgba($gold, .2);
+$gold-200: rgba($gold, .4);
+$gold-300: rgba($gold, .6);
+$gold-400: rgba($gold, .8);
+$gold-500: $gold;
+$gold-600: shade-color($gold, 2);
+$gold-700: shade-color($gold, 4);
+$gold-800: shade-color($gold, 6);
+$gold-900: shade-color($gold, 8);
+
+$golds: ("100": $gold-100,
+"200": $gold-200,
+"300": $gold-300,
+"400": $gold-400,
+"500": $gold-500,
+"600": $gold-600,
+"700": $gold-700,
+"800": $gold-800,
+"900": $gold-900);
+
+@each $color,
+$value in $golds {
+  .bg-gold-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-gold-#{$color} {
+    color: #{$value};
+  }
+}
+
+$forest-100: rgba($forest, .2);
+$forest-200: rgba($forest, .4);
+$forest-300: rgba($forest, .6);
+$forest-400: rgba($forest, .8);
+$forest-500: $forest;
+$forest-600: shade-color($forest, 2);
+$forest-700: shade-color($forest, 4);
+$forest-800: shade-color($forest, 6);
+$forest-900: shade-color($forest, 8);
+
+$forests: ("100": $forest-100,
+"200": $forest-200,
+"300": $forest-300,
+"400": $forest-400,
+"500": $forest-500,
+"600": $forest-600,
+"700": $forest-700,
+"800": $forest-800,
+"900": $forest-900);
+
+@each $color,
+$value in $forests {
+  .bg-forest-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-forest-#{$color} {
+    color: #{$value};
+  }
+}
+
+
+$hoki-100: rgba($hoki, .2);
+$hoki-200: rgba($hoki, .4);
+$hoki-300: rgba($hoki, .6);
+$hoki-400: rgba($hoki, .8);
+$hoki-500: $hoki;
+$hoki-600: shade-color($hoki, 2);
+$hoki-700: shade-color($hoki, 4);
+$hoki-800: shade-color($hoki, 6);
+$hoki-900: shade-color($hoki, 8);
+
+$hokis: ("100": $hoki-100,
+"200": $hoki-200,
+"300": $hoki-300,
+"400": $hoki-400,
+"500": $hoki-500,
+"600": $hoki-600,
+"700": $hoki-700,
+"800": $hoki-800,
+"900": $hoki-900);
+
+@each $color,
+$value in $hokis {
+  .bg-hoki-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-hoki-#{$color} {
+    color: #{$value};
+  }
+}
+
+$facebook-100: rgba($facebook, .2);
+$facebook-200: rgba($facebook, .4);
+$facebook-300: rgba($facebook, .6);
+$facebook-400: rgba($facebook, .8);
+$facebook-500: $facebook;
+$facebook-600: shade-color($facebook, 2);
+$facebook-700: shade-color($facebook, 4);
+$facebook-800: shade-color($facebook, 6);
+$facebook-900: shade-color($facebook, 8);
+
+$facebooks: ("100": $facebook-100,
+"200": $facebook-200,
+"300": $facebook-300,
+"400": $facebook-400,
+"500": $facebook-500,
+"600": $facebook-600,
+"700": $facebook-700,
+"800": $facebook-800,
+"900": $facebook-900);
+
+@each $color,
+$value in $facebooks {
+  .bg-facebook-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-facebook-#{$color} {
+    color: #{$value};
+  }
+}
+
+$purple-100: rgba($purple, .2);
+$purple-200: rgba($purple, .4);
+$purple-300: rgba($purple, .6);
+$purple-400: rgba($purple, .8);
+$purple-500: $purple;
+$purple-600: shade-color($purple, 2);
+$purple-700: shade-color($purple, 4);
+$purple-800: shade-color($purple, 6);
+$purple-900: shade-color($purple, 8);
+$purples: ("100": $purple-100,
+"200": $purple-200,
+"300": $purple-300,
+"400": $purple-400,
+"500": $purple-500,
+"600": $purple-600,
+"700": $purple-700,
+"800": $purple-800,
+"900": $purple-900);
+
+@each $color,
+$value in $purples {
+  .bg-purple-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-purple-#{$color} {
+    color: #{$value};
+  }
+}
+
+
+$indigo-100: rgba($indigo, .2);
+$indigo-200: rgba($indigo, .4);
+$indigo-300: rgba($indigo, .6);
+$indigo-400: rgba($indigo, .8);
+$indigo-500: $indigo;
+$indigo-600: shade-color($indigo, 2);
+$indigo-700: shade-color($indigo, 4);
+$indigo-800: shade-color($indigo, 6);
+$indigo-900: shade-color($indigo, 8);
+
+$indigos: ("100": $indigo-100,
+"200": $indigo-200,
+"300": $indigo-300,
+"400": $indigo-400,
+"500": $indigo-500,
+"600": $indigo-600,
+"700": $indigo-700,
+"800": $indigo-800,
+"900": $indigo-900);
+
+@each $color,
+$value in $indigos {
+  .bg-indigo-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-indigo-#{$color} {
+    color: #{$value};
+  }
+}
+
+$aqua-100: rgba($aqua, .2);
+$aqua-200: rgba($aqua, .4);
+$aqua-300: rgba($aqua, .6);
+$aqua-400: rgba($aqua, .8);
+$aqua-500: $aqua;
+$aqua-600: shade-color($aqua, 2);
+$aqua-700: shade-color($aqua, 4);
+$aqua-800: shade-color($aqua, 6);
+$aqua-900: shade-color($aqua, 8);
+$aquas: ("100": $aqua-100,
+"200": $aqua-200,
+"300": $aqua-300,
+"400": $aqua-400,
+"500": $aqua-500,
+"600": $aqua-600,
+"700": $aqua-700,
+"800": $aqua-800,
+"900": $aqua-900);
+
+@each $color,
+$value in $aquas {
+  .bg-aqua-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-aqua-#{$color} {
+    color: #{$value};
+  }
+}
+
+$blue-100: rgba($blue, .2);
+$blue-200: rgba($blue, .4);
+$blue-300: rgba($blue, .6);
+$blue-400: rgba($blue, .8);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 2);
+$blue-700: shade-color($blue, 4);
+$blue-800: shade-color($blue, 6);
+$blue-900: shade-color($blue, 8);
+
+$blues: ("100": $blue-100,
+"200": $blue-200,
+"300": $blue-300,
+"400": $blue-400,
+"500": $blue-500,
+"600": $blue-600,
+"700": $blue-700,
+"800": $blue-800,
+"900": $blue-900);
+
+@each $color,
+$value in $blues {
+  .bg-blue-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-blue-#{$color} {
+    color: #{$value};
+  }
+}
+
+$yellow-100: rgba($yellow, .2);
+$yellow-200: rgba($yellow, .4);
+$yellow-300: rgba($yellow, .6);
+$yellow-400: rgba($yellow, .8);
+$yellow-500: $yellow;
+$yellow-600: shade-color($yellow, 2);
+$yellow-700: shade-color($yellow, 4);
+$yellow-800: shade-color($yellow, 6);
+$yellow-900: shade-color($yellow, 8);
+
+$yellows: ("100": $yellow-100,
+"200": $yellow-200,
+"300": $yellow-300,
+"400": $yellow-400,
+"500": $yellow-500,
+"600": $yellow-600,
+"700": $yellow-700,
+"800": $yellow-800,
+"900": $yellow-900);
+
+@each $color,
+$value in $yellows {
+  .bg-yellow-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-yellow-#{$color} {
+    color: #{$value};
+  }
+}
+
+$pink-100: rgba($pink, .2);
+$pink-200: rgba($pink, .4);
+$pink-300: rgba($pink, .6);
+$pink-400: rgba($pink, .8);
+$pink-500: $pink;
+$pink-600: shade-color($pink, 2);
+$pink-700: shade-color($pink, 4);
+$pink-800: shade-color($pink, 6);
+$pink-900: shade-color($pink, 8);
+
+$pinks: ("100": $pink-100,
+"200": $pink-200,
+"300": $pink-300,
+"400": $pink-400,
+"500": $pink-500,
+"600": $pink-600,
+"700": $pink-700,
+"800": $pink-800,
+"900": $pink-900);
+
+@each $color,
+$value in $pinks {
+  .bg-pink-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-pink-#{$color} {
+    color: #{$value};
+  }
+}
+
+$extend-colors: ("anchor": $anchor,
+"maroon": $maroon,
+"carrot": $carrot,
+"lollipop": $lollipop,
+"gold": $gold,
+"forest": $forest,
+"hoki": $hoki,
+"facebook": $facebook,
+"purple": $purple,
+"indigo": $indigo,
+"aqua": $aqua,
+"blue": $blue,
+"yellow": $yellow,
+"pink": $pink
+);
+
+@each $color,
+$value in $extend-colors {
+  .bg-#{$color} {
+    background-color: #{$value};
+  }
+
+  .text-#{$color} {
+    color: #{$value};
+  }
+}

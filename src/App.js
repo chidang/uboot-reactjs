@@ -1,17 +1,12 @@
 import React from 'react';
-import Layout from './hoc/Layout/Layout';
-import { Route, Switch } from 'react-router-dom';
-import DashboardAnalytics from './containers/Dashboard/DashboardAnalytics';
-import DashboardEcommerce from './containers/Dashboard/DashboardEcommerce';
+import Dashboard from './hoc/Layout/Dashboard';
+import Routes from './routes/Routes';
 
 const App = () => (
     <div>
-      <Layout>
-        <Switch>
-          <Route path="/dashboard/analytics" component={DashboardAnalytics} />
-          <Route path="/" exac component={DashboardEcommerce} />
-        </Switch>
-      </Layout>
+      <Dashboard>
+        <Routes />
+      </Dashboard>
     </div>
 );
 

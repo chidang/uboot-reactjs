@@ -1,0 +1,120 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Custom
+*/
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
+  background-color: var(--web-wash);
+  color: var(--main-text);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+:focus {
+  outline: none;
+}
+
+a,
+a:hover{
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+dd { color: $info}
+
+.page-container {
+  min-height: 100vh;
+}
+
+.page-content {
+  min-height: subtract(100vh, $footer-min-height * 2);
+  width: subtract(100%, $left-sidebar-width);
+  padding: 2rem;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.show-child-on-hover {
+   .show-on-hover-parent {
+      display: none;
+   }
+
+   &:hover {
+    .show-on-hover-parent {
+      display: block;
+    }
+   }
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+  box-sizing: content-box;
+  background: $gray-500 !important;
+  color: $dark !important;
+}
+
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: $gray-400; }
+
+body[data-theme-boxed-layout="true"] {
+  .main-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    border-left: 1px solid rgba(0, 0, 0, .15);
+    border-right: 1px solid rgba(0, 0, 0, .15);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .row-border>[class*=" col-"], .row-border>[class^=col-] {
+    padding: 1rem;
+    border-right: 1px solid var(--divider);
+    border-top: 1px solid var(--divider);
+  }
+
+  .row-border>[class*=" col-"]:last-child {
+    border-right: none;
+  }
+
+  body[data-theme-sidebar-shrinked="true"] {
+    .page-content {
+      width: subtract(100%, $left-sidebar-shrinking-width);
+      min-height: 100vh;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  body {
+    display: block;
+  }
+
+  .page-content {
+    width: 100%;
+    padding: 1rem;
+  }
+}

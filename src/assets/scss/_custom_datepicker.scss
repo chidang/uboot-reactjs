@@ -1,0 +1,18 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Custom datepicker
+*/
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+  background: var(--thirtary-background);
+}
+
+.datepicker-dropdown:after {
+  border-bottom: 6px solid var(--thirtary-background);
+}
+
+.datepicker.dropdown-menu {
+  background-color: var(--thirtary-background);
+}

@@ -1,0 +1,60 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Right Sidebar
+*/
+
+.theme-colors>ul>li {
+  display: inline-block;
+
+  a.active {
+    &::before {
+      display: flex;
+      font-family: 'bootstrapicons';
+      content: "\ea45";
+      font-size: 1.2rem;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+    }
+  }
+}
+
+.theme-colors > ul > li [data-theme-color] {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+// End Theme Color
+
+// Theme Mode
+.theme-mode-config {
+  position: relative;
+
+  &.active {
+    &::before {
+      display: flex;
+      font-family: 'bootstrapicons';
+      content: "\ea43";
+      font-size: 3rem;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-left: .75rem;
+      padding-top: .25rem;
+    }
+  }
+}
+
+// End Theme Mode

@@ -1,0 +1,23 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Theme mode
+*/
+
+body[data-theme-mode="dark-mode"] {
+  .bg-faded {
+    background-color: #3c3f48;
+    color: #a5abb1;
+  }
+
+  .border-top, .border-right, .border-bottom, .border-left {
+    border-color: #3e3f3f !important;
+  }
+}
+
+body:not([data-theme-mode="dark-mode"]) {
+  .bg-trans-gradient {
+    background: linear-gradient(to left, var(--highlight) 0%, #3f93d6 100%)!important;
+  }
+}

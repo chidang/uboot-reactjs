@@ -13,6 +13,10 @@ class DashboardEcommerce extends Component {
   render() {
     return (
       <div>
+        <i className="fab fa-500px"></i>
+        <i className="uil-angle-right"></i>
+        <i className="dripicons-alarm"></i>
+        <i className="bi-alarm-fill"></i>
         Ecommerce
       </div>
     )

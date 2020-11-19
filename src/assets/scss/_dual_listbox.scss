@@ -1,0 +1,34 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Dual listbox
+*/
+
+.dual-listbox {
+  .dual-listbox__button {
+    background: transparent;
+    border: 1px solid var(--highlight);
+    border-radius: 9px;
+    padding: 10px 25px;
+    color: var(--highlight);
+
+    &:hover {
+      background-color: var(--highlight);
+      color: $white;
+    }
+  }
+
+  .dual-listbox__item {
+
+    &:active,
+    &.dual-listbox__item--selected {
+      background-color: var(--highlight);
+      color: $white;
+    }
+  }
+
+  .dual-listbox__title {
+    border: none;
+  }
+}

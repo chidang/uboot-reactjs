@@ -1,0 +1,13 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Callout
+*/
+
+@each $color,
+$value in $theme-colors {
+  .bd-callout-#{$color} {
+    border-left-color: $value;
+  }
+}

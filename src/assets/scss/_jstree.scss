@@ -1,0 +1,15 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: jsTree
+*/
+
+body[data-theme-mode="dark-mode"] {
+  .jstree-default {
+    .jstree-clicked, .jstree-hovered {
+      background-color: var(--contrast-background) !important;
+      color: var(--web-wash);
+    }
+  }
+}

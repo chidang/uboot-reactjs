@@ -1,0 +1,12 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Upload (Dropzone)
+*/
+
+body[data-theme-mode="dark-mode"] {
+  .dropzone {
+    background-color: var(--thirtary-background);
+  }
+}

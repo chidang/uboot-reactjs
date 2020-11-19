@@ -1,0 +1,117 @@
+/**
+* Theme: Uboot - Bootstrap 5 Admin Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: Common
+*/
+
+.d-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  border-radius: 0;
+  margin: 0 !important;
+}
+
+.text-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #6e4e9e), color-stop(50%, #62468d), color-stop(75%, #0c7cd5), to(#0960a5));
+  background: linear-gradient(180deg, #6e4e9e 25%, #62468d 50%, #0c7cd5 75%, #0960a5 100%);
+  color: #886ab5;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+.text-blurred {
+  color: rgba($white, 0.5);
+}
+
+.text-primary {
+  color: var(--highlight) !important;
+}
+
+.bg-black {
+  background: $black !important;
+}
+
+.btn-primary {
+  background-color: var(--highlight) !important;
+  border-color: var(--highlight) !important;
+  color: $white;
+}
+
+.btn-primary:hover,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  border-color: var(--highlight);
+}
+
+.bg-faded {
+  background-color: #fcfcfc;
+}
+
+.bg-primary {
+  background-color: var(--highlight) !important;
+}
+
+.bg-surface {
+  background-color: var(--surface-background);
+}
+
+.bg-thirtary {
+  background-color: var(--thirtary-background);
+}
+
+.bg-wash {
+  background-color: var(--wash);
+}
+
+.bg-web-wash {
+  background-color: var(--web-wash);
+}
+
+.text-primary,
+.breadcrumb a,
+table a {
+  color: var(--highlight);
+}
+
+.list-group-item {
+  background-color: var(--surface-background);
+}
+
+.pricing-featured {
+  z-index: 1;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.rotate {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

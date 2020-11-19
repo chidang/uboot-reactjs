@@ -1,2 +1,80 @@
+/**
+* Theme: Uboot - Fully-featured React Admin & Dashboard Template
+* Author: TEachProd
+* Email: support@teachprod.com
+* File: app.css
+*/
+
+@import "variables";
+@import "utilities";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900 !default";
 // Bootstrap
 @import "bootstrap/scss/bootstrap";
+
+// font-awesome
+@import "../fonts/fontawesome-free/scss/fontawesome";
+@import "../fonts/fontawesome-free/scss/regular";
+@import "../fonts/fontawesome-free/scss/solid";
+@import "../fonts/fontawesome-free/scss/brands";
+
+// font unicons
+@import "../fonts/unicons/scss/unicons-line";
+
+// font dripicons
+@import "../fonts/dripicons/scss/dripicons";
+
+// font bootstrapicons
+@import "../fonts/bootstrapicons/scss/bootstrapicons";
+
+// Configuration
+@import "mixins";
+
+@import "colors";
+// Layout 
+@import "doc";
+@import "root";
+@import "right_sidebar";
+
+//Components
+@import "alert";
+@import "avatar";
+@import "button";
+@import "calendar";
+@import "callout";
+@import "card";
+@import "chart";
+@import "chat";
+@import "checkbox";
+@import "close";
+@import "common";
+@import "custom";
+@import "custom_select2";
+@import "custom_datepicker";
+@import "dropdown";
+@import "dual_listbox";
+@import "footer";
+@import "footer";
+@import "forms";
+@import "gallery";
+@import "icon";
+@import "jstree";
+@import "left_sidebar";
+@import "modal";
+@import "pace";
+@import "pagination";
+@import "positions";
+@import "progress";
+@import "radio";
+@import "sweet_alert";
+@import "table";
+@import "tabs";
+@import "topbar";
+@import "upload";
+@import "widget";
+// theme mode
+@import "theme_mode";
+//
+@import "custom_checkbox";
+@import "custom_radio";
+@import "highlight";
+@import "helpers";
