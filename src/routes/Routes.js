@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { dashboard as dashboardRoutes, authentication as authRoutes } from "./index";
-import DashboardLayout from "../hoc/Layout/Dashboard";
-import AuthLayout from "../hoc/Layout/Auth"
+import { dashboard as dashboardRoutes, authentication as authRoutes, AsyncDashboardEcommerce } from "./index";
+import DashboardLayout from "../layout/Dashboard";
+import AuthLayout from "../layout/Auth"
 
 const appRoutes = (Layout, routes) =>
   routes.map(({ children, path, component: Component }, index) =>
@@ -39,7 +39,11 @@ class Routes extends React.Component {
       <Switch>
         {appRoutes(DashboardLayout, dashboardRoutes)}
         {appRoutes(AuthLayout, authRoutes)}
-        
+        <Route path="/" render={props => (
+          <DashboardLayout>
+            <AsyncDashboardEcommerce {...props} />
+          </DashboardLayout>
+        )} />
       </Switch>
     )
   }

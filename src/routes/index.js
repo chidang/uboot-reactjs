@@ -1,26 +1,26 @@
-import asyncComponent from '../hoc/asyncComponent/asyncComponent';
+import AsyncComponent from '../components/AsyncComponent';
 
-const asyncDashboardAnalytics = asyncComponent(() => import('../containers/Dashboard/DashboardAnalytics'));
-const asyncDashboardEcommerce = asyncComponent(() => import('../containers/Dashboard/DashboardEcommerce'));
-const asyncLogin = asyncComponent(() => import('../containers/Pages/Authentication/Login'));
+const AsyncDashboardAnalytics = AsyncComponent(() => import('../containers/dashboard/Analytics'));
+export const AsyncDashboardEcommerce = AsyncComponent(() => import('../containers/dashboard/Ecommerce'));
+const AsyncLogin = AsyncComponent(() => import('../containers/Pages/Authentication/Login'));
 
 export const dashboardRoutes = {
     path: "/",
     name: "Dashboards",
-    component: asyncDashboardEcommerce,
+    component: AsyncDashboardEcommerce,
     badgeColor: "primary",
     badgeText: "5",
     containsHome: true,
     children: [
       {
-        path: "/",
+        path: "/dashboard/ecommerce",
         name: "Ecommerce",
-        component: asyncDashboardEcommerce
+        component: AsyncDashboardEcommerce
       },
       {
         path: "/dashboard/analytics",
         name: "Analytics",
-        component: asyncDashboardAnalytics
+        component: AsyncDashboardAnalytics
       }
     ]
 };
@@ -35,7 +35,7 @@ export const authRoutes = {
         {
             path: "/auth/login",
             name: "Login",
-            component: asyncLogin
+            component: AsyncLogin
         },
     ]
 };
