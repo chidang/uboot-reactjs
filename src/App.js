@@ -4,19 +4,28 @@ import SettingContext from './context/setting-context'
 
 const App = () => {
   const [rightSidebarOpened, toggleRightSidebar] = useState(false);
+  const [leftSidebarShrinked, toggleLeftSidebar] = useState(false);
 
-  const toggleHandler = () => {
+  const toggleRightSidebarHandler = () => {
     toggleRightSidebar(!rightSidebarOpened);
   }
 
-  return (<SettingContext.Provider
-    value={{
-      rightSidebarOpened: rightSidebarOpened,
-      toggle: toggleHandler
-    }}
-  >
-    <Routes />
-  </SettingContext.Provider>);
+  const toggleLeftSidebarHandler = () => {
+    toggleLeftSidebar(!leftSidebarShrinked);
+  }
+
+  return (
+    <SettingContext.Provider
+      value={{
+        leftSidebarShrinked: leftSidebarShrinked,
+        toggleLeftSidebar: toggleLeftSidebarHandler,
+        rightSidebarOpened: rightSidebarOpened,
+        toggleRightSidebar: toggleRightSidebarHandler
+      }}
+    >
+      <Routes />
+    </SettingContext.Provider>
+  );
 }
 
 export default App;

@@ -29,7 +29,7 @@ input {
   background-color: var(--thirtary-background);
 }
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   .input-group-text {
     background: rgba(0, 0, 0, .15);
     border-color: var(--input-border);

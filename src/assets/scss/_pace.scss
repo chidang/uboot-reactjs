@@ -42,7 +42,7 @@
   display: none;
 }
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   .pace-progress {
     background: var(--highlight);
   }

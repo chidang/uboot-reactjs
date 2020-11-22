@@ -35,7 +35,7 @@
   border-bottom-color: var(--divider);
 }
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   .table-hover > tbody > tr:hover {
     background-color: var(--nav-bar-highlight-background);
     --bs-table-accent-bg: none;

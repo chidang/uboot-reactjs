@@ -17,7 +17,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  body[data-theme-footer-fixed="true"] {
+  .main-wrapper[data-theme-footer-fixed="true"] {
     .page-content {
       margin-bottom: $topbar-height;
     }

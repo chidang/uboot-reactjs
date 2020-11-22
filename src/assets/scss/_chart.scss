@@ -36,7 +36,7 @@
 
 }
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   .tick text,
   .nvd3 .nv-legend-text,
   .nvd3 .nv-axisMaxMin text,

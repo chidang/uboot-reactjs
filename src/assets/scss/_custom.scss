@@ -80,7 +80,7 @@ dd { color: $info}
 
 .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: $gray-400; }
 
-body[data-theme-boxed-layout="true"] {
+.main-wrapper[data-theme-boxed-layout="true"] {
   .main-wrapper {
     max-width: 1350px;
     margin: 0 auto;
@@ -100,7 +100,7 @@ body[data-theme-boxed-layout="true"] {
     border-right: none;
   }
 
-  body[data-theme-sidebar-shrinked="true"] {
+  .main-wrapper[data-theme-sidebar-shrinked="true"] {
     .page-content {
       width: subtract(100%, $left-sidebar-shrinking-width);
       min-height: 100vh;

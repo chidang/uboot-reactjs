@@ -6,7 +6,7 @@ const Setting = () => {
     const settingContext = useContext(SettingContext);
     return (
         <li className="nav-item">
-            <Link to="#" className="nav-link" onClick={settingContext.toggle} id="modalSetting">
+            <Link to="#" className="nav-link" onClick={settingContext.toggleRightSidebar} id="modalSetting">
                 <i className="rotate bi-gear"></i>
             </Link>
         </li>

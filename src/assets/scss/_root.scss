@@ -27,7 +27,7 @@
 }
 
 // highlight theme colors
-body[data-theme-color="app-theme-anchor"] {
+.main-wrapper[data-theme-color="app-theme-anchor"] {
   --highlight: #{$anchor};
   @each $color,
   $value in $anchors {
@@ -35,7 +35,7 @@ body[data-theme-color="app-theme-anchor"] {
   }
 }
 
-body[data-theme-color="app-theme-maroon"] {
+.main-wrapper[data-theme-color="app-theme-maroon"] {
   --highlight: #{$maroon};
   @each $color,
   $value in $maroons {
@@ -44,7 +44,7 @@ body[data-theme-color="app-theme-maroon"] {
   --nav-bar-highlight-background: #{$maroon};
 }
 
-body[data-theme-color="app-theme-carrot"] {
+.main-wrapper[data-theme-color="app-theme-carrot"] {
   --highlight: #{$carrot};
   @each $color,
   $value in $carrots {
@@ -53,7 +53,7 @@ body[data-theme-color="app-theme-carrot"] {
   --nav-bar-highlight-background: #{$carrot};
 }
 
-body[data-theme-color="app-theme-lollipop"] {
+.main-wrapper[data-theme-color="app-theme-lollipop"] {
   --highlight: #{$lollipop};
   @each $color,
   $value in $lollipops {
@@ -62,7 +62,7 @@ body[data-theme-color="app-theme-lollipop"] {
   --nav-bar-highlight-background: #{$lollipop};
 }
 
-body[data-theme-color="app-theme-gold"] {
+.main-wrapper[data-theme-color="app-theme-gold"] {
   --highlight: #{$gold};
   @each $color,
   $value in $golds {
@@ -71,7 +71,7 @@ body[data-theme-color="app-theme-gold"] {
   --nav-bar-highlight-background: #{$gold};
 }
 
-body[data-theme-color="app-theme-forest"] {
+.main-wrapper[data-theme-color="app-theme-forest"] {
   --highlight: #{$forest};
   @each $color,
   $value in $forests {
@@ -80,7 +80,7 @@ body[data-theme-color="app-theme-forest"] {
   --nav-bar-highlight-background: #{$forest};
 }
 
-body[data-theme-color="app-theme-hoki"] {
+.main-wrapper[data-theme-color="app-theme-hoki"] {
   --highlight: #{$hoki};
   @each $color,
   $value in $hokis {
@@ -89,7 +89,7 @@ body[data-theme-color="app-theme-hoki"] {
   --nav-bar-highlight-background: #{$hoki};
 }
 
-body[data-theme-color="app-theme-purple"] {
+.main-wrapper[data-theme-color="app-theme-purple"] {
   --highlight: #{$purple};
   @each $color,
   $value in $purples {
@@ -98,7 +98,7 @@ body[data-theme-color="app-theme-purple"] {
   --nav-bar-highlight-background: #{$purple};
 }
 
-body[data-theme-color="app-theme-indigo"] {
+.main-wrapper[data-theme-color="app-theme-indigo"] {
   --highlight: #{$indigo};
   @each $color,
   $value in $indigos {
@@ -107,7 +107,7 @@ body[data-theme-color="app-theme-indigo"] {
   --nav-bar-highlight-background: #{$indigo};
 }
 
-body[data-theme-color="app-theme-blue"] {
+.main-wrapper[data-theme-color="app-theme-blue"] {
   --highlight: #{$blue};
   @each $color,
   $value in $blues {
@@ -116,7 +116,7 @@ body[data-theme-color="app-theme-blue"] {
   --nav-bar-highlight-background: #{$blue};
 }
 
-body[data-theme-color="app-theme-aqua"] {
+.main-wrapper[data-theme-color="app-theme-aqua"] {
   --highlight: #{$aqua};
   @each $color,
   $value in $aquas {
@@ -125,7 +125,7 @@ body[data-theme-color="app-theme-aqua"] {
   --nav-bar-highlight-background: #{$aqua};
 }
 
-body[data-theme-color="app-theme-facebook"] {
+.main-wrapper[data-theme-color="app-theme-facebook"] {
   --highlight: #{$facebook};
   @each $color,
   $value in $facebooks {
@@ -134,7 +134,7 @@ body[data-theme-color="app-theme-facebook"] {
   --nav-bar-highlight-background: #{$facebook};
 }
 
-body[data-theme-color="app-theme-pink"] {
+.main-wrapper[data-theme-color="app-theme-pink"] {
   --highlight: #{$pink};
   @each $color,
   $value in $pinks {
@@ -143,7 +143,7 @@ body[data-theme-color="app-theme-pink"] {
   --nav-bar-highlight-background: #{$pink};
 }
 
-body[data-theme-color="app-theme-yellow"] {
+.main-wrapper[data-theme-color="app-theme-yellow"] {
   --highlight: #{$yellow};
   @each $color,
   $value in $yellows {
@@ -152,7 +152,7 @@ body[data-theme-color="app-theme-yellow"] {
   --nav-bar-highlight-background: #{$yellow};
 }
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   --contrast-background: #{$dark-contrast-background};
   --contrast-box-shadow: #{$dark-contrast-box-shadow};
   --divider: #{$dark-divider};

@@ -5,7 +5,7 @@
 * File: jsTree
 */
 
-body[data-theme-mode="dark-mode"] {
+.main-wrapper[data-theme-mode="dark-mode"] {
   .jstree-default {
     .jstree-clicked, .jstree-hovered {
       background-color: var(--contrast-background) !important;

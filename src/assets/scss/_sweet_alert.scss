@@ -5,7 +5,7 @@
 * File: Sweet alert
 */
 
-body[data-theme-mode="dark-mode"]{
+.main-wrapper[data-theme-mode="dark-mode"]{
   .swal2-popup {
     background-color: var(--thirtary-background);
   }
