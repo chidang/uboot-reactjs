@@ -28,7 +28,7 @@
   }
 }
 
-body:not([data-theme-mode="dark-mode"]) {
+.main-wrapper:not([data-theme-mode="dark-mode"]) {
   .topbar {
     background-color: var(--highlight);
   }

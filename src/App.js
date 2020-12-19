@@ -5,6 +5,7 @@ import SettingContext from './context/setting-context'
 const App = () => {
   const [rightSidebarOpened, toggleRightSidebar] = useState(false);
   const [leftSidebarShrinked, toggleLeftSidebar] = useState(false);
+  const [themeMode, changeThemeMode] = useState('default-mode');
 
   const toggleRightSidebarHandler = () => {
     toggleRightSidebar(!rightSidebarOpened);
@@ -14,13 +15,19 @@ const App = () => {
     toggleLeftSidebar(!leftSidebarShrinked);
   }
 
+  const changeThemeModeHandler = (modeName) => {
+    changeThemeMode(modeName);
+  }
+
   return (
     <SettingContext.Provider
       value={{
         leftSidebarShrinked: leftSidebarShrinked,
         toggleLeftSidebar: toggleLeftSidebarHandler,
         rightSidebarOpened: rightSidebarOpened,
-        toggleRightSidebar: toggleRightSidebarHandler
+        toggleRightSidebar: toggleRightSidebarHandler,
+        themeMode: themeMode,
+        changeThemeMode: (modeName) => changeThemeModeHandler(modeName)
       }}
     >
       <Routes />

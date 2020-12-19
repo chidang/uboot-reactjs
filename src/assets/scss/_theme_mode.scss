@@ -16,7 +16,7 @@
   }
 }
 
-body:not([data-theme-mode="dark-mode"]) {
+.main-wrapper:not([data-theme-mode="dark-mode"]) {
   .bg-trans-gradient {
     background: linear-gradient(to left, var(--highlight) 0%, #3f93d6 100%)!important;
   }

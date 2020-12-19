@@ -80,6 +80,11 @@ dd { color: $info}
 
 .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: $gray-400; }
 
+.main-wrapper {
+  background-color: var(--web-wash);
+  color: var(--main-text);
+}
+
 .main-wrapper[data-theme-boxed-layout="true"] {
   .main-wrapper {
     max-width: 1350px;
