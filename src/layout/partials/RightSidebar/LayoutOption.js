@@ -21,21 +21,21 @@ const LayoutOption = () =>
                 </div>
                 <div className="ml-3"><label htmlFor="app-fixed-left-sidebar">Fixed Navigation</label></div>
             </div>
-        <div className="d-flex mb-2">
-            <div className="custom-switcher custom-switcher-highlight">
-                <input type="checkbox" name="app-fixed-footer" id="app-fixed-footer"/>
-                <label htmlFor="app-fixed-footer"></label>
+            <div className="d-flex mb-2">
+                <div className="custom-switcher custom-switcher-highlight">
+                    <input type="checkbox" name="app-fixed-footer" id="app-fixed-footer"/>
+                    <label htmlFor="app-fixed-footer"></label>
+                </div>
+                <div className="ml-3"><label htmlFor="app-fixed-footer">Fixed Footer</label></div>
             </div>
-            <div className="ml-3"><label htmlFor="app-fixed-footer">Fixed Footer</label></div>
-        </div>
-        <div className="d-flex mb-2">
-            <div className="custom-switcher custom-switcher-highlight">
-                <input type="checkbox" name="app-boxed-layout" id="app-boxed-layout"/>
-                <label htmlFor="app-boxed-layout"></label>
+            <div className="d-flex mb-2">
+                <div className="custom-switcher custom-switcher-highlight">
+                    <input type="checkbox" name="app-boxed-layout" id="app-boxed-layout"/>
+                    <label htmlFor="app-boxed-layout"></label>
+                </div>
+                <div className="ml-3"><label htmlFor="app-boxed-layout">Boxed Layout</label></div>
             </div>
-            <div className="ml-3"><label htmlFor="app-boxed-layout">Boxed Layout</label></div>
         </div>
-    </div>
     </>
 
 export default LayoutOption;

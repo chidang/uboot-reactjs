@@ -10,7 +10,12 @@ const Dashboard = props => {
 
     return (
         <>
-            <div className="main-wrapper" data-theme-sidebar-shrinked={settingContext.leftSidebarShrinked} data-theme-mode={settingContext.themeMode}>
+            <div 
+            className="main-wrapper"
+            data-theme-sidebar-shrinked={settingContext.leftSidebarShrinked}
+            data-theme-mode={settingContext.themeMode}
+            data-theme-color={settingContext.themeColor}
+            >
                 <Topbar />
                 <div className="page-container">
                     <LeftSidebar />
@@ -18,8 +23,8 @@ const Dashboard = props => {
                         {props.children}
                     </div>
                 </div>
+                <RightSidebar/>
             </div>
-            <RightSidebar/>
         </>
     );
 }
