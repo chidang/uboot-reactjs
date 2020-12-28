@@ -1,6 +1,6 @@
 import AsyncComponent from '../components/AsyncComponent';
 
-const AsyncDashboardAnalytics = AsyncComponent(() => import('../containers/dashboard/Analytics'));
+export const AsyncDashboardAnalytics = AsyncComponent(() => import('../containers/dashboard/Analytics'));
 export const AsyncDashboardEcommerce = AsyncComponent(() => import('../containers/dashboard/Ecommerce'));
 const AsyncLogin = AsyncComponent(() => import('../containers/pages/authentication/Login'));
 

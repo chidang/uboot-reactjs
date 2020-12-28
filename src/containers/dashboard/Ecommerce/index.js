@@ -1,3 +1,6 @@
+import BarChart from "./BarChart";
+import DoughnutChart from "./DoughnutChart";
+
 const Ecommerce = () =>
   <>
     <h1 className="header-title h3 mb-4">
@@ -104,7 +107,7 @@ const Ecommerce = () =>
           <div className="card-body pt-0">
             <div className="row">
               <div className="col-xl-8 pl-0">
-                <div id="dashboard-area-chart" style={{height: "270px"}}></div>
+              <BarChart />
               </div>
               <div className="col-xl-4">
                 <h5 className="mt-3">Direct <span className="float-right">72%</span></h5>
@@ -179,7 +182,9 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-                <div id="user-section-pie-chart" style={{height: "220px"}}></div>
+                <div id="user-section-pie-chart" style={{height: "220px"}}>
+                  <DoughnutChart />
+                </div>
                 <table className="table table-sm table-sm-width table-borderless mb-0 mx-auto text-center">
                   <tbody>
                     <tr>

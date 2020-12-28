@@ -14,10 +14,10 @@ const Main = () =>
             <Accordion.Collapse eventKey="dashboardMenu">
                 <ul className="sidebar-second-level list-unstyled" id="dashboardMenu" data-parent="#left-sidebar">
                     <li>
-                        <Link to="index.html">Analytics</Link>
+                        <Link to="/dashboard/analytics">Analytics</Link>
                     </li>
                     <li>
-                        <Link to="dashboard-ecommerce.html">Ecommerce</Link>
+                        <Link to="/dashboard/ecommerce">Ecommerce</Link>
                     </li>
                 </ul>
             </Accordion.Collapse>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { dashboard as dashboardRoutes, authentication as authRoutes, AsyncDashboardEcommerce } from "./index";
+import { dashboard as dashboardRoutes, authentication as authRoutes, AsyncDashboardEcommerce, AsyncDashboardAnalytics } from "./index";
 import DashboardLayout from "../layout/Dashboard";
 import AuthLayout from "../layout/Auth"
 
@@ -42,6 +42,7 @@ class Routes extends React.Component {
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />
+            <AsyncDashboardAnalytics {...props} />
           </DashboardLayout>
         )} />
       </Switch>
