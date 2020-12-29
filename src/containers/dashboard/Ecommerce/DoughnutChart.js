@@ -3,22 +3,28 @@ import { Doughnut } from "react-chartjs-2";
 
 const DoughnutChart = () => {
   let theme = { primary: '#4285f4' }
+
+  const options = {
+    maintainAspectRatio: false,
+    cutoutPercentage: 0,
+    legend: {
+      display: false
+    }
+  };
   const data = {
-    "labels": ["Direct", "Affilliate", "Sponsored", "Email"],
+    "labels": ["Return Customers", "New Customers"],
     "datasets": [{
       "label": "My First Dataset",
-      "data": [300, 50, 100, 30],
+      "data": [67432224, 37232128],
       "backgroundColor": [
-        'red',
-        'blue',
-       'green',
-       'yellow'
+        theme.primary,
+        'gray'
       ]
     }]
   }
 
   return (
-    <Doughnut data={data} />
+    <Doughnut data={data} options={options} />
   );
 };
 

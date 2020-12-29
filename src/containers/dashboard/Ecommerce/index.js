@@ -1,5 +1,6 @@
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
+import WorldMap from "./WorldMap";
 
 const Ecommerce = () =>
   <>
@@ -160,7 +161,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <div id="world_map" style={{height: "340px"}}></div>
+              <WorldMap />
             </div>
           </div>
         </div>
