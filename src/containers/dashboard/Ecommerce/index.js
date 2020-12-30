@@ -1,6 +1,8 @@
+import LineChart from "./LineChart";
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
 import WorldMap from "./WorldMap";
+import Calendar from "./Calendar";
 
 const Ecommerce = () =>
   <>
@@ -108,7 +110,7 @@ const Ecommerce = () =>
           <div className="card-body pt-0">
             <div className="row">
               <div className="col-xl-8 pl-0">
-              <BarChart />
+                <LineChart />
               </div>
               <div className="col-xl-4">
                 <h5 className="mt-3">Direct <span className="float-right">72%</span></h5>
@@ -219,7 +221,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <canvas id="dashboard-bar-chartjs"></canvas>
+              <BarChart />
             </div>
           </div>
         </div>
@@ -243,7 +245,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <div id="demo-calendar"></div>
+              <Calendar />
             </div>
           </div>
         </div>

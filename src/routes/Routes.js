@@ -42,7 +42,6 @@ class Routes extends React.Component {
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />
-            <AsyncDashboardAnalytics {...props} />
           </DashboardLayout>
         )} />
       </Switch>
