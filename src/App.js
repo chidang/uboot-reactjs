@@ -6,7 +6,7 @@ const App = () => {
   const [rightSidebarOpened, toggleRightSidebar] = useState(false);
   const [leftSidebarShrinked, toggleLeftSidebar] = useState(false);
   const [themeMode, changeThemeMode] = useState('default-mode');
-  const [themeColor, changeThemeColor] = useState('app-theme-blue');
+  const [themeColor, changeThemeColor] = useState({ primaryColor: '#4285f4', name: 'blue' });
 
   const toggleRightSidebarHandler = () => {
     toggleRightSidebar(!rightSidebarOpened);
@@ -20,8 +20,8 @@ const App = () => {
     changeThemeMode(modeName);
   }
 
-  const changeThemeColorHandler = (colorName) => {
-    changeThemeColor(colorName);
+  const changeThemeColorHandler = (color) => {
+    changeThemeColor(color);
   }
 
   return (
@@ -34,7 +34,7 @@ const App = () => {
         themeMode: themeMode,
         changeThemeMode: (modeName) => changeThemeModeHandler(modeName),
         themeColor: themeColor,
-        changeThemeColor: (colorName) => changeThemeColorHandler(colorName)
+        changeThemeColor: (color) => changeThemeColorHandler(color)
       }}
     >
       <Routes />

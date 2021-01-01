@@ -1,8 +1,9 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const LineChart = () => {
-  let theme = { primary: '#4285f4' }
+const LineChart = (props) => {
+  const defaultTheme = { color: { primaryColor: '#4285f4' } };
+  const theme =  Object.assign( defaultTheme, props.theme);
   const data = {
     labels: [
       "Jan",
@@ -23,7 +24,7 @@ const LineChart = () => {
         label: "Sales ($)",
         fill: true,
         backgroundColor: "transparent",
-        borderColor: theme.primary,
+        borderColor: theme.color.primaryColor,
         data: [
           3005,
           1765,

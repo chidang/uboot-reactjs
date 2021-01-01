@@ -7,11 +7,11 @@ window.jQuery = jQuery;
 require("jvectormap-next")($);
 require("../../../vendor/jquery-jvectormap-world-mill");
 
-const WorldMap = () => {
-  let theme = { primary: '#4285f4' }
-
+const WorldMap = props => {
+  const defaultTheme = { color: { primaryColor: '#4285f4' } };
+  const theme =  Object.assign( defaultTheme, props.theme);
   const drawMap = (theme) => {
-    $("#world_map").vectorMap({
+    $("#world_map").empty().vectorMap({
       map: "world_mill",
       normalizeFunction: "polynomial",
       hoverOpacity: 0.7,
@@ -24,7 +24,7 @@ const WorldMap = () => {
       markerStyle: {
         initial: {
           r: 9,
-          fill: theme.primary,
+          fill: theme.color.primaryColor,
           "fill-opacity": 0.9,
           stroke: "#fff",
           "stroke-width": 7,
@@ -124,7 +124,7 @@ const WorldMap = () => {
 
   return (
     <div className="map-container">
-        <div id="world_map" style={{ height: 340 }} />
+      <div id="world_map" style={{ height: 340 }} />
     </div>
   );
 };

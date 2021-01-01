@@ -1,9 +1,9 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
 
-const DoughnutChart = () => {
-  let theme = { primary: '#4285f4' }
-
+const DoughnutChart = props => {
+  const defaultTheme = { color: { primaryColor: '#4285f4' } };
+  const theme =  Object.assign( defaultTheme, props.theme);
   const options = {
     maintainAspectRatio: false,
     cutoutPercentage: 0,
@@ -17,8 +17,8 @@ const DoughnutChart = () => {
       "label": "My First Dataset",
       "data": [67432224, 37232128],
       "backgroundColor": [
-        theme.primary,
-        'gray'
+        theme.color.primaryColor,
+        '#e3eaef'
       ]
     }]
   }

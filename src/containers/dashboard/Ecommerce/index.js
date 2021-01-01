@@ -1,11 +1,17 @@
+import React, { useContext } from 'react';
 import LineChart from "./LineChart";
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
 import WorldMap from "./WorldMap";
 import Calendar from "./Calendar";
+import TopProducts from "./TopProducts";
+import SettingContext from '../../../context/setting-context';
+import { THEME_COLORS } from '../../../shared/color-utils';
 
-const Ecommerce = () =>
-  <>
+const Ecommerce = () => {
+  const settingContext = useContext(SettingContext);
+  let theme = { color: settingContext.themeColor  }
+  return <>
     <h1 className="header-title h3 mb-4">
       <span className="text-primary"><i className="bi-cart3"></i></span> E-Commerce <span className="fw-300">Dashboard</span>
     </h1>
@@ -110,7 +116,7 @@ const Ecommerce = () =>
           <div className="card-body pt-0">
             <div className="row">
               <div className="col-xl-8 pl-0">
-                <LineChart />
+                <LineChart theme={theme}/>
               </div>
               <div className="col-xl-4">
                 <h5 className="mt-3">Direct <span className="float-right">72%</span></h5>
@@ -163,7 +169,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <WorldMap />
+              <WorldMap theme={theme}/>
             </div>
           </div>
         </div>
@@ -186,7 +192,7 @@ const Ecommerce = () =>
             </div>
             <div className="card-body px-4">
                 <div id="user-section-pie-chart" style={{height: "220px"}}>
-                  <DoughnutChart />
+                  <DoughnutChart theme={theme} />
                 </div>
                 <table className="table table-sm table-sm-width table-borderless mb-0 mx-auto text-center">
                   <tbody>
@@ -221,7 +227,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <BarChart />
+              <BarChart theme={theme}/>
             </div>
           </div>
         </div>
@@ -245,7 +251,7 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
-              <Calendar />
+            <Calendar />
             </div>
           </div>
         </div>
@@ -267,11 +273,13 @@ const Ecommerce = () =>
               </div>
             </div>
             <div className="card-body px-4">
+              <TopProducts />
             </div>
           </div>
         </div>
       </div>
     </div>
   </>
+}
 
 export default Ecommerce;
