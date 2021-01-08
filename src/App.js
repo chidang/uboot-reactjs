@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Routes from './routes/Routes';
 import SettingContext from './context/setting-context'
+import { setConfig, getConfig } from './shared/storage-utils';
 
 const App = () => {
   const [rightSidebarOpened, toggleRightSidebar] = useState(false);
   const [leftSidebarShrinked, toggleLeftSidebar] = useState(false);
-  const [themeMode, changeThemeMode] = useState('default-mode');
-  const [themeColor, changeThemeColor] = useState({ primaryColor: '#4285f4', name: 'blue' });
-
+  const [themeMode, changeThemeMode] = useState(getConfig().themeMode);
+  const [themeColor, changeThemeColor] = useState(getConfig().themeColor);
+  
   const toggleRightSidebarHandler = () => {
     toggleRightSidebar(!rightSidebarOpened);
   }
@@ -17,10 +18,12 @@ const App = () => {
   }
 
   const changeThemeModeHandler = (modeName) => {
+    setConfig({ themeMode: modeName });
     changeThemeMode(modeName);
   }
 
   const changeThemeColorHandler = (color) => {
+    setConfig({ themeColor: color });
     changeThemeColor(color);
   }
 
