@@ -23,13 +23,13 @@ const Main = () =>
             </Accordion.Collapse>
             </li>
             <li className="sidebar-item">
-                <Link to="calendar.html">
+                <Link to="/calendar">
                 <i className="bi-calendar2-event-fill"></i>
                 <span>Calendar <span className="badge bg-primary">Plugin</span></span>
                 </Link>
             </li>
             <li className="sidebar-item">
-                <Link to="chat.html">
+                <Link to="/chat">
                 <i className="bi-chat-square-text"></i>
                 <span>Chat</span>
                 </Link>
