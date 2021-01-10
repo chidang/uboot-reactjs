@@ -48,7 +48,7 @@ const Main = () =>
                             <Link to="ecommerce-product-detail.html">Product Detail</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-add-product.html">Add Product</Link>
+                            <Link to="/ecommerce/add-product">Add Product</Link>
                         </li>
                         <li>
                             <Link to="ecommerce-orders.html">Orders</Link>

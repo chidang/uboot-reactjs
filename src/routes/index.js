@@ -1,46 +1,10 @@
 import AsyncComponent from '../components/AsyncComponent';
+import ecommerceRoutes from './ecommerce';
+import dashboardRoutes from './dashboard';
+import authRoutes from './auth';
 
-export const AsyncDashboardAnalytics = AsyncComponent(() => import('../containers/Dashboard/Analytics'));
-export const AsyncDashboardEcommerce = AsyncComponent(() => import('../containers/Dashboard/Ecommerce'));
-export const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
-export const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
-const AsyncLogin = AsyncComponent(() => import('../containers/Pages/Authentication/Login'));
-
-export const dashboardRoutes = {
-    path: "/",
-    name: "Dashboards",
-    component: AsyncDashboardEcommerce,
-    badgeColor: "primary",
-    badgeText: "5",
-    containsHome: true,
-    children: [
-      {
-        path: "/dashboard/ecommerce",
-        name: "Ecommerce",
-        component: AsyncDashboardEcommerce
-      },
-      {
-        path: "/dashboard/analytics",
-        name: "Analytics",
-        component: AsyncDashboardAnalytics
-      }
-    ]
-};
-
-export const authRoutes = {
-    path: "/auth",
-    name: "Authentication",
-    badgeColor: "primary",
-    badgeText: "5",
-    containsHome: true,
-    children: [
-        {
-            path: "/auth/login",
-            name: "Login",
-            component: AsyncLogin
-        },
-    ]
-};
+const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
+const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
 
 export const calendarRoutes = {
     path: "/calendar",
@@ -55,6 +19,7 @@ export const chatRoutes = {
     component: AsyncChat,
     badgeColor: "primary"
 };
+
 
 export const dashboard = [
     dashboardRoutes
@@ -72,9 +37,14 @@ export const chat = [
     chatRoutes
 ];
 
-export default [
+export const ecommerces = [
+    ecommerceRoutes
+];
+
+export const routes = [
     dashboardRoutes,
     authRoutes,
     calendarRoutes,
-    chatRoutes
+    chatRoutes,
+    ecommerces
 ];

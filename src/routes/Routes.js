@@ -1,14 +1,17 @@
+import AsyncComponent from '../components/AsyncComponent';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { dashboard as dashboardRoutes, 
+import { 
+  dashboard as dashboardRoutes, 
   authentication as authRoutes, 
-  AsyncDashboardEcommerce, 
   chat as chatRoutes,
-  calendar as calendarRoutes
+  calendar as calendarRoutes,
+  ecommerces as ecommerceRoutes
  } from "./index";
 import DashboardLayout from "../layout/Dashboard";
-import AuthLayout from "../layout/Auth"
+import AuthLayout from "../layout/Auth";
 
+const AsyncDashboardEcommerce = AsyncComponent(() => import('../containers/Dashboard/Ecommerce'));
 const appRoutes = (Layout, routes) =>
   routes.map(({ children, path, component: Component }, index) =>
     children ? (
@@ -46,6 +49,7 @@ class Routes extends React.Component {
         {appRoutes(AuthLayout, authRoutes)}
         {appRoutes(DashboardLayout, calendarRoutes)}
         {appRoutes(DashboardLayout, chatRoutes)}
+        {appRoutes(DashboardLayout, ecommerceRoutes)}
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />
