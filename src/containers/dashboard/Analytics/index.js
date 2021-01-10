@@ -1,7 +1,15 @@
-// import AudienceOverviewChart from './AudienceOverviewChart';
+import { useContext } from 'react';
 import BarChart from "./BarChart";
+import SettingContext from '../../../context/setting-context';
+import DoughnutChart from "./DoughnutChart";
+import PieChart from "./PieChart";
+import WorldMap from "./WorldMap";
+import Calendar from "./Calendar";
+// import EasyPieChart from "./EasyPieChart";
 
 const Analytics = () => {
+  const settingContext = useContext(SettingContext);
+  let theme = { color: settingContext.themeColor  }
     return <>
       <h1 className="header-title h3 mb-4">
         <span className="text-primary"><i className="bi-bar-chart"></i></span> Analytics <span className="fw-300">Dashboard</span>
@@ -14,11 +22,13 @@ const Analytics = () => {
               <div className="row">
                 <div className="col-xl-8 pl-0">
                   <div className="chart chart-sm">
-                  <BarChart />
+                  
                   </div>
                 </div>
                 <div className="col-xl-4">
-                  <div id="user-section-pie-chart" className="mt-lg-5 mt-xl-3" style={{height: "220px"}}></div>
+                <div style={{height: "220px"}}>
+                  <DoughnutChart theme={theme} />
+                </div>
                   <table className="table table-sm table-sm-width table-borderless mb-0 mx-auto text-center">
                     <tbody>
                       <tr>
@@ -36,52 +46,11 @@ const Analytics = () => {
             </div>
               <div className="row row-border w-100 ml-0">
                 <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <div className="easy-pie-chart position-relative d-inline-flex align-items-center justify-content-center" data-percent="86">
-                    <div className="d-flex flex-column align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom fw-300 fs-sm">
-                      <span className="percent d-block"></span>
-                    </div>
-                  </div>
                   <span className="d-inline-block ml-2 mr-4">
                     User Retention
                   </span>
                   <span className="compositebar">4,6,7,7,4,3,2,1,4</span>
                   <span className="text-success ml-2"><i className="fas fa-arrow-up"></i> 19.27%</span>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <div className="easy-pie-chart position-relative d-inline-flex align-items-center justify-content-center" data-percent="65">
-                    <div className="d-flex flex-column align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom fw-300 fs-sm">
-                      <span className="percent d-block"></span>
-                    </div>
-                  </div>
-                  <span className="d-inline-block ml-2 mr-4">
-                    New Visitor
-                  </span>
-                  <span className="compositebar">4,6,7,7,8,6,5,4,4</span>
-                  <span className="text-warning ml-2"><i className="fas fa-arrow-down"></i> 5.98%</span>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <div className="easy-pie-chart position-relative d-inline-flex align-items-center justify-content-center" data-percent="72">
-                    <div className="d-flex flex-column align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom fw-300 fs-sm">
-                      <span className="percent d-block"></span>
-                    </div>
-                  </div>
-                  <span className="d-inline-block ml-2 mr-4">
-                    Session
-                  </span>
-                  <span className="compositebar">8,6,7,5,6,2,4,6,4</span>
-                  <span className="text-info ml-2"><i className="fas fa-arrow-up"></i> 9.34%</span>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <div className="easy-pie-chart position-relative d-inline-flex align-items-center justify-content-center" data-percent="56">
-                    <div className="d-flex flex-column align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom fw-300 fs-sm">
-                      <span className="percent d-block"></span>
-                    </div>
-                  </div>
-                  <span className="d-inline-block ml-2 mr-4">
-                    Site Usage
-                  </span>
-                  <span className="compositebar">9,8,7,3,4,2,7,9,8</span>
-                  <span className="text-danger ml-2"><i className="fas fa-arrow-down"></i> 6.12%</span>
                 </div>
               </div>
           </div>
@@ -106,7 +75,9 @@ const Analytics = () => {
               </div>
             </div>
             <div className="card-body p-3">
-              <div id="analytics-section-by-device" style={{height: "220px"}}></div>
+              <div id="analytics-section-by-device" style={{height: "220px"}}>
+                <PieChart theme={theme} />
+              </div>
               <table className="table table-sm table-sm-width table-borderless mb-0 mx-auto text-center">
                 <tbody>
                   <tr>
@@ -144,8 +115,7 @@ const Analytics = () => {
               </div>
             </div>
             <div className="card-body px-4">
-              <div id="world_map" style={{height: "300px"}}></div>
-              <div id="horizontal-bar-chart" className="nv-axis-y-hide" style={{height: "150px"}}></div>
+              <WorldMap theme={theme}/>
             </div>
           </div>
         </div>
@@ -167,7 +137,7 @@ const Analytics = () => {
               </div>
             </div>
             <div className="card-body px-4">
-              <canvas id="dashboard-bar-chartjs"></canvas>
+            <BarChart theme={theme} />
             </div>
           </div>
         </div>
@@ -292,7 +262,7 @@ const Analytics = () => {
               </div>
             </div>
             <div className="card-body px-4">
-              <div id="demo-calendar"></div>
+            <Calendar />
             </div>
           </div>
         </div>

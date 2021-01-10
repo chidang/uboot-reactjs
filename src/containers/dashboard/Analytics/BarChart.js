@@ -1,8 +1,9 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 
-const BarChart = () => {
-  let theme = { primary: '#4285f4' }
+const BarChart = props => {
+  const defaultTheme = { color: { primaryColor: '#4285f4' } };
+  const theme =  Object.assign( defaultTheme, props.theme);
   const data = {
     labels: [
       "Jan",
@@ -21,10 +22,10 @@ const BarChart = () => {
     datasets: [
       {
         label: "Last year",
-        backgroundColor: theme.primary,
-        borderColor: theme.primary,
-        hoverBackgroundColor: theme.primary,
-        hoverBorderColor: theme.primary,
+        backgroundColor: theme.color.primaryColor,
+        borderColor: theme.color.primaryColor,
+        hoverBackgroundColor: theme.color.primaryColor,
+        hoverBorderColor: theme.color.primaryColor,
         data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
         barPercentage: 0.75,
         categoryPercentage: 0.5

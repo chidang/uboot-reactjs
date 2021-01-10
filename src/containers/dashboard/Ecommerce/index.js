@@ -6,7 +6,6 @@ import WorldMap from "./WorldMap";
 import Calendar from "./Calendar";
 import TopProducts from "./TopProducts";
 import SettingContext from '../../../context/setting-context';
-import { THEME_COLORS } from '../../../shared/color-utils';
 
 const Ecommerce = () => {
   const settingContext = useContext(SettingContext);
