@@ -19,7 +19,42 @@ const ecommerceRoutes = {
         path: "/ecommerce/add-product",
         name: "AddProduct",
         component: AsyncEcommerceAddProduct
-      }
+      },
+      {
+        path: "/ecommerce/products",
+        name: "Products",
+        component: AsyncEcommerceAllProducts
+      },
+      {
+        path: "/ecommerce/checkout",
+        name: "Checkout",
+        component: AsyncEcommerceCheckout
+      },
+      {
+        path: "/ecommerce/customers",
+        name: "Customers",
+        component: AsyncEcommerceCustomers
+      },
+      {
+        path: "/ecommerce/order-detail",
+        name: "OrderDetail",
+        component: AsyncEcommerceOrderDetail
+      },
+      {
+        path: "/ecommerce/orders",
+        name: "Orders",
+        component: AsyncEcommerceOrders
+      },
+      {
+        path: "/ecommerce/product-detail",
+        name: "ProductDetail",
+        component: AsyncEcommerceProductDetail
+      },
+      {
+        path: "/ecommerce/shopping-cart",
+        name: "ShoppingCart",
+        component: AsyncEcommerceShoppingCart
+      },
     ]
 };
 

@@ -42,28 +42,28 @@ const Main = () =>
                 <Accordion.Collapse eventKey="menuEcommerce">
                     <ul className="sidebar-second-level list-unstyled" id="pageSubmenuEcommerce" data-parent="#left-sidebar">
                         <li>
-                            <Link to="ecommerce-products.html">All Products</Link>
+                            <Link to="/ecommerce/products">All Products</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-product-detail.html">Product Detail</Link>
+                            <Link to="/ecommerce/product-detail">Product Detail</Link>
                         </li>
                         <li>
                             <Link to="/ecommerce/add-product">Add Product</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-orders.html">Orders</Link>
+                            <Link to="/ecommerce/orders">Orders</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-order-detail.html">Order Detail</Link>
+                            <Link to="/ecommerce/order-detail">Order Detail</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-customers.html">Customers</Link>
+                            <Link to="/ecommerce/customers">Customers</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-shopping-card.html">Shopping Card</Link>
+                            <Link to="/ecommerce/shopping-cart">Shopping Cart</Link>
                         </li>
                         <li>
-                            <Link to="ecommerce-checkout.html">Checkout</Link>
+                            <Link to="/ecommerce/checkout">Checkout</Link>
                         </li>
                     </ul>
                 </Accordion.Collapse>
