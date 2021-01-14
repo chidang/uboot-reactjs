@@ -3,7 +3,8 @@ import ecommerceRoutes from './ecommerce';
 import dashboardRoutes from './dashboard';
 import authRoutes from './auth';
 import pageRoutes from './page';
-import uiKitRoutes from './ui'
+import uiKitRoutes from './ui';
+import formRoutes from './form';
 
 const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
 const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
@@ -51,6 +52,10 @@ export const uiKits = [
     uiKitRoutes
 ]
 
+export const forms = [
+    formRoutes
+]
+
 export const routes = [
     dashboardRoutes,
     authRoutes,
@@ -58,5 +63,6 @@ export const routes = [
     chatRoutes,
     ecommerces,
     pages,
-    uiKits
+    uiKits,
+    forms
 ];

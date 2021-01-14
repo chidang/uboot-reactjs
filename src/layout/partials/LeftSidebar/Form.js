@@ -12,25 +12,25 @@ const Form = () =>
         <Accordion.Collapse eventKey="formMenu"> 
             <ul className="sidebar-second-level list-unstyled" id="forms" data-parent="#left-sidebar">
             <li>
-                <Link to="forms-basic-elements.html">Basic Elements</Link>
+                <Link to="/forms/basic-elements">Basic Elements</Link>
             </li>
             <li>
-                <Link to="forms-checkboxs.html">Checkbox</Link>
+                <Link to="/forms/checkboxs">Checkbox</Link>
             </li>
             <li>
-                <Link to="forms-dropzonejs.html">DropzoneJS <span className="badge bg-primary">Plugin</span></Link>
+                <Link to="/forms/dropzonejs">DropzoneJS <span className="badge bg-primary">Plugin</span></Link>
             </li>
             <li>
-                <Link to="forms-input-groups.html">Input Groups</Link>
+                <Link to="/forms/input-groups">Input Groups</Link>
             </li>
             <li>
-                <Link to="forms-radios.html">Radio</Link>
+                <Link to="/forms/radios">Radio</Link>
             </li>
             <li>
-                <Link to="forms-select2.html">Select2 <span className="badge bg-primary">Plugin</span></Link>
+                <Link to="/forms/select2">Select2 <span className="badge bg-primary">Plugin</span></Link>
             </li>
             <li>
-                <Link to="forms-validations.html">Validations</Link>
+                <Link to="/forms/validations">Validations</Link>
             </li>
             </ul>
         </Accordion.Collapse>

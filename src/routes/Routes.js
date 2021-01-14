@@ -8,8 +8,10 @@ import {
   calendar as calendarRoutes,
   ecommerces as ecommerceRoutes,
   pages as pageRoutes,
-  uiKits as uiKitRoutes
+  uiKits as uiKitRoutes,
+  forms as formRoutes
  } from "./index";
+
 import DashboardLayout from "../layout/Dashboard";
 import AuthLayout from "../layout/Auth";
 
@@ -54,6 +56,7 @@ class Routes extends React.Component {
         {appRoutes(DashboardLayout, ecommerceRoutes)}
         {appRoutes(DashboardLayout, pageRoutes)}
         {appRoutes(DashboardLayout, uiKitRoutes)}
+        {appRoutes(DashboardLayout, formRoutes)}
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />
