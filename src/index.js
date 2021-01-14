@@ -10,9 +10,10 @@ const app = (
   <BrowserRouter><App /></BrowserRouter>
 )
 ReactDOM.render(
-  <React.StrictMode>
+  //StrictMode
+  <React.Fragment>
     {app}
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

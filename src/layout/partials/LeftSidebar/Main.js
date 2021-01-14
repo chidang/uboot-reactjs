@@ -11,7 +11,7 @@ const Main = () =>
                 <i className="bi-sliders"></i>
                 <span>Dashboard</span>
             </LeftSidebarItemToggle>
-            <Accordion.Collapse eventKey="dashboardMenu">
+            <Accordion.Collapse transition="false" eventKey="dashboardMenu">
                 <ul className="sidebar-second-level list-unstyled" id="dashboardMenu" data-parent="#left-sidebar">
                     <li>
                         <Link to="/dashboard/analytics">Analytics</Link>
