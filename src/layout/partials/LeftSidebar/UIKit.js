@@ -12,43 +12,43 @@ const UIKit = () =>
         <Accordion.Collapse eventKey="uikitMenu">
             <ul className="sidebar-second-level list-unstyled" id="ui-kit" data-parent="#left-sidebar">
                 <li>
-                    <Link to="ui-kits-avatars.html">Avatars</Link>
+                    <Link to="/ui-kits/avatars">Avatars</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-breadcrumbs.html">Breadcrumbs</Link>
+                    <Link to="/ui-kits/breadcrumbs">Breadcrumbs</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-buttons.html">Buttons</Link>
+                    <Link to="/ui-kits/buttons">Buttons</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-cards.html">Cards</Link>
+                    <Link to="/ui-kits/cards">Cards</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-dual-listbox.html">Dual Listbox <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/ui-kits/dual-listbox">Dual Listbox <span className="badge bg-primary">Plugin</span></Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-jstree.html">jsTree <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/ui-kits/jstree">jsTree <span className="badge bg-primary">Plugin</span></Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-image-cropper.html">Image cropper <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/ui-kits/image-cropper">Image cropper <span className="badge bg-primary">Plugin</span></Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-notifications.html">Notifications</Link>
+                    <Link to="/ui-kits/notifications">Notifications</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-spinners.html">Spinner</Link>
+                    <Link to="/ui-kits/spinners">Spinner</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-sweetalert.html">SweetAlert2 <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/ui-kits/sweetalert">SweetAlert2 <span className="badge bg-primary">Plugin</span></Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-tabs.html">Tabs</Link>
+                    <Link to="/ui-kits/tabs">Tabs</Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-toastr.html">Toastr <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/ui-kits/toastr">Toastr <span className="badge bg-primary">Plugin</span></Link>
                 </li>
                 <li>
-                    <Link to="ui-kits-widgets.html">Widgets</Link>
+                    <Link to="/ui-kits/widgets">Widgets</Link>
                 </li>
             </ul>
         </Accordion.Collapse>

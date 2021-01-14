@@ -6,7 +6,9 @@ import {
   authentication as authRoutes, 
   chat as chatRoutes,
   calendar as calendarRoutes,
-  ecommerces as ecommerceRoutes
+  ecommerces as ecommerceRoutes,
+  pages as pageRoutes,
+  uiKits as uiKitRoutes
  } from "./index";
 import DashboardLayout from "../layout/Dashboard";
 import AuthLayout from "../layout/Auth";
@@ -50,6 +52,8 @@ class Routes extends React.Component {
         {appRoutes(DashboardLayout, calendarRoutes)}
         {appRoutes(DashboardLayout, chatRoutes)}
         {appRoutes(DashboardLayout, ecommerceRoutes)}
+        {appRoutes(DashboardLayout, pageRoutes)}
+        {appRoutes(DashboardLayout, uiKitRoutes)}
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />

@@ -8,7 +8,7 @@ const Login = () =>
         <div className="card shadow-sm rounded-0">
           <div className="card-body p-4">
             <div className="text-center mb-4">
-              <Link to="/dashboard/ecommerce">
+              <Link to="/">
                 <img src={logo} style={{width: "145px"}} className="img-fluid" alt="Logo"/>
               </Link>
             </div>

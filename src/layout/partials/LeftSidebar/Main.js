@@ -83,23 +83,22 @@ const Main = () =>
                                 <Accordion.Collapse eventKey="menuAuthentication">
                                     <ul className="sidebar-third-level list-unstyled" id="pageAuthentication" data-parent="#sidebar-pages">
                                         <li>
-                                            <Link to="pages-authentication-login.html" target="_blank">Login</Link>
+                                            <Link to="/auth/login" target="_blank">Login</Link>
                                         </li>
                                         <li>
-                                            <Link to="pages-authentication-register.html" target="_blank">Register</Link>
+                                            <Link to="/auth/register" target="_blank">Register</Link>
                                         </li>
                                         <li>
-                                            <Link to="pages-authentication-forgot-password.html" target="_blank">Forgot Password</Link>
+                                            <Link to="/auth/forgot-password" target="_blank">Forgot Password</Link>
                                         </li>
                                         <li>
-                                            <Link to="pages-authentication-confirm-email.html" target="_blank">Confirm Email</Link>
+                                            <Link to="/auth/confirm-email" target="_blank">Confirm Email</Link>
                                         </li>
                                     </ul>
                                 </Accordion.Collapse>
-                            
                             </li>
                             <li>
-                                <Link to="pages-contact.html">Contact</Link>
+                                <Link to="/pages/contact">Contact</Link>
                             </li>
                             <li>
                                 <LeftSidebarItemToggle eventKey="menuError">
@@ -108,31 +107,31 @@ const Main = () =>
                                 <Accordion.Collapse eventKey="menuError">
                                     <ul className="sidebar-third-level list-unstyled" id="pageError" data-parent="#sidebar-pages">
                                         <li>
-                                            <Link to="pages-error-404.html">Error 404 </Link>
+                                            <Link to="/pages/page-not-found">Error 404 </Link>
                                         </li>
                                         <li>
-                                            <Link to="pages-error-500.html">Error 500</Link>
+                                            <Link to="/pages/internal-server-error">Error 500</Link>
                                         </li>
                                     </ul>
                                 </Accordion.Collapse>
                             </li>
                             <li>
-                                <Link to="pages-faq.html">FAQ</Link>
+                                <Link to="/pages/faq">FAQ</Link>
                             </li>
                             <li>
-                                <Link to="pages-invoice.html">Invoice</Link>
+                                <Link to="/pages/invoice">Invoice</Link>
                             </li>
                             <li>
-                                <Link to="pages-maintenance.html" target="_blank">Maintenance Page</Link>
+                                <Link to="/pages/maintenance" target="_blank">Maintenance Page</Link>
                             </li>
                             <li>
-                                <Link to="pages-pricing.html">Pricing</Link>
+                                <Link to="/pages/pricing">Pricing</Link>
                             </li>
                             <li>
-                                <Link to="pages-profile.html">Profile</Link>
+                                <Link to="/pages/profile">Profile</Link>
                             </li>
                             <li>
-                                <Link to="pages-starter.html">Starter Page</Link>
+                                <Link to="/pages/starter">Starter Page</Link>
                             </li>
                         </ul>
                     </Accordion>
@@ -140,7 +139,7 @@ const Main = () =>
                 
             </li>
             <li className="sidebar-item">
-                <Link to="project-structure.html">
+                <Link to="/pages/project-structure">
                     <i className="bi-diagram-3"></i>
                     <span>Project Structure</span>
                 </Link>
