@@ -5,6 +5,8 @@ import authRoutes from './auth';
 import pageRoutes from './page';
 import uiKitRoutes from './ui';
 import formRoutes from './form';
+import iconRoutes from './icon';
+import tableRoutes from './table';
 
 const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
 const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
@@ -56,6 +58,14 @@ export const forms = [
     formRoutes
 ]
 
+export const icons = [
+    iconRoutes
+]
+
+export const tables = [
+    tableRoutes
+]
+
 export const routes = [
     dashboardRoutes,
     authRoutes,
@@ -64,5 +74,6 @@ export const routes = [
     ecommerces,
     pages,
     uiKits,
-    forms
+    forms,
+    icons
 ];

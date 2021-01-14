@@ -12,10 +12,10 @@ const Table = () =>
         <Accordion.Collapse eventKey="tableMenu">
             <ul className="sidebar-second-level list-unstyled" id="tables" data-parent="#left-sidebar">
                 <li>
-                    <Link to="tables-basic-table.html">Basic Table</Link>
+                    <Link to="/tables/basic-table">Basic Table</Link>
                 </li>
                 <li>
-                    <Link to="tables-data-table.html">Data Table <span className="badge bg-primary">Plugin</span></Link>
+                    <Link to="/tables/data-table">Data Table <span className="badge bg-primary">Plugin</span></Link>
                 </li>
             </ul>
         </Accordion.Collapse>

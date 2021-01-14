@@ -12,16 +12,16 @@ const Icon = () =>
         <Accordion.Collapse eventKey="iconMenu">
             <ul className="sidebar-second-level list-unstyled" id="icons" data-parent="#left-sidebar">
                 <li>
-                    <Link to="icon-bootstrapicons.html">Bootstrapicons</Link>
+                    <Link to="/icons/bootstrapicons">Bootstrapicons</Link>
                 </li>
                 <li>
-                    <Link to="icon-dripicons.html">Dripicons</Link>
+                    <Link to="/icons/dripicons">Dripicons</Link>
                 </li>
                 <li>
-                    <Link to="icon-fontawesome.html">Font Awesome</Link>
+                    <Link to="/icons/font-awesome">Font Awesome</Link>
                 </li>
                 <li>
-                    <Link to="icon-unicons-line.html">Unicons</Link>
+                    <Link to="/icons/unicon">Unicons</Link>
                 </li>
             </ul>
         </Accordion.Collapse>
