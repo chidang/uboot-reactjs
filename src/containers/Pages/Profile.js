@@ -1,4 +1,21 @@
 import { Link } from "react-router-dom";
+import pic_1 from "../../assets/images/natural/pic-1.jpg";
+import pic_2 from "../../assets/images/natural/pic-2.jpg";
+import pic_3 from "../../assets/images/natural/pic-3.jpg";
+import pic_4 from "../../assets/images/natural/pic-4.jpg";
+import pic_5 from "../../assets/images/natural/pic-5.jpg";
+import pic_6 from "../../assets/images/natural/pic-6.jpg";
+import pic_7 from "../../assets/images/natural/pic-7.jpg";
+import pic_8 from "../../assets/images/natural/pic-8.jpg";
+import pic_9 from "../../assets/images/natural/pic-9.jpg";
+import pic_10 from "../../assets/images/natural/pic-10.jpg";
+import pic_11 from "../../assets/images/natural/pic-11.jpg";
+import pic_12 from "../../assets/images/natural/pic-12.jpg";
+import pic_13 from "../../assets/images/natural/pic-13.jpg";
+import pic_14 from "../../assets/images/natural/pic-14.jpg";
+import pic_15 from "../../assets/images/natural/pic-15.jpg";
+import pic_16 from "../../assets/images/natural/pic-16.jpg";
+import femaleAvatar from "../../assets/images/default-female-avatar.jpg";
 
 const Profile = () => 
 <>
@@ -22,7 +39,7 @@ const Profile = () =>
           <div className="row">
             <div className="col-md-8">
               <div className="media">
-                <span className="float-left m-2 mr-4">
+                <span className="float-left m-2 me-4">
                   <img src="assets/images/avatar.jpg" style={{height: '100px'}} alt="User" className="rounded-circle img-thumbnail" />
                 </span>
                 <div>
@@ -156,7 +173,34 @@ const Profile = () =>
             Photos</h4>
         </div>
         <div className="card-body">
-          {'{'}{'{'}&gt; ../../components/widgets/image-list {'}'}{'}'}
+        <div className="widget-image-list">
+          <div className="d-flex p-1">
+            <div className="w-25">
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_1 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_2 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_3 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_4 + ")" }} /></a>
+            </div>
+            <div className="w-25">
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_5 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_6 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_7 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_8 + ")" }} /></a>
+            </div>
+            <div className="w-25">
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_9 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_10 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_11 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_12 + ")" }} /></a>
+            </div>
+            <div className="w-25">
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_13 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_14 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_15 + ")" }} /></a>
+              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_16 + ")" }} /></a>
+            </div>
+          </div>
+        </div>
         </div>
       </div> {/* end card */}
     </div> {/* end col */}
@@ -210,7 +254,7 @@ const Profile = () =>
           <div className="card">
             <div className="card-body">
               <div className="d-flex align-items-center text-primary">
-                <div className="mr-3 fs-xxl">
+                <div className="me-3 fs-xxl">
                   <i className="fas fa-graduation-cap" />
                 </div>
                 <div className="d-flex flex-column">
@@ -223,7 +267,7 @@ const Profile = () =>
           <div className="card">
             <div className="card-body">
               <div className="d-flex align-items-center text-info">
-                <div className="mr-3 fs-xxl">
+                <div className="me-3 fs-xxl">
                   <i className="fas fa-id-card-alt" />
                 </div>
                 <div className="d-flex flex-column">
@@ -240,7 +284,98 @@ const Profile = () =>
           <h4 className="fw-700 m-0 fs-base"><span className="p-2"><i className="bi-table" /></span> My Products</h4>
         </div>
         <div className="card-body">
-          {'{'}{'{'}&gt; ../../components/tables/hover-table {'}'}{'}'}
+          <div className="table-responsive">
+            <table className="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" />
+                  <th scope="col">Title</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Amout</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>PlayStation Store Gift Card</td>
+                  <td>$10</td>
+                  <td>100</td>
+                  <td>$1,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Water Sports Shoes</td>
+                  <td>$13.68</td>
+                  <td>100</td>
+                  <td>$1,368</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wireless Security Camera</td>
+                  <td>$29.99</td>
+                  <td>100</td>
+                  <td>$2,999</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>WiFi Sports Action Camera Ultra HD</td>
+                  <td>$50</td>
+                  <td>100</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Electronics Universal Smartphone</td>
+                  <td>$6.99</td>
+                  <td>100</td>
+                  <td>$699</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>WD 4TB Elements Portable External Hard Drive</td>
+                  <td>$89.99</td>
+                  <td>100</td>
+                  <td>$8,999</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Unlisted by Kenneth Cole Men's Dress Shirt Slim Fit Checks and Stripes</td>
+                  <td>19.99</td>
+                  <td>100</td>
+                  <td>$1,999</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Wireless Security Camera</td>
+                  <td>$29.99</td>
+                  <td>100</td>
+                  <td>$2,999</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>WiFi Sports Action Camera Ultra HD</td>
+                  <td>$50</td>
+                  <td>100</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Electronics Universal Smartphone</td>
+                  <td>$6.99</td>
+                  <td>100</td>
+                  <td>$699</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>WD 4TB Elements Portable External Hard Drive</td>
+                  <td>$89.99</td>
+                  <td>100</td>
+                  <td>$8,999</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div> {/* end card */}
       <div className="card">
@@ -254,9 +389,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Sam Robert</h4>
                     <span className="m-0 fs-sm text-muted">37 mutual friends</span>
                   </div>
@@ -267,9 +402,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Schirsten Vander</h4>
                     <span className="m-0 fs-sm text-muted">29 mutual friends</span>
                   </div>
@@ -280,9 +415,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Robert Nordic</h4>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
@@ -293,9 +428,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Michael Branson</h4>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>
@@ -306,9 +441,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Robert Nordic</h4>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
@@ -319,9 +454,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Michael Branson</h4>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>
@@ -332,9 +467,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Robert Nordic</h4>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
@@ -345,9 +480,9 @@ const Profile = () =>
               <a href="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
-                    <img src="assets/images/default-female-avatar.jpg" style={{height: '50px'}} alt="User" className="rounded-circle" />
+                    <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
                   </div>
-                  <div className="ml-3">
+                  <div className="ms-3">
                     <h4 className="m-0 fs-base fw-700">Michael Branson</h4>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>

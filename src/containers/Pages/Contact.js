@@ -30,7 +30,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Jenny Butterscotch
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -45,9 +45,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 808-395-9741</Link>
             <Link to="mailto:jenny.butterscotch@example.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
+              <i className="bi-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
+              <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -75,7 +75,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Carole T Lusk
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -90,9 +90,9 @@ const Contact = () =>
             <Link to="tel:619-347-3841" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 619-347-3841</Link>
             <Link to="mailto:monty.skile6@yahoo.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
+              <i className="bi-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Napa, California(CA), 94559</address>
+              <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -120,7 +120,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 John K Gordon
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -135,9 +135,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 616-460-6774</Link>
             <Link to="mailto:jayda.kuh0@gmail.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
+              <i className="bi-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
+              <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -167,7 +167,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Jenny Butterscotch
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -182,9 +182,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 808-395-9741</Link>
            /.. <Link to="mailto:jenny.butterscotch@example.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
+              <i className="bi-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
+              <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -212,7 +212,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Carole T Lusk
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -227,9 +227,9 @@ const Contact = () =>
             <Link to="tel:619-347-3841" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 619-347-3841</Link>
             <Link to="mailto:monty.skile6@yahoo.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
+              <i className="bi-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Napa, California(CA), 94559</address>
+              <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -257,7 +257,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 John K Gordon
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -272,9 +272,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 616-460-6774</Link>
             <Link to="mailto:jayda.kuh0@gmail.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
+              <i className="bi-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
+              <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -304,7 +304,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Jenny Butterscotch
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -319,9 +319,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 808-395-9741</Link>
             <Link to="mailto:jenny.butterscotch@example.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
+              <i className="bi-envelope text-muted"></i> jenny.butterscotch@example.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
+              <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -349,7 +349,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 Carole T Lusk
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -364,9 +364,9 @@ const Contact = () =>
             <Link to="tel:619-347-3841" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 619-347-3841</Link>
             <Link to="mailto:monty.skile6@yahoo.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
+              <i className="bi-envelope text-muted"></i> monty.skile6@yahoo.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Napa, California(CA), 94559</address>
+              <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
@@ -394,7 +394,7 @@ const Contact = () =>
             <div>
               <Link to="/" className="fs-md fw-700" data-bs-toggle="dropdown" aria-expanded="false">
                 John K Gordon
-                <i className="fal fa-angle-down d-inline-block ms-1 fs-md"></i>
+                <i className="bi-chevron-down d-inline-block ms-1 fs-md"></i>
               </Link>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/">Send A Message</Link>
@@ -409,9 +409,9 @@ const Contact = () =>
             <Link to="tel:808-395-9741" className="mt-1 d-block fs-sm fw-400">
               <i className="fas fa-mobile-alt text-muted"></i> 616-460-6774</Link>
             <Link to="mailto:jayda.kuh0@gmail.com" className="mt-1 d-block fs-sm fw-400">
-              <i className="fal fa-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
+              <i className="bi-envelope text-muted"></i> jayda.kuh0@gmail.com</Link>
             <address className="fs-sm fw-400 mt-4 text-muted">
-              <i className="fal fa-map-marker-alt text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
+              <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
             <div className="d-flex flex-row justify-content-center">
               <Link to="javascript:void(0);" className="me-2 fs-xl" style={{color: "#3b5998"}}>
                 <i className="fab fa-facebook-square"></i>
