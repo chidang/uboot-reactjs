@@ -1,4 +1,13 @@
-import { Link } from "react-router-dom";
+import {
+    BorderedTable,
+    ContextualTable, 
+    DefaultTable,
+    HoverTable,
+    StripedTable,
+    SmallTable,
+    WithButtonTable,
+    WithCheckboxTable
+} from '../../components/Table';
 
 const BasicTable = () => 
 <>
@@ -36,7 +45,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableDefault" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/default-table {'}'}{'}'}
+                <DefaultTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -49,7 +58,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableStriped" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/striped-table {'}'}{'}'}
+            <StripedTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -62,7 +71,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableBordered" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/bordered-table {'}'}{'}'}
+            <BorderedTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -75,7 +84,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableHover" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/hover-table {'}'}{'}'}
+            <HoverTable />
             </div>
         </div> {/* end card */}
         </div> {/* end colunm */}
@@ -90,7 +99,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableContextual" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/contextual-table {'}'}{'}'}
+            <ContextualTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -103,7 +112,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableSmall" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/small-table {'}'}{'}'}
+            <SmallTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -116,7 +125,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableWithCheckbox" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/with-checkbox {'}'}{'}'}
+                <WithCheckboxTable />
             </div>
         </div> {/* end card */}
         <div className="card">
@@ -129,7 +138,7 @@ const BasicTable = () =>
             </div>
             </div>
             <div id="cardTableWithButton" className="card-body show">
-            {'{'}{'{'}&gt; ../../components/tables/with-button {'}'}{'}'}
+            <WithButtonTable />
             </div>
         </div> {/* end card */}
         </div> {/* end column */}
