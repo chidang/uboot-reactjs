@@ -14,6 +14,7 @@ const ecommerceRoutes = {
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
+    icon: "bi-cart3",
     children: [
       {
         path: "/ecommerce/add-product",

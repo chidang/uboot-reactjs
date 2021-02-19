@@ -9,6 +9,8 @@ const dashboardRoutes = {
     badgeColor: "primary",
     badgeText: "5",
     containsHome: true,
+    icon: 'bi-sliders',
+    header: "Main",
     children: [
       {
         path: "/dashboard/ecommerce",

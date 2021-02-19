@@ -16,6 +16,7 @@ const PageRoutes = {
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
+    icon: 'bi-book',
     children: [
       {
         path: "/pages/page-not-found",

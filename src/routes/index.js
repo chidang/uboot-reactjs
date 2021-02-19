@@ -15,6 +15,7 @@ export const calendarRoutes = {
     path: "/calendar",
     name: "Calendar",
     component: AsyncCalendar,
+    icon: 'bi-calendar4',
     badgeColor: "primary"
 };
 
@@ -22,6 +23,7 @@ export const chatRoutes = {
     path: "/chat",
     name: "Chat",
     component: AsyncChat,
+    icon: 'bi-chat-left-text',
     badgeColor: "primary"
 };
 
@@ -71,9 +73,9 @@ export const routes = [
     authRoutes,
     calendarRoutes,
     chatRoutes,
-    ecommerces,
-    pages,
-    uiKits,
-    forms,
-    icons
+    ecommerceRoutes,
+    pageRoutes,
+    uiKitRoutes,
+    formRoutes,
+    iconRoutes
 ];

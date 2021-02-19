@@ -8,6 +8,7 @@ const chartRoutes = {
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
+    icon: 'bi-bar-chart',
     children: [
       {
         path: "/charts/todo",

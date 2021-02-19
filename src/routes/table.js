@@ -9,6 +9,7 @@ const tableRoutes = {
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
+    icon: 'bi-table',
     children: [
       {
         path: "/tables/basic-table",

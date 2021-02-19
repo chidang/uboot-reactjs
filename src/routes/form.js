@@ -14,6 +14,7 @@ const formRoutes = {
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
+    icon: 'bi-layout-text-window',
     children: [
       {
         path: "/forms/basic-elements",

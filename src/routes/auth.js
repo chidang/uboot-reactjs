@@ -11,6 +11,7 @@ const authRoutes = {
     badgeColor: "primary",
     badgeText: "5",
     containsHome: true,
+    icon: 'bi-shield',
     children: [
         {
             path: "/auth/login",
