@@ -7,6 +7,7 @@ import uiKitRoutes from './ui';
 import formRoutes from './form';
 import iconRoutes from './icon';
 import tableRoutes from './table';
+import chartRoutes from './chart';
 
 const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
 const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
@@ -14,9 +15,10 @@ const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
 export const calendarRoutes = {
     path: "/calendar",
     name: "Calendar",
+    badgeColor: "warning",
+    badgeText: "Plugin",
     component: AsyncCalendar,
     icon: 'bi-calendar4',
-    badgeColor: "primary"
 };
 
 export const chatRoutes = {
@@ -24,7 +26,7 @@ export const chatRoutes = {
     name: "Chat",
     component: AsyncChat,
     icon: 'bi-chat-left-text',
-    badgeColor: "primary"
+    badgeColor: "info"
 };
 
 
@@ -77,5 +79,7 @@ export const routes = [
     pageRoutes,
     uiKitRoutes,
     formRoutes,
-    iconRoutes
+    tableRoutes,
+    iconRoutes,
+    chartRoutes
 ];

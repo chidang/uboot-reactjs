@@ -11,8 +11,8 @@ const AsyncStarter = AsyncComponent(() => import('../containers/Pages/Starter'))
 const AsyncProjectStructure = AsyncComponent(() => import('../containers/Pages/ProjectStructure'));
 
 const PageRoutes = {
-    path: "/contact",
-    name: "Contact",
+    key: 'page',
+    name: "Page",
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,

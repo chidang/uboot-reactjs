@@ -6,9 +6,10 @@ const AsyncFontAwesome = AsyncComponent(() => import('../containers/Icon/FontAwe
 const AsyncUnicon = AsyncComponent(() => import('../containers/Icon/Unicon'));
 
 const iconRoutes = {
+    key: 'icon',
     path: "/icons/bootstrapicons",
     name: "Bootstrap Icon",
-    badgeColor: "primary",
+    badgeColor: "info",
     badgeText: "75",
     containsHome: false,
     icon: 'bi-gift',

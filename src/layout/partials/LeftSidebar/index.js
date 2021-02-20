@@ -1,90 +1,79 @@
 import React, { useState } from "react";
-import { Accordion } from 'react-bootstrap'
-import  { routes } from "../../../routes";
+import { Accordion } from 'react-bootstrap';
+import { routes } from "../../../routes";
 import { NavLink, withRouter } from "react-router-dom";
 import { LeftSidebarItemToggle } from '../../../components/Accordion';
+
 const initOpenRoutes = (location) => {
     const pathName = location.pathname;
-    let _routes = {};
+    let openRoute = {};
     routes.forEach((route, index) => {
-      const isHome = route.containsHome && pathName === "/" ? true : false;
-      const isActive = pathName.indexOf(route.path) === 0;
-      const isOpen = route.open;
-      _routes = Object.assign({}, _routes, {[index]: isActive || isOpen || isHome})
+        const isActive = pathName.indexOf(route.key) === 1;
+        if (isActive) {
+            openRoute = routes[index];
+        }
     });
-  
-    return _routes;
-  };
-const SidebarCategory = withRouter(
-    ({
-        name,
-        badgeColor,
-        badgeText,
-        icon,
-        isOpen,
-        children,
-        onClick,
-        location,
-        to
-    }) => {
-        const getSidebarItemClass = path => {
-        return location.pathname.indexOf(path) !== -1 ||
-            (location.pathname === "/" && path === "/dashboard")
-            ? "active"
-            : "";
-        };
+    return openRoute;
+};
 
-        return (
-            <li className={"sidebar-item " + getSidebarItemClass(to)}>
-                <LeftSidebarItemToggle eventKey={`${name}Menu`}>
-                    <i className={icon}></i>
-                    <span>{name}</span>
-                </LeftSidebarItemToggle>
-                <Accordion.Collapse eventKey={`${name}Menu`}>
-                    <ul className="sidebar-second-level list-unstyled" data-parent="#left-sidebar">
-                        {children}
-                    </ul>
-                </Accordion.Collapse>
-            </li>
-        );
-    }
-);
+const SidebarCategory = withRouter(({
+    ckey,
+    name,
+    badgeColor = 'primary',
+    badgeText,
+    icon,
+    children,
+    location
+}) => {
+    const getSidebarItemClass = path => {
+        return location.pathname.indexOf(path) !== -1 ? "active" : "";
+    };
+    return (
+        <li className={"sidebar-item " + getSidebarItemClass(ckey)}>
+            <LeftSidebarItemToggle eventKey={ckey}>
+                <i className={icon}></i>
+                <span>
+                    {name}
+                    {badgeText ? (
+                        <span className={`badge bg-${badgeColor}`}>{badgeText}</span>
+                    ) : null}
+                </span>
+            </LeftSidebarItemToggle>
+            <Accordion.Collapse eventKey={ckey}>
+                <ul className="sidebar-second-level list-unstyled" data-parent="#left-sidebar">
+                    {children}
+                </ul>
+            </Accordion.Collapse>
+        </li>
+    );
+});
 
-const SidebarItem = withRouter(
-    ({ name, badgeColor, badgeText, icon, location, to }) => {
-        const getSidebarItemClass = path => {
-            return location.pathname === path ? "active" : "";
-        };
-    
-        return (
-            <li className={"sidebar-item " + getSidebarItemClass(to)}>
+const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, to }) => {
+    const getSidebarItemClass = path => {
+        return location.pathname === path ? "active" : "";
+    };
+
+    return (
+        <li className={"sidebar-item " + getSidebarItemClass(to)}>
             <NavLink to={to} className="sidebar-link" activeClassName="active">
                 {icon ? (
                     <i className={icon}></i>
                 ) : null}
                 {name}
+                {badgeText ? (
+                    <span className={`badge bg-${badgeColor}`}>{badgeText}</span>
+                ) : null}
             </NavLink>
-            </li>
-        );
-        }
-    );
+        </li>
+    )
+});
 
 const LeftSidebar = ({ location, sidebar, layout }) => {
     const [openRoutes, setOpenRoutes] = useState(() => initOpenRoutes(location));
 
-    const toggle = index => {
-        // Collapse all elements
-        Object.keys(openRoutes).forEach(
-        item => openRoutes[index] || setOpenRoutes(openRoutes => Object.assign({}, openRoutes, {[item]: false}))
-        )
-        
-        // Toggle selected element
-        setOpenRoutes(openRoutes => Object.assign({}, openRoutes, {[index]: !openRoutes[index]}));
-    }
-
     return (
         <nav id="left-sidebar">
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey={openRoutes.key}>
                 <div className="sidebar-wrapper">
                     <div className="sidebar-body">
                         <div className="nav-filter align-items-center justify-content-center flex-row mb-4 p-2">
@@ -92,44 +81,45 @@ const LeftSidebar = ({ location, sidebar, layout }) => {
                         </div>
                         <div className="sidebar-block">
                             <ul className="list-unstyled sidebar-content">
-                            {routes.map((category, index) => {
-                                return (
-                                    <React.Fragment key={index}>
-                                    {category.header ? (
-                                        <li className="sidebar-title">{category.header}</li>
-                                    ) : null}
+                            {
+                                routes.map((category, index) => {
+                                    return (
+                                        <React.Fragment key={index}>
+                                            {category.header ? (
+                                                <li className="sidebar-title">{category.header}</li>
+                                            ) : null}
 
-                                    {category.children ? (
-                                        <SidebarCategory
-                                        name={category.name}
-                                        badgeColor={category.badgeColor}
-                                        badgeText={category.badgeText}
-                                        icon={category.icon}
-                                        to={category.path}
-                                        isOpen={openRoutes[index]}
-                                        onClick={() => toggle(index)}
-                                        >
-                                        {category.children.map((route, index) => (
-                                            <SidebarItem
-                                            key={index}
-                                            name={route.name}
-                                            to={route.path}
-                                            badgeColor={route.badgeColor}
-                                            badgeText={route.badgeText}
-                                            />
-                                        ))}
-                                        </SidebarCategory>
-                                    ) : (
-                                        <SidebarItem
-                                        name={category.name}
-                                        to={category.path}
-                                        icon={category.icon}
-                                        badgeColor={category.badgeColor}
-                                        badgeText={category.badgeText}
-                                        />
-                                    )}
-                                    </React.Fragment>
-                                );
+                                            {category.children ? (
+                                                <SidebarCategory
+                                                    ckey={category.key}
+                                                    name={category.name}
+                                                    badgeColor={category.badgeColor}
+                                                    badgeText={category.badgeText}
+                                                    icon={category.icon}
+                                                    to={category.path}
+                                                    isOpen={openRoutes[index]}
+                                                >
+                                                {category.children.map((route, index) => (
+                                                    <SidebarItem
+                                                    key={index}
+                                                    name={route.name}
+                                                    to={route.path}
+                                                    badgeColor={route.badgeColor}
+                                                    badgeText={route.badgeText}
+                                                    />
+                                                ))}
+                                                </SidebarCategory>
+                                            ) : (
+                                                <SidebarItem
+                                                    name={category.name}
+                                                    to={category.path}
+                                                    icon={category.icon}
+                                                    badgeColor={category.badgeColor}
+                                                    badgeText={category.badgeText}
+                                                />
+                                            )}
+                                        </React.Fragment>
+                                    );
                                 })}
                             </ul>
                         </div>
@@ -139,5 +129,5 @@ const LeftSidebar = ({ location, sidebar, layout }) => {
         </nav>
     )
 }
-    
+
 export default withRouter(LeftSidebar);

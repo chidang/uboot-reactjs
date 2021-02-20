@@ -9,10 +9,10 @@ const AsyncSelect2 = AsyncComponent(() => import('../containers/Form/Select2'));
 const AsyncValidations = AsyncComponent(() => import('../containers/Form/Validations'));
 
 const formRoutes = {
+    key: 'form',
     path: "/forms/basic-elememts",
-    name: "BasicElements",
+    name: "Form",
     badgeColor: "primary",
-    badgeText: "75",
     containsHome: false,
     icon: 'bi-layout-text-window',
     children: [

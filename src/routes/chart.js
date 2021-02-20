@@ -3,8 +3,9 @@ import AsyncComponent from '../components/AsyncComponent';
 const AsyncBasicElements = AsyncComponent(() => import('../containers/Form/BasicElements'));
 
 const chartRoutes = {
+    key: 'chart',
     path: "/charts/todo",
-    name: "Todo",
+    name: "Chart",
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,

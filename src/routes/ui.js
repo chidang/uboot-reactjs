@@ -15,8 +15,9 @@ const AsyncToastr = AsyncComponent(() => import('../containers/UiKit/Toastr'));
 const AsyncWidgets = AsyncComponent(() => import('../containers/UiKit/Widgets'));
 
 const uiKitRoutes = {
-    path: "/ui-kits/avatars",
-    name: "Avatars",
+    key: 'ui',
+    path: "/ui/avatars",
+    name: "UI Kit",
     badgeColor: "primary",
     badgeText: "75",
     containsHome: false,
@@ -24,67 +25,67 @@ const uiKitRoutes = {
     header: 'Component',
     children: [
       {
-        path: "/ui-kits/avatars",
+        path: "/ui/avatars",
         name: "Avatars",
         component: AsyncAvatars
       },
       {
-        path: "/ui-kits/breadcrumbs",
+        path: "/ui/breadcrumbs",
         name: "BreadCrumbs",
         component: AsyncBreadCrumbs
       },
       {
-        path: "/ui-kits/buttons",
+        path: "/ui/buttons",
         name: "Buttons",
         component: AsyncButtons
       },
       {
-        path: "/ui-kits/cards",
+        path: "/ui/cards",
         name: "Cards",
         component: AsyncCards
       },
       {
-        path: "/ui-kits/dual-listbox",
+        path: "/ui/dual-listbox",
         name: "DualListbox",
         component: AsyncDualListbox
       },
       {
-        path: "/ui-kits/image-cropper",
+        path: "/ui/image-cropper",
         name: "ImageCropper",
         component: AsyncImageCropper
       },
       {
-        path: "/ui-kits/jstree",
+        path: "/ui/jstree",
         name: "JsTree",
         component: AsyncJsTree
       },
       {
-        path: "/ui-kits/notifications",
+        path: "/ui/notifications",
         name: "Notifications",
         component: AsyncNotifications
       },
       {
-        path: "/ui-kits/spinners",
+        path: "/ui/spinners",
         name: "Spinners",
         component: AsyncSpinners
       },
       {
-        path: "/ui-kits/sweetalert",
+        path: "/ui/sweetalert",
         name: "SweetAlert",
         component: AsyncSweetAlert
       },
       {
-        path: "/ui-kits/tabs",
+        path: "/ui/tabs",
         name: "Tabs",
         component: AsyncTabs
       },
       {
-        path: "/ui-kits/toastr",
+        path: "/ui/toastr",
         name: "Toastr",
         component: AsyncToastr
       },
       {
-        path: "/ui-kits/widgets",
+        path: "/ui/widgets",
         name: "Widgets",
         component: AsyncWidgets
       }

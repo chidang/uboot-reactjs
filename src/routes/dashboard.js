@@ -3,11 +3,12 @@ const AsyncDashboardAnalytics = AsyncComponent(() => import('../containers/Dashb
 const AsyncDashboardEcommerce = AsyncComponent(() => import('../containers/Dashboard/Ecommerce'));
 
 const dashboardRoutes = {
+    key: 'dashboard',
     path: "/",
     name: "Dashboards",
     component: AsyncDashboardEcommerce,
     badgeColor: "primary",
-    badgeText: "5",
+    badgeText: "2",
     containsHome: true,
     icon: 'bi-sliders',
     header: "Main",

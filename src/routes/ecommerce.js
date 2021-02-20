@@ -9,10 +9,11 @@ const AsyncEcommerceProductDetail = AsyncComponent(() => import('../containers/E
 const AsyncEcommerceShoppingCart = AsyncComponent(() => import('../containers/Ecommerce/ShoppingCart'));
 
 const ecommerceRoutes = {
+    key: 'ecommerce',
     path: "/ecommerce",
     name: "Ecommerce",
-    badgeColor: "primary",
-    badgeText: "75",
+    badgeColor: "success",
+    badgeText: "New",
     containsHome: false,
     icon: "bi-cart3",
     children: [

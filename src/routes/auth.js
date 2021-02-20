@@ -6,11 +6,10 @@ const AsyncConfirmEmail  = AsyncComponent(() => import('../containers/Pages/Auth
 const AsyncMaintenance = AsyncComponent(() => import('../containers/Pages/Maintenance'));
 
 const authRoutes = {
+    key: 'authentication',
     path: "/auth",
     name: "Authentication",
-    badgeColor: "primary",
-    badgeText: "5",
-    containsHome: true,
+    containsHome: false,
     icon: 'bi-shield',
     children: [
         {

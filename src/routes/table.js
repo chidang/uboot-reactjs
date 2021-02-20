@@ -4,10 +4,9 @@ const AsyncBasicTable = AsyncComponent(() => import('../containers/Table/BasicTa
 const AsyncDataTable = AsyncComponent(() => import('../containers/Table/DataTable'));
 
 const tableRoutes = {
-    path: "/tables/basic-table",
-    name: "Bootstrap Icon",
+    key: "tables",
+    name: "Table",
     badgeColor: "primary",
-    badgeText: "75",
     containsHome: false,
     icon: 'bi-table',
     children: [
