@@ -4,7 +4,7 @@ import { routes } from "../../../routes";
 import { NavLink, withRouter } from "react-router-dom";
 import { LeftSidebarItemToggle } from '../../../components/Accordion';
 
-const initOpenRoutes = (location) => {
+const initOpenRoute = (location) => {
     const pathName = location.pathname;
     let openRoute = {};
     routes.forEach((route, index) => {
@@ -65,11 +65,11 @@ const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, t
                 ) : null}
             </NavLink>
         </li>
-    )
+    );
 });
 
 const LeftSidebar = ({ location, sidebar, layout }) => {
-    const [openRoutes, setOpenRoutes] = useState(() => initOpenRoutes(location));
+    const [openRoutes, setOpenRoutes] = useState(() => initOpenRoute(location));
 
     return (
         <nav id="left-sidebar">
@@ -88,7 +88,6 @@ const LeftSidebar = ({ location, sidebar, layout }) => {
                                             {category.header ? (
                                                 <li className="sidebar-title">{category.header}</li>
                                             ) : null}
-
                                             {category.children ? (
                                                 <SidebarCategory
                                                     ckey={category.key}
@@ -101,11 +100,11 @@ const LeftSidebar = ({ location, sidebar, layout }) => {
                                                 >
                                                 {category.children.map((route, index) => (
                                                     <SidebarItem
-                                                    key={index}
-                                                    name={route.name}
-                                                    to={route.path}
-                                                    badgeColor={route.badgeColor}
-                                                    badgeText={route.badgeText}
+                                                        key={index}
+                                                        name={route.name}
+                                                        to={route.path}
+                                                        badgeColor={route.badgeColor}
+                                                        badgeText={route.badgeText}
                                                     />
                                                 ))}
                                                 </SidebarCategory>
@@ -127,7 +126,7 @@ const LeftSidebar = ({ location, sidebar, layout }) => {
                 </div>
             </Accordion>
         </nav>
-    )
+    );
 }
 
 export default withRouter(LeftSidebar);

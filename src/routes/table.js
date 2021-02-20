@@ -1,7 +1,7 @@
 import AsyncComponent from '../components/AsyncComponent';
 
 const AsyncBasicTable = AsyncComponent(() => import('../containers/Table/BasicTable'));
-const AsyncDataTable = AsyncComponent(() => import('../containers/Table/DataTable'));
+const AsyncDataTable = AsyncComponent(() => import('../containers/Table/ReactDataTable'));
 
 const tableRoutes = {
     key: "tables",
