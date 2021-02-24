@@ -1,10 +1,10 @@
 import AsyncComponent from '../components/AsyncComponent';
 
-const AsyncBasicElements = AsyncComponent(() => import('../containers/Form/BasicElements'));
+const AsyncApexCharts = AsyncComponent(() => import('../containers/Chart/ApexCharts'));
+const AsyncChartjs = AsyncComponent(() => import('../containers/Chart/Chartsjs'));
 
-const chartRoutes = {
+const apexChartRoutes = {
     key: 'chart',
-    path: "/charts/todo",
     name: "Chart",
     badgeColor: "primary",
     badgeText: "75",
@@ -12,11 +12,16 @@ const chartRoutes = {
     icon: 'bi-bar-chart',
     children: [
       {
-        path: "/charts/todo",
-        name: "Todo",
-        component: AsyncBasicElements
+        path: "/charts/apexcharts",
+        name: "Apex Charts",
+        component: AsyncApexCharts
+      },
+      {
+        path: "/charts/chartjs",
+        name: "Chartjs",
+        component: AsyncChartjs
       }
     ]
 };
 
-export default chartRoutes;
+export default apexChartRoutes;

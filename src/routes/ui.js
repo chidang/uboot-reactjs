@@ -22,7 +22,7 @@ const uiKitRoutes = {
     badgeText: "75",
     containsHome: false,
     icon: 'bi-gem',
-    header: 'Component',
+    header: 'COMPONENT',
     children: [
       {
         path: "/ui/avatars",

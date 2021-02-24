@@ -11,7 +11,7 @@ const dashboardRoutes = {
     badgeText: "2",
     containsHome: true,
     icon: 'bi-sliders',
-    header: "Main",
+    header: "MAIN",
     children: [
       {
         path: "/dashboard/ecommerce",

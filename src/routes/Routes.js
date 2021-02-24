@@ -11,7 +11,8 @@ import {
   uiKits as uiKitRoutes,
   forms as formRoutes,
   icons as iconRoutes,
-  tables as tableRoutes
+  tables as tableRoutes,
+  charts as chartRoutes
  } from "./index";
 
 import DashboardLayout from "../layout/Dashboard";
@@ -61,6 +62,7 @@ class Routes extends React.Component {
         {appRoutes(DashboardLayout, formRoutes)}
         {appRoutes(DashboardLayout, iconRoutes)}
         {appRoutes(DashboardLayout, tableRoutes)}
+        {appRoutes(DashboardLayout, chartRoutes)}
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />

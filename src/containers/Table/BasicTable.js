@@ -117,12 +117,12 @@ const BasicTable = () =>
         </div> {/* end card */}
         <div className="card">
             <div className="card-header justify-content-between">
-            <h4 className="fw-700 m-0 fs-base">With Checkbox <span className="fw-300"><i>Table</i></span></h4>
-            <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithCheckbox" role="button" aria-expanded="false" aria-controls="cardTableWithCheckbox"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
-            </div>
+                <h4 className="fw-700 m-0 fs-base">With Checkbox <span className="fw-300"><i>Table</i></span></h4>
+                <div className="card-widgets">
+                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
+                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithCheckbox" role="button" aria-expanded="false" aria-controls="cardTableWithCheckbox"><i className="dripicons-minus" /></a>
+                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                </div>
             </div>
             <div id="cardTableWithCheckbox" className="card-body show">
                 <WithCheckboxTable />

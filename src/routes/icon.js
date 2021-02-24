@@ -8,7 +8,7 @@ const AsyncUnicon = AsyncComponent(() => import('../containers/Icon/Unicon'));
 const iconRoutes = {
     key: 'icon',
     path: "/icons/bootstrapicons",
-    name: "Bootstrap Icon",
+    name: "Icon",
     badgeColor: "info",
     badgeText: "75",
     containsHome: false,

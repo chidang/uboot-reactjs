@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+// https://reactjsexample.com/faq-accordion-card-build-with-react-js-and-hooks/
 const Faq = () => 
 <>
-<nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb">
     <ol className="breadcrumb pl-0 fs-base">
       <li className="breadcrumb-item"><a href="#">Uboot</a></li>
       <li className="breadcrumb-item"><span>Page</span></li>

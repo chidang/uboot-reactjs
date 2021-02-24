@@ -70,6 +70,10 @@ export const tables = [
     tableRoutes
 ]
 
+export const charts = [
+    chartRoutes
+]
+
 export const routes = [
     dashboardRoutes,
     authRoutes,
