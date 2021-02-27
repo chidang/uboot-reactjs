@@ -3,7 +3,7 @@ import product from "../../../assets/images/products/product-540x60.jpg";
 const ProductDetail = () => {
     return <>
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb pl-0 fs-base">
+          <ol className="breadcrumb ps-0 fs-base">
             <li className="breadcrumb-item"><a href="#">Uboot</a></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Product Detail</li>
@@ -27,13 +27,13 @@ const ProductDetail = () => {
                 <a href="javascript: void(0);" className="product-gallery-item">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </a>
-                <a href="javascript: void(0);" className="product-gallery-item ml-2">
+                <a href="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </a>
-                <a href="javascript: void(0);" className="product-gallery-item ml-2">
+                <a href="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </a>
-                <a href="javascript: void(0);" className="product-gallery-item ml-2">
+                <a href="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </a>
               </div>
@@ -187,7 +187,7 @@ const ProductDetail = () => {
                       <h4 className="product-tab-title">2 Review For <span>T-Shirt Form Girls</span></h4>
                       <ul className="list-none comment-list mt-4">
                         <li className="d-flex flex-row">
-                          <div className="comment-img mr-3">
+                          <div className="comment-img me-3">
                             <img src="assets/images/avatar.jpg" style={{height: '60px'}} alt="User" className="rounded" />
                           </div>
                           <div className="comment-block">
@@ -206,7 +206,7 @@ const ProductDetail = () => {
                           </div>
                         </li>
                         <li className="d-flex flex-row">
-                          <div className="comment-img mr-3">
+                          <div className="comment-img me-3">
                             <img src="assets/images/default-female-avatar.jpg" style={{height: '60px'}} alt="" className="rounded" />
                           </div>
                           <div className="comment-block">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Pricing = () => 
 <>
 <nav aria-label="breadcrumb">
-    <ol className="breadcrumb pl-0 fs-base">
+    <ol className="breadcrumb ps-0 fs-base">
       <li className="breadcrumb-item"><a href="#">Uboot</a></li>
       <li className="breadcrumb-item"><span>Page</span></li>
       <li className="breadcrumb-item active" aria-current="page">Pricing</li>
@@ -43,12 +43,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-3">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-x text-danger mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-x text-danger me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -71,12 +71,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-5">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-x text-danger mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-x text-danger me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-x text-danger me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -99,12 +99,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-3">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-check2 text-success mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 border-bottom p-3"><i className="bi-check2 text-success me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-check2 text-success me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -148,12 +148,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-3">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-x text-danger mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-x text-danger me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -176,12 +176,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-5">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-x text-danger mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-x text-danger me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-x text-danger me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -204,12 +204,12 @@ const Pricing = () =>
                   <div className="card-body p-0">
                     <div className="pt-3">
                       <ul className="list-group">
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>UI Kit</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Components</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Sections</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>Technical Support</span></li>
-                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success mr-2" /><span>20% Renewal Discount</span></li>
-                        <li className="list-group-item border-0"><i className="bi-check2 text-success mr-2" /><span>Templates</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>UI Kit</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Components</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Sections</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>Technical Support</span></li>
+                        <li className="list-group-item border-0 p-3"><i className="bi-check2 text-success me-2" /><span>20% Renewal Discount</span></li>
+                        <li className="list-group-item border-0"><i className="bi-check2 text-success me-2" /><span>Templates</span></li>
                       </ul>
                     </div>
                   </div>

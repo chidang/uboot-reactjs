@@ -114,7 +114,7 @@ const Ecommerce = () => {
           </div>
           <div className="card-body pt-0">
             <div className="row">
-              <div className="col-xl-8 pl-0">
+              <div className="col-xl-8 ps-0">
                 <LineChart theme={theme}/>
               </div>
               <div className="col-xl-4">
@@ -135,11 +135,11 @@ const Ecommerce = () => {
                   <div className="progress-bar bg-primary" style={{width: "25%"}} role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div className="row mt-4">
-                  <div className="col-6 pr-1">
-                    <a href="#" className="btn btn-primary btn-block"><i className="bi-file-earmark-text mr-3"></i> Export</a>
+                  <div className="col-6 pe-1">
+                    <a href="#" className="btn btn-primary btn-block"><i className="bi-file-earmark-text me-3"></i> Export</a>
                   </div>
-                  <div className="col-6 pl-1">
-                    <a href="#" className="btn btn-primary btn-block"><i className="bi-eye mr-3"></i> View More</a>
+                  <div className="col-6 ps-1">
+                    <a href="#" className="btn btn-primary btn-block"><i className="bi-eye me-3"></i> View More</a>
                   </div>
                 </div>
               </div>

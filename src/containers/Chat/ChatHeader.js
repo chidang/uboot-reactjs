@@ -1,6 +1,6 @@
 const ChatHeader = () =>  <>
     <nav>
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
             <li className="breadcrumb-item"><a href="#">Uboot</a></li>
             <li className="breadcrumb-item">Chat</li>
         </ol>

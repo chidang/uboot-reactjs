@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Radios = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>Forms</span></li>
         <li className="breadcrumb-item active" aria-current="page">Radio</li>
@@ -92,15 +92,15 @@ const Radios = () =>
                 <div className="form-group">
                     <label className="fw-700 text-muted mb-2 mt-2">Inline Radios</label>
                     <div>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="CustomRadio2" /> Option 1
                         <span />
                     </label>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="CustomRadio2" /> Option 2
                         <span />
                     </label>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="CustomRadio2" /> Option 3
                         <span />
                     </label>
@@ -109,15 +109,15 @@ const Radios = () =>
                 <div className="form-group">
                     <label className="fw-700 text-muted mb-2 mt-2">Inline Radios Checked State</label>
                     <div>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio3" defaultChecked /> Option 1
                         <span />
                     </label>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio3" /> Option 2
                         <span />
                     </label>
-                    <label className="custom-radio d-inline-block mr-3">
+                    <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio3" defaultChecked /> Option 3
                         <span />
                     </label>
@@ -141,19 +141,19 @@ const Radios = () =>
                     <label className="col-3 fw-700 text-muted">Radios</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio4" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio4" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio4" defaultChecked="checked" /> Checked
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio4" disabled /> Disabled
                         <span />
                         </label>
@@ -164,15 +164,15 @@ const Radios = () =>
                     <label className="col-3 fw-700 text-muted">Inline Radios</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio5" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio5" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio5" /> Option 3
                         <span />
                         </label>
@@ -183,15 +183,15 @@ const Radios = () =>
                     <label className="col-3 fw-700 text-muted">Inline Radios Checked State</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio6" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio6" defaultChecked="checked" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-radio d-inline-block mr-3">
+                        <label className="custom-radio d-inline-block me-3">
                         <input type="radio" name="customRadio6" /> Option 3
                         <span />
                         </label>

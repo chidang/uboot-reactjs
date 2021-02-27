@@ -4,7 +4,7 @@ const ShoppingCart = () => {
     return <>
         <div>
             <nav aria-label="breadcrumb">
-                <ol className="breadcrumb pl-0 fs-base">
+                <ol className="breadcrumb ps-0 fs-base">
                 <li className="breadcrumb-item"><a href="#">Uboot</a></li>
                 <li className="breadcrumb-item"><span>Ecommerce</span></li>
                 <li className="breadcrumb-item active" aria-current="page">Shopping Cart</li>
@@ -157,7 +157,7 @@ const ShoppingCart = () => {
                     Use promo code <strong>DC20PC</strong> and get 20% discount !
                 </div>
                 <div className="d-flex">
-                    <input type="text" className="form-control mr-2" placeholder="Promo code" />
+                    <input type="text" className="form-control me-2" placeholder="Promo code" />
                     <button className="btn btn-primary" type="button">Apply</button>
                 </div>
                 </div>

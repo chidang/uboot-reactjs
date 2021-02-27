@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CheckBoxs = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>Forms</span></li>
         <li className="breadcrumb-item active" aria-current="page">Checkbox</li>
@@ -109,15 +109,15 @@ const CheckBoxs = () =>
                 <div className="form-group">
                     <label className="fw-700 text-muted mb-2 mt-2">Inline Checkboxes</label>
                     <div>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 1
                         <span />
                     </label>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 2
                         <span />
                     </label>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 3
                         <span />
                     </label>
@@ -126,15 +126,15 @@ const CheckBoxs = () =>
                 <div className="form-group">
                     <label className="fw-700 text-muted mb-2 mt-2">Inline Checkboxes Checked State</label>
                     <div>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" defaultChecked /> Option 1
                         <span />
                     </label>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 2
                         <span />
                     </label>
-                    <label className="custom-checkbox d-inline-block mr-3">
+                    <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" defaultChecked /> Option 3
                         <span />
                     </label>
@@ -187,19 +187,19 @@ const CheckBoxs = () =>
                     <label className="col-3 fw-700 text-muted">Checkboxes</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" defaultChecked="checked" /> Checked
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" disabled /> Disabled
                         <span />
                         </label>
@@ -210,15 +210,15 @@ const CheckBoxs = () =>
                     <label className="col-3 fw-700 text-muted">Inline Checkboxes</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 3
                         <span />
                         </label>
@@ -229,15 +229,15 @@ const CheckBoxs = () =>
                     <label className="col-3 fw-700 text-muted">Inline Checkboxes Checked State</label>
                     <div className="col-9">
                     <div>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 1
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" defaultChecked="checked" /> Option 2
                         <span />
                         </label>
-                        <label className="custom-checkbox d-inline-block mr-3">
+                        <label className="custom-checkbox d-inline-block me-3">
                         <input type="checkbox" /> Option 3
                         <span />
                         </label>

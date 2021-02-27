@@ -30,7 +30,7 @@ const Unicon = () => {
     return (
     <>
         <nav aria-label="breadcrumb">
-            <ol className="breadcrumb pl-0 fs-base">
+            <ol className="breadcrumb ps-0 fs-base">
             <li className="breadcrumb-item"><a href="#">Uboot</a></li>
             <li className="breadcrumb-item"><span>Icons</span></li>
             <li className="breadcrumb-item"><span>Unicons</span></li>
@@ -62,7 +62,7 @@ const Unicon = () => {
         <div className="card">
             <div className="card-body">
             <div className="text-center">
-                <ul id="icon-list" className="pl-0">
+                <ul id="icon-list" className="ps-0">
                     { data.map((icon, _key) => (
                         <IconItem
                         key={_key}

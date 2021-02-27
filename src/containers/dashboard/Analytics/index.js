@@ -20,7 +20,7 @@ const Analytics = () => {
             <div className="card-body px-4">
               <h4 className="mb-4 fs-base">Audience Overview</h4>
               <div className="row">
-                <div className="col-xl-8 pl-0">
+                <div className="col-xl-8 ps-0">
                   <div className="chart chart-sm">
                   
                   </div>
@@ -44,13 +44,13 @@ const Analytics = () => {
                 </div>
               </div>
             </div>
-              <div className="row row-border w-100 ml-0">
+              <div className="row row-border w-100 ms-0">
                 <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <span className="d-inline-block ml-2 mr-4">
+                  <span className="d-inline-block ms-2 me-4">
                     User Retention
                   </span>
                   <span className="compositebar">4,6,7,7,4,3,2,1,4</span>
-                  <span className="text-success ml-2"><i className="fas fa-arrow-up"></i> 19.27%</span>
+                  <span className="text-success ms-2"><i className="fas fa-arrow-up"></i> 19.27%</span>
                 </div>
               </div>
           </div>

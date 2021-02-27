@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Spinners = () => 
 <>
 <nav aria-label="breadcrumb">
-    <ol className="breadcrumb pl-0 fs-base">
+    <ol className="breadcrumb ps-0 fs-base">
       <li className="breadcrumb-item"><a href="#">Uboot</a></li>
       <li className="breadcrumb-item"><span>UI Kit</span></li>
       <li className="breadcrumb-item active" aria-current="page">Spinner</li>
@@ -107,7 +107,7 @@ const Spinners = () =>
         <div id="cardCollpase5" className="card-body show">
           <div className="bd-callout bd-callout-highlight">Use <code>flexbox utilities</code>, <code>float utilities</code>, or <code>text alignment</code> utilities to place spinners exactly where you need them in any situation.</div>
           <div className="d-flex align-items-center"> <strong>Loading...</strong>
-            <div className="spinner-border ml-auto" role="status" aria-hidden="true" />
+            <div className="spinner-border ms-auto" role="status" aria-hidden="true" />
           </div>
         </div>
       </div>
@@ -165,10 +165,10 @@ const Spinners = () =>
           <div className="bd-callout bd-callout-highlight">Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</div>
           <div className="row">
             <div className="col-lg-6">
-              <div className="button-list"> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /><span className="sr-only">Loading...</span> </button> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true" /> Loading... </button> </div>
+              <div className="button-list"> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /><span className="sr-only">Loading...</span> </button> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true" /> Loading... </button> </div>
             </div>
             <div className="col-lg-6">
-              <div className="button-list"> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" /> <span className="sr-only">Loading...</span> </button> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-grow spinner-grow-sm mr-1" role="status" aria-hidden="true" /> Loading... </button> </div>
+              <div className="button-list"> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" /> <span className="sr-only">Loading...</span> </button> <button className="btn btn-primary" type="button" disabled="disabled"> <span className="spinner-grow spinner-grow-sm me-1" role="status" aria-hidden="true" /> Loading... </button> </div>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const BreadCrumbs = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>UI Kit</span></li>
         <li className="breadcrumb-item active" aria-current="page">Breadcrum</li>
@@ -53,10 +53,10 @@ const BreadCrumbs = () =>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-info">
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-house mr-1 fs-sm" />
+                            <i className="bi-house me-1 fs-sm" />
                             Home</a></li>
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book mr-1 fs-sm" /> Library</a></li>
+                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
@@ -64,10 +64,10 @@ const BreadCrumbs = () =>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-primary">
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-house mr-1 fs-sm" />
+                            <i className="bi-house me-1 fs-sm" />
                             Home</a></li>
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book mr-1 fs-sm" /> Library</a></li>
+                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
@@ -75,10 +75,10 @@ const BreadCrumbs = () =>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-warning">
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-house mr-1 fs-sm" />
+                            <i className="bi-house me-1 fs-sm" />
                             Home</a></li>
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book mr-1 fs-sm" /> Library</a></li>
+                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
@@ -86,10 +86,10 @@ const BreadCrumbs = () =>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-danger">
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-house mr-1 fs-sm" />
+                            <i className="bi-house me-1 fs-sm" />
                             Home</a></li>
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book mr-1 fs-sm" /> Library</a></li>
+                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
@@ -113,10 +113,10 @@ const BreadCrumbs = () =>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-house mr-1 fs-sm" />
+                            <i className="bi-house me-1 fs-sm" />
                             Home</a></li>
                         <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book mr-1 fs-sm" /> Library</a></li>
+                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>

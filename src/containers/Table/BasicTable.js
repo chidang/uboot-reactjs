@@ -12,7 +12,7 @@ import {
 const BasicTable = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>Tables</span></li>
         <li className="breadcrumb-item active" aria-current="page">Basic Table</li>
@@ -25,7 +25,7 @@ const BasicTable = () =>
         </h1>
     </div>
     <div className="bd-callout bd-callout-highlight bg-highlight-100 d-flex align-items-center" role="alert">
-        <div className="alert-icon"><i className="bi-info-circle text-primary fs-xxl mr-3" /></div>
+        <div className="alert-icon"><i className="bi-info-circle text-primary fs-xxl me-3" /></div>
         <div className="alert-text">
         <h4>About</h4>
         <p className="mt-2">

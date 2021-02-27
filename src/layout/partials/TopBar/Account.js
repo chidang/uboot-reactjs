@@ -17,27 +17,27 @@ const Account = () =>
                     <h6 className="text-center">Welcome !</h6>
                 </div>
                 <Link to="#" className="dropdown-item">
-                    <i className="uil uil-user mr-1 text-primary"></i>
+                    <i className="uil uil-user me-1 text-primary"></i>
                     <span>My Account</span>
                 </Link>
                 <Link to="#" className="dropdown-item">
-                    <i className="bi-gear mr-1 text-primary"></i>
+                    <i className="bi-gear me-1 text-primary"></i>
                     <span>Settings</span>
                 </Link>
                 <Link to="#" className="dropdown-item">
-                    <i className="bi-envelope mr-1 text-primary"></i>
+                    <i className="bi-envelope me-1 text-primary"></i>
                     <span>Inbox</span>
                 </Link>
                 <Link to="#" className="dropdown-item">
-                    <i className="bi-calendar2-event-fill mr-1 text-primary"></i>
+                    <i className="bi-calendar2-event-fill me-1 text-primary"></i>
                     <span>Calendar</span>
                 </Link>
                 <Link to="#" className="dropdown-item">
-                    <i className="bi-list-task mr-1 text-primary"></i>
+                    <i className="bi-list-task me-1 text-primary"></i>
                     <span>Tasks</span>
                 </Link>
                 <Link to="#" className="dropdown-item">
-                    <i className="uil uil-sign-out-alt mr-1 text-primary"></i>
+                    <i className="uil uil-sign-out-alt me-1 text-primary"></i>
                     <span>Sign out</span>
                 </Link>
             </Dropdown.Menu>

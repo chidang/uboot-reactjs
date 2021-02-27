@@ -1,7 +1,7 @@
 const AddProduct = () => {
     return <>
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb pl-0 fs-base">
+          <ol className="breadcrumb ps-0 fs-base">
             <li className="breadcrumb-item"><a href="#">Uboot</a></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Add Product</li>
@@ -326,7 +326,7 @@ const AddProduct = () => {
                 <h4>Product tags</h4>
                 <form className>
                   <div className="d-flex align-items-center">
-                    <div className="form-group mr-1 flex-grow-1">
+                    <div className="form-group me-1 flex-grow-1">
                       <input type="text" className="form-control" />
                     </div>
                     <button type="button" className="btn btn-sm btn-outline-highlight">

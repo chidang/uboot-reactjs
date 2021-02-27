@@ -10,7 +10,7 @@ import {
 const Chartsjs = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>Charts</span></li>
         <li className="breadcrumb-item active" aria-current="page">Chartjs</li>

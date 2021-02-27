@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Invoice = () => 
 <>
 <nav aria-label="breadcrumb">
-    <ol className="breadcrumb pl-0 fs-base">
+    <ol className="breadcrumb ps-0 fs-base">
       <li className="breadcrumb-item"><a href="#">Uboot</a></li>
       <li className="breadcrumb-item"><span>Page</span></li>
       <li className="breadcrumb-item active" aria-current="page">Invoice</li>
@@ -98,7 +98,7 @@ const Invoice = () =>
       </div>
     </div>
     <div className="row">
-      <div className="col-sm-4 ml-sm-auto">
+      <div className="col-sm-4 ms-sm-auto">
         <p className="lead">Amount Due 2/22/2014</p>
         <div className="table-responsive">
           <table className="table">
@@ -126,8 +126,8 @@ const Invoice = () =>
     </div>
     <div className="row no-print">
       <div className="col-xs-12">
-        <button className="btn btn-info mr-2"><i className="fa fa-print" /> Print</button>
-        <button type="button" className="btn btn-success mr-2"><i className="fa fa-credit-card" /> Submit Payment
+        <button className="btn btn-info me-2"><i className="fa fa-print" /> Print</button>
+        <button type="button" className="btn btn-success me-2"><i className="fa fa-credit-card" /> Submit Payment
         </button>
         <button type="button" className="btn btn-primary" style={{marginRight: '5px'}}>
           <i className="fa fa-download" /> Generate PDF

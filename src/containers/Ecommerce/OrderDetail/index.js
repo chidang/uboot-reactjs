@@ -1,7 +1,7 @@
 const OrderDetail = () => {
     return <>
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb pl-0 fs-base">
+          <ol className="breadcrumb ps-0 fs-base">
             <li className="breadcrumb-item"><a href="#">Uboot</a></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Order Detail</li>
@@ -26,17 +26,17 @@ const OrderDetail = () => {
                   Payment via Cash on delivery. Paid on September 14, 2020 @ 3:28 am. Customer IP: <span className="order-customerIP">231.34.1.22</span>
                 </p>
                 <div className="row order-data-column-container">
-                  <div className="col-xl-6 order-data-column pr-xl-5">
+                  <div className="col-xl-6 order-data-column pe-xl-5">
                     <h4>General</h4>
                     <form>
                       <div className="form-field d-flex flex-row align-items-center">
-                        <div className="mr-2 mb-3">
+                        <div className="me-2 mb-3">
                           <label htmlFor="order-date">Date created:</label>
                           <div className="d-flex align-items-center">
                             <input className="form-control datepicker" id="order-date" name="rder-date" />
                             <span className="mx-2">@</span>
-                            <input type="text" className="hour form-control mr-2" style={{flex: '0 0 60px'}} placeholder="h" name="order-date-hour" min={0} max={23} step={1} pattern="([01]?[0-9]{1}|2[0-3]{1})" />
-                            <span className="mr-2">:</span>
+                            <input type="text" className="hour form-control me-2" style={{flex: '0 0 60px'}} placeholder="h" name="order-date-hour" min={0} max={23} step={1} pattern="([01]?[0-9]{1}|2[0-3]{1})" />
+                            <span className="me-2">:</span>
                             <input type="text" className="minute form-control" style={{flex: '0 0 60px'}} placeholder="m" name="order-date-minute" min={0} max={59} step={1} defaultValue={27} pattern="[0-5]{1}[0-9]{1}" />
                           </div>
                         </div>
@@ -155,7 +155,7 @@ const OrderDetail = () => {
                 </div>
                 {/* end row */}
                 <div className="row">
-                  <div className="col-4 ml-auto">
+                  <div className="col-4 ms-auto">
                     <div className="table-responsive">
                       <table className="table table-borderless text-right">
                         <tbody>
@@ -205,7 +205,7 @@ const OrderDetail = () => {
               {/* end card-header */}
               <div className="card-body">
                 <div className="d-flex">
-                  <select className="form-select mr-1" name="order-actions">
+                  <select className="form-select me-1" name="order-actions">
                     <option value>Choose an action...</option>
                     <option value="send_order_details">Email invoice / order details to customer</option>
                     <option value="send_order_details_admin">Resend new order notification</option>
@@ -291,13 +291,13 @@ const OrderDetail = () => {
               <div className="p-4">
                 <form className>
                   <div className="mb-3">
-                    <label htmlFor="note-description">Add note <a className="ml-1" href="#">
+                    <label htmlFor="note-description">Add note <a className="ms-1" href="#">
                         <i className="fal fa-question-circle" data-original-title="Add a note for your reference, or add a customer note (the user will be notified)." data-toggle="tooltip" />
                       </a></label>
                     <textarea className="form-control" id="note-description" rows={3} defaultValue={""} />
                   </div>
                   <div className="d-flex">
-                    <select className="form-select mr-1" name="order-actions">
+                    <select className="form-select me-1" name="order-actions">
                       <option value="private-note">Private note</option>
                       <option value="customer-note">Note to customer</option>
                     </select>

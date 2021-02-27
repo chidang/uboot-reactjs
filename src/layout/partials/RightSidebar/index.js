@@ -24,7 +24,7 @@ const RightSidebar = () => {
               Settings
               <small className="mb-0 opacity-80">User Interface Settings</small>
             </h4>
-            <Link to="#" className="pos-top-right text-white p-2 m-1 mr-2 fs-md" onClick={settingContext.toggleRightSidebar}><i className="bi-x"></i></Link>
+            <Link to="#" className="pos-top-right text-white p-2 m-1 me-2 fs-md" onClick={settingContext.toggleRightSidebar}><i className="bi-x"></i></Link>
           </div>
           <div className="modal-body p-0">
             <div className="settings-panel">

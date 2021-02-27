@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Notifications = () => 
 <>
     <nav aria-label="breadcrumb">
-        <ol className="breadcrumb pl-0 fs-base">
+        <ol className="breadcrumb ps-0 fs-base">
         <li className="breadcrumb-item"><a href="#">Uboot</a></li>
         <li className="breadcrumb-item"><span>UI Kit</span></li>
         <li className="breadcrumb-item active" aria-current="page">Notification</li>
@@ -68,10 +68,10 @@ const Notifications = () =>
           <div className="bd-callout bd-callout-highlight"> Display alert with transparent background and with contextual text color. Use classes <code>.bg-white</code>, and <code>.text-*</code>. E.g. <code>bg-white text-primary</code>. </div>
           <div className="alert alert-primary bg-white text-primary" role="alert"> This is a <strong>primary</strong> alert—check it out! </div>
           <div className="bd-callout bd-callout-highlight"> Display alert with filled background. Use classes <code>.bg-*</code>, and <code>.text-white</code>. E.g. <code>bg-success text-white</code>. </div>
-          <div className="alert alert-success" role="alert"><i className="bi-check2 mr-2" /> This is a <strong>success</strong> alert - check it out! </div>
-          <div className="alert alert-danger" role="alert"><i className="bi-x-circle mr-2" /> This is a <strong>danger</strong> alert - check it out! </div>
-          <div className="alert alert-warning" role="alert"> <i className="bi-exclamation-triangle mr-2" /> This is a <strong>warning</strong> alert - check it out! </div>
-          <div className="alert alert-info" role="alert"> <i className="bi-info-circle mr-2" /> This is a <strong>info</strong> alert - check it out! </div>
+          <div className="alert alert-success" role="alert"><i className="bi-check2 me-2" /> This is a <strong>success</strong> alert - check it out! </div>
+          <div className="alert alert-danger" role="alert"><i className="bi-x-circle me-2" /> This is a <strong>danger</strong> alert - check it out! </div>
+          <div className="alert alert-warning" role="alert"> <i className="bi-exclamation-triangle me-2" /> This is a <strong>warning</strong> alert - check it out! </div>
+          <div className="alert alert-info" role="alert"> <i className="bi-info-circle me-2" /> This is a <strong>info</strong> alert - check it out! </div>
         </div>
       </div>
     </div>

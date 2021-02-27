@@ -16,7 +16,7 @@ const Topbar = () => {
             <div className="sidebar-header">
                 <Link to="#" className="sidebar-toggle-btn" onClick={settingContext.toggleLeftSidebar}>
                 </Link>
-                <div className="logo text-white mr-5">
+                <div className="logo text-white me-5">
                     <h3>
                         <Link to="/index.html">
                             <span className="fw-700">Uboot</span> Admin
