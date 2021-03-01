@@ -4,7 +4,7 @@ const Cards = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>UI Kit</span></li>
         <li className="breadcrumb-item active" aria-current="page">Card</li>
         </ol>
@@ -209,7 +209,7 @@ const Cards = () =>
                 <div className="card-body">
                 <h5 className="card-title">Lorem ipsum dolor sit amet</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="javascript: void(0);" className="btn btn-danger">Go somewhere</a>
+                <Link to="javascript: void(0);" className="btn btn-danger">Go somewhere</Link>
                 </div>
             </div> {/* end card*/}
         </div> {/* end col*/}
@@ -232,7 +232,7 @@ const Cards = () =>
                 <h4 className="m-0 fw-700">Card title</h4>
                 </div>
                 <div className="card-body">
-                <a href="javascript: void(0);" className="btn btn-warning">Go somewhere</a>
+                <Link to="javascript: void(0);" className="btn btn-warning">Go somewhere</Link>
                 </div>
                 <div className="card-footer text-muted"> Some text here</div>
             </div> {/* end card*/}
@@ -242,13 +242,13 @@ const Cards = () =>
         <div className="col-sm-6">
             <div className="card card-body">
                 <h5 className="m-0 fw-700">Lorem ipsum dolor sit amet</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="javascript: void(0);" className="btn btn-primary">Go somewhere</a>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="javascript: void(0);" className="btn btn-primary">Go somewhere</Link>
             </div> {/* end card*/}
         </div> {/* end col*/}
         <div className="col-sm-6">
             <div className="card card-body">
                 <h5 className="m-0 fw-700">Lorem ipsum dolor sit amet</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="javascript: void(0);" className="btn btn-primary">Go somewhere</a>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="javascript: void(0);" className="btn btn-primary">Go somewhere</Link>
             </div> {/* end card*/}
         </div> {/* end col*/}
     </div>
@@ -260,8 +260,8 @@ const Cards = () =>
                 </div>
                 <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
+                <Link to="#" className="card-link">Card link</Link>
+                <Link to="#" className="card-link">Another link</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -272,7 +272,7 @@ const Cards = () =>
                 </div>
                 <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link to="#" className="btn btn-primary">Go somewhere</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -295,15 +295,15 @@ const Cards = () =>
                 <div className="card-header justify-content-between">
                 <h4 className="m-0 fw-700">Card title</h4>
                 <div className="card-widgets">
-                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardReverseCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></a>
-                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardReverseCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></Link>
+                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
                 </div>
                 <div id="cardReverseCollpase1" className="card-body show">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
+                <Link to="#" className="card-link">Card link</Link>
+                <Link to="#" className="card-link">Another link</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -314,7 +314,7 @@ const Cards = () =>
                 </div>
                 <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link to="#" className="btn btn-primary">Go somewhere</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -339,8 +339,8 @@ const Cards = () =>
                 </div>
                 <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
+                <Link to="#" className="card-link">Card link</Link>
+                <Link to="#" className="card-link">Another link</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -351,7 +351,7 @@ const Cards = () =>
                 </div>
                 <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link to="#" className="btn btn-primary">Go somewhere</Link>
                 </div>
             </div>{/* end card*/}
         </div>{/* end col */}
@@ -373,9 +373,9 @@ const Cards = () =>
             <div className="card bg-danger">
                 <div className="card-body">
                 <div className="card-widgets">
-                    <a href="#" data-toggle="remove"><i className="bi-x" /></a>
-                    <a data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></a>
-                    <a href="javascript:;"><i className="fal fa-sync" /></a>
+                    <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
+                    <Link to="javascript:;"><i className="fal fa-sync" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0 text-white">Card title</h4>
                 <div id="cardCollpase0" className="collapse pt-3 show text-white"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -386,9 +386,9 @@ const Cards = () =>
             <div className="card">
                 <div className="card-body">
                 <div className="card-widgets">
-                    <a href="#" data-toggle="remove"><i className="bi-x" /></a>
-                    <a data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></a>
-                    <a href="javascript:;"><i className="fal fa-sync" /></a>
+                    <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
+                    <Link to="javascript:;"><i className="fal fa-sync" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase1" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -399,9 +399,9 @@ const Cards = () =>
             <div className="card bg-primary text-white">
                 <div className="card-body">
                 <div className="card-widgets">
-                    <a href="#" data-toggle="remove"><i className="bi-x" /></a>
-                    <a data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></a>
-                    <a href="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></a>
+                    <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></Link>
+                    <Link to="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase2" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -412,9 +412,9 @@ const Cards = () =>
             <div className="card bg-success text-white">
                 <div className="card-body">
                 <div className="card-widgets">
-                    <a href="#" data-toggle="remove"><i className="bi-x" /></a>
-                    <a data-toggle="collapse" data-target="#cardCollpase3" role="button" aria-expanded="false" aria-controls="cardCollpase3"><i className="dripicons-minus" /></a>
-                    <a href="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></a>
+                    <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link data-toggle="collapse" data-target="#cardCollpase3" role="button" aria-expanded="false" aria-controls="cardCollpase3"><i className="dripicons-minus" /></Link>
+                    <Link to="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase3" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from "react-router-dom";
 import LineChart from "./LineChart";
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
@@ -101,13 +102,13 @@ const Ecommerce = () => {
             </h5>
             <div className="card-actions">
               <div className="d-inline-block dropdown show">
-                <a href="#" data-toggle="dropdown" data-display="static">
+                <Link to="#" data-toggle="dropdown" data-display="static">
                   <i className="far fa-ellipsis-v"></i>
-                </a>
+                </Link>
                 <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Export</a>
-                  <a className="dropdown-item" href="#">Profit</a>
+                  <Link className>="dropdown-item" href="#">Action</Link>
+                  <Link className>="dropdown-item" href="#">Export</Link>
+                  <Link className>="dropdown-item" href="#">Profit</Link>
                 </div>
               </div>
             </div>
@@ -136,10 +137,10 @@ const Ecommerce = () => {
                 </div>
                 <div className="row mt-4">
                   <div className="col-6 pe-1">
-                    <a href="#" className="btn btn-primary btn-block"><i className="bi-file-earmark-text me-3"></i> Export</a>
+                    <Link to="#" className="btn btn-primary btn-block"><i className="bi-file-earmark-text me-3"></i> Export</Link>
                   </div>
                   <div className="col-6 ps-1">
-                    <a href="#" className="btn btn-primary btn-block"><i className="bi-eye me-3"></i> View More</a>
+                    <Link to="#" className="btn btn-primary btn-block"><i className="bi-eye me-3"></i> View More</Link>
                   </div>
                 </div>
               </div>
@@ -156,13 +157,13 @@ const Ecommerce = () => {
               <h5 className="card-title mb-0">Location</h5>
               <div className="card-actions">
                 <div className="d-inline-block dropdown show">
-                  <a href="#" data-toggle="dropdown" data-display="static">
+                  <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
-                  </a>
+                  </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Export</a>
-                    <a className="dropdown-item" href="#">Profit</a>
+                    <Link className>="dropdown-item" href="#">Action</Link>
+                    <Link className>="dropdown-item" href="#">Export</Link>
+                    <Link className>="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -178,13 +179,13 @@ const Ecommerce = () => {
               <h5 className="card-title mb-0">Total customers: 104,664,352</h5>
               <div className="card-actions float-right">
                 <div className="d-inline-block dropdown show">
-                  <a href="#" data-toggle="dropdown" data-display="static">
+                  <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
-                  </a>
+                  </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Export</a>
-                    <a className="dropdown-item" href="#">Profit</a>
+                    <Link className>="dropdown-item" href="#">Action</Link>
+                    <Link className>="dropdown-item" href="#">Export</Link>
+                    <Link className>="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -214,13 +215,13 @@ const Ecommerce = () => {
               <h5 className="card-title mb-0">Expect and Actual</h5>
               <div className="card-actions float-right">
                 <div className="d-inline-block dropdown show">
-                  <a href="#" data-toggle="dropdown" data-display="static">
+                  <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
-                  </a>
+                  </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Export</a>
-                    <a className="dropdown-item" href="#">Profit</a>
+                    <Link className>="dropdown-item" href="#">Action</Link>
+                    <Link className>="dropdown-item" href="#">Export</Link>
+                    <Link className>="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -238,13 +239,13 @@ const Ecommerce = () => {
               <h5 className="card-title mb-0">Events</h5>
               <div className="card-actions float-right">
                 <div className="d-inline-block dropdown show">
-                  <a href="#" data-toggle="dropdown" data-display="static">
+                  <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
-                  </a>
+                  </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Export</a>
-                    <a className="dropdown-item" href="#">Profit</a>
+                    <Link className>="dropdown-item" href="#">Action</Link>
+                    <Link className>="dropdown-item" href="#">Export</Link>
+                    <Link className>="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -260,13 +261,13 @@ const Ecommerce = () => {
               <h5 className="card-title mb-0">Top Selling Products</h5>
               <div className="card-actions">
                 <div className="d-inline-block dropdown show">
-                  <a href="#" data-toggle="dropdown" data-display="static">
+                  <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
-                  </a>
+                  </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Export</a>
-                    <a className="dropdown-item" href="#">Profit</a>
+                    <Link className>="dropdown-item" href="#">Action</Link>
+                    <Link className>="dropdown-item" href="#">Export</Link>
+                    <Link className>="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>

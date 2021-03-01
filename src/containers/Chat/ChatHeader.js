@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const ChatHeader = () =>  <>
     <nav>
         <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item">Chat</li>
         </ol>
     </nav>

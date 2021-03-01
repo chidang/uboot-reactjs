@@ -4,7 +4,7 @@ const InputGroups = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Forms</span></li>
         <li className="breadcrumb-item active" aria-current="page">Input Group</li>
         </ol>
@@ -21,9 +21,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Basic</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardInputGroup" role="button" aria-expanded="false" aria-controls="cardInputGroup"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardInputGroup" role="button" aria-expanded="false" aria-controls="cardInputGroup"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardInputGroup" className="card-body show">
@@ -48,7 +48,7 @@ const InputGroups = () =>
                 </div>
                 <div className="input-group">
                     <span className="input-group-text">With textarea</span>
-                    <textarea className="form-control" aria-label="With textarea" defaultValue={""} />
+                    <textarea className="form-control" aria-label="With textarea" placeholder={""} />
                 </div>
                 </form>
             </div>
@@ -57,9 +57,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Checkboxes and radios</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCheckboxAndRadio" role="button" aria-expanded="false" aria-controls="cardCheckboxAndRadio"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCheckboxAndRadio" role="button" aria-expanded="false" aria-controls="cardCheckboxAndRadio"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCheckboxAndRadio" className="card-body show">
@@ -89,9 +89,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Button addons</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardButtonRadio" role="button" aria-expanded="false" aria-controls="cardButtonRadio"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardButtonRadio" role="button" aria-expanded="false" aria-controls="cardButtonRadio"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardButtonRadio" className="card-body show">
@@ -121,9 +121,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Segmented buttons</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardSegmentedButton" role="button" aria-expanded="false" aria-controls="cardSegmentedButton"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardSegmentedButton" role="button" aria-expanded="false" aria-controls="cardSegmentedButton"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardSegmentedButton" className="card-body show">
@@ -134,13 +134,13 @@ const InputGroups = () =>
                     <span className="sr-only">Toggle Dropdown</span>
                     </button>
                     <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                     <input type="text" className="form-control" aria-label="Text input with segmented dropdown button" />
                 </div>
@@ -151,13 +151,13 @@ const InputGroups = () =>
                     <span className="sr-only">Toggle Dropdown</span>
                     </button>
                     <ul className="dropdown-menu dropdown-menu-right">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                 </div>
                 </form>
@@ -167,9 +167,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Custom select</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomSelect" role="button" aria-expanded="false" aria-controls="cardCustomSelect"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomSelect" role="button" aria-expanded="false" aria-controls="cardCustomSelect"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCustomSelect" className="card-body show">
@@ -219,9 +219,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Sizing</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardSizing" role="button" aria-expanded="false" aria-controls="cardSizing"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardSizing" role="button" aria-expanded="false" aria-controls="cardSizing"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardSizing" className="card-body show">
@@ -245,9 +245,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Multiple inputs</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardMultipleInputs" role="button" aria-expanded="false" aria-controls="cardMultipleInputs"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardMultipleInputs" role="button" aria-expanded="false" aria-controls="cardMultipleInputs"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardMultipleInputs" className="card-body show">
@@ -264,9 +264,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Multiple addons</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardMultipleAddons" role="button" aria-expanded="false" aria-controls="cardMultipleAddons"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardMultipleAddons" role="button" aria-expanded="false" aria-controls="cardMultipleAddons"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardMultipleAddons" className="card-body show">
@@ -288,9 +288,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Buttons with dropdowns</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBottonWithDropdown" role="button" aria-expanded="false" aria-controls="cardBottonWithDropdown"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBottonWithDropdown" role="button" aria-expanded="false" aria-controls="cardBottonWithDropdown"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBottonWithDropdown" className="card-body show">
@@ -298,13 +298,13 @@ const InputGroups = () =>
                 <div className="input-group mb-3">
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
                     <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                     <input type="text" className="form-control" aria-label="Text input with dropdown button" />
                 </div>
@@ -312,36 +312,36 @@ const InputGroups = () =>
                     <input type="text" className="form-control" aria-label="Text input with dropdown button" />
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
                     <ul className="dropdown-menu dropdown-menu-right">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                 </div>
                 <div className="input-group">
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
                     <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action before</a></li>
-                    <li><a className="dropdown-item" href="#">Another action before</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action before</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action before</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                     <input type="text" className="form-control" aria-label="Text input with 2 dropdown buttons" />
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
                     <ul className="dropdown-menu dropdown-menu-right">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><Link className>="dropdown-item" href="#">Action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Another action</Link></li>
+                    <li><Link className>="dropdown-item" href="#">Something else here</Link></li>
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><a className="dropdown-item" href="#">Separated link</a></li>
+                    <li><Link className>="dropdown-item" href="#">Separated link</Link></li>
                     </ul>
                 </div>
                 </form>
@@ -351,9 +351,9 @@ const InputGroups = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Custom file input</h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomFileInput" role="button" aria-expanded="false" aria-controls="cardCustomFileInput"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomFileInput" role="button" aria-expanded="false" aria-controls="cardCustomFileInput"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCustomFileInput" className="card-body show">

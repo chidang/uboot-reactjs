@@ -4,7 +4,7 @@ const Faq = () =>
 <>
   <nav aria-label="breadcrumb">
     <ol className="breadcrumb ps-0 fs-base">
-      <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+      <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
       <li className="breadcrumb-item"><span>Page</span></li>
       <li className="breadcrumb-item active" aria-current="page">FAQ</li>
     </ol>
@@ -21,9 +21,9 @@ const Faq = () =>
         Default FAQ
       </h4>
       <div className="card-widgets">
-        <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-        <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></a>
-        <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+        <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+        <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
+        <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
       </div>
     </div>
     <div id="cardCollpase0" className="card-body show">
@@ -85,9 +85,9 @@ const Faq = () =>
         Accodions FAQ
       </h4>
       <div className="card-widgets">
-        <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-        <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></a>
-        <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+        <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+        <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></Link>
+        <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
       </div>
     </div>
     <div id="cardCollpase2" className="card-body show">
@@ -96,7 +96,7 @@ const Faq = () =>
           <div>
             <div className="card-header">
               <h4 className="mb-0">
-                <a href="javascript:void(0);" className="text-info" data-toggle="collapse" data-target="#collapse11" aria-expanded="true">What is Lorem Ipsum?</a>
+                <Link to="javascript:void(0);" className="text-info" data-toggle="collapse" data-target="#collapse11" aria-expanded="true">What is Lorem Ipsum?</Link>
               </h4>
             </div>
             <div id="collapse11" className="collapse show" data-parent="#accordion1" style={{}}>
@@ -108,7 +108,7 @@ const Faq = () =>
           <div>
             <div className="card-header">
               <h4 className="mb-0">
-                <a href="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false">What is Lorem Ipsum?</a>
+                <Link to="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false">What is Lorem Ipsum?</Link>
               </h4>
             </div>
             <div id="collapse12" className="collapse" data-parent="#accordion1" style={{}}>
@@ -120,7 +120,7 @@ const Faq = () =>
           <div>
             <div className="card-header">
               <h4 className="mb-0">
-                <a href="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false">What is Lorem Ipsum?</a>
+                <Link to="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false">What is Lorem Ipsum?</Link>
               </h4>
             </div>
             <div id="collapse13" className="collapse" data-parent="#accordion1" style={{}}>
@@ -132,7 +132,7 @@ const Faq = () =>
           <div>
             <div className="card-header">
               <h4 className="mb-0">
-                <a href="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false">What is Lorem Ipsum?</a>
+                <Link to="javascript:void(0);" className="text-info collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false">What is Lorem Ipsum?</Link>
               </h4>
             </div>
             <div id="collapse14" className="collapse" data-parent="#accordion1" style={{}}>

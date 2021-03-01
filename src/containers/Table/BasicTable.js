@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
     BorderedTable,
     ContextualTable, 
@@ -13,7 +14,7 @@ const BasicTable = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Tables</span></li>
         <li className="breadcrumb-item active" aria-current="page">Basic Table</li>
         </ol>
@@ -39,9 +40,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Default <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableDefault" role="button" aria-expanded="false" aria-controls="cardTableDefault"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableDefault" role="button" aria-expanded="false" aria-controls="cardTableDefault"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableDefault" className="card-body show">
@@ -52,9 +53,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Striped <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableStriped" role="button" aria-expanded="false" aria-controls="cardTableStriped"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableStriped" role="button" aria-expanded="false" aria-controls="cardTableStriped"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableStriped" className="card-body show">
@@ -65,9 +66,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Bordered <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableBordered" role="button" aria-expanded="false" aria-controls="cardTableBordered"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableBordered" role="button" aria-expanded="false" aria-controls="cardTableBordered"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableBordered" className="card-body show">
@@ -78,9 +79,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Hover <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableHover" role="button" aria-expanded="false" aria-controls="cardTableHover"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableHover" role="button" aria-expanded="false" aria-controls="cardTableHover"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableHover" className="card-body show">
@@ -93,9 +94,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Contextual <span className="fw-300"><i>classes</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableContextual" role="button" aria-expanded="false" aria-controls="cardTableContextual"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableContextual" role="button" aria-expanded="false" aria-controls="cardTableContextual"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableContextual" className="card-body show">
@@ -106,9 +107,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">Small <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableSmall" role="button" aria-expanded="false" aria-controls="cardTableSmall"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableSmall" role="button" aria-expanded="false" aria-controls="cardTableSmall"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableSmall" className="card-body show">
@@ -119,9 +120,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">With Checkbox <span className="fw-300"><i>Table</i></span></h4>
                 <div className="card-widgets">
-                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithCheckbox" role="button" aria-expanded="false" aria-controls="cardTableWithCheckbox"><i className="dripicons-minus" /></a>
-                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithCheckbox" role="button" aria-expanded="false" aria-controls="cardTableWithCheckbox"><i className="dripicons-minus" /></Link>
+                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardTableWithCheckbox" className="card-body show">
@@ -132,9 +133,9 @@ const BasicTable = () =>
             <div className="card-header justify-content-between">
             <h4 className="fw-700 m-0 fs-base">With Button <span className="fw-300"><i>Table</i></span></h4>
             <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithButton" role="button" aria-expanded="false" aria-controls="cardTableWithButton"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardTableWithButton" role="button" aria-expanded="false" aria-controls="cardTableWithButton"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
             </div>
             </div>
             <div id="cardTableWithButton" className="card-body show">

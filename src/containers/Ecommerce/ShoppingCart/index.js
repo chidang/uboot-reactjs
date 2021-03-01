@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import product from "../../../assets/images/products/product-80x80.jpg";
 
 const ShoppingCart = () => {
@@ -5,7 +6,7 @@ const ShoppingCart = () => {
         <div>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb ps-0 fs-base">
-                <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+                <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
                 <li className="breadcrumb-item"><span>Ecommerce</span></li>
                 <li className="breadcrumb-item active" aria-current="page">Shopping Cart</li>
                 </ol>
@@ -38,19 +39,19 @@ const ShoppingCart = () => {
                             </td>
                             <td>
                                 <div className>
-                                <a href className>Blue Dress For Woman</a>
+                                <Link to="#" className>Blue Dress For Woman</Link>
                                 <br />
                                 <small className><b>Size:</b> Large </small>
                                 <small><b>Color:</b> Black
                                 </small>
                                 </div>
-                                <a href="#" className="text-danger">Delete</a>
+                                <Link to="#" className="text-danger">Delete</Link>
                             </td>
                             <td>
                                 $19.99
                             </td>
                             <td>
-                                <input type="number" min={1} defaultValue={2} className="form-control" placeholder="Qty" style={{width: '90px'}} />
+                                <input type="number" min={1} placeholder={2} className="form-control" placeholder="Qty" style={{width: '90px'}} />
                             </td>
                             <td>
                                 $39.98
@@ -62,19 +63,19 @@ const ShoppingCart = () => {
                             </td>
                             <td>
                                 <div className>
-                                <a href className>Woman Full Sliv Dress</a>
+                                <Link to="#" className>Woman Full Sliv Dress</Link>
                                 <br />
                                 <small className><b>Size:</b> Large </small>
                                 <small><b>Color:</b> Black
                                 </small>
                                 </div>
-                                <a href="#" className="text-danger">Delete</a>
+                                <Link to="#" className="text-danger">Delete</Link>
                             </td>
                             <td>
                                 $21.99
                             </td>
                             <td>
-                                <input type="number" min={1} defaultValue={1} className="form-control" placeholder="Qty" style={{width: '90px'}} />
+                                <input type="number" min={1} placeholder={1} className="form-control" placeholder="Qty" style={{width: '90px'}} />
                             </td>
                             <td>
                                 $21.99
@@ -86,19 +87,19 @@ const ShoppingCart = () => {
                             </td>
                             <td>
                                 <div className>
-                                <a href className>Light Blue Shirt</a>
+                                <Link to="#" className>Light Blue Shirt</Link>
                                 <br />
                                 <small className><b>Size:</b> Large </small>
                                 <small><b>Color:</b> Black
                                 </small>
                                 </div>
-                                <a href="#" className="text-danger">Delete</a>
+                                <Link to="#" className="text-danger">Delete</Link>
                             </td>
                             <td>
                                 $26.99
                             </td>
                             <td>
-                                <input type="number" min={1} defaultValue={3} className="form-control" placeholder="Qty" style={{width: '90px'}} />
+                                <input type="number" min={1} placeholder={3} className="form-control" placeholder="Qty" style={{width: '90px'}} />
                             </td>
                             <td>
                                 $80.97
@@ -110,7 +111,7 @@ const ShoppingCart = () => {
                     {/* end table-responsive */}
                     <div className="card-note mt-3">
                         <label htmlFor="add-note">Note</label>
-                        <textarea className="form-control" id="add-note" rows={3} placeholder="Write some note.." defaultValue={""} />
+                        <textarea className="form-control" id="add-note" rows={3} placeholder="Write some note.." placeholder={""} />
                     </div>
                     {/* end card-note */}
                     </div>
@@ -164,10 +165,10 @@ const ShoppingCart = () => {
             </div>
             <div className="row pt-3 pb-5">
                 <div className="col-12">
-                <a href="products.html" className="btn btn-warning mt-3 mt-lg-0">
+                <Link to="products.html" className="btn btn-warning mt-3 mt-lg-0">
                     <i className="bi-chevron-double-left" />
                     Continue Shopping
-                </a>
+                </Link>
                 </div>
             </div>
             </div>

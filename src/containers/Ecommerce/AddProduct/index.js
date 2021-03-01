@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+import Dropzone from 'react-dropzone'
+
 const AddProduct = () => {
     return <>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Add Product</li>
           </ol>
         </nav>
         <div className="header justify-content-between mb-4">
           <h1 className="header-title h3">
-            <i className="bi-cart3 text-primary" />
-            Add Product
+            <i className="bi-cart3 text-primary" /> Add Product
           </h1>
         </div>
         <div className="row">
@@ -25,7 +27,7 @@ const AddProduct = () => {
                     </div>
                     <div className="form-group mb-3">
                       <label htmlFor="product-description">Description <span className="text-danger">*</span></label>
-                      <textarea className="form-control" id="product-description" rows={3} defaultValue={""} />
+                      <textarea className="form-control" id="product-description" rows={3} />
                     </div>
                   </div>
                   {/* end col */}
@@ -38,19 +40,23 @@ const AddProduct = () => {
             <div className="card">
               <div className="card-body">
                 <h4>Media</h4>
-                <form action="/file-upload" className="dropzone" id="product-media">
-                  <div className="dz-message needsclick">
-                    <div className="mb-4">
-                      <button className="btn btn-primary">
-                        <i className="bi-cloud-arrow-up" />
-                        <span>Add file</span>
-                      </button>
-                    </div>
-                    <span className="text-uppercase">or drop files to upload.</span>
-                    <br />
-                    <span className="fs-sm text-muted">This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.</span>
-                  </div>
-                </form>
+                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                  {({getRootProps, getInputProps}) => (
+                    <section className="dropzone">
+                      <div {...getRootProps()} className="dz-message">
+                        <div className="mb-4">
+                          <button className="btn btn-primary">
+                            <i className="bi-cloud-arrow-up me-2" />
+                            <span>Add file</span>
+                          </button>
+                        </div>
+                        <span className="text-uppercase">or drop files to upload.</span>
+                        <input {...getInputProps()} />
+                        <p>This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.</p>
+                      </div>
+                    </section>
+                  )}
+                </Dropzone>
               </div>
               {/* end card-body */}
             </div>
@@ -147,7 +153,7 @@ const AddProduct = () => {
                     <div className="form-group mb-3">
                       <label htmlFor="product-backorder">Allow backorder</label>
                       <select className="form-select" id="product-backorder">
-                        <option selected>No not allow</option>
+                        <option>No not allow</option>
                         <option>Allow, but notify customer</option>
                         <option>Allow</option>
                       </select>
@@ -203,7 +209,7 @@ const AddProduct = () => {
                     <div className="form-group mb-3">
                       <label htmlFor="product-shipping-class">Shipping Class</label>
                       <select className="form-select" id="product-shipping-class">
-                        <option selected>No shipping class</option>
+                        <option>No shipping class</option>
                       </select>
                     </div>
                   </div>
@@ -221,7 +227,7 @@ const AddProduct = () => {
                   </div>
                   {/* end form-group */}
                   <div className="col-3">
-                    <input className="form-control" type="text" defaultValue="Size" id="product-variant-1" />
+                    <input className="form-control" type="text" placeholder="Size" id="product-variant-1" />
                   </div>
                   {/* end col */}
                   <div className="col-9">
@@ -236,7 +242,7 @@ const AddProduct = () => {
                   </div>
                   {/* end form-group */}
                   <div className="col-3">
-                    <input className="form-control" type="text" defaultValue="Color" id="product-variant-2" />
+                    <input className="form-control" type="text" placeholder="Color" id="product-variant-2" />
                   </div>
                   {/* end col */}
                   <div className="col-9">
@@ -251,7 +257,7 @@ const AddProduct = () => {
                   </div>
                   {/* end form-group */}
                   <div className="col-3">
-                    <input className="form-control" type="text" defaultValue="Style" id="product-variant-3" />
+                    <input className="form-control" type="text" placeholder="Style" id="product-variant-3" />
                   </div>
                   {/* end col */}
                   <div className="col-9">
@@ -260,7 +266,7 @@ const AddProduct = () => {
                   {/* end col */}
                 </div>
                 {/* end row */}
-                <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle" /> Add another option</button>
+                <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle me-2" />Add another option</button>
               </div>
               {/* end card-body */}
             </div>
@@ -316,7 +322,7 @@ const AddProduct = () => {
                     <span />
                   </label>
                 </div>
-                <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle" /> Add new category</button>
+                <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle me-2" />Add new category</button>
               </div>
               {/* end card-body */}
             </div>
@@ -324,7 +330,7 @@ const AddProduct = () => {
             <div className="card">
               <div className="card-body">
                 <h4>Product tags</h4>
-                <form className>
+                <form>
                   <div className="d-flex align-items-center">
                     <div className="form-group me-1 flex-grow-1">
                       <input type="text" className="form-control" />
@@ -335,10 +341,10 @@ const AddProduct = () => {
                   </div>
                   <span className="fs-sm"><i>Separate tags with commas</i></span>
                   <div className="product-tags mt-2">
-                    <span className="badge bg-primary"><a href="javascript:void(0);"><i className="bi-x" /></a> T-shirt</span>
-                    <span className="badge bg-primary"><a href="javascript:void(0);"><i className="bi-x" /></a> Christmas</span>
-                    <span className="badge bg-primary"><a href="javascript:void(0);"><i className="bi-x" /></a> Lorem</span>
-                    <span className="badge bg-primary"><a href="javascript:void(0);"><i className="bi-x" /></a> Ipsum</span>
+                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> T-shirt</span>
+                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Christmas</span>
+                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Lorem</span>
+                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Ipsum</span>
                   </div>
                 </form>
               </div>
@@ -348,7 +354,7 @@ const AddProduct = () => {
             <div className="card">
               <div className="card-body d-flex justify-content-between">
                 <button className="btn btn-outline-highlight" type="button">Save Draft</button>
-                <button className="btn btn-primary" type="button"><i className="bi-save" /> Save</button>
+                <button className="btn btn-primary" type="button"><i className="bi-save me-2" />Save</button>
               </div>
               {/* end card-body */}
             </div>

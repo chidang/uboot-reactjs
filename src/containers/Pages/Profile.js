@@ -21,7 +21,7 @@ const Profile = () =>
 <>
 <nav aria-label="breadcrumb">
     <ol className="breadcrumb ps-0 fs-base">
-      <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+      <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
       <li className="breadcrumb-item"><span>Page</span></li>
       <li className="breadcrumb-item active" aria-current="page">Profile</li>
     </ol>
@@ -47,24 +47,24 @@ const Profile = () =>
                   <p className="fs-sm">Frontend developer</p>
                   <ul className="mb-0 list-inline">
                     <li className="d-inline">
-                      <a href="javascript:void(0);" className="fs-lg" style={{color: '#3b5998'}}>
+                      <Link to="javascript:void(0);" className="fs-lg" style={{color: '#3b5998'}}>
                         <i className="fab fa-facebook" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="d-inline">
-                      <a href="javascript:void(0);" className="fs-lg" style={{color: '#38A1F3'}}>
+                      <Link to="javascript:void(0);" className="fs-lg" style={{color: '#38A1F3'}}>
                         <i className="fab fa-twitter" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="d-inline">
-                      <a href="javascript:void(0);" className="fs-lg" style={{color: '#db3236'}}>
+                      <Link to="javascript:void(0);" className="fs-lg" style={{color: '#db3236'}}>
                         <i className="fab fa-google-plus" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="d-inline">
-                      <a href="javascript:void(0);" className="fs-lg" style={{color: '#0077B5'}}>
+                      <Link to="javascript:void(0);" className="fs-lg" style={{color: '#0077B5'}}>
                         <i className="fab fa-linkedin-in" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -72,7 +72,7 @@ const Profile = () =>
             </div>
             <div className="col-md-4">
               <div className="text-center mt-sm-0 mt-3 text-sm-right">
-                <a href="#" data-original-title="Edit" data-toggle="tooltip"><i className="bi-pencil" /></a>
+                <Link to="#" data-original-title="Edit" data-toggle="tooltip"><i className="bi-pencil" /></Link>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Profile = () =>
         <div className="card-body">
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
-              <a href="#">
+              <Link to="#">
                 <span className="task small">
                   <span className="desc">Design database</span>
                   <span className="percent">74%</span>
@@ -110,10 +110,10 @@ const Profile = () =>
                     <span className="sr-only">74% Complete</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="list-group-item">
-              <a href="#">
+              <Link to="#">
                 <span className="task small">
                   <span className="desc">Testing</span>
                   <span className="percent">30%</span>
@@ -123,10 +123,10 @@ const Profile = () =>
                     <span className="sr-only">30% Complete</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="list-group-item">
-              <a href="#">
+              <Link to="#">
                 <span className="task small">
                   <span className="desc">Document writting</span>
                   <span className="percent">50%</span>
@@ -136,10 +136,10 @@ const Profile = () =>
                     <span className="sr-only">50% Complete</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="list-group-item">
-              <a href="#">
+              <Link to="#">
                 <span className="task small">
                   <span className="desc">Development</span>
                   <span className="percent">45%</span>
@@ -149,10 +149,10 @@ const Profile = () =>
                     <span className="sr-only">45% Complete</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="list-group-item">
-              <a href="#">
+              <Link to="#">
                 <span className="task small">
                   <span className="desc">HTML slicing</span>
                   <span className="percent">66%</span>
@@ -162,7 +162,7 @@ const Profile = () =>
                     <span className="sr-only">66% Complete</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -176,28 +176,28 @@ const Profile = () =>
         <div className="widget-image-list">
           <div className="d-flex p-1">
             <div className="w-25">
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_1 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_2 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_3 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_4 + ")" }} /></a>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_1 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_2 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_3 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_4 + ")" }} /></Link>
             </div>
             <div className="w-25">
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_5 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_6 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_7 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_8 + ")" }} /></a>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_5 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_6 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_7 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_8 + ")" }} /></Link>
             </div>
             <div className="w-25">
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_9 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_10 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_11 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_12 + ")" }} /></a>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_9 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_10 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_11 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_12 + ")" }} /></Link>
             </div>
             <div className="w-25">
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_13 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_14 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_15 + ")" }} /></a>
-              <a className="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_16 + ")" }} /></a>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_13 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_14 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_15 + ")" }} /></Link>
+              <Link className>="widget-image-list-item" href="#"><span className="bg-image" style={{backgroundImage: "url(" + pic_16 + ")" }} /></Link>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ const Profile = () =>
                         <dt>Registered on</dt>
                         <dd><span className="badge bg-success">10/02/2019</span></dd>
                         <dt>Mobile</dt>
-                        <dd><a target="_blank" href="tel:+0422xxxx">+0422xxxx</a></dd>
+                        <dd><Link href="tel:+0422xxxx">+0422xxxx</Link></dd>
                         <dt>Timezone</dt>
                         <dd>
                           <span className="badge bg-success">New York</span>
@@ -258,7 +258,7 @@ const Profile = () =>
                   <i className="fas fa-graduation-cap" />
                 </div>
                 <div className="d-flex flex-column">
-                  <a href="#" className="fw-700 mb-3">Qualifications</a>
+                  <Link to="#" className="fw-700 mb-3">Qualifications</Link>
                   <div className="text-dark-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy since the 1500s.</div>
                 </div>
               </div>
@@ -271,7 +271,7 @@ const Profile = () =>
                   <i className="fas fa-id-card-alt" />
                 </div>
                 <div className="d-flex flex-column">
-                  <a href="#" className="fw-700 mb-3">Skill</a>
+                  <Link to="#" className="fw-700 mb-3">Skill</Link>
                   <div className="text-dark-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy since the 1500s.</div>
                 </div>
               </div>
@@ -386,7 +386,7 @@ const Profile = () =>
         <div className="card-body">
           <div className="row friend-list">
             <div className=" col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -396,10 +396,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">37 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -409,10 +409,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">29 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -422,10 +422,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -435,10 +435,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -448,10 +448,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -461,10 +461,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -474,10 +474,10 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">22 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6">
-              <a href="#" className="friend-list-item card mb-2 p-2 border-0">
+              <Link to="#" className="friend-list-item card mb-2 p-2 border-0">
                 <div className=" align-items-center d-flex flex-row">
                   <div className="my-2">
                     <img src={ femaleAvatar } style={{height: '50px'}} alt="User" className="rounded-circle" />
@@ -487,7 +487,7 @@ const Profile = () =>
                     <span className="m-0 fs-sm text-muted">34 mutual friends</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

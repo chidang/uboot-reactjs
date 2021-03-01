@@ -15,7 +15,7 @@ const InternalServerError = () =>
                 <div class="mb-3 text-danger"><i class="bi-exclamation-triangle fs-xxl"></i></div>
                 <p class="text-muted mb-4">Something went wrong!</p>
             </div>
-            <div class="mb-0 text-center"> <a href="/" class="text-primary"> <i class="bi-house"></i> <span>Back to Dashboard</span></a> </div>
+            <div class="mb-0 text-center"> <Link to="/" class="text-primary"> <i class="bi-house"></i> <span>Back to Dashboard</span></Link> </div>
             </div>
         </div>
     </div>

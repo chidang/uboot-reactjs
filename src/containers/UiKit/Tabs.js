@@ -4,7 +4,7 @@ const Tabs = () =>
 <>
 <nav aria-label="breadcrumb">
     <ol className="breadcrumb ps-0 fs-base">
-      <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+      <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
       <li className="breadcrumb-item"><span>UI Kit</span></li>
       <li className="breadcrumb-item active" aria-current="page">Tab</li>
     </ol>
@@ -24,31 +24,31 @@ const Tabs = () =>
             Basic <span className="fw-300"><i>Tabs</i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBasicTab" role="button" aria-expanded="false" aria-controls="cardBasicTab"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBasicTab" role="button" aria-expanded="false" aria-controls="cardBasicTab"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardBasicTab" className="card-body show">
           <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="tab" href="#" data-target="#tabs_1_1">Active</a>
+              <Link className>="nav-link active" data-toggle="tab" href="#" data-target="#tabs_1_1">Active</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <Link className>="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</Link>
               <div className="dropdown-menu">
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_1_2">Action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_1_3">Another action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_1_4">Something else here</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_1_2">Action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_1_3">Another action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_1_4">Something else here</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_1_2">Separated link</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_1_2">Separated link</Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_1_3">Link</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_1_3">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_1_4">Disabled</a>
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_1_4">Disabled</Link>
             </li>
           </ul>
           <div className="tab-content tab-content-bordered">
@@ -75,44 +75,44 @@ const Tabs = () =>
             Icon <span className="fw-300"><i>Tabs</i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardIconTab" role="button" aria-expanded="false" aria-controls="cardIconTab"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardIconTab" role="button" aria-expanded="false" aria-controls="cardIconTab"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardIconTab" className="card-body show">
           <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="tab" href="#tabs_2_1">
+              <Link className>="nav-link active" data-toggle="tab" href="#tabs_2_1">
                 <i className="bi-check2" /> Active
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <Link className>="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <i className="bi-gear" /> Dropdown
-              </a>
+              </Link>
               <div className="dropdown-menu" style={{}}>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_2_3">Action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_2_4">Another action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_2_1">Something else here</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_2_3">Action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_2_4">Another action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_2_1">Something else here</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_2_2">Separated link</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_2_2">Separated link</Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_2_2">
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_2_2">
                 <i className="bi-link-45deg" /> Link 1
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_2_3">
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_2_3">
                 <i className="bi-link-45deg" /> Link 2
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_2_4">
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_2_4">
                 <i className="fal fa-exclamation-triangle" /> Disabled
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="tab-content">
@@ -140,24 +140,24 @@ const Tabs = () =>
             Adjusted <span className="fw-300"><i>Tabs</i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardAdjustTab" role="button" aria-expanded="false" aria-controls="cardAdjustTab"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardAdjustTab" role="button" aria-expanded="false" aria-controls="cardAdjustTab"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardAdjustTab" className="card-body show">
           <ul className="nav nav-tabs nav-fill" role="tablist">
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_4_1">Active</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_4_1">Active</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_4_2">Link</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_4_2">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="tab" href="#tabs_4_3">Link</a>
+              <Link className>="nav-link active" data-toggle="tab" href="#tabs_4_3">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_4_4">Disabled</a>
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_4_4">Disabled</Link>
             </li>
           </ul>
           <div className="tab-content">
@@ -186,31 +186,31 @@ const Tabs = () =>
             Pills
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBill" role="button" aria-expanded="false" aria-controls="cardBill"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBill" role="button" aria-expanded="false" aria-controls="cardBill"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardBill" className="card-body show">
           <ul className="nav nav-pills" role="tablist">
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_5_1">Active</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_5_1">Active</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <Link className>="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</Link>
               <div className="dropdown-menu" style={{}}>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_5_3" aria-expanded="true">Action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_5_1" aria-expanded="true">Another action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_5_4" aria-expanded="true">Something else here</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_5_3" aria-expanded="true">Action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_5_1" aria-expanded="true">Another action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_5_4" aria-expanded="true">Something else here</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item active" data-toggle="tab" href="#tabs_5_2" aria-expanded="true">Separated link</a>
+                <Link className>="dropdown-item active" data-toggle="tab" href="#tabs_5_2" aria-expanded="true">Separated link</Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_5_3">Link</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_5_3">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_5_4">Disabled</a>
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_5_4">Disabled</Link>
             </li>
           </ul>
           <div className="tab-content">
@@ -237,33 +237,33 @@ const Tabs = () =>
             Pill <span className="fw-300"><i>With Icon Tabs </i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBillWithIconTab" role="button" aria-expanded="false" aria-controls="cardBillWithIconTab"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBillWithIconTab" role="button" aria-expanded="false" aria-controls="cardBillWithIconTab"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardBillWithIconTab" className="card-body show">
           <ul className="nav nav-pills" role="tablist">
             <li className="nav-item ">
-              <a className="nav-link active" data-toggle="tab" href="#tabs_6_1"><i className="bi-check2" />Active</a>
+              <Link className>="nav-link active" data-toggle="tab" href="#tabs_6_1"><i className="bi-check2" />Active</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <Link className>="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <i className="bi-shield-minus" /> Dropdown
-              </a>
+              </Link>
               <div className="dropdown-menu" style={{}}>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_6_3" aria-expanded="true">Action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_6_4">Another action</a>
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_6_1" aria-expanded="true">Something else here</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_6_3" aria-expanded="true">Action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_6_4">Another action</Link>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_6_1" aria-expanded="true">Something else here</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" data-toggle="tab" href="#tabs_6_2" aria-expanded="true">Separated link</a>
+                <Link className>="dropdown-item" data-toggle="tab" href="#tabs_6_2" aria-expanded="true">Separated link</Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_6_3"><i className="bi-suit-club" /> Link</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_6_3"><i className="bi-suit-club" /> Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_6_4"><i className="la la-question-circle" />Disabled</a>
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_6_4"><i className="la la-question-circle" />Disabled</Link>
             </li>
           </ul>
           <div className="tab-content">
@@ -290,24 +290,24 @@ const Tabs = () =>
             Adjusted <span className="fw-300"><i>Bills </i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardAdjustedBill" role="button" aria-expanded="false" aria-controls="cardAdjustedBill"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardAdjustedBill" role="button" aria-expanded="false" aria-controls="cardAdjustedBill"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardAdjustedBill" className="card-body show">
           <ul className="nav nav-pills nav-fill" role="tablist">
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_7_1">Active</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_7_1">Active</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#tabs_7_2">Link</a>
+              <Link className>="nav-link" data-toggle="tab" href="#tabs_7_2">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="tab" href="#tabs_7_3">Link</a>
+              <Link className>="nav-link active" data-toggle="tab" href="#tabs_7_3">Link</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" data-toggle="tab" href="#tabs_7_4">Disabled</a>
+              <Link className>="nav-link disabled" data-toggle="tab" href="#tabs_7_4">Disabled</Link>
             </li>
           </ul>
           <div className="tab-content">
@@ -333,23 +333,23 @@ const Tabs = () =>
             Vertical <span className="fw-300"><i>Tabs </i></span>
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardVerticalTab" role="button" aria-expanded="false" aria-controls="cardVerticalTab"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardVerticalTab" role="button" aria-expanded="false" aria-controls="cardVerticalTab"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardVerticalTab" className="card-body show">
           <div className="nav-tabs-left">
             <ul className="nav nav-tabs" id="nav-tabs-left">
-              <li className="nav-item"><a href="#tab-left-home" className="nav-link active" data-toggle="tab">Home</a></li>
-              <li className="nav-item"><a href="#tab-left-profile" className="nav-link" data-toggle="tab">Profile</a></li>
+              <li className="nav-item"><Link to="#tab-left-home" className="nav-link active" data-toggle="tab">Home</Link></li>
+              <li className="nav-item"><Link to="#tab-left-profile" className="nav-link" data-toggle="tab">Profile</Link></li>
               <li className="nav-item dropdown">
-                <a href="#" className="nav-link" data-toggle="dropdown">
+                <Link to="#" className="nav-link" data-toggle="dropdown">
                   Dropdown
-                </a>
+                </Link>
                 <div className="dropdown-menu">
-                  <a href="#tab-left-dropdown1" className="dropdown-item" data-toggle="tab">New</a>
-                  <a href="#tab-left-dropdown2" className="dropdown-item" data-toggle="tab">Export</a>
+                  <Link to="#tab-left-dropdown1" className="dropdown-item" data-toggle="tab">New</Link>
+                  <Link to="#tab-left-dropdown2" className="dropdown-item" data-toggle="tab">Export</Link>
                 </div>
               </li>
             </ul>

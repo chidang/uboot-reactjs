@@ -37,7 +37,7 @@ const Register = () =>
                             </div>
                             <div className="mb-3">
                                 <label className="custom-checkbox">
-                                <input type="checkbox" id="term-and-conditions" /> I agree to <a className="text-info" href="#">terms & conditions</a>
+                                <input type="checkbox" id="term-and-conditions" /> I agree to <Link className>="text-info" href="#">terms & conditions</Link>
                                 <span></span>
                                 </label>
                             </div>
@@ -53,10 +53,10 @@ const Register = () =>
                             <p className="text-center my-4">- OR -</p>
                             <div className="row">
                                 <div className="col-md-6">
-                                    <a href="#" className="btn btn-facebook btn-block mb-4"><span className="me-2"><i className="fab fa-facebook-f"></i></span> Sign Up with Facebook</a>
+                                    <Link to="#" className="btn btn-facebook btn-block mb-4"><span className="me-2"><i className="fab fa-facebook-f"></i></span> Sign Up with Facebook</Link>
                                 </div>
                                 <div className="col-md-6">
-                                    <a href="#" className="btn btn-twitter  btn-block mb-4"><span className="me-2"><i className="fab fa-twitter"></i></span> Sign Up with Twitter</a>
+                                    <Link to="#" className="btn btn-twitter  btn-block mb-4"><span className="me-2"><i className="fab fa-twitter"></i></span> Sign Up with Twitter</Link>
                                 </div>
                             </div>
                         </form>
@@ -64,7 +64,7 @@ const Register = () =>
                 </div>
                 <div className="row my-3">
                     <div className="col-12 text-center">
-                        <p className="text-muted">Already have an account? <a href="pages-authentication-login.html" className="text-muted ms-1"><span className="text-info">Sign in</span></a></p>
+                        <p className="text-muted">Already have an account? <Link to="pages-authentication-login.html" className="text-muted ms-1"><span className="text-info">Sign in</span></Link></p>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const NotFoundError = () =>
             <div className="mb-3 text-danger"><i className="bi-exclamation-triangle fs-xxl" /></div>
             <p className="text-muted mb-4">We couldn’t find this page.</p>
             </div>
-            <div className="mb-0 text-center"> <a href="/" className="text-primary"> <i className="bi-house" /> <span>Back to Dashboard</span></a> </div>
+            <div className="mb-0 text-center"> <Link to="/" className="text-primary"> <i className="bi-house" /> <span>Back to Dashboard</span></Link> </div>
         </div>
         </div>
     </div>

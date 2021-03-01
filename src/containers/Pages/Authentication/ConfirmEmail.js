@@ -17,12 +17,12 @@ const ConfirmEmail = () =>
                     <h4 className="text-dark-50 text-center mt-0 font-weight-bold">Confirm email</h4>
                     <p className="text-muted mb-4">A email has been send to your-email@domain.com.</p>
                 </div>
-                <div className="mb-0 text-center"> <a href="/" className="btn btn-warning text-white px-5"> <i className="fal fa-home-lg-alt"></i> <span>Back to Home Page</span></a> </div>
+                <div className="mb-0 text-center"> <Link to="/" className="btn btn-warning text-white px-5"> <i className="fal fa-home-lg-alt"></i> <span>Back to Home Page</span></Link> </div>
                 </div>
             </div>
             <div className="row mt-3">
                 <div className="col-12 text-center">
-                <p className="text-muted"><a href="pages-authentication-register.html" className="text-muted ms-1"><span className="text-info">Back to Login</span></a></p>
+                <p className="text-muted"><Link to="pages-authentication-register.html" className="text-muted ms-1"><span className="text-info">Back to Login</span></Link></p>
                 </div>
             </div>
             </div>

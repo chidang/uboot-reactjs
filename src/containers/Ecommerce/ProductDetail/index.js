@@ -1,18 +1,18 @@
+import { Link } from "react-router-dom";
 import product from "../../../assets/images/products/product-540x60.jpg";
 
 const ProductDetail = () => {
     return <>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Product Detail</li>
           </ol>
         </nav>
         <div className="d-flex header justify-content-between mb-4">
           <h1 className="header-title h3">
-            <i className="bi-cart3 text-primary" />
-            Product Detail
+            <i className="bi-cart3 text-primary" /> Product Detail
           </h1>
         </div>
         <div className="card p-5">
@@ -24,18 +24,18 @@ const ProductDetail = () => {
               </div>
               {/* begin product-gallery */}
               <div className="product-gallery d-flex justify-content-center">
-                <a href="javascript: void(0);" className="product-gallery-item">
+                <Link to="javascript: void(0);" className="product-gallery-item">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
-                </a>
-                <a href="javascript: void(0);" className="product-gallery-item ms-2">
+                </Link>
+                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
-                </a>
-                <a href="javascript: void(0);" className="product-gallery-item ms-2">
+                </Link>
+                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
-                </a>
-                <a href="javascript: void(0);" className="product-gallery-item ms-2">
+                </Link>
+                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
-                </a>
+                </Link>
               </div>
               {/* end product-gallery */}
             </div>
@@ -117,9 +117,9 @@ const ProductDetail = () => {
               {/* end product-detail */}
               <hr />
               <ul className="product-meta list-unstyled">
-                <li>SKU: <a className="fw-700" href="#">AC31RFT</a></li>
-                <li>Category: <a className="fw-700" href="#">Classic Pullover Hoodie</a></li>
-                <li>Tags: <a href="#" className="badge bg-primary rounded">Cloth</a> <a href="#" className="badge bg-primary rounded">printed</a> <a href="#" className="badge bg-primary rounded">T-shirt</a> </li>
+                <li>SKU: <Link className>="fw-700" href="#">AC31RFT</Link></li>
+                <li>Category: <Link className>="fw-700" href="#">Classic Pullover Hoodie</Link></li>
+                <li>Tags: <Link to="#" className="badge bg-primary rounded">Cloth</Link> <Link to="#" className="badge bg-primary rounded">printed</Link> <Link to="#" className="badge bg-primary rounded">T-shirt</Link> </li>
               </ul>
               <hr />
               <div className="row">
@@ -146,13 +146,13 @@ const ProductDetail = () => {
               <div className="tab-style3">
                 <ul className="nav nav-tabs" role="tablist">
                   <li className="nav-item">
-                    <a className="nav-link" id="Description-tab" data-toggle="tab" href="#Description" role="tab" aria-controls="Description" aria-selected="false">Description</a>
+                    <Link className>="nav-link" id="Description-tab" data-toggle="tab" href="#Description" role="tab" aria-controls="Description" aria-selected="false">Description</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" id="Additional-info-tab" data-toggle="tab" href="#Additional-info" role="tab" aria-controls="Additional-info" aria-selected="false">Additional info</a>
+                    <Link className>="nav-link" id="Additional-info-tab" data-toggle="tab" href="#Additional-info" role="tab" aria-controls="Additional-info" aria-selected="false">Additional info</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" id="Reviews-tab" data-toggle="tab" href="#Reviews" role="tab" aria-controls="Reviews" aria-selected="true">Reviews (2)</a>
+                    <Link className>="nav-link active" id="Reviews-tab" data-toggle="tab" href="#Reviews" role="tab" aria-controls="Reviews" aria-selected="true">Reviews (2)</Link>
                   </li>
                 </ul>
                 <div className="tab-content shop-info-tab">

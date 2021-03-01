@@ -4,7 +4,7 @@ const BasicElements = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Forms</span></li>
         <li className="breadcrumb-item active" aria-current="page">Basic Element</li>
         </ol>
@@ -21,9 +21,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Basic  <span className="fw-300"><i>Inputs</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBasicInput" role="button" aria-expanded="false" aria-controls="cardBasicInput"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBasicInput" role="button" aria-expanded="false" aria-controls="cardBasicInput"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBasicInput" className="card-body show">
@@ -38,7 +38,7 @@ const BasicElements = () =>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="example-input-password">Password</label>
-                    <input type="password" id="example-input-password" className="form-control" defaultValue="password" />
+                    <input type="password" id="example-input-password" className="form-control" placeholder="password" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="example-input-palaceholder">Placeholder</label>
@@ -46,7 +46,7 @@ const BasicElements = () =>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="example-textarea">Text area</label>
-                    <textarea className="form-control" id="example-textarea" rows={3} defaultValue={""} />
+                    <textarea className="form-control" id="example-textarea" rows={3} placeholder={""} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="example-input-helping">Input with helping text</label>
@@ -87,9 +87,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Input  <span className="fw-300"><i>Sizes</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardInputSize" role="button" aria-expanded="false" aria-controls="cardInputSize"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardInputSize" role="button" aria-expanded="false" aria-controls="cardInputSize"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardInputSize" className="card-body show">
@@ -147,9 +147,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Html5 <span className="fw-300"><i>Inputs</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardHtml5Input" role="button" aria-expanded="false" aria-controls="cardHtml5Input"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardHtml5Input" role="button" aria-expanded="false" aria-controls="cardHtml5Input"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardHtml5Input" className="card-body show">
@@ -176,7 +176,7 @@ const BasicElements = () =>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleColorInput" className="form-label">Color picker</label>
-                    <input type="color" className="form-control form-control-color" id="exampleColorInput" defaultValue="#563d7c" title="Choose your color" />
+                    <input type="color" className="form-control form-control-color" id="exampleColorInput" placeholder="#563d7c" title="Choose your color" />
                 </div>
                 </form>
             </div>
@@ -185,9 +185,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Input <span className="fw-300"><i>range</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardInputRange" role="button" aria-expanded="false" aria-controls="cardInputRange"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardInputRange" role="button" aria-expanded="false" aria-controls="cardInputRange"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardInputRange" className="card-body show">

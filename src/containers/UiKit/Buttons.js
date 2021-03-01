@@ -4,7 +4,7 @@ const Buttons = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item"><span>UI Kit</span></li>
             <li className="breadcrumb-item active" aria-current="page">Button</li>
         </ol>
@@ -224,11 +224,11 @@ const Buttons = () =>
                 </div>
                 <div className="card-body">
                     <div className="button-list">
-                        <a href="#" className="btn btn-facebook mb-4"><span className="me-2"><i className="fab fa-facebook-f" /></span> Facebook</a>&nbsp;
-                        <a href="#" className="btn btn-twitter mb-4"><span className="me-2"><i className="fab fa-twitter" /></span> Twitter</a>&nbsp;
-                        <a href="#" className="btn btn-google mb-4"><span className="me-2"><i className="fab fa-google" /></span> Google</a>&nbsp;
-                        <a href="#" className="btn btn-instagram mb-4"><span className="me-2"><i className="fab fa-instagram" /></span> Instagram</a>&nbsp;
-                        <a href="#" className="btn btn-linkedin mb-4"><span className="me-2"><i className="fab fa-linkedin-in" /></span> Linkedin</a>&nbsp;
+                        <Link to="#" className="btn btn-facebook mb-4"><span className="me-2"><i className="fab fa-facebook-f" /></span> Facebook</Link>&nbsp;
+                        <Link to="#" className="btn btn-twitter mb-4"><span className="me-2"><i className="fab fa-twitter" /></span> Twitter</Link>&nbsp;
+                        <Link to="#" className="btn btn-google mb-4"><span className="me-2"><i className="fab fa-google" /></span> Google</Link>&nbsp;
+                        <Link to="#" className="btn btn-instagram mb-4"><span className="me-2"><i className="fab fa-instagram" /></span> Instagram</Link>&nbsp;
+                        <Link to="#" className="btn btn-linkedin mb-4"><span className="me-2"><i className="fab fa-linkedin-in" /></span> Linkedin</Link>&nbsp;
                     </div>
                 </div>
             </div>

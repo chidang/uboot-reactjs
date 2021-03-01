@@ -4,7 +4,7 @@ const BreadCrumbs = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>UI Kit</span></li>
         <li className="breadcrumb-item active" aria-current="page">Breadcrum</li>
         </ol>
@@ -23,16 +23,16 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>Basic</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb1" role="button" aria-expanded="false" aria-controls="cardBreadcrumb1"><i className="dripicons-minus" /></a>
-                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb1" role="button" aria-expanded="false" aria-controls="cardBreadcrumb1"><i className="dripicons-minus" /></Link>
+                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb1" className="card-body show">
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="#">Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">Library</a></li>
+                        <li className="breadcrumb-item"><Link to="#">Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                     </nav>
@@ -44,52 +44,52 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>Outlines</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb2" role="button" aria-expanded="false" aria-controls="cardBreadcrumb2"><i className="dripicons-minus" /></a>
-                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb2" role="button" aria-expanded="false" aria-controls="cardBreadcrumb2"><i className="dripicons-minus" /></Link>
+                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb2" className="card-body show">
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-info">
-                        <li className="breadcrumb-item"><a href="#">
+                        <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
-                            Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
+                            Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">
+                            <i className="bi-book me-1 fs-sm" /> Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-primary">
-                        <li className="breadcrumb-item"><a href="#">
+                        <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
-                            Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
+                            Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">
+                            <i className="bi-book me-1 fs-sm" /> Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-warning">
-                        <li className="breadcrumb-item"><a href="#">
+                        <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
-                            Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
+                            Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">
+                            <i className="bi-book me-1 fs-sm" /> Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb border border-danger">
-                        <li className="breadcrumb-item"><a href="#">
+                        <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
-                            Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
+                            Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">
+                            <i className="bi-book me-1 fs-sm" /> Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>
@@ -104,19 +104,19 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>With Icon</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                    <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb3" role="button" aria-expanded="false" aria-controls="cardBreadcrumb3"><i className="dripicons-minus" /></a>
-                    <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb3" role="button" aria-expanded="false" aria-controls="cardBreadcrumb3"><i className="dripicons-minus" /></Link>
+                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb3" className="card-body show">
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="#">
+                        <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
-                            Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">
-                            <i className="bi-book me-1 fs-sm" /> Library</a></li>
+                            Home</Link></li>
+                        <li className="breadcrumb-item"><Link to="#">
+                            <i className="bi-book me-1 fs-sm" /> Library</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">
                         <span><i className="bi-save fs-sm" /> Data</span></li>
                     </ol>

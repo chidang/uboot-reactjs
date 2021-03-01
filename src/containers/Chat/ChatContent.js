@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avatar from "../../assets/images/avatar.jpg";
 import maleAvatar from "../../assets/images/default-male-avatar.jpg";
 import femaleAvatar from "../../assets/images/default-female-avatar.jpg";
@@ -83,15 +84,15 @@ const ChatContent = () =>  <>
                     <div className="d-flex w-100 align-items-center justify-content-between mt-2">
                         <div className="me-3 fs-lg">
                         <div className="me-3 fs-lg">
-                            <a href="#" className="">
+                            <Link to="#" className="">
                                 <i className="bi-plus-circle"></i>
-                            </a>
-                            <a href="#" className="ms-2">
+                            </Link>
+                            <Link to="#" className="ms-2">
                                 <i className="bi-paperclip"></i>
-                            </a>
-                            <a href="#" className="ms-2">
+                            </Link>
+                            <Link to="#" className="ms-2">
                                 <i className="bi-emoji-smile"></i>
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="chatbox-message-input"><input className="form-control" type="text" placeholder="Type a message..." /></div>
@@ -107,11 +108,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-danger me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>
@@ -120,11 +121,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-danger me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>
@@ -133,11 +134,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-success me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>
@@ -146,11 +147,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-danger me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>
@@ -159,11 +160,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-success me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>
@@ -172,11 +173,11 @@ const ChatContent = () =>  <>
                     </div>
                     <div className="chatbox-friend-list-item align-items-center d-flex flex-row">
                         <div className="my-2">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="user-avatar user-avatar-xs user-avatar-success me-2">
                                     <span className="user-avatar-img rounded-circle" style={{ backgroundImage: "url(" + femaleAvatar + ")", backgroundSize: "cover" }}></span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="ms-1">
                             <h4 className="m-0 fs-base fw-400">Michael Branson</h4>

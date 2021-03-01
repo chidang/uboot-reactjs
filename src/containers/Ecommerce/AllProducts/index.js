@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import product from "../../../assets/images/products/product-80x80.jpg";
 
 const AllProduct = () => {
     return <>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Products</li>
           </ol>
@@ -12,8 +13,7 @@ const AllProduct = () => {
         <div className="row header justify-content-between mb-4">
           <div className="col-12">
             <h1 className="header-title h3">
-              <i className="bi-cart3 text-primary" />
-              Products
+              <i className="bi-cart3 text-primary" /> Products
             </h1>
           </div>
         </div>
@@ -28,9 +28,9 @@ const AllProduct = () => {
                 <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
               </button>
               <ul className="dropdown-menu" style={{}}>
-                <li><a className="dropdown-item" href="#">Delete</a></li>
-                <li><a className="dropdown-item" href="#">Update Statuses</a></li>
-                <li><a className="dropdown-item" href="#">Create Notes</a></li>
+                <li><Link className>="dropdown-item" href="#">Delete</Link></li>
+                <li><Link className>="dropdown-item" href="#">Update Statuses</Link></li>
+                <li><Link className>="dropdown-item" href="#">Create Notes</Link></li>
               </ul>
             </div>
           </div>
@@ -68,11 +68,11 @@ const AllProduct = () => {
                           </label>
                         </td>
                         <td>
-                          <a href="ecommerce-product-detail.html">
+                          <Link to="ecommerce-product-detail.html">
                             <img className="img-thumbnail" alt="Product" src={product} width={48} />
-                          </a>
+                          </Link>
                         </td>
-                        <td><a href="ecommerce-product-detail.html">Blue Dress For Woman</a></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>32</td>
@@ -80,11 +80,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -95,8 +95,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Lether Gray Tuxedo</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Lether Gray Tuxedo</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$25</td>
                         <td>56</td>
@@ -104,11 +104,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -119,8 +119,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Woman Full Sliv Dress</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$21</td>
                         <td>44</td>
@@ -128,11 +128,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -143,8 +143,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Light Blue Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Light Blue Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>44</td>
@@ -152,11 +152,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -167,8 +167,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Blue Dress For Woman</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$26</td>
                         <td>23</td>
@@ -176,11 +176,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -191,8 +191,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Blue Casual Check Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Casual Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>14</td>
@@ -200,11 +200,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -215,8 +215,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">White Black Line Dress</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">White Black Line Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$18</td>
                         <td>19</td>
@@ -224,11 +224,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -239,8 +239,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Men Blue Jins Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$21</td>
                         <td>76</td>
@@ -248,11 +248,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -263,8 +263,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Woman Full Sliv Dress</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
                         <td>Classic Tee</td>
                         <td>$27</td>
                         <td>22</td>
@@ -272,11 +272,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -287,8 +287,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Red &amp; Black Check Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Red &amp; Black Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$16</td>
                         <td>28</td>
@@ -296,11 +296,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -311,8 +311,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Men Blue Jins Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>15</td>
@@ -320,11 +320,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -335,8 +335,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Military And Veterans T-shirts</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Military And Veterans T-shirts</Link></td>
                         <td>Classic Tee</td>
                         <td>$17.99</td>
                         <td>44</td>
@@ -344,11 +344,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -359,8 +359,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Just Eat It! Hamburger</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Just Eat It! Hamburger</Link></td>
                         <td>Classic Tee</td>
                         <td>$18</td>
                         <td>67</td>
@@ -368,11 +368,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -383,8 +383,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">I'm Just Here For The Boos</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">I'm Just Here For The Boos</Link></td>
                         <td>Classic Tee</td>
                         <td>$21</td>
                         <td>16</td>
@@ -392,11 +392,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -407,8 +407,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Patriotic Dog Paw</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Patriotic Dog Paw</Link></td>
                         <td>Classic Tee</td>
                         <td>$22</td>
                         <td>61</td>
@@ -416,11 +416,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -431,8 +431,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">T-Shirt Form Girls</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>39</td>
@@ -440,11 +440,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -455,8 +455,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">T-Shirt Form Girls</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
                         <td>Classic Tee</td>
                         <td>$17</td>
                         <td>23</td>
@@ -464,11 +464,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -479,8 +479,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Blue Dress For Woman</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
                         <td>Classic Tee</td>
                         <td>$18</td>
                         <td>48</td>
@@ -488,11 +488,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -503,8 +503,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Woman Full Sliv Dress</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$21</td>
                         <td>35</td>
@@ -512,11 +512,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -527,8 +527,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Woman Full Sliv Dress</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>9</td>
@@ -536,11 +536,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -551,8 +551,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Blue Casual Check Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Casual Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$24</td>
                         <td>56</td>
@@ -560,11 +560,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -575,8 +575,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Men Blue Jins Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$25</td>
                         <td>16</td>
@@ -584,11 +584,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -599,8 +599,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Blue Dress For Woman</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$23</td>
                         <td>76</td>
@@ -608,11 +608,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -623,8 +623,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">T-Shirt Form Girls</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
                         <td>Pillow</td>
                         <td>$25</td>
                         <td>45</td>
@@ -632,11 +632,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>
@@ -647,8 +647,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><a href="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></a></td>
-                        <td><a href="ecommerce-product-detail.html">Light Blue Shirt</a></td>
+                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="ecommerce-product-detail.html">Light Blue Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$26</td>
                         <td>34</td>
@@ -656,11 +656,11 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><a href="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></a></li>
-                            <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
                         </td>
                       </tr>

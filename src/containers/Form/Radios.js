@@ -4,7 +4,7 @@ const Radios = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Forms</span></li>
         <li className="breadcrumb-item active" aria-current="page">Radio</li>
         </ol>
@@ -21,9 +21,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Bootstrap <span className="fw-300"><i>Radio</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardBoostrapRadio" role="button" aria-expanded="false" aria-controls="cardBoostrapRadio"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBoostrapRadio" role="button" aria-expanded="false" aria-controls="cardBoostrapRadio"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBoostrapRadio" className="card-body show">
@@ -43,15 +43,15 @@ const Radios = () =>
                 <label className="fw-700 text-muted mb-2 mt-2">Inline</label>
                 <br />
                 <div className="form-check form-check-inline">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" defaultValue="option1" />
+                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" placeholder="option1" />
                     <label className="form-check-label" htmlFor="inlineRadio1">1</label>
                 </div>
                 <div className="form-check form-check-inline">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" defaultValue="option2" />
+                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" placeholder="option2" />
                     <label className="form-check-label" htmlFor="inlineRadio2">2</label>
                 </div>
                 <div className="form-check form-check-inline">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" defaultValue="option3" disabled />
+                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" placeholder="option3" disabled />
                     <label className="form-check-label" htmlFor="inlineRadio3">3 (disabled)</label>
                 </div>
                 </form>
@@ -61,9 +61,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Custom <span className="fw-300"><i>Radio</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomRadio" role="button" aria-expanded="false" aria-controls="cardCustomRadio"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomRadio" role="button" aria-expanded="false" aria-controls="cardCustomRadio"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCustomRadio" className="card-body show">
@@ -130,9 +130,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Horizontal <span className="fw-300"><i>Form</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardHorizontalForm" role="button" aria-expanded="false" aria-controls="cardHorizontalForm"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardHorizontalForm" role="button" aria-expanded="false" aria-controls="cardHorizontalForm"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardHorizontalForm" className="card-body show">
@@ -207,9 +207,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Color <span className="fw-300"><i>Options</i></span></h4>
                 <div className="card-widgets">
-                <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-                <a className="btn btn-warning" data-toggle="collapse" data-target="#cardColorOptionRadio" role="button" aria-expanded="false" aria-controls="cardColorOptionRadio"><i className="dripicons-minus" /></a>
-                <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardColorOptionRadio" role="button" aria-expanded="false" aria-controls="cardColorOptionRadio"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardColorOptionRadio" className="card-body show">

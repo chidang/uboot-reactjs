@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avatar from "../../assets/images/avatar.jpg";
 import maleAvatar from "../../assets/images/default-male-avatar.jpg";
 import PerfectScrollbar from 'react-perfect-scrollbar';
@@ -6,7 +7,7 @@ const ChatLeft = () =>  <>
     <div className="card">
         <div className="card-body">
             <div className="dropdown float-right">
-                <div className="dropdown-menu dropdown-menu-right"><a className="dropdown-item">View full</a> <a className="dropdown-item">Edit Contact Info</a> <a className="dropdown-item">Remove</a></div>
+                <div className="dropdown-menu dropdown-menu-right"><Link className>="dropdown-item">View full</Link> <Link className>="dropdown-item">Edit Contact Info</Link> <Link className>="dropdown-item">Remove</Link></div>
             </div>
             <div className="mt-3 text-center">
                 <span className="user-avatar user-avatar-lg user-avatar-success me-3">
@@ -16,19 +17,19 @@ const ChatLeft = () =>  <>
                 <h4>Jack Godfrey</h4>
                 <ul className="d-flex justify-content-evenly list-unstyled mt-3 fs-lg">
                     <li>
-                    <a href="#">
+                    <Link to="#">
                         <i className="bi-chat-dots" data-original-title="Chat History" data-toggle="tooltip"></i>
-                    </a>
+                    </Link>
                     </li>
                     <li>
-                    <a href="#">
+                    <Link to="#">
                         <i className="bi-person-plus" data-original-title="Add friend" data-toggle="tooltip"></i>
-                    </a>
+                    </Link>
                     </li>
                     <li>
-                    <a href="#">
+                    <Link to="#">
                         <i className="bi-people" data-original-title="Create Group" data-toggle="tooltip"></i>
-                    </a>
+                    </Link>
                     </li>
                 </ul>
             </div>

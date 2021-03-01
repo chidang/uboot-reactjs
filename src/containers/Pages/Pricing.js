@@ -4,7 +4,7 @@ const Pricing = () =>
 <>
 <nav aria-label="breadcrumb">
     <ol className="breadcrumb ps-0 fs-base">
-      <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+      <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
       <li className="breadcrumb-item"><span>Page</span></li>
       <li className="breadcrumb-item active" aria-current="page">Pricing</li>
     </ol>
@@ -23,9 +23,9 @@ const Pricing = () =>
             Default Pricing
           </h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase0" className="card-body show">
@@ -53,9 +53,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-4 border-0">
-                    <a href="#pablo" className="btn btn-success text-white">
+                    <Link to="#pablo" className="btn btn-success text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -81,9 +81,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-5 border-0">
-                    <a href="#pablo" className="btn btn-rose text-white">
+                    <Link to="#pablo" className="btn btn-rose text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -109,9 +109,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-4 border-0">
-                    <a href="#pablo" className="btn btn-warning text-white">
+                    <Link to="#pablo" className="btn btn-warning text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -128,9 +128,9 @@ const Pricing = () =>
         <div className="card-header justify-content-between">
           <h4 className="fw-700 m-0 fs-base">Stacked Pricing</h4>
           <div className="card-widgets">
-            <a className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></a>
-            <a className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></a>
-            <a className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></a>
+            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
+            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase1" className="card-body show">
@@ -158,9 +158,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-4 border-0">
-                    <a href="#pablo" className="btn btn-success text-white">
+                    <Link to="#pablo" className="btn btn-success text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -186,9 +186,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-5 border-0">
-                    <a href="#pablo" className="btn btn-rose text-white">
+                    <Link to="#pablo" className="btn btn-rose text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -214,9 +214,9 @@ const Pricing = () =>
                     </div>
                   </div>
                   <div className="card-footer justify-content-center mt-4 border-0">
-                    <a href="#pablo" className="btn btn-warning text-white">
+                    <Link to="#pablo" className="btn btn-warning text-white">
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

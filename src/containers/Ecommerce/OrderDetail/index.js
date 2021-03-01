@@ -1,16 +1,48 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Select from 'react-select';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+
 const OrderDetail = () => {
+    const [statusOption, setStatusOption] = useState( { value: '1', label: 'Pending Payment' });
+    const [selectedCustomer, selectCustomer] = useState( { value: '1', label: 'Zoe Tamayo' });
+    const [selectedOrderAction, selectOrderAction] = useState( { value: '1', label: 'Email invoice / order details to customer' });
+    const [selectedNoteType, selectNoteType] = useState( { value: '1', label: 'Private note' });
+
+    const statusOptions = [
+      { value: '1', label: 'Pending Payment' },
+      { value: '2', label: 'Processing' },
+      { value: '3', label: 'On Hold' },
+      { value: '4', label: 'Cancelled' },
+      { value: '5', label: 'Refunded' },
+      { value: '6', label: 'Failed' }
+    ];
+    const customers = [
+      { value: '1', label: 'Zoe Tamayo' },
+      { value: '2', label: 'Paul G Conger' },
+      { value: '3', label: 'Chery R Nicholes' }
+    ];
+    const orderActions = [
+      { value: '1', label: 'Email invoice / order details to customer' },
+      { value: '2', label: 'Resend new order notification' },
+      { value: '3', label: 'Regenerate download permissions' }
+    ];
+    const noteTypes = [
+      { value: '1', label: 'Private note' },
+      { value: '2', label: 'Note to customer' }
+    ];
+
     return <>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Order Detail</li>
           </ol>
         </nav>
         <div className="d-flex header justify-content-between mb-4">
           <h1 className="header-title h3">
-            <i className="bi-cart3 text-primary" />
-            Order Detail
+            <i className="bi-cart3 text-primary" /> Order Detail
           </h1>
           <div className="header-right d-none d-md-block">
             <button className="btn btn-primary" type="button"><i className="bi-plus-circle" /> <span className="d-none d-md-inline">Add Order</span></button>
@@ -37,34 +69,27 @@ const OrderDetail = () => {
                             <span className="mx-2">@</span>
                             <input type="text" className="hour form-control me-2" style={{flex: '0 0 60px'}} placeholder="h" name="order-date-hour" min={0} max={23} step={1} pattern="([01]?[0-9]{1}|2[0-3]{1})" />
                             <span className="me-2">:</span>
-                            <input type="text" className="minute form-control" style={{flex: '0 0 60px'}} placeholder="m" name="order-date-minute" min={0} max={59} step={1} defaultValue={27} pattern="[0-5]{1}[0-9]{1}" />
+                            <input type="text" className="minute form-control" style={{flex: '0 0 60px'}} placeholder="m" name="order-date-minute" min={0} max={59} step={1} placeholder={27} pattern="[0-5]{1}[0-9]{1}" />
                           </div>
                         </div>
                       </div>
                       {/* end form-field */}
                       <div className="form-field mb-3">
                         <label htmlFor="order-status">Status:</label>
-                        <select className="select2" id="order-status" name="order-status" data-placeholder="Please select status">
-                          <option />
-                          <option value={1}>Completed</option>
-                          <option value={2}>Pending Payment</option>
-                          <option value={3}>Processing</option>
-                          <option value={4}>On Hold</option>
-                          <option value={5}>Cancelled</option>
-                          <option value={6}>Refunded</option>
-                          <option value={6}>Failed</option>
-                        </select>
+                        <Select
+                          value={statusOption}
+                          options={statusOptions}
+                          onChange={setStatusOption}
+                        />                        
                       </div>
                       {/* end form-field */}
                       <div className="form-field mb-3">
                         <label htmlFor="customer">Customer:</label>
-                        <select className="select2" id="customer" name="customer" data-placeholder="Please select customer">
-                          <option />
-                          <option value={1}>Megan Harrison</option>
-                          <option value={2}>Zoe Tamayo</option>
-                          <option value={3}>Paul G Conger</option>
-                          <option value={4}>Chery R Nicholes</option>
-                        </select>
+                        <Select
+                          value={selectedCustomer}
+                          options={customers}
+                          onChange={selectCustomer}
+                        />
                       </div>
                       {/* end form-field */}
                     </form>
@@ -79,10 +104,10 @@ const OrderDetail = () => {
                       United Kingdom (UK)
                     </address>
                     <div className="mb-3"><span className="fw-700 d-block">Email address:</span>
-                      <a href="mailto:support@techprod.com">support@techprod.com</a>
+                      <Link to="mailto:support@techprod.com">support@techprod.com</Link>
                     </div>
                     <div><span className="fw-700 d-block">Phone:</span>
-                      <a href="tel:04598xxx">04598xxx</a>
+                      <Link to="tel:04598xxx">04598xxx</Link>
                     </div>
                   </div>
                   {/* end order-data-column */}
@@ -155,7 +180,7 @@ const OrderDetail = () => {
                 </div>
                 {/* end row */}
                 <div className="row">
-                  <div className="col-4 ms-auto">
+                  <div className="col-6 ms-auto">
                     <div className="table-responsive">
                       <table className="table table-borderless text-right">
                         <tbody>
@@ -179,7 +204,7 @@ const OrderDetail = () => {
                       </table>
                     </div>
                     {/* end table-responsive */}
-                    <p className>September 14, 2020 via Cash on delivery </p>
+                    <p>September 14, 2020 via Cash on delivery </p>
                   </div>
                 </div>
                 {/* end row */}
@@ -187,9 +212,19 @@ const OrderDetail = () => {
               {/* end card-body order-item */}
               <div className="card-footer justify-content-between">
                 <button type="button" className="btn btn-outline-highlight my-2">Refund</button>
-                <span><a href="#">
-                    <i className="fal fa-question-circle" data-original-title="To edit this order change the status back to 'Pending'" data-toggle="tooltip" />
-                  </a> This order is no longer editable.</span>
+                <OverlayTrigger
+                  placement="top"
+                  overlay={
+                    <Tooltip>
+                      To edit this order change the status back to 'Pending'
+                    </Tooltip>
+                  }
+                >
+                    <Link to="#">
+                      <i className="bi-question-circle me-1" />
+                      This order is no longer editable.
+                    </Link>
+                  </OverlayTrigger>
               </div>
             </div>
             {/* end card order-item */}
@@ -204,14 +239,14 @@ const OrderDetail = () => {
               </div>
               {/* end card-header */}
               <div className="card-body">
-                <div className="d-flex">
-                  <select className="form-select me-1" name="order-actions">
-                    <option value>Choose an action...</option>
-                    <option value="send_order_details">Email invoice / order details to customer</option>
-                    <option value="send_order_details_admin">Resend new order notification</option>
-                    <option value="regenerate_download_permissions">Regenerate download permissions</option>
-                  </select>
-                  <button type="button" className="btn btn-sm btn-icon btn-circle btn-primary mb-4">
+                <div className="d-flex align-items-center">
+                  <Select
+                    className="flex-fill me-2"
+                    value={selectedOrderAction}
+                    options={orderActions}
+                    onChange={selectOrderAction}
+                  />
+                  <button type="button" className="btn btn-sm btn-icon btn-circle btn-primary">
                     <i className="bi-chevron-right" />
                   </button>
                 </div>
@@ -219,9 +254,9 @@ const OrderDetail = () => {
               {/* end card-body */}
               <div className="card-footer justify-content-between">
                 <button type="button" className="btn btn-primary"><i className="bi-save" /> Update</button>
-                <a href="#" className="text-danger">
+                <Link to="#" className="text-danger">
                   Move to Trash
-                </a>
+                </Link>
               </div>
               {/* end card-footer */}
             </div>
@@ -234,74 +269,87 @@ const OrderDetail = () => {
               </div>
               {/* end card-header */}
               <div className="card-body">
-              <ul class="widget-order-notes">
-                <li class="note">
-                    <div class="note-content alert alert-secondary">
+              <ul className="widget-order-notes">
+                <li className="note">
+                    <div className="note-content alert alert-secondary">
                     Stock levels reduced: Cats Kitty Tats Tattoos (AC31RFT) 444→443
                     </div>
-                    <p class="meta fs-sm">
-                    <abbr class="exact-date" title="2020-09-14 03:28:20">
+                    <p className="meta fs-sm">
+                    <abbr className="exact-date" title="2020-09-14 03:28:20">
                         September 14, 2020 at 3:28 am </abbr>
-                    by Admin <a href="#" class="delete-note text-danger" role="button">Delete note</a>
+                    by Admin <Link to="#" className="delete-note text-danger" role="button">Delete note</Link>
                     </p>
                 </li>
-                <li class="note">
-                    <div class="note-content alert alert-success">
+                <li className="note">
+                    <div className="note-content alert alert-success">
                     Order status changed from Processing to Completed.
                     </div>
-                    <p class="meta fs-sm">
-                    <abbr class="exact-date" title="2020-09-14 03:28:20">
+                    <p className="meta fs-sm">
+                    <abbr className="exact-date" title="2020-09-14 03:28:20">
                         September 14, 2020 at 3:28 am </abbr>
-                    by Admin <a href="#" class="delete-note text-danger" role="button">Delete note</a>
+                    by Admin <Link to="#" className="delete-note text-danger" role="button">Delete note</Link>
                     </p>
                 </li>
-                <li class="note">
-                    <div class="note-content alert alert-warning">
+                <li className="note">
+                    <div className="note-content alert alert-warning">
                     Payment to be made upon delivery. Order status changed from Pending payment to Processing.
                     </div>
-                    <p class="meta fs-sm">
-                    <abbr class="exact-date" title="2020-09-14 03:28:20">
+                    <p className="meta fs-sm">
+                    <abbr className="exact-date" title="2020-09-14 03:28:20">
                         September 14, 2020 at 3:28 am </abbr>
-                    by Admin <a href="#" class="delete-note text-danger" role="button">Delete note</a>
+                    by Admin <Link to="#" className="delete-note text-danger" role="button">Delete note</Link>
                     </p>
                 </li>
-                <li class="note">
-                    <div class="note-content alert alert-info">
+                <li className="note">
+                    <div className="note-content alert alert-info">
                     Stock levels reduced: Cats Kitty Tats Tattoos (AC31RFT) 444→443
                     </div>
-                    <p class="meta fs-sm">
-                    <abbr class="exact-date" title="2020-09-14 03:28:20">
+                    <p className="meta fs-sm">
+                    <abbr className="exact-date" title="2020-09-14 03:28:20">
                         September 14, 2020 at 3:28 am </abbr>
-                    by Admin <a href="#" class="delete-note text-danger" role="button">Delete note</a>
+                    by Admin <Link to="#" className="delete-note text-danger" role="button">Delete note</Link>
                     </p>
                 </li>
-                <li class="note">
-                    <div class="note-content alert alert-danger">
+                <li className="note">
+                    <div className="note-content alert alert-danger">
                     Stock levels reduced: Cats Kitty Tats Tattoos (AC31RFT) 444→443
                     </div>
-                    <p class="meta fs-sm">
-                    <abbr class="exact-date" title="2020-09-14 03:28:20">
+                    <p className="meta fs-sm">
+                    <abbr className="exact-date" title="2020-09-14 03:28:20">
                         September 14, 2020 at 3:28 am </abbr>
-                    by Admin <a href="#" class="delete-note text-danger" role="button">Delete note</a>
+                    by Admin <Link to="#" className="delete-note text-danger" role="button">Delete note</Link>
                     </p>
                 </li>
                 </ul>
               </div>
               <hr />
               <div className="p-4">
-                <form className>
+                <form>
                   <div className="mb-3">
-                    <label htmlFor="note-description">Add note <a className="ms-1" href="#">
-                        <i className="fal fa-question-circle" data-original-title="Add a note for your reference, or add a customer note (the user will be notified)." data-toggle="tooltip" />
-                      </a></label>
-                    <textarea className="form-control" id="note-description" rows={3} defaultValue={""} />
+                    <OverlayTrigger
+                      placement="top"
+                      overlay={
+                        <Tooltip id={`tooltip-1`}>
+                          Add a note for your reference, or add a customer note (the user will be notified).
+                        </Tooltip>
+                      }
+                    >
+                      <Link to="#">
+                        
+                        Add note
+                        <i className="bi-question-circle ms-1" />
+                      </Link>
+                    </OverlayTrigger>  
+                    <textarea className="form-control" id="note-description" rows={3} placeholder={""} />
                   </div>
-                  <div className="d-flex">
-                    <select className="form-select me-1" name="order-actions">
-                      <option value="private-note">Private note</option>
-                      <option value="customer-note">Note to customer</option>
-                    </select>
-                    <button type="button" className="btn btn-sm btn-primary mb-4">
+                  <div className="d-flex align-items-center">
+                    <Select
+                      className="flex-fill me-2"
+                      value={selectedNoteType}
+                      options={noteTypes}
+                      onChange={selectNoteType}
+                    />
+                    <button type="button" className="btn btn-sm btn-primary">
                       Add
                     </button>
                   </div>
