@@ -13,7 +13,7 @@ const ConfirmEmail = () =>
             <div className="card shadow-sm rounded-0">
                 <div className="card-body p-4">
                 <div className="text-center w-75 m-auto">
-                    <div className="mb-3 text-info"><i className="fal fa-envelope-open-text fs-xxl"></i></div>
+                    <div className="mb-3 text-info"><i className="dripicons-mail fs-xxl"></i></div>
                     <h4 className="text-dark-50 text-center mt-0 font-weight-bold">Confirm email</h4>
                     <p className="text-muted mb-4">A email has been send to your-email@domain.com.</p>
                 </div>
@@ -22,7 +22,7 @@ const ConfirmEmail = () =>
             </div>
             <div className="row mt-3">
                 <div className="col-12 text-center">
-                <p className="text-muted"><Link to="pages-authentication-register.html" className="text-muted ms-1"><span className="text-info">Back to Login</span></Link></p>
+                <p className="text-muted"><Link to="/auth/login" className="text-muted ms-1"><span className="text-info">Back to Login</span></Link></p>
                 </div>
             </div>
             </div>

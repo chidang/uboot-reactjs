@@ -62,7 +62,7 @@ const Analytics = () => {
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Sessions by device</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
@@ -124,7 +124,7 @@ const Analytics = () => {
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">How do you acquire users?</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
@@ -249,7 +249,7 @@ const Analytics = () => {
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Events</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>

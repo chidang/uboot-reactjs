@@ -19,7 +19,7 @@ const ecommerceRoutes = {
     children: [
       {
         path: "/ecommerce/add-product",
-        name: "AddProduct",
+        name: "Add Product",
         component: AsyncEcommerceAddProduct
       },
       {
@@ -39,7 +39,7 @@ const ecommerceRoutes = {
       },
       {
         path: "/ecommerce/order-detail",
-        name: "OrderDetail",
+        name: "Order Detail",
         component: AsyncEcommerceOrderDetail
       },
       {
@@ -49,12 +49,12 @@ const ecommerceRoutes = {
       },
       {
         path: "/ecommerce/product-detail",
-        name: "ProductDetail",
+        name: "Product Detail",
         component: AsyncEcommerceProductDetail
       },
       {
         path: "/ecommerce/shopping-cart",
-        name: "ShoppingCart",
+        name: "Shopping Cart",
         component: AsyncEcommerceShoppingCart
       },
     ]

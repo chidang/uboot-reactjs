@@ -16,7 +16,7 @@ const Orders = () => {
             </h1>
           </div>
           <div className="col-xl-7 col-lg-12">
-            <div className="header-right float-xl-right float-left mt-3 mt-xl-0">
+            <div className="header-right float-xl-right float-start mt-3 mt-xl-0">
               <form>
                 <div className="input-group">
                   <input type="text" className="form-control" placeholder="Search others" aria-label="Recipient's username with two button addons" />

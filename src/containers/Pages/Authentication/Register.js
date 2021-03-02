@@ -19,25 +19,25 @@ const Register = () =>
                         <form >
                             <div className="row mb-3">
                                 <div className="col-md-6">
-                                    <label for="first-name">First name</label>
+                                    <label htmlFor="first-name">First name</label>
                                     <input type="text" id="first-name" className="form-control" required />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="last-name">Last name</label>
+                                    <label htmlFor="last-name">Last name</label>
                                     <input type="text" id="last-name" className="form-control" required />
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                                 <input type="email" id="email" className="form-control" required />
                             </div>
                             <div className="mb-3">
-                                <label for="password">Password</label>
+                                <label htmlFor="password">Password</label>
                                 <input type="password" id="password" className="form-control" required />
                             </div>
                             <div className="mb-3">
                                 <label className="custom-checkbox">
-                                <input type="checkbox" id="term-and-conditions" /> I agree to <Link className>="text-info" href="#">terms & conditions</Link>
+                                <input type="checkbox" id="term-and-conditions" /> I agree to <Link className="text-info" to="#">terms & conditions</Link>
                                 <span></span>
                                 </label>
                             </div>
@@ -64,7 +64,7 @@ const Register = () =>
                 </div>
                 <div className="row my-3">
                     <div className="col-12 text-center">
-                        <p className="text-muted">Already have an account? <Link to="pages-authentication-login.html" className="text-muted ms-1"><span className="text-info">Sign in</span></Link></p>
+                        <p className="text-muted">Already have an account? <Link to="/auth/login" className="text-muted ms-1"><span className="text-info">Sign in</span></Link></p>
                     </div>
                 </div>
             </div>

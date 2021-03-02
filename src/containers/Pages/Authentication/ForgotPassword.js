@@ -29,7 +29,7 @@ const FogotPassword = () =>
                 </div>
                 <div className="row mt-3">
                     <div className="col-12 text-center">
-                        <p className="text-muted"><Link to="pages-authentication-login.html" className="text-muted ms-1"><span className="text-info">Back to Login</span></Link></p>
+                        <p className="text-muted"><Link to="/auth/login" className="text-muted ms-1"><span className="text-info">Back to Login</span></Link></p>
                     </div>
                 </div>
             </div>

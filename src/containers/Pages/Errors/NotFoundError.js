@@ -4,8 +4,7 @@ const NotFoundError = () =>
 <>
     <div className="d-flex header justify-content-between mb-2">
         <h1 className="header-title h3">
-        <i className="bi-exclamation-triangle text-primary" />
-        Page Not Found
+        <i className="bi-exclamation-triangle text-primary" /> Page Not Found
         </h1>
     </div>
     <div className="container">

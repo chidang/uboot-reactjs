@@ -4,11 +4,10 @@ import Select from 'react-select';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 const OrderDetail = () => {
-    const [statusOption, setStatusOption] = useState( { value: '1', label: 'Pending Payment' });
-    const [selectedCustomer, selectCustomer] = useState( { value: '1', label: 'Zoe Tamayo' });
-    const [selectedOrderAction, selectOrderAction] = useState( { value: '1', label: 'Email invoice / order details to customer' });
-    const [selectedNoteType, selectNoteType] = useState( { value: '1', label: 'Private note' });
-
+    const [statusOption, setStatusOption] = useState({ value: '1', label: 'Pending Payment' });
+    const [selectedCustomer, selectCustomer] = useState({ value: '1', label: 'Zoe Tamayo' });
+    const [selectedOrderAction, selectOrderAction] = useState({ value: '1', label: 'Email invoice / order details to customer' });
+    const [selectedNoteType, selectNoteType] = useState({ value: '1', label: 'Private note' });
     const statusOptions = [
       { value: '1', label: 'Pending Payment' },
       { value: '2', label: 'Processing' },
@@ -152,26 +151,26 @@ const OrderDetail = () => {
                         <tr>
                           <th className="text-center border-top-0 table-scale-border-bottom fw-700" />
                           <th className="border-top-0 table-scale-border-bottom fw-700">Item</th>
-                          <th className="text-right border-top-0 table-scale-border-bottom fw-700">Cost</th>
+                          <th className="text-end border-top-0 table-scale-border-bottom fw-700">Cost</th>
                           <th className="text-center border-top-0 table-scale-border-bottom fw-700">Qty</th>
-                          <th className="text-right border-top-0 table-scale-border-bottom fw-700">Total</th>
+                          <th className="text-end border-top-0 table-scale-border-bottom fw-700">Total</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td className="text-center fw-700">1</td>
-                          <td className="text-left strong">Apple Magic Keyboard (Wireless, Rechargable) (US English) - Silver</td>
-                          <td className="text-right">$94.00</td>
+                          <td className="text-start strong">Apple Magic Keyboard (Wireless, Rechargable) (US English) - Silver</td>
+                          <td className="text-end">$94.00</td>
                           <td className="text-center">1</td>
-                          <td className="text-right">$94.00</td>
+                          <td className="text-end">$94.00</td>
                         </tr>
                         <tr>
                           <td className="text-center fw-700">2</td>
-                          <td className="text-left">
+                          <td className="text-start">
                             Apple Magic Mouse 2 (Wireless, Rechargable) - Silver</td>
-                          <td className="text-right">$74.00</td>
+                          <td className="text-end">$74.00</td>
                           <td className="text-center">1</td>
-                          <td className="text-right">$74.00</td>
+                          <td className="text-end">$74.00</td>
                         </tr>
                       </tbody>
                     </table>
@@ -182,7 +181,7 @@ const OrderDetail = () => {
                 <div className="row">
                   <div className="col-6 ms-auto">
                     <div className="table-responsive">
-                      <table className="table table-borderless text-right">
+                      <table className="table table-borderless text-end">
                         <tbody>
                           <tr>
                             <th style={{width: '50%'}}>Subtotal:</th>
@@ -204,7 +203,7 @@ const OrderDetail = () => {
                       </table>
                     </div>
                     {/* end table-responsive */}
-                    <p>September 14, 2020 via Cash on delivery </p>
+                    <p className="text-end">September 14, 2020 via Cash on delivery </p>
                   </div>
                 </div>
                 {/* end row */}

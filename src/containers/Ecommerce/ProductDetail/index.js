@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import product from "../../../assets/images/products/product-540x60.jpg";
+import { Tabs, Tab } from "react-bootstrap";
+import AdditionalInfoTab from './AdditionalInfoTab';
+import DescriptionTab from './DescriptionTab';
+import ReviewsTab from './ReviewsTab';
 
 const ProductDetail = () => {
     return <>
@@ -65,7 +69,7 @@ const ProductDetail = () => {
                 </div>
                 <div className="product-sort-info">
                   <ul className="list-unstyled">
-                    <li><i className="fal fa-shield-check text-primary" /> If you're not 100% satisfied with your physical order, let us know and we'll make it right.</li>
+                    <li><i className="bi-shield-check text-primary" /> If you're not 100% satisfied with your physical order, let us know and we'll make it right.</li>
                     <li><i className="bi-arrow-repeat text-primary" /> 30 Day Return Policy</li>
                     <li><i className="bi-cash text-primary" /> Cash on Delivery available</li>
                   </ul>
@@ -117,8 +121,8 @@ const ProductDetail = () => {
               {/* end product-detail */}
               <hr />
               <ul className="product-meta list-unstyled">
-                <li>SKU: <Link className>="fw-700" href="#">AC31RFT</Link></li>
-                <li>Category: <Link className>="fw-700" href="#">Classic Pullover Hoodie</Link></li>
+                <li>SKU: <Link className="fw-700" to="#">AC31RFT</Link></li>
+                <li>Category: <Link className="fw-700" to="#">Classic Pullover Hoodie</Link></li>
                 <li>Tags: <Link to="#" className="badge bg-primary rounded">Cloth</Link> <Link to="#" className="badge bg-primary rounded">printed</Link> <Link to="#" className="badge bg-primary rounded">T-shirt</Link> </li>
               </ul>
               <hr />
@@ -143,92 +147,17 @@ const ProductDetail = () => {
           {/* end row */}
           <div className="row">
             <div className="col-12">
-              <div className="tab-style3">
-                <ul className="nav nav-tabs" role="tablist">
-                  <li className="nav-item">
-                    <Link className>="nav-link" id="Description-tab" data-toggle="tab" href="#Description" role="tab" aria-controls="Description" aria-selected="false">Description</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className>="nav-link" id="Additional-info-tab" data-toggle="tab" href="#Additional-info" role="tab" aria-controls="Additional-info" aria-selected="false">Additional info</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className>="nav-link active" id="Reviews-tab" data-toggle="tab" href="#Reviews" role="tab" aria-controls="Reviews" aria-selected="true">Reviews (2)</Link>
-                  </li>
-                </ul>
-                <div className="tab-content shop-info-tab">
-                  <div className="tab-pane fade" id="Description" role="tabpanel" aria-labelledby="Description-tab">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis enim volutpat, interdum odio vel, sagittis massa. Phasellus id turpis leo. Aenean pretium non massa a ultricies. Integer quis nulla quis nulla mollis vestibulum. Nullam erat nulla, elementum placerat augue in, ultrices aliquet tellus. Mauris suscipit orci at mauris consequat, vel posuere nibh vestibulum. Vestibulum sit amet turpis dolor. Praesent commodo nibh sed mi facilisis, vitae auctor felis semper. Suspendisse potenti. Aenean tempor, quam sit amet hendrerit euismod, enim tellus aliquam dolor, quis tristique tortor ex eu leo. Duis ligula eros, maximus non mattis sed, vehicula feugiat urna. Ut faucibus hendrerit eleifend. Aenean ipsum velit, mollis sit amet felis ut, interdum luctus nibh.</p>
-                    <p>Nam placerat justo vitae porttitor euismod. Nullam sit amet enim id elit varius vestibulum ac ac tortor. Nunc non tortor vitae nulla laoreet finibus. Curabitur at sagittis neque. Sed rutrum ante sem. Praesent mattis justo quis congue convallis. In at molestie odio, a porttitor ipsum. Duis elementum, augue vitae semper mollis, nunc ex vulputate diam, et luctus diam urna ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra tortor eget sem vehicula, a mollis dui molestie. Suspendisse sagittis lectus in velit tristique, vel luctus odio ornare. Ut dui lorem, hendrerit sed aliquet non, eleifend eu ex. Mauris vel purus vulputate, consequat velit non, tempus enim. Mauris nibh nunc, consequat vulputate massa non, vehicula imperdiet leo. Quisque gravida justo a enim blandit, in egestas velit varius.</p>
-                  </div>
-                  <div className="tab-pane fade" id="Additional-info" role="tabpanel" aria-labelledby="Additional-info-tab">
-                    <table className="table table-bordered">
-                      <tbody>
-                        <tr>
-                          <td>Capacity</td>
-                          <td>0.2 Kg</td>
-                        </tr>
-                        <tr>
-                          <td>Color</td>
-                          <td>Black, Brown, Red,</td>
-                        </tr>
-                        <tr>
-                          <td>Water Resistant</td>
-                          <td>Yes</td>
-                        </tr>
-                        <tr>
-                          <td>Material</td>
-                          <td>Heathered, poly/cotton/rayon blend</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="tab-pane fade active show" id="Reviews" role="tabpanel" aria-labelledby="Reviews-tab">
-                    <div className="comments">
-                      <h4 className="product-tab-title">2 Review For <span>T-Shirt Form Girls</span></h4>
-                      <ul className="list-none comment-list mt-4">
-                        <li className="d-flex flex-row">
-                          <div className="comment-img me-3">
-                            <img src="assets/images/avatar.jpg" style={{height: '60px'}} alt="User" className="rounded" />
-                          </div>
-                          <div className="comment-block">
-                            <div className="rating-wrap float-right">
-                              <div className="rating">
-                                <div className="product-rate" style={{width: '80%'}} />
-                              </div>
-                            </div>
-                            <div className="customer-meta">
-                              <span className="review-author fw-700 d-block">Schirsten Vander</span>
-                              <span className="comment-date"><i>March 5, 2020</i></span>
-                            </div>
-                            <div className="description">
-                              <p>Duis interdum gravida erat eu congue. Aenean malesuada sapien risus, sed lacinia dui sodales venenatis. Sed vitae felis vitae dolor consequat semper. Vestibulum hendrerit nulla justo, et hendrerit nibh accumsan et. Sed faucibus erat id eleifend accumsan.</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="d-flex flex-row">
-                          <div className="comment-img me-3">
-                            <img src="assets/images/default-female-avatar.jpg" style={{height: '60px'}} alt="" className="rounded" />
-                          </div>
-                          <div className="comment-block">
-                            <div className="rating-wrap float-right">
-                              <div className="rating">
-                                <div className="product-rate" style={{width: '60%'}} />
-                              </div>
-                            </div>
-                            <div className="customer-meta">
-                              <span className="review-author fw-700 d-block">Robert Nordic</span>
-                              <span className="comment-date"><i>Apr 5, 2020</i></span>
-                            </div>
-                            <div className="description">
-                              <p>Praesent tristique ex sit amet ante sodales, vel dignissim nisl laoreet. Nunc sit amet orci dolor. Duis sit amet porttitor diam. Sed nisi sapien, lobortis eget lacus vitae, tincidunt dapibus mauris.</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <Tabs defaultActiveKey="description">
+              <Tab eventKey="description" title="Description">
+                <DescriptionTab />
+              </Tab>
+              <Tab eventKey="additional_info" title="Additional info">
+                <AdditionalInfoTab />
+              </Tab>
+              <Tab eventKey="reviews" title="Reviews (2)">
+                <ReviewsTab />
+              </Tab>
+            </Tabs>
             </div>
             {/* end col */}
           </div>

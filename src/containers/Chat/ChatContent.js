@@ -21,15 +21,15 @@ const ChatContent = () =>  <>
                     <div className="chatbox-body custom-scroll p-3">
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 py-2 text-left mw-75">Hi</div>
+                            <div className="widget-chat-message-left ms-2 px-3 py-2 text-start mw-75">Hi</div>
                         </div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 py-2 text-left d-inline-block">Hi</div>
+                            <div className="widget-chat-message-right me-2 px-3 py-2 text-start d-inline-block">Hi</div>
                             <img className="rounded-circle" style={{height: "30px"}} src={maleAvatar} alt="User" />
                         </div>
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-left">
+                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-start">
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Consectetur adipiscing elit.</p>
                                 <p>Mauris condimentum, nulla ut vulputate sodales</p>
@@ -37,7 +37,7 @@ const ChatContent = () =>  <>
                         </div>
                         <div className="fw-600 fs-sm text-center my-3 py-2">Aug 14, 2020, 4:24 PM</div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 p-2 text-left d-inline-block">
+                            <div className="widget-chat-message-right me-2 px-3 p-2 text-start d-inline-block">
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Consectetur adipiscing elit.</p>
                                 <p>Mauris condimentum, nulla ut vulputate sodales</p>
@@ -46,36 +46,36 @@ const ChatContent = () =>  <>
                         </div>
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                         </div>
                         <div className="fw-600 fs-sm text-center my-3 py-2">Aug 15, 2020, 4:24 PM</div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 p-2 text-left d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-right me-2 px-3 p-2 text-start d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                             <img className="rounded-circle" style={{height: "30px"}} src={maleAvatar} alt="User" />
                         </div>
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                         </div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 p-2 text-left d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-right me-2 px-3 p-2 text-start d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                             <img className="rounded-circle" style={{height: "30px"}} src={maleAvatar} alt="User" />
                         </div>
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                         </div>
                         <div className="fw-600 fs-sm text-center my-3 py-2">Aug 16, 2020, 4:24 PM</div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 p-2 text-left d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-right me-2 px-3 p-2 text-start d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                             <img className="rounded-circle" style={{height: "30px"}} src={maleAvatar} alt="User" />
                         </div>
                         <div className="d-flex mt-3 d-inline-block">
                             <img className="rounded-circle" style={{height: "30px"}} src={avatar} alt="User" />
-                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-left ms-2 px-3 p-2 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                         </div>
                         <div className="d-flex mt-3 justify-content-end">
-                            <div className="widget-chat-message-right me-2 px-3 p-2 text-left d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
+                            <div className="widget-chat-message-right me-2 px-3 p-2 text-start d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, nulla ut vulputate sodales</div>
                             <img className="rounded-circle" style={{height: "30px"}} src={maleAvatar} alt="User" />
                         </div>
                     </div>

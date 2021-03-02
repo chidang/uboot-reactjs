@@ -13,8 +13,7 @@ const Avatars = () =>
   </nav>
   <div className="d-flex header justify-content-between mb-4">
     <h1 className="header-title h3">
-    <i className="bi-person-circle text-primary" />
-    Avatar
+    <i className="bi-person-circle text-primary" /> Avatar
     </h1>
   </div>
   <div className="row">

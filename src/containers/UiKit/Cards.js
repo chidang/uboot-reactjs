@@ -32,7 +32,7 @@ const Cards = () =>
                 <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-light" style={{width: '34%'}} role="progressbar" aria-valuenow={34} aria-valuemin={0} aria-valuemax={100} />
                 </div>
-                <h5 className="mt-2">TARGET <span className="float-right">34%</span></h5>
+                <h5 className="mt-2">TARGET <span className="float-end">34%</span></h5>
                 </div>
             </div> {/* end card-box-color*/}
         </div> {/* end col*/}
@@ -52,7 +52,7 @@ const Cards = () =>
                 <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-light" style={{width: '34%'}} role="progressbar" aria-valuenow={34} aria-valuemin={0} aria-valuemax={100} />
                 </div>
-                <h5 className="mt-2">TARGET <span className="float-right">34%</span></h5>
+                <h5 className="mt-2">TARGET <span className="float-end">34%</span></h5>
                 </div>
             </div> {/* end card-box-color*/}
         </div> {/* end col*/}
@@ -72,7 +72,7 @@ const Cards = () =>
                     <div className="progress progress-sm m-0">
                         <div className="progress-bar bg-light" style={{width: '34%'}} role="progressbar" aria-valuenow={34} aria-valuemin={0} aria-valuemax={100} />
                     </div>
-                    <h5 className="mt-2">TARGET <span className="float-right">34%</span></h5>
+                    <h5 className="mt-2">TARGET <span className="float-end">34%</span></h5>
                 </div>
             </div> {/* end card-box-color*/}
         </div> {/* end col*/}
@@ -92,7 +92,7 @@ const Cards = () =>
                 <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-light" style={{width: '34%'}} role="progressbar" aria-valuenow={34} aria-valuemin={0} aria-valuemax={100} />
                 </div>
-                <h5 className="mt-2">TARGET <span className="float-right">34%</span></h5>
+                <h5 className="mt-2">TARGET <span className="float-end">34%</span></h5>
                 </div>
             </div> {/* end card-box-color*/}
         </div> {/* end col*/}
@@ -107,14 +107,14 @@ const Cards = () =>
                     </p>
                     </div>
                     <div className="col-6">
-                    <div className="icon-sm bg-primary rounded float-right">
+                    <div className="icon-sm bg-primary rounded float-end">
                         <i className="uil uil-usd-circle" />
                     </div>
                     </div>
                 </div>
                 <h2 className="my-1 fw-300">$24,431</h2>
                 <div className="mt-3">
-                    <h6>Target <span className="float-right">59%</span></h6>
+                    <h6>Target <span className="float-end">59%</span></h6>
                     <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={59} aria-valuemin={0} aria-valuemax={100} style={{width: '59%'}}>
                         <span className="sr-only">59% Complete</span>
@@ -132,14 +132,14 @@ const Cards = () =>
                     <p className="text-muted mb-1 text-truncate">Sales Today</p>
                     </div>
                     <div className="col-6">
-                    <div className="icon-sm bg-success rounded float-right">
+                    <div className="icon-sm bg-success rounded float-end">
                         <i className="bi-cart2" />
                     </div>
                     </div>
                 </div>
                 <h2 className="my-1 fw-300">1,576</h2>
                 <div className="mt-3">
-                    <h6>Target <span className="float-right">68%</span></h6>
+                    <h6>Target <span className="float-end">68%</span></h6>
                     <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-success" role="progressbar" aria-valuenow={68} aria-valuemin={0} aria-valuemax={100} style={{width: '68%'}}>
                         <span className="sr-only">68% Complete</span>
@@ -157,14 +157,14 @@ const Cards = () =>
                     <p className="text-muted mb-1 text-truncate">Pending Orders</p>
                     </div>
                     <div className="col-6">
-                    <div className="icon-sm bg-info rounded float-right">
+                    <div className="icon-sm bg-info rounded float-end">
                         <i className="bi-alarm" />
                     </div>
                     </div>
                 </div>
                 <h2 className="my-1 fw-300"><span>234</span></h2>
                 <div className="mt-3">
-                    <h6>Target <span className="float-right">74%</span></h6>
+                    <h6>Target <span className="float-end">74%</span></h6>
                     <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-info" role="progressbar" aria-valuenow={74} aria-valuemin={0} aria-valuemax={100} style={{width: '74%'}}>
                         <span className="sr-only">74% Complete</span>
@@ -182,14 +182,14 @@ const Cards = () =>
                     <p className="text-muted mb-1 text-truncate">Payouts</p>
                     </div>
                     <div className="col-6">
-                    <div className="icon-sm bg-warning rounded float-right">
+                    <div className="icon-sm bg-warning rounded float-end">
                         <i className="bi-receipt" />
                     </div>
                     </div>
                 </div>
                 <h2 className="my-1 fw-300">$4,321</h2>
                 <div className="mt-3">
-                    <h6>Target <span className="float-right">76%</span></h6>
+                    <h6>Target <span className="float-end">76%</span></h6>
                     <div className="progress progress-sm m-0">
                     <div className="progress-bar bg-warning" role="progressbar" aria-valuenow={76} aria-valuemin={0} aria-valuemax={100} style={{width: '76%'}}>
                         <span className="sr-only">76% Complete</span>

@@ -12,8 +12,7 @@ const Contact = () =>
 </nav>
 <div className="d-flex header justify-content-between mb-4">
   <h1 className="header-title h3">
-    <i className="fal fa-id-card text-highlight"></i>
-    Contact
+    <i className="bi-person-circle text-primary"></i> Contact
   </h1>
 </div>
 <div className="card p-4">

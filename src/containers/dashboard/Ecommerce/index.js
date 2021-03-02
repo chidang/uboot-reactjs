@@ -31,7 +31,7 @@ const Ecommerce = () => {
             <div className="progress progress-sm bg-dark m-0">
               <div className="progress-bar bg-light" style={{width: "34%"}} role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h5 className="mt-2">TARGET <span className="float-right">34%</span></h5>
+            <h5 className="mt-2">TARGET <span className="float-end">34%</span></h5>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Ecommerce = () => {
             <div className="progress progress-sm bg-dark m-0">
               <div className="progress-bar bg-light" style={{width: "68%"}} role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h5 className="mt-2">TARGET <span className="float-right">68%</span></h5>
+            <h5 className="mt-2">TARGET <span className="float-end">68%</span></h5>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Ecommerce = () => {
             <div className="progress progress-sm bg-dark m-0">
               <div className="progress-bar bg-light" style={{width: "76%"}} role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h5 className="mt-2">TARGET <span className="float-right">76%</span></h5>
+            <h5 className="mt-2">TARGET <span className="float-end">76%</span></h5>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ const Ecommerce = () => {
             <div className="progress progress-sm bg-dark m-0">
               <div className="progress-bar bg-light" style={{width: "28%"}} role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h5 className="mt-2">TARGET <span className="float-right">28%</span></h5>
+            <h5 className="mt-2">TARGET <span className="float-end">28%</span></h5>
           </div>
         </div>
       </div>
@@ -119,19 +119,19 @@ const Ecommerce = () => {
                 <LineChart theme={theme}/>
               </div>
               <div className="col-xl-4">
-                <h5 className="mt-3">Direct <span className="float-right">72%</span></h5>
+                <h5 className="mt-3">Direct <span className="float-end">72%</span></h5>
                 <div className="progress progress-sm bg-dark m-0">
                   <div className="progress-bar bg-primary" style={{width: "72%"}} role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h5 className="mt-3">Affilliate <span className="float-right">54%</span></h5>
+                <h5 className="mt-3">Affilliate <span className="float-end">54%</span></h5>
                 <div className="progress progress-sm bg-dark m-0">
                   <div className="progress-bar bg-primary" style={{width: "54%"}} role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h5 className="mt-3">Sponsored <span className="float-right">61%</span></h5>
+                <h5 className="mt-3">Sponsored <span className="float-end">61%</span></h5>
                 <div className="progress progress-sm bg-dark m-0">
                   <div className="progress-bar bg-primary" style={{width: "61%"}} role="progressbar" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h5 className="mt-3">Emails <span className="float-right">25%</span></h5>
+                <h5 className="mt-3">Emails <span className="float-end">25%</span></h5>
                 <div className="progress progress-sm bg-dark m-0">
                   <div className="progress-bar bg-primary" style={{width: "25%"}} role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -177,7 +177,7 @@ const Ecommerce = () => {
           <div className="card flex-fill w-100 ">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Total customers: 104,664,352</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
@@ -213,7 +213,7 @@ const Ecommerce = () => {
           <div className="card flex-fill w-100 ">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Expect and Actual</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>
@@ -237,7 +237,7 @@ const Ecommerce = () => {
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Events</h5>
-              <div className="card-actions float-right">
+              <div className="card-actions float-end">
                 <div className="d-inline-block dropdown show">
                   <Link to="#" data-toggle="dropdown" data-display="static">
                     <i className="far fa-ellipsis-v"></i>

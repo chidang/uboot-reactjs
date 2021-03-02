@@ -30,20 +30,22 @@ const Login = () =>
                   <input type="checkbox" id="remember-me"/> Keep me logged in
                   <span></span>
                 </label>
-                <Link to="pages-authentication-forgot-password.html" className="text-info ms-1">Forgot your password?</Link>
+                <Link to="/auth/forgot-password" className="text-info ms-1">Forgot your password?</Link>
               </div>
-              <div className="mb-0 text-center">
+              <div className="d-grid mb-0 text-center">
                 <button className="btn btn-warning btn-block text-white" type="submit"> <span>Sign In</span> <i className="fas fa-sign-in-alt"></i></button>
               </div>
               <p className="text-center my-4">- OR -</p>
-              <Link to="#" className="btn btn-facebook btn-block mb-4"><span className="me-2"><i className="fab fa-facebook-f"></i></span> Sign In with Facebook</Link>
-              <Link to="#" className="btn btn-twitter  btn-block mb-4"><span className="me-2"><i className="fab fa-twitter"></i></span> Sign In with Twitter</Link>
+              <div className="d-grid mx-auto">
+                <Link to="#" className="btn btn-facebook btn-block mb-4"><span className="me-2"><i className="fab fa-facebook-f"></i></span> Sign In with Facebook</Link>
+                <Link to="#" className="btn btn-twitter  btn-block mb-4"><span className="me-2"><i className="fab fa-twitter"></i></span> Sign In with Twitter</Link>
+              </div>
             </form>
           </div>
         </div>
         <div className="row mt-3">
           <div className="col-12 text-center">
-            <p className="text-muted">Don't have an account? <Link to="pages-authentication-register.html" className="text-info ms-1">Sign Up</Link></p>
+            <p className="text-muted">Don't have an account? <Link to="/auth/register" className="text-info ms-1">Sign Up</Link></p>
           </div>
         </div>
       </div>

@@ -11,8 +11,7 @@ const Pricing = () =>
   </nav>
   <div className="d-flex header justify-content-between mb-5">
     <h1 className="header-title h3">
-      <i className="uil uil-usd-circle text-primary" />
-      Pricing
+      <i className="uil uil-usd-circle text-primary" /> Pricing
     </h1>
   </div>
   <div className="row">

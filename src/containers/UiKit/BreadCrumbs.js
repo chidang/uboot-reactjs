@@ -11,8 +11,7 @@ const BreadCrumbs = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
         <h1 className="header-title h3">
-        <i className="fal fa-directions text-primary" />
-        Breadcrum
+        <i className="bi-bookmarks text-primary" /> Breadcrum
         </h1>
     </div>
     <div className="row">
@@ -51,7 +50,7 @@ const BreadCrumbs = () =>
                 </div>
                 <div id="cardBreadcrumb2" className="card-body show">
                     <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb border border-info">
+                    <ol className="breadcrumb border border-info p-2 rounded">
                         <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
                             Home</Link></li>
@@ -62,7 +61,7 @@ const BreadCrumbs = () =>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb border border-primary">
+                    <ol className="breadcrumb border border-primary p-2 rounded">
                         <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
                             Home</Link></li>
@@ -73,7 +72,7 @@ const BreadCrumbs = () =>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb border border-warning">
+                    <ol className="breadcrumb border border-warning p-2 rounded">
                         <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
                             Home</Link></li>
@@ -84,7 +83,7 @@ const BreadCrumbs = () =>
                     </ol>
                     </nav>
                     <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb border border-danger">
+                    <ol className="breadcrumb border border-danger p-2 rounded">
                         <li className="breadcrumb-item"><Link to="#">
                             <i className="bi-house me-1 fs-sm" />
                             Home</Link></li>

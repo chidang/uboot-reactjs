@@ -13,8 +13,7 @@ const ShoppingCart = () => {
             </nav>
             <div className="d-flex header justify-content-between mb-4">
                 <h1 className="header-title h3">
-                <i className="bi-cart3 text-primary" />
-                Shopping Cart
+                <i className="bi-cart3 text-primary" /> Shopping Cart
                 </h1>
             </div>
             <div className="row">
@@ -125,7 +124,7 @@ const ShoppingCart = () => {
                     <div className="card-body">
                     <h4 className="header-title mb-3">Order Summary</h4>
                     <div className="table-responsive">
-                        <table className="table table-borderless text-right mb-0">
+                        <table className="table table-borderless text-end mb-0">
                         <tbody>
                             <tr>
                             <td>Grand Total:</td>

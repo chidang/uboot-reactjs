@@ -4,8 +4,7 @@ const InternalServerError = () =>
 <>
     <div class="d-flex header justify-content-between mb-2">
         <h1 class="header-title h3">
-            <i class="bi-exclamation-triangle text-primary"></i>
-            Internal Server Error
+            <i class="bi-exclamation-triangle text-primary"></i> Internal Server Error
         </h1>
         </div>
         <div class="container">

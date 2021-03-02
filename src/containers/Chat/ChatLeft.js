@@ -6,7 +6,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 const ChatLeft = () =>  <>
     <div className="card">
         <div className="card-body">
-            <div className="dropdown float-right">
+            <div className="dropdown float-end">
                 <div className="dropdown-menu dropdown-menu-right"><Link className>="dropdown-item">View full</Link> <Link className>="dropdown-item">Edit Contact Info</Link> <Link className>="dropdown-item">Remove</Link></div>
             </div>
             <div className="mt-3 text-center">
