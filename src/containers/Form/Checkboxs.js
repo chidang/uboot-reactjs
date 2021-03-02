@@ -21,21 +21,21 @@ const CheckBoxs = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Bootstrap <span className="fw-300"><i>Checkbox</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBoostrapCheckbox" role="button" aria-expanded="false" aria-controls="cardBoostrapCheckbox"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to ="#" data-target="#cardBoostrapCheckbox" role="button" aria-expanded="false" aria-controls="cardBoostrapCheckbox"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBoostrapCheckbox" className="card-body show">
                 <form>
                 <div className="form-check">
-                    <input className="form-check-input" type="checkbox" placeholder id="flexCheckDefault" />
+                    <input className="form-check-input" type="checkbox" id="flexCheckDefault" />
                     <label className="form-check-label" htmlFor="flexCheckDefault">
                     Default checkbox
                     </label>
                 </div>
                 <div className="form-check mb-3">
-                    <input className="form-check-input" type="checkbox" placeholder id="flexCheckChecked" defaultChecked />
+                    <input className="form-check-input" type="checkbox" id="flexCheckChecked" defaultChecked />
                     <label className="form-check-label" htmlFor="flexCheckChecked">
                     Checked checkbox
                     </label>
@@ -78,9 +78,9 @@ const CheckBoxs = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Custom <span className="fw-300"><i>Checkbox</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomCheckbox" role="button" aria-expanded="false" aria-controls="cardCustomCheckbox"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to ="#" data-target="#cardCustomCheckbox" role="button" aria-expanded="false" aria-controls="cardCustomCheckbox"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCustomCheckbox" className="card-body show">
@@ -176,9 +176,9 @@ const CheckBoxs = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Horizontal <span className="fw-300"><i>Form</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardHorizontalForm" role="button" aria-expanded="false" aria-controls="cardHorizontalForm"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to ="#" data-target="#cardHorizontalForm" role="button" aria-expanded="false" aria-controls="cardHorizontalForm"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardHorizontalForm" className="card-body show">
@@ -253,9 +253,9 @@ const CheckBoxs = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Color <span className="fw-300"><i>Options</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardColorOption" role="button" aria-expanded="false" aria-controls="cardColorOption"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to ="#" data-target="#cardColorOption" role="button" aria-expanded="false" aria-controls="cardColorOption"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardColorOption" className="card-body show">

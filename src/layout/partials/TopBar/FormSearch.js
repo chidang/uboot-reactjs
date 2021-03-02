@@ -1,5 +1,5 @@
 const FormSearch = () => 
-    <div id="form-global-search" className=" d-flex flex-grow-1 ml-4 rounded">
+    <div id="form-global-search" className=" d-flex flex-grow-1 ms-4 rounded">
         <form className="w-100">
             <div className="input-group position-relative">
                 <input type="text" className="form-control" placeholder="Search..." id="top-search"/>

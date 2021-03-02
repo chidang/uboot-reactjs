@@ -11,8 +11,7 @@ const BasicElements = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
         <h1 className="header-title h3">
-        <i className="fab fa-wpforms text-primary" />
-        Basic Element
+        <i className="fab fa-wpforms text-primary" /> Basic Element
         </h1>
     </div>
     <div className="row">
@@ -21,9 +20,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Basic  <span className="fw-300"><i>Inputs</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBasicInput" role="button" aria-expanded="false" aria-controls="cardBasicInput"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to="#" data-target="#cardBasicInput" role="button" aria-expanded="false" aria-controls="cardBasicInput"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBasicInput" className="card-body show">
@@ -74,11 +73,10 @@ const BasicElements = () =>
                     </select>
                 </div>
                 <div className="form-file">
-                    <input type="file" className="form-file-input" id="customFile" />
-                    <label className="form-file-label" htmlFor="customFile">
-                    <span className="form-file-text">Choose file...</span>
-                    <span className="form-file-button">Browse</span>
-                    </label>
+                    <div className="input-group mb-3">
+                        <label className="input-group-text" for="inputGroupFile01">Upload</label>
+                        <input type="file" className="form-control" id="inputGroupFile01" />
+                    </div>
                 </div>
                 </form>
             </div>
@@ -87,9 +85,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Input  <span className="fw-300"><i>Sizes</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardInputSize" role="button" aria-expanded="false" aria-controls="cardInputSize"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to="#" data-target="#cardInputSize" role="button" aria-expanded="false" aria-controls="cardInputSize"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardInputSize" className="card-body show">
@@ -147,9 +145,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Html5 <span className="fw-300"><i>Inputs</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardHtml5Input" role="button" aria-expanded="false" aria-controls="cardHtml5Input"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to="#" data-target="#cardHtml5Input" role="button" aria-expanded="false" aria-controls="cardHtml5Input"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardHtml5Input" className="card-body show">
@@ -185,9 +183,9 @@ const BasicElements = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Input <span className="fw-300"><i>range</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
-                <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardInputRange" role="button" aria-expanded="false" aria-controls="cardInputRange"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-warning" data-toggle="collapse" to="#" data-target="#cardInputRange" role="button" aria-expanded="false" aria-controls="cardInputRange"><i className="dripicons-minus" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardInputRange" className="card-body show">

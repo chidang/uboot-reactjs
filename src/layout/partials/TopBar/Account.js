@@ -8,7 +8,7 @@ const Account = () =>
         <Dropdown as={CustomDropdown}>
             <Dropdown.Toggle as={CustomDropdownToggle} className="nav-link dropdown-toggle nav-profile">
                 <img src={avatar} alt="user-image" className="rounded-circle"/>
-                <span className="ml-1 d-none d-lg-inline">
+                <span className="ms-1 d-none d-lg-inline">
                     <span className="user-name">Hi, Admin</span>
                 </span>
             </Dropdown.Toggle>

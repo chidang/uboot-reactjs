@@ -5,7 +5,7 @@ const AsyncCheckboxs = AsyncComponent(() => import('../containers/Form/Checkboxs
 const AsyncDropzonejs = AsyncComponent(() => import('../containers/Form/Dropzonejs'));
 const AsyncInputGroups = AsyncComponent(() => import('../containers/Form/InputGroups'));
 const AsyncRadios = AsyncComponent(() => import('../containers/Form/Radios'));
-const AsyncSelect2 = AsyncComponent(() => import('../containers/Form/Select2'));
+const AsyncCustomSelect = AsyncComponent(() => import('../containers/Form/CustomSelect'));
 const AsyncValidations = AsyncComponent(() => import('../containers/Form/Validations'));
 
 const formRoutes = {
@@ -42,9 +42,9 @@ const formRoutes = {
         component: AsyncRadios
       },
       {
-        path: "/forms/select2",
-        name: "Select",
-        component: AsyncSelect2
+        path: "/forms/custom-select",
+        name: "Custom Select",
+        component: AsyncCustomSelect
       },
       {
         path: "/forms/validations",

@@ -17,7 +17,7 @@ const Notification = () =>
                     <Link to="#" className="list-group-item">
                     <div className="row align-items-center">
                         <div className="col-2">
-                        <i className="ml-1 text-primary uil uil-user"></i>
+                        <i className="ms-1 text-primary uil uil-user"></i>
                         </div>
                         <div className="col-10">
                         <div>New user registered</div>
@@ -29,7 +29,7 @@ const Notification = () =>
                     <Link to="#" className="list-group-item">
                     <div className="row align-items-center">
                         <div className="col-2">
-                        <i className="ml-1 text-warning bi-bell-fill"></i>
+                        <i className="ms-1 text-warning bi-bell-fill"></i>
                         </div>
                         <div className="col-10">
                         <div>Update completed</div>
@@ -41,7 +41,7 @@ const Notification = () =>
                     <Link to="#" className="list-group-item">
                     <div className="row align-items-center">
                         <div className="col-2">
-                        <i className="ml-1 text-info bi-envelope-open"></i>
+                        <i className="ms-1 text-info bi-envelope-open"></i>
                         </div>
                         <div className="col-10">
                         <div>Mark cancelled the event</div>
@@ -53,7 +53,7 @@ const Notification = () =>
                     <Link to="#" className="list-group-item">
                     <div className="row align-items-center">
                         <div className="col-2">
-                        <i className="ml-1 text-danger bi-building"></i>
+                        <i className="ms-1 text-danger bi-building"></i>
                         </div>
                         <div className="col-10">
                         <div>Login from 192.168.1.1</div>
