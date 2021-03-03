@@ -4,7 +4,7 @@ const AsyncAvatars = AsyncComponent(() => import('../containers/UiKit/Avatars'))
 const AsyncBreadCrumbs = AsyncComponent(() => import('../containers/UiKit/BreadCrumbs'));
 const AsyncButtons = AsyncComponent(() => import('../containers/UiKit/Buttons'));
 const AsyncCards = AsyncComponent(() => import('../containers/UiKit/Cards'));
-const AsyncDualListbox = AsyncComponent(() => import('../containers/UiKit/DualListbox'));
+const AsyncDualListbox = AsyncComponent(() => import('../containers/UiKit/DualListBoxes'));
 const AsyncImageCropper = AsyncComponent(() => import('../containers/UiKit/ImageCropper'));
 const AsyncJsTree = AsyncComponent(() => import('../containers/UiKit/JsTree'));
 const AsyncNotifications = AsyncComponent(() => import('../containers/UiKit/Notifications'));
