@@ -18,7 +18,7 @@ const options = [
     { value: 'iapetus', label: 'Iapetus' }
 ];
 
-const icons={
+const icons = {
     moveLeft: <i className="bi-chevron-left" />,
     moveAllLeft: [
         <i key={0} className="bi-chevron-left" />,
