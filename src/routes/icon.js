@@ -10,7 +10,7 @@ const iconRoutes = {
     path: "/icons/bootstrapicons",
     name: "Icon",
     badgeColor: "info",
-    badgeText: "75",
+    badgeText: "3900",
     containsHome: false,
     icon: 'bi-gift',
     children: [

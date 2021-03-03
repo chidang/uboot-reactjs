@@ -7,7 +7,7 @@ const apexChartRoutes = {
     key: 'chart',
     name: "Chart",
     badgeColor: "primary",
-    badgeText: "75",
+    badgeText: "14",
     containsHome: false,
     icon: 'bi-bar-chart',
     children: [

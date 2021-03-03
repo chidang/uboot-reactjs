@@ -14,7 +14,7 @@ const PageRoutes = {
     key: 'page',
     name: "Page",
     badgeColor: "primary",
-    badgeText: "75",
+    badgeText: "9",
     containsHome: false,
     icon: 'bi-book',
     children: [

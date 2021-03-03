@@ -17,7 +17,7 @@ const uiKitRoutes = {
     path: "/ui/avatars",
     name: "UI Kit",
     badgeColor: "primary",
-    badgeText: "75",
+    badgeText: "1500",
     containsHome: false,
     icon: 'bi-gem',
     header: 'COMPONENT',
