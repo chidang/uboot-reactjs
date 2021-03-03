@@ -6,12 +6,10 @@ const AsyncButtons = AsyncComponent(() => import('../containers/UiKit/Buttons'))
 const AsyncCards = AsyncComponent(() => import('../containers/UiKit/Cards'));
 const AsyncDualListbox = AsyncComponent(() => import('../containers/UiKit/DualListBoxes'));
 const AsyncImageCropper = AsyncComponent(() => import('../containers/UiKit/ImageCropper'));
-const AsyncJsTree = AsyncComponent(() => import('../containers/UiKit/JsTree'));
 const AsyncNotifications = AsyncComponent(() => import('../containers/UiKit/Notifications'));
 const AsyncSpinners = AsyncComponent(() => import('../containers/UiKit/Spinners'));
-const AsyncSweetAlert = AsyncComponent(() => import('../containers/UiKit/SweetAlert'));
+const AsyncSweetAlert = AsyncComponent(() => import('../containers/UiKit/SweetAlerts'));
 const AsyncTabs = AsyncComponent(() => import('../containers/UiKit/Tabs'));
-const AsyncToastr = AsyncComponent(() => import('../containers/UiKit/Toastr'));
 const AsyncWidgets = AsyncComponent(() => import('../containers/UiKit/Widgets'));
 
 const uiKitRoutes = {
@@ -55,11 +53,6 @@ const uiKitRoutes = {
         component: AsyncImageCropper
       },
       {
-        path: "/ui/jstree",
-        name: "JsTree",
-        component: AsyncJsTree
-      },
-      {
         path: "/ui/notifications",
         name: "Notifications",
         component: AsyncNotifications
@@ -78,11 +71,6 @@ const uiKitRoutes = {
         path: "/ui/tabs",
         name: "Tabs",
         component: AsyncTabs
-      },
-      {
-        path: "/ui/toastr",
-        name: "Toastr",
-        component: AsyncToastr
       },
       {
         path: "/ui/widgets",
