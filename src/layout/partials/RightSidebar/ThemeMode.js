@@ -14,14 +14,14 @@ const ThemeMode = () => {
         defaultModeClass = defaultModeClass + " active";
     }
     return  <>
-        <div className="mt-4 pl-3 pr-2">
+        <div className="mt-4 ps-3 pe-2">
             <h5 className="p-0 fw-700">
                 Theme Modes
             </h5>
         </div>
-        <div className="theme-modes pl-3 pr-2">
+        <div className="theme-modes ps-3 pe-2">
             <div className="row">
-                <div className="col-6 pr-2 text-center">
+                <div className="col-6 pe-2 text-center">
                     <div onClick={() => settingContext.changeThemeMode("default-mode")} className={ defaultModeClass } style={{height: "100px"}}>
                         <div className="bg-primary border-bottom py-1"></div>
                         <div className="d-flex w-100 flex-row" style={{height: "92px"}}>
@@ -33,7 +33,7 @@ const ThemeMode = () => {
                     </div>
                     Default
                 </div>
-                <div className="col-6 pl-2 text-center">
+                <div className="col-6 ps-2 text-center">
                     <div  onClick={() => settingContext.changeThemeMode("dark-mode")} className={darkModeClass} style={{height: "100px"}}>
                         <div className="border-bottom py-1"></div>
                         <div className="d-flex w-100 flex-row" style={{height: "92px"}}>

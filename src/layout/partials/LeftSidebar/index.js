@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Accordion } from 'react-bootstrap';
 import { routes } from "../../../routes";
 import { NavLink, withRouter } from "react-router-dom";
 import { LeftSidebarItemToggle } from '../../../components/Accordion';
+import SettingContext from '../../../context/setting-context';
 
 const initOpenRoute = (location) => {
     const pathName = location.pathname;
@@ -70,11 +71,13 @@ const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, t
 
 const LeftSidebar = ({ location, sidebar, layout }) => {
     const [openRoutes, setOpenRoutes] = useState(() => initOpenRoute(location));
+    const settingContext = useContext(SettingContext);
+    let sidebarWrapperStyle = settingContext.showMobileNav ? {display: "block"} : {}
 
     return (
         <nav id="left-sidebar">
             <Accordion defaultActiveKey={openRoutes.key}>
-                <div className="sidebar-wrapper">
+                <div className="sidebar-wrapper" style={sidebarWrapperStyle}>
                     <div className="sidebar-body">
                         <div className="nav-filter align-items-center justify-content-center flex-row mb-4 p-2">
                             <input type="text" placeholder="Quick search" className="w-100 form-control" tabIndex="0"/>

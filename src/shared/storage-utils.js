@@ -1,4 +1,4 @@
-const defaultConfig = {
+export const defaultConfig = {
     fixedLeftSidebar: true,
     fixedHeader: false,
     fixedFooter: false,

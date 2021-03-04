@@ -35,7 +35,7 @@ const RightSidebar = () => {
               <ThemeColor />
               <ThemeMode />
               <div className="d-flex justify-content-center mt-4 pt-4">
-                <button id="reset-setting" type="button" className="btn btn-primary btn-rounded d-block w-75">Reset</button>
+                <button id="reset-setting" type="button" className="btn btn-primary btn-rounded d-block w-75" onClick={settingContext.resetSetting}>Reset</button>
               </div>
             </div>
           </div>

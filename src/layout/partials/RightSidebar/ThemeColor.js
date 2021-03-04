@@ -21,12 +21,12 @@ const ThemeColor = () => {
     )});
 
     return <>
-        <div className="mt-4 pl-3 pr-2">
+        <div className="mt-4 ps-3 pe-2">
             <h5 className="p-0 fw-700">
                 Theme Colors
             </h5>
         </div>
-        <div className="theme-colors pl-3 pr-2">
+        <div className="theme-colors ps-3 pe-2">
             <ul className="m-0 p-0">
                 {colors}
             </ul>

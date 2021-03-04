@@ -14,6 +14,9 @@ const Dashboard = props => {
                 data-theme-sidebar-shrinked={settingContext.leftSidebarShrinked}
                 data-theme-mode={settingContext.themeMode}
                 data-theme-color={dataThemeColor}
+                data-theme-boxed-layout={settingContext.boxedLayout}
+                data-theme-sidebar-fixed={settingContext.leftSidebarFixed}
+                data-theme-footer-fixed={settingContext.footerFixed}
             >
                 <Topbar />
                 <div className="page-container">
@@ -24,7 +27,6 @@ const Dashboard = props => {
                     </div>
                 </div>
                 <RightSidebar/>
-                
             </div>
         </>
     );

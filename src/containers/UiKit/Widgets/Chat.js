@@ -19,7 +19,7 @@ const Chat = () => {
                         <Link to="#" className="me-2" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
-                <div className="card-body pl-1">
+                <div className="card-body ps-1">
                     <div className="d-flex mt-3 d-inline-block">
                         <img src={femaleAvatar} style={{ height: '30px' }} alt="User" className="rounded-circle" />
                         <div className="widget-chat-message-left ms-2 px-3 py-2 text-left mw-75">Hi

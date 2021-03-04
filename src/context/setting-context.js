@@ -1,7 +1,5 @@
 import React from 'react';
 
-const settingContext = React.createContext({
-  rightSidebarOpened: false,
-});
+const settingContext = React.createContext({});
 
 export default settingContext;
