@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Routes from './routes/Routes';
-import SettingContext from './context/setting-context'
+import SettingContext from './context/setting-context';
 import { defaultConfig, setConfig, getConfig } from './shared/storage-utils';
-import useWindowSize from "./hooks/WindowSize"
+import { isMobile } from "./shared/utility";
 
 const App = () => {
   const [rightSidebarOpened, toggleRightSidebar] = useState(false);
@@ -13,7 +13,6 @@ const App = () => {
   const [boxedLayout, toggleBoxedLayout] = useState(false);
   const [leftSidebarFixed, toggleLeftSidebarFixed] = useState(false);
   const [footerFixed, toggleFooterFixed] = useState(false);
-  const windowSize = useWindowSize();
 
   useEffect(() => {
     const initConfig = getConfig();
@@ -28,11 +27,11 @@ const App = () => {
   }
 
   const toggleLeftSidebarHandler = () => {
-    if (windowSize.width > 994) {
+    if (isMobile()) {
+      toggleMobileNav(!showMobileNav);
+    } else {
       setConfig({ isShrinked: !leftSidebarShrinked });
       toggleLeftSidebar(!leftSidebarShrinked);
-    } else {
-      toggleMobileNav(!showMobileNav);
     }
   }
 

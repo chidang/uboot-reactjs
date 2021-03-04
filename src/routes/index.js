@@ -29,7 +29,6 @@ export const chatRoutes = {
     badgeColor: "info"
 };
 
-
 export const dashboard = [
     dashboardRoutes
 ];

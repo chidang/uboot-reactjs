@@ -1,11 +1,14 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Accordion } from 'react-bootstrap';
-import { routes } from "../../../routes";
+import PerfectScrollbar from 'react-perfect-scrollbar';
 import { NavLink, withRouter } from "react-router-dom";
+import { routes } from "../../../routes";
 import { LeftSidebarItemToggle } from '../../../components/Accordion';
 import SettingContext from '../../../context/setting-context';
+import useWindowSize from "../../../hooks/WindowSize";
+import { isMobile } from "../../../shared/utility";
 
-const initOpenRoute = (location) => {
+const initOpenRoutes = (location) => {
     const pathName = location.pathname;
     let openRoute = {};
     routes.forEach((route, index) => {
@@ -49,7 +52,7 @@ const SidebarCategory = withRouter(({
     );
 });
 
-const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, to }) => {
+const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, to, isCategory }) => {
     const getSidebarItemClass = path => {
         return location.pathname === path ? "active" : "";
     };
@@ -60,7 +63,7 @@ const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, t
                 {icon ? (
                     <i className={icon}></i>
                 ) : null}
-                {name}
+                {isCategory ? <span>{name}</span> : name}
                 {badgeText ? (
                     <span className={`badge bg-${badgeColor}`}>{badgeText}</span>
                 ) : null}
@@ -69,63 +72,82 @@ const SidebarItem = withRouter(({ name, badgeColor, badgeText, icon, location, t
     );
 });
 
-const LeftSidebar = ({ location, sidebar, layout }) => {
-    const [openRoutes, setOpenRoutes] = useState(() => initOpenRoute(location));
+const SidebarBody = ({ location, settingContext, windowSize }) => {
+    const openRoutes = initOpenRoutes(location);
+    const sidebarStyle = (isMobile() || !settingContext.leftSidebarFixed || settingContext.leftSidebarShrinked) ? {} : { height: `${windowSize.height - 70}px` };
+
+    return (
+        <div className="sidebar-body" style={sidebarStyle}>
+            <div className="nav-filter align-items-center justify-content-center flex-row mb-4 p-2">
+                <input type="text" placeholder="Quick search" className="w-100 form-control" tabIndex="0" />
+            </div>
+            <div className="sidebar-block">
+                <ul className="list-unstyled sidebar-content">
+                    {
+                        routes.map((category, index) => {
+                            return (
+                                <React.Fragment key={index}>
+                                    {category.header ? (
+                                        <li className="sidebar-title">{category.header}</li>
+                                    ) : null}
+                                    {category.children ? (
+                                        <SidebarCategory
+                                            ckey={category.key}
+                                            name={category.name}
+                                            badgeColor={category.badgeColor}
+                                            badgeText={category.badgeText}
+                                            icon={category.icon}
+                                            to={category.path}
+                                            isOpen={openRoutes[index]}
+                                        >
+                                            {category.children.map((route, index) => (
+                                                <SidebarItem
+                                                    key={index}
+                                                    name={route.name}
+                                                    to={route.path}
+                                                    badgeColor={route.badgeColor}
+                                                    badgeText={route.badgeText}
+                                                />
+                                            ))}
+                                        </SidebarCategory>
+                                    ) : (
+                                            <SidebarItem
+                                                name={category.name}
+                                                to={category.path}
+                                                icon={category.icon}
+                                                badgeColor={category.badgeColor}
+                                                badgeText={category.badgeText}
+                                                isCategory={true}
+                                            />
+                                        )}
+                                </React.Fragment>
+                            );
+                        })
+                    }
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const LeftSidebar = ({ location }) => {
+    const openRoutes = initOpenRoutes(location);
     const settingContext = useContext(SettingContext);
-    let sidebarWrapperStyle = settingContext.showMobileNav ? {display: "block"} : {}
+    const sidebarWrapperStyle = settingContext.showMobileNav ? { display: "block" } : {}
+    const windowSize = useWindowSize();
 
     return (
         <nav id="left-sidebar">
             <Accordion defaultActiveKey={openRoutes.key}>
                 <div className="sidebar-wrapper" style={sidebarWrapperStyle}>
-                    <div className="sidebar-body">
-                        <div className="nav-filter align-items-center justify-content-center flex-row mb-4 p-2">
-                            <input type="text" placeholder="Quick search" className="w-100 form-control" tabIndex="0"/>
-                        </div>
-                        <div className="sidebar-block">
-                            <ul className="list-unstyled sidebar-content">
-                            {
-                                routes.map((category, index) => {
-                                    return (
-                                        <React.Fragment key={index}>
-                                            {category.header ? (
-                                                <li className="sidebar-title">{category.header}</li>
-                                            ) : null}
-                                            {category.children ? (
-                                                <SidebarCategory
-                                                    ckey={category.key}
-                                                    name={category.name}
-                                                    badgeColor={category.badgeColor}
-                                                    badgeText={category.badgeText}
-                                                    icon={category.icon}
-                                                    to={category.path}
-                                                    isOpen={openRoutes[index]}
-                                                >
-                                                {category.children.map((route, index) => (
-                                                    <SidebarItem
-                                                        key={index}
-                                                        name={route.name}
-                                                        to={route.path}
-                                                        badgeColor={route.badgeColor}
-                                                        badgeText={route.badgeText}
-                                                    />
-                                                ))}
-                                                </SidebarCategory>
-                                            ) : (
-                                                <SidebarItem
-                                                    name={category.name}
-                                                    to={category.path}
-                                                    icon={category.icon}
-                                                    badgeColor={category.badgeColor}
-                                                    badgeText={category.badgeText}
-                                                />
-                                            )}
-                                        </React.Fragment>
-                                    );
-                                })}
-                            </ul>
-                        </div>
-                    </div>
+                    {
+                        (isMobile() || !settingContext.leftSidebarFixed || settingContext.leftSidebarShrinked) ?
+                        <SidebarBody location={location} settingContext={settingContext} windowSize={windowSize} />
+                        :
+                        <PerfectScrollbar>
+                            <SidebarBody location={location} settingContext={settingContext} windowSize={windowSize} />
+                        </PerfectScrollbar>
+                    }
                 </div>
             </Accordion>
         </nav>
