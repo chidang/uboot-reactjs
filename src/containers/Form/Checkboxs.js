@@ -11,8 +11,7 @@ const CheckBoxs = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
         <h1 className="header-title h3">
-        <i className="fab fa-wpforms text-primary" />
-        Checkbox
+        <i className="fab fa-wpforms text-primary" /> Checkbox
         </h1>
     </div>
     <div className="row">

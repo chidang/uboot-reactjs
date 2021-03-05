@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
 import product from "../../../assets/images/products/product-80x80.jpg";
 
 const AllProduct = () => {
@@ -24,14 +25,16 @@ const AllProduct = () => {
               <button className="btn btn-primary" type="button"><i className="bi-cloud-arrow-up" /> <span className="d-none d-md-inline">Import</span></button>
               <button className="btn btn-primary" type="button"><i className="bi-cloud-arrow-down" /> <span className="d-none d-md-inline">Export</span></button>
               <button className="btn btn-primary" type="button"><i className="bi-list-task" /> <span className="d-none d-md-inline">Customize Columns</span></button>
-              <button type="button" className="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
-                <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
-              </button>
-              <ul className="dropdown-menu" style={{}}>
-                <li><Link className>="dropdown-item" href="#">Delete</Link></li>
-                <li><Link className>="dropdown-item" href="#">Update Statuses</Link></li>
-                <li><Link className>="dropdown-item" href="#">Create Notes</Link></li>
-              </ul>
+              <Dropdown>
+                <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                  <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Delete</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Update Statuses</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Create Notes</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </div>
@@ -80,7 +83,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -104,7 +107,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -128,7 +131,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -152,7 +155,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -176,7 +179,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -200,7 +203,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -224,7 +227,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -248,7 +251,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -272,7 +275,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -296,7 +299,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -320,7 +323,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -344,7 +347,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -368,7 +371,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -392,7 +395,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -416,7 +419,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -440,7 +443,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-warning rounded">Pending</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -464,7 +467,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -488,7 +491,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -512,7 +515,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-danger rounded">Deactive</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -536,7 +539,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -560,7 +563,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -584,7 +587,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -608,7 +611,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -632,7 +635,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>
@@ -656,7 +659,7 @@ const AllProduct = () => {
                         <td><span className="badge bg-success rounded">Active</span></td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-add-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-stickies" data-original-title="Duplicate" data-toggle="tooltip" /></Link></li>

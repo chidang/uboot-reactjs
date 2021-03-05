@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { THEME_COLORS } from '../../../shared/color-utils';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 const ThemeColor = (props) => {
     const options = props.options;
@@ -10,12 +11,21 @@ const ThemeColor = (props) => {
             classes += ' active';
         }
         return (<li key={color.name}>
-            <Link
-                to="#"
-                className={classes}
-                onClick={() => options.changeThemeColor(color)}
-                data-original-title={color.name}>
-            </Link>
+            <OverlayTrigger
+                  placement="top"
+                  overlay={
+                    <Tooltip>
+                      { color.name.charAt(0).toUpperCase() + color.name.slice(1) }
+                    </Tooltip>
+                  }
+                >
+                    <Link
+                        to="#"
+                        className={classes}
+                        onClick={() => options.changeThemeColor(color)}
+                        data-original-title={color.name}>
+                    </Link>
+                </OverlayTrigger>
         </li>
         )
     });

@@ -11,8 +11,7 @@ const Buttons = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
         <h1 className="header-title h3">
-        <i className="bi-box text-primary" />
-        Button
+        <i className="bi-box text-primary" /> Button
         </h1>
     </div>
     <div className="row">

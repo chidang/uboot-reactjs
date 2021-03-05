@@ -223,7 +223,7 @@ const OrderDetail = () => {
                       <i className="bi-question-circle me-1" />
                       This order is no longer editable.
                     </Link>
-                  </OverlayTrigger>
+                </OverlayTrigger>
               </div>
             </div>
             {/* end card order-item */}

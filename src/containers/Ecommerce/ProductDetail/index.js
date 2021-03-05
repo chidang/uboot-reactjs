@@ -28,16 +28,16 @@ const ProductDetail = () => {
               </div>
               {/* begin product-gallery */}
               <div className="product-gallery d-flex justify-content-center">
-                <Link to="javascript: void(0);" className="product-gallery-item">
+                <Link to="#" className="product-gallery-item">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </Link>
-                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
+                <Link to="#" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </Link>
-                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
+                <Link to="#" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </Link>
-                <Link to="javascript: void(0);" className="product-gallery-item ms-2">
+                <Link to="#" className="product-gallery-item ms-2">
                   <img src={product} className="img-fluid img-thumbnail p-2" style={{maxWidth: '60px'}} alt="Product-img" />
                 </Link>
               </div>
@@ -50,9 +50,9 @@ const ProductDetail = () => {
               <div className="product-detail">
                 <h3 className="product-title">T-Shirt Form Girls</h3>
                 <div className="product-price mb-2">
-                  <span className="price text-primary fs-lg fw-700">$24.65</span>
+                  <span className="price text-primary fs-lg fw-700 me-2">$24.65</span>
                   <del>$29.00</del>
-                  <div className="text-success d-inline">
+                  <div className="text-success d-inline ms-2">
                     <span>15% Off</span>
                   </div>
                 </div>

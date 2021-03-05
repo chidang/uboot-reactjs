@@ -11,8 +11,7 @@ const Spinners = () =>
   </nav>
   <div className="header mb-4">
     <h1 className="header-title h3">
-      <i className="bi-life-preserver text-primary" />
-      Spinner
+      <i className="bi-life-preserver text-primary" /> Spinner
     </h1>
     <p className="mt-2">
       Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.

@@ -11,8 +11,7 @@ const Cards = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
         <h1 className="header-title h3">
-        <i className="bi-card-text text-primary" />
-        Card
+        <i className="bi-card-text text-primary" /> Card
         </h1>
     </div>
     <div className="row">
@@ -375,7 +374,7 @@ const Cards = () =>
                 <div className="card-widgets">
                     <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     <Link data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
-                    <Link to="javascript:;"><i className="fal fa-sync" /></Link>
+                    <Link to="javascript:;"><i className="bi-arrow-repeat" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0 text-white">Card title</h4>
                 <div id="cardCollpase0" className="collapse pt-3 show text-white"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -388,7 +387,7 @@ const Cards = () =>
                 <div className="card-widgets">
                     <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     <Link data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
-                    <Link to="javascript:;"><i className="fal fa-sync" /></Link>
+                    <Link to="javascript:;"><i className="bi-arrow-repeat" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase1" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -401,7 +400,7 @@ const Cards = () =>
                 <div className="card-widgets">
                     <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     <Link data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></Link>
-                    <Link to="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></Link>
+                    <Link to="javascript:;" data-toggle="reload"><i className="bi-arrow-repeat" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase2" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>
@@ -414,7 +413,7 @@ const Cards = () =>
                 <div className="card-widgets">
                     <Link to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     <Link data-toggle="collapse" data-target="#cardCollpase3" role="button" aria-expanded="false" aria-controls="cardCollpase3"><i className="dripicons-minus" /></Link>
-                    <Link to="javascript:;" data-toggle="reload"><i className="fal fa-sync" /></Link>
+                    <Link to="javascript:;" data-toggle="reload"><i className="bi-arrow-repeat" /></Link>
                 </div>
                 <h4 className="m-0 fw-700 mb-0">Card title</h4>
                 <div id="cardCollpase3" className="collapse pt-3 show"> Cras quis metus mauris. Maecenas posuere lorem eu tortor interdum rutrum. In consequat metus eu nisi accumsan iaculis. Vestibulum sed finibus ante. Mauris nulla sapien, sodales eu ultricies et, dignissim eu erat. Vestibulum hendrerit augue vitae scelerisque tempor. Vivamus a nulla risus. Aliquam venenatis odio eget varius iaculis. Nulla ultrices est eu interdum luctus. Sed eu elementum tellus. Etiam eget vulputate ante, in sagittis metus. Etiam finibus rutrum odio sollicitudin eleifend. Duis lacinia commodo orci nec placerat. Sed non leo quis augue tincidunt condimentum eleifend et mauris. Vivamus commodo nulla tristique, pretium arcu vitae, vestibulum lacus. </div>

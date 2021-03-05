@@ -11,8 +11,7 @@ const Notifications = () =>
     </nav>
     <div className="header mb-4">
         <h1 className="header-title h3">
-        <i className="bi-bell text-primary" />
-        Notification
+        <i className="bi-bell text-primary" /> Notification
         </h1>
         <p className="mt-2">
         Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.

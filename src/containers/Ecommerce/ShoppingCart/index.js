@@ -152,7 +152,7 @@ const ShoppingCart = () => {
                     </div>
                 </div>
                 {/* end card */}
-                <button type="button" className="btn btn-lg btn-danger btn-block btn-air mt-4 fs-md">Checkout</button>
+                <button type="button" className="btn btn-lg btn-danger btn-block btn-air mt-4 fs-md w-100">Checkout</button>
                 <div className="alert alert-warning mt-4" role="alert">
                     Use promo code <strong>DC20PC</strong> and get 20% discount !
                 </div>

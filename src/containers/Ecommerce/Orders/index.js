@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
 
 const Orders = () => {
     return <>
@@ -32,14 +33,16 @@ const Orders = () => {
               <button className="btn btn-primary" type="button"><i className="bi-cloud-arrow-up" /> <span className="d-none d-md-inline">Import</span></button>
               <button className="btn btn-primary" type="button"><i className="bi-cloud-arrow-down" /> <span className="d-none d-md-inline">Export</span></button>
               <button className="btn btn-primary" type="button"><i className="bi-list-task" /> <span className="d-none d-md-inline">Customize Columns</span></button>
-              <button type="button" className="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
-                <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
-              </button>
-              <ul className="dropdown-menu" style={{}}>
-                <li><Link className>="dropdown-item" href="#">Delete</Link></li>
-                <li><Link className>="dropdown-item" href="#">Update Statuses</Link></li>
-                <li><Link className>="dropdown-item" href="#">Create Notes</Link></li>
-              </ul>
+              <Dropdown>
+                <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                  <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Delete</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Update Statuses</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Create Notes</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </div>

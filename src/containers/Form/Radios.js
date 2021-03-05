@@ -11,8 +11,7 @@ const Radios = () =>
     </nav>
     <div className="header mb-4">
         <h1 className="header-title h3">
-        <i className="fab fa-wpforms text-primary" />
-        Radio
+        <i className="fab fa-wpforms text-primary" /> Radio
         </h1>
     </div>
     <div className="row">
