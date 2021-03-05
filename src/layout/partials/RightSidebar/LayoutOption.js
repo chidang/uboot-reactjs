@@ -1,9 +1,6 @@
-import React, { useState, useContext } from "react";
-import SettingContext from '../../../context/setting-context';
+const LayoutOption = (props) => {
+    const options = props.options;
 
-const LayoutOption = () => {
-    const settingContext = useContext(SettingContext);
-    
     return <>
         <div className="mt-4 ps-3 pe-2">
             <h5 className="p-0 fw-700"> Layout Options</h5>
@@ -14,8 +11,8 @@ const LayoutOption = () => {
                     <input
                         type="checkbox"
                         id="app-shrinking-left-sidebar"
-                        checked={!!settingContext.leftSidebarShrinked}
-                        onChange={settingContext.toggleLeftSidebar}
+                        checked={!!options.leftSidebarShrinked}
+                        onChange={options.toggleLeftSidebar}
                     />
                     <label htmlFor="app-shrinking-left-sidebar"></label>
                 </div>
@@ -26,8 +23,8 @@ const LayoutOption = () => {
                     <input
                         type="checkbox"
                         id="app-fixed-left-sidebar"
-                        checked={!!settingContext.leftSidebarFixed}
-                        onChange={settingContext.toggleLeftSidebarFixed}
+                        checked={!!options.leftSidebarFixed}
+                        onChange={options.toggleLeftSidebarFixed}
                     />
                     <label htmlFor="app-fixed-left-sidebar"></label>
                 </div>
@@ -38,9 +35,9 @@ const LayoutOption = () => {
                     <input
                         type="checkbox"
                         id="app-fixed-footer"
-                        checked={!!settingContext.footerFixed}
-                        onChange={settingContext.toggleFooterFixed}
-                        disabled={!!settingContext.boxedLayout}
+                        checked={!!options.footerFixed}
+                        onChange={options.toggleFooterFixed}
+                        disabled={!!options.boxedLayout}
                     />
                     <label htmlFor="app-fixed-footer"></label>
                 </div>
@@ -51,13 +48,13 @@ const LayoutOption = () => {
                     <input
                         type="checkbox"
                         id="app-boxed-layout"
-                        checked={!!settingContext.boxedLayout}
-                        onChange={settingContext.toggleBoxedLayout}
+                        checked={!!options.boxedLayout}
+                        onChange={options.toggleBoxedLayout}
                     />
                     <label htmlFor="app-boxed-layout"></label>
                 </div>
-                
-                <div className="ms-3"><label htmlFor="app-boxed-layout">Boxed Layout{!!settingContext.boxedLayout}</label></div>
+
+                <div className="ms-3"><label htmlFor="app-boxed-layout">Boxed Layout{!!options.boxedLayout}</label></div>
             </div>
         </div>
     </>

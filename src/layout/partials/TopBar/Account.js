@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Dropdown } from 'react-bootstrap';
-import { CustomDropdown, CustomDropdownToggle} from '../../../components/Dropdown';
+import { CustomDropdown, CustomDropdownToggle } from '../../../components/Dropdown';
 import avatar from "../../../assets/images/avatar.jpg";
 
 const Account = () => 
