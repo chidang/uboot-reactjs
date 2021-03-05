@@ -1,7 +1,7 @@
 import { AccordionContext, useAccordionToggle } from 'react-bootstrap'
 import { useContext } from 'react';
 
-export const  LeftSidebarItemToggle = ({ children, eventKey, callback, collapsed }) => {
+const SidebarToggleItem = ({ children, eventKey, callback, collapsed }) => {
     const currentEventKey = useContext(AccordionContext);
   
     const decoratedOnClick = useAccordionToggle(
@@ -12,10 +12,12 @@ export const  LeftSidebarItemToggle = ({ children, eventKey, callback, collapsed
   
     return (
       <a
-        className={ isCurrentEventKey ? 'dropdown-toggle collapsed' : 'dropdown-toggle aaa' }
+        className={ isCurrentEventKey ? 'dropdown-toggle collapsed' : 'dropdown-toggle' }
         onClick={decoratedOnClick}
       >
         {children}
       </a>
     );
 }
+
+export default SidebarToggleItem;
