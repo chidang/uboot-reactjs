@@ -1,39 +1,73 @@
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 import logo from "../../../assets/images/logo.svg";
 
-const Login = () =>
-  <div className="container">
+const SigninSchema = yup.object().shape({
+  email: yup.string().email("Email must be a valid email").required("Email is a required field"),
+  password: yup.string().required("Password is a required field")
+});
+
+const Login = () => {
+  const { register, handleSubmit, setValue, errors } = useForm({
+    resolver: yupResolver(SigninSchema),
+  });
+  const onSubmit = data => {
+      alert(JSON.stringify(data));
+  };
+
+  return <div className="container">
     <div className="row justify-content-center align-items-center vh-100">
       <div className="col-xl-4 col-lg-5 px-4">
         <div className="card shadow-sm rounded-0">
           <div className="card-body p-4">
             <div className="text-center mb-4">
               <Link to="/">
-                <img src={logo} style={{width: "145px"}} className="img-fluid" alt="Logo"/>
+                <img src={logo} style={{ width: "145px" }} className="img-fluid" alt="Logo" />
               </Link>
             </div>
             <div className="text-center m-auto">
               <h3 className="text-dark-50 text-center mt-0 font-weight-bold">Sign In</h3>
               <p className="text-muted mb-4">Enter your email address and password to access admin panel.</p>
             </div>
-            <form action="#">
-              <div className="input-group mb-4">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="input-group mt-4">
                 <span className="input-group-text" id="basic-addon1"><i className="bi-envelope"></i></span>
-                <input type="email" id="emailaddress" className="form-control" required="" placeholder="Email address" aria-label="Email"/>
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Email address"
+                  ref={register} 
+                />
               </div>
-              <div className="input-group mb-4">
+              {errors.email && <span className="text-danger">{errors.email.message}</span>}
+              <div className="input-group mt-4">
                 <span className="input-group-text" id="basic-addon2"><i className="bi-shield-lock"></i></span>
-                <input className="form-control" type="password" required="" id="password" placeholder="Password" />
+                <input
+                  type="password"
+                  name="password"
+                  className="form-control"
+                  placeholder="password"
+                  ref={register}
+                />
               </div>
-              <div className="mb-3 justify-content-between d-flex">
+              {errors.password && <p className="text-danger">{errors.password.message}</p>}
+              <div className="my-4 justify-content-between d-flex">
                 <label className="custom-checkbox">
-                  <input type="checkbox" id="remember-me"/> Keep me logged in
-                  <span></span>
+                  <input type="checkbox" id="remember-me" /> Keep me logged in
+                <span></span>
                 </label>
                 <Link to="/auth/forgot-password" className="text-info ms-1">Forgot your password?</Link>
               </div>
               <div className="d-grid mb-0 text-center">
-                <button className="btn btn-warning btn-block text-white" type="submit"> <span>Sign In</span> <i className="fas fa-sign-in-alt"></i></button>
+                <button
+                  className="btn btn-warning btn-block text-white"
+                  type="submit"
+                > 
+                  <span>Sign In</span> <i className="fas fa-sign-in-alt"></i>
+                </button>
               </div>
               <p className="text-center my-4">- OR -</p>
               <div className="d-grid mx-auto">
@@ -51,5 +85,6 @@ const Login = () =>
       </div>
     </div>
   </div>
+}
 
 export default Login;
