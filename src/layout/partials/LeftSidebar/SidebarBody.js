@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import SidebarCategory from "./SidebarCategory";
-import SidebarItem from "./SidebarItem";
 import { isMobile } from "../../../shared/utility";
 import useWindowSize from "../../../hooks/WindowSize";
+import SidebarCategory from "./SidebarCategory";
+import SidebarItem from "./SidebarItem";
+import FormSearch from "./FormSearch";
 
 const SidebarBody = (props) => {
     const { openedRoute, routes, options } = props;
@@ -13,9 +14,7 @@ const SidebarBody = (props) => {
 
     return (
         <div className="sidebar-body" style={sidebarStyle}>
-            <div className="nav-filter align-items-center justify-content-center flex-row mb-4 p-2">
-                <input type="text" placeholder="Quick search" className="w-100 form-control" tabIndex="0" />
-            </div>
+            <FormSearch />
             <div className="sidebar-block">
                 <ul className="list-unstyled sidebar-content">
                     {
