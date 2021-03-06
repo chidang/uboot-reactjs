@@ -77,7 +77,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT80SDF Megan Harrison</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT80SDF Megan Harrison</strong></Link></td>
                         <td>6 mins ago</td>
                         <td><span className="badge bg-success rounded">Completed</span></td>
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
@@ -87,7 +87,7 @@ const Orders = () => {
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -100,7 +100,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
                         <td>Mar 3, 2020</td>
                         <td><span className="badge bg-info rounded">Processing</span></td>
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
@@ -110,7 +110,7 @@ const Orders = () => {
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -123,7 +123,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT79SDF Paul G Conger</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT79SDF Paul G Conger</strong></Link></td>
                         <td>Oct 27, 2019</td>
                         <td><span className="badge bg-warning rounded">On hold</span></td>
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
@@ -133,7 +133,7 @@ const Orders = () => {
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -146,7 +146,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT78SDF Chery R Nicholes</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT78SDF Chery R Nicholes</strong></Link></td>
                         <td>Oct 27, 2019</td>
                         <td><span className="badge bg-warning rounded">On hold</span></td>
                         <td>Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019
@@ -156,7 +156,7 @@ const Orders = () => {
                         <td>$24,960</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -169,7 +169,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT80SDF Megan Harrison</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT80SDF Megan Harrison</strong></Link></td>
                         <td>6 mins ago</td>
                         <td><span className="badge bg-success rounded">Completed</span></td>
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
@@ -179,7 +179,7 @@ const Orders = () => {
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -192,7 +192,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
                         <td>Mar 3, 2020</td>
                         <td><span className="badge bg-info rounded">Processing</span></td>
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
@@ -202,7 +202,7 @@ const Orders = () => {
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -215,7 +215,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT79SDF Paul G Conger</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT79SDF Paul G Conger</strong></Link></td>
                         <td>Oct 27, 2019</td>
                         <td><span className="badge bg-warning rounded">On hold</span></td>
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
@@ -225,7 +225,7 @@ const Orders = () => {
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -238,7 +238,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT78SDF Chery R Nicholes</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT78SDF Chery R Nicholes</strong></Link></td>
                         <td>Oct 27, 2019</td>
                         <td><span className="badge bg-info rounded">Processing</span></td>
                         <td>Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019
@@ -248,7 +248,7 @@ const Orders = () => {
                         <td>$24,960</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -261,7 +261,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT81SDF Michael H Hubble</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT81SDF Michael H Hubble</strong></Link></td>
                         <td>Mar 3, 2020</td>
                         <td><span className="badge bg-info rounded">Processing</span></td>
                         <td>Michael H Hubble, Kinsman, Ohio(OH), 44428, South Africa
@@ -271,7 +271,7 @@ const Orders = () => {
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -284,7 +284,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT79SDF Paul G Conger</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT79SDF Paul G Conger</strong></Link></td>
                         <td>Oct 27, 2019</td>
                         <td><span className="badge bg-warning rounded">On hold</span></td>
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
@@ -294,7 +294,7 @@ const Orders = () => {
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -307,7 +307,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT80SDF Megan Harrison</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT80SDF Megan Harrison</strong></Link></td>
                         <td>6 mins ago</td>
                         <td><span className="badge bg-success rounded">Completed</span></td>
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
@@ -317,7 +317,7 @@ const Orders = () => {
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>
@@ -330,7 +330,7 @@ const Orders = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-order-detail.html"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
+                        <td><Link to="/ecommerce/order-detail"><strong>#RT81SDF Zoe Tamayo</strong></Link></td>
                         <td>Mar 3, 2020</td>
                         <td><span className="badge bg-info rounded">Processing</span></td>
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
@@ -340,7 +340,7 @@ const Orders = () => {
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
-                            <li><Link to="ecommerce-order-detail.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                            <li><Link to="/ecommerce/order-detail"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-bar-chart" data-original-title="Analytics" data-toggle="tooltip" /></Link></li>
                             <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                           </ul>

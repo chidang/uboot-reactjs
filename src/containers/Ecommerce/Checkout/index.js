@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import InfomationStep from "./InfomationStep";
 import ShippingStep from "./ShippingStep";
 import PaymentStep from "./PaymentStep";
+import * as actions from '../../../store/actions/index';
 
 const Checkout = () => {
-  const [step, setStep] = useState(1);
-
-  const changeStep = (newStep) => {
-    setStep(newStep);
-  }
+  const ecommerceState = useSelector(state => state.ecommerce)
+  const dispatch = useDispatch();
+  const changeStep = (newStep) => dispatch(actions.setEcommerceCheckoutStep(newStep))
 
   const TabContent = () => {
-    switch(step) {
+    switch(ecommerceState.checkout.step) {
       case 2:
-        return <ShippingStep />;
+        return <ShippingStep changeStep={changeStep} />;
       case 3:
-        return <PaymentStep />;
+        return <PaymentStep changeStep={changeStep} />;
       default:
-        return <InfomationStep />;
+        return <InfomationStep changeStep={changeStep} />;
     }
   }
   const tabClasses = "nav-link rounded-0 w-100";
-  const infomationTabClasses = step === 1 ? `${tabClasses} active` : tabClasses;
-  const shippingTabClasses = step === 2 ? `${tabClasses} active` : tabClasses;
-  const paymentTabClasses = step === 3 ? `${tabClasses} active` : tabClasses; 
+  const infomationTabClasses = ecommerceState.checkout.step === 1 ? `${tabClasses} active` : tabClasses;
+  const shippingTabClasses = ecommerceState.checkout.step === 2 ? `${tabClasses} active` : tabClasses;
+  const paymentTabClasses = ecommerceState.checkout.step === 3 ? `${tabClasses} active` : tabClasses; 
 
   return <>
     <div>
@@ -60,7 +60,7 @@ const Checkout = () => {
         </li>
       </ul>
       <div className="tab-content shadow-none px-0">
-        <TabContent />
+        <TabContent changeStep={changeStep}/>
       </div>
     </div>
   </>

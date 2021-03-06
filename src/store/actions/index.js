@@ -1,3 +1,3 @@
 export { 
-    shrinkLeftSidebar
-} from './leftSidebar';
+    setEcommerceCheckoutStep
+} from './ecommerce';

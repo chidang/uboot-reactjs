@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import Select from 'react-select';
 import countries from "../../../data/countries";
 import OrderSummary from "./OrderSummary"
 
-const InfomationStep = () => {
+const InfomationStep = (props) => {
     return (
         <>
             <div className="tab-pane show active" id="order-information">
@@ -113,15 +114,15 @@ const InfomationStep = () => {
                                     </div>
                                     <div className="row mt-4">
                                         <div className="col-6">
-                                            <a href="shopping-card.html" className="btn btn-warning">
+                                            <Link to="/ecommerce/shopping-cart" className="btn btn-warning">
                                                 <i className="bi-chevron-double-left" />
-                            Return to cart
-                            </a>
+                                                Return to cart
+                                            </Link>
                                         </div> {/* end col */}
                                         <div className="col-6">
                                             <div className="text-end">
-                                                <a href="#" className="btn btn-danger">
-                                                    <i className="mdi mdi-truck-fast mr-1" /> Continue to Shipping </a>
+                                                <button className="btn btn-danger" onClick={() => props.changeStep(2)}>
+                                                    <i className="mdi mdi-truck-fast mr-1" /> Continue to Shipping </button>
                                             </div>
                                         </div> {/* end col */}
                                     </div> {/* end row */}

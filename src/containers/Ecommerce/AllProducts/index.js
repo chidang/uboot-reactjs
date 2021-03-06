@@ -71,11 +71,11 @@ const AllProduct = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="ecommerce-product-detail.html">
+                          <Link to="/ecommerce/product-detail">
                             <img className="img-thumbnail" alt="Product" src={product} width={48} />
                           </Link>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Dress For Woman</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>32</td>
@@ -98,8 +98,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Lether Gray Tuxedo</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Lether Gray Tuxedo</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$25</td>
                         <td>56</td>
@@ -122,8 +122,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Woman Full Sliv Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$21</td>
                         <td>44</td>
@@ -146,8 +146,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Light Blue Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Light Blue Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>44</td>
@@ -170,8 +170,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Dress For Woman</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$26</td>
                         <td>23</td>
@@ -194,8 +194,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Casual Check Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Casual Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>14</td>
@@ -218,8 +218,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">White Black Line Dress</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">White Black Line Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$18</td>
                         <td>19</td>
@@ -242,8 +242,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$21</td>
                         <td>76</td>
@@ -266,8 +266,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Woman Full Sliv Dress</Link></td>
                         <td>Classic Tee</td>
                         <td>$27</td>
                         <td>22</td>
@@ -290,8 +290,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Red &amp; Black Check Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Red &amp; Black Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$16</td>
                         <td>28</td>
@@ -314,8 +314,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$19</td>
                         <td>15</td>
@@ -338,8 +338,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Military And Veterans T-shirts</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Military And Veterans T-shirts</Link></td>
                         <td>Classic Tee</td>
                         <td>$17.99</td>
                         <td>44</td>
@@ -362,8 +362,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Just Eat It! Hamburger</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Just Eat It! Hamburger</Link></td>
                         <td>Classic Tee</td>
                         <td>$18</td>
                         <td>67</td>
@@ -386,8 +386,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">I'm Just Here For The Boos</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">I'm Just Here For The Boos</Link></td>
                         <td>Classic Tee</td>
                         <td>$21</td>
                         <td>16</td>
@@ -410,8 +410,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Patriotic Dog Paw</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Patriotic Dog Paw</Link></td>
                         <td>Classic Tee</td>
                         <td>$22</td>
                         <td>61</td>
@@ -434,8 +434,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">T-Shirt Form Girls</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>39</td>
@@ -458,8 +458,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">T-Shirt Form Girls</Link></td>
                         <td>Classic Tee</td>
                         <td>$17</td>
                         <td>23</td>
@@ -482,8 +482,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Dress For Woman</Link></td>
                         <td>Classic Tee</td>
                         <td>$18</td>
                         <td>48</td>
@@ -506,8 +506,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Woman Full Sliv Dress</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$21</td>
                         <td>35</td>
@@ -530,8 +530,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Woman Full Sliv Dress</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Woman Full Sliv Dress</Link></td>
                         <td>Classic Tee</td>
                         <td>$23</td>
                         <td>9</td>
@@ -554,8 +554,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Casual Check Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Casual Check Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$24</td>
                         <td>56</td>
@@ -578,8 +578,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Men Blue Jins Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Men Blue Jins Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$25</td>
                         <td>16</td>
@@ -602,8 +602,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Blue Dress For Woman</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Blue Dress For Woman</Link></td>
                         <td>Classic Pullover Hoodie</td>
                         <td>$23</td>
                         <td>76</td>
@@ -626,8 +626,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">T-Shirt Form Girls</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">T-Shirt Form Girls</Link></td>
                         <td>Pillow</td>
                         <td>$25</td>
                         <td>45</td>
@@ -650,8 +650,8 @@ const AllProduct = () => {
                             <span />
                           </label>
                         </td>
-                        <td><Link to="ecommerce-product-detail.html"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
-                        <td><Link to="ecommerce-product-detail.html">Light Blue Shirt</Link></td>
+                        <td><Link to="/ecommerce/product-detail"><img className="img-thumbnail" alt="Product" src={product} width={48} /></Link></td>
+                        <td><Link to="/ecommerce/product-detail">Light Blue Shirt</Link></td>
                         <td>Classic Tee</td>
                         <td>$26</td>
                         <td>34</td>

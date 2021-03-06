@@ -1,6 +1,6 @@
 import OrderSummary from "./OrderSummary"
 
-const ShippingStep = () => {
+const ShippingStep = (props) => {
     return (
         <>
             <div className="tab-pane show active" id="shipping-information">
@@ -118,16 +118,16 @@ const ShippingStep = () => {
                                 {/* end border */}
                                 <div className="row mt-4">
                                     <div className="col-6">
-                                        <a href="shopping-card.html" className="btn btn-warning">
+                                        <button onClick={() => props.changeStep(1)} className="btn btn-warning">
                                             <i className="bi-chevron-double-left" />
-                            Return to Information
-                        </a>
+                                            Return to Information
+                                        </button>
                                     </div>
                                     {/* end col */}
                                     <div className="col-6">
                                         <div className="text-end">
-                                            <a href="#" className="btn btn-danger">
-                                                <i className="mdi mdi-truck-fast mr-1" /> Continue to Payment </a>
+                                            <button onClick={() => props.changeStep(3)} className="btn btn-danger">
+                                                <i className="mdi mdi-truck-fast mr-1" /> Continue to Payment </button>
                                         </div>
                                     </div>
                                     {/* end col */}

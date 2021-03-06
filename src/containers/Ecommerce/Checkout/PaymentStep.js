@@ -2,7 +2,7 @@ import Select from 'react-select';
 import countries from "../../../data/countries";
 import OrderSummary from "./OrderSummary"
 
-const PaymentStep = () => {
+const PaymentStep = (props) => {
     return (
         <>
         <div className="tab-pane show active" id="payment-information">
@@ -268,10 +268,10 @@ const PaymentStep = () => {
                     {/* end billing-address */}
                     <div className="row mt-4">
                         <div className="col-6">
-                        <a href="shopping-card.html" className="btn btn-warning">
+                        <button onClick={() => props.changeStep(2)} className="btn btn-warning">
                             <i className="bi-chevron-double-left" />
                             Return to shipping
-                        </a>
+                        </button>
                         </div>
                         {/* end col */}
                         <div className="col-6">
