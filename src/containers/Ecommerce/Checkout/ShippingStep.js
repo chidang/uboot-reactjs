@@ -8,7 +8,6 @@ const ShippingStep = (props) => {
                     <div className="col-lg-4">
                         <OrderSummary />
                     </div>
-                    {/* end col */}
                     <div className="col-lg-8">
                         <div className="card">
                             <div className="card-body">
@@ -28,7 +27,7 @@ const ShippingStep = (props) => {
                                 </div>
                                 <h2 className="h4">
                                     Shipping method
-                    </h2>
+                                </h2>
                                 <div className="border mb-3 rounded">
                                     <div className="border-bottom p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
@@ -38,12 +37,12 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-1">
                                                 FedEx Ground
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">Estimated delivery: four days</span>
                                             </label>
                                         </div>
-                        $8.73
-                        </div>
+                                        $8.73
+                                    </div>
                                     <div className="border-bottom p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
                                             <label className="custom-radio">
@@ -52,12 +51,12 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-2">
                                                 USPS Priority Mail 2-Day
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">1-Day or 2-Day expedited service by 3 p.m</span>
                                             </label>
                                         </div>
-                        $11.19
-                        </div>
+                                        $11.19
+                                    </div>
                                     <div className="border-bottom p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
                                             <label className="custom-radio">
@@ -66,12 +65,12 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-3">
                                                 FedEx Express Saver
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">3 business days</span>
                                             </label>
                                         </div>
-                        $16.22
-                        </div>
+                                        $16.22
+                                    </div>
                                     <div className="border-bottom p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
                                             <label className="custom-radio">
@@ -80,12 +79,12 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-4">
                                                 FedEx 2 Day
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">2 business days</span>
                                             </label>
                                         </div>
-                        $20.85
-                        </div>
+                                        $20.85
+                                    </div>
                                     <div className="border-bottom p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
                                             <label className="custom-radio">
@@ -94,12 +93,12 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-5">
                                                 FedEx Standard Overnight
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">1 business days</span>
                                             </label>
                                         </div>
-                        $39.68
-                        </div>
+                                        $39.68
+                                    </div>
                                     <div className="p-3 d-flex justify-content-between align-items-center">
                                         <div className="d-flex">
                                             <label className="custom-radio">
@@ -108,14 +107,13 @@ const ShippingStep = (props) => {
                                             </label>
                                             <label htmlFor="checkout-shipping-rate-id-6">
                                                 FedEx First Overnight
-                            <br />
+                                                <br />
                                                 <span className="fs-sm">1 business days</span>
                                             </label>
                                         </div>
-                        $132.41
-                        </div>
+                                        $132.41
+                                    </div>
                                 </div>
-                                {/* end border */}
                                 <div className="row mt-4">
                                     <div className="col-6">
                                         <button onClick={() => props.changeStep(1)} className="btn btn-warning">
@@ -123,24 +121,18 @@ const ShippingStep = (props) => {
                                             Return to Information
                                         </button>
                                     </div>
-                                    {/* end col */}
                                     <div className="col-6">
                                         <div className="text-end">
                                             <button onClick={() => props.changeStep(3)} className="btn btn-danger">
                                                 <i className="mdi mdi-truck-fast mr-1" /> Continue to Payment </button>
                                         </div>
                                     </div>
-                                    {/* end col */}
                                 </div>
-                                {/* end row */}
+                                
                             </div>
-                            {/* end card-body */}
                         </div>
-                        {/* end card */}
                     </div>
-                    {/* end col */}
                 </div>
-                {/* end row*/}
             </div>
         </>
     );

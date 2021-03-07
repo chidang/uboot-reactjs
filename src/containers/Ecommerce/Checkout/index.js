@@ -8,14 +8,21 @@ import * as actions from '../../../store/actions/index';
 const Checkout = () => {
   const ecommerceState = useSelector(state => state.ecommerce)
   const dispatch = useDispatch();
-  const changeStep = (newStep) => dispatch(actions.setEcommerceCheckoutStep(newStep))
-
+  const changeStep = (newStep) => dispatch(actions.setEcommerceCheckoutStep(newStep));
+  const changeBillingAddess = (billingAddress) => dispatch(actions.setBillingAddress(billingAddress));
+  const changePaymentMethod = (paymentMethod) => dispatch(actions.setPaymentMethod(paymentMethod));
   const TabContent = () => {
     switch(ecommerceState.checkout.step) {
       case 2:
         return <ShippingStep changeStep={changeStep} />;
       case 3:
-        return <PaymentStep changeStep={changeStep} />;
+        return <PaymentStep
+                changeStep={changeStep}
+                changeBillingAddess={changeBillingAddess}
+                billingAddress={ecommerceState.checkout.billingAddress}
+                paymentMethod={ecommerceState.checkout.paymentMethod}
+                changePaymentMethod={changePaymentMethod}
+              />;
       default:
         return <InfomationStep changeStep={changeStep} />;
     }
@@ -60,7 +67,7 @@ const Checkout = () => {
         </li>
       </ul>
       <div className="tab-content shadow-none px-0">
-        <TabContent changeStep={changeStep}/>
+        <TabContent />
       </div>
     </div>
   </>

@@ -18,6 +18,7 @@
     "chart.js": "^2.9.4",
     "chroma-js": "^2.1.0",
     "d3": "^6.3.1",
+    "deepmerge": "^4.2.2",
     "jquery": "^3.5.1",
     "jvectormap-next": "^3.1.1",
     "node-sass": "4.14.1",

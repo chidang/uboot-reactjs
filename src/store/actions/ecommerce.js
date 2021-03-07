@@ -6,3 +6,17 @@ export const setEcommerceCheckoutStep = (step) => {
         step: step
     }
 }
+
+export const setBillingAddress = (billingAddress) => {
+    return {
+        type: actionTypes.SET_BILLING_ADDRESS,
+        billingAddress: billingAddress
+    }
+}
+
+export const setPaymentMethod = (paymentMethod) => {
+    return {
+        type: actionTypes.SET_PAYMENT_METHOD,
+        paymentMethod: paymentMethod
+    }
+}

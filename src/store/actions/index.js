@@ -1,3 +1,5 @@
 export { 
-    setEcommerceCheckoutStep
+    setEcommerceCheckoutStep,
+    setBillingAddress,
+    setPaymentMethod
 } from './ecommerce';

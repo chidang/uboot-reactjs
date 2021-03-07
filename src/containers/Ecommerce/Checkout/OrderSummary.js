@@ -57,7 +57,7 @@ const OrderSummary = () => {
                 <hr />
                 <form>
                     <div className="d-flex my-4">
-                        <input type="text" className="form-control mr-2" placeholder="Gift card or discount code" />
+                        <input type="text" className="form-control me-2" placeholder="Gift card or discount code" />
                         <button className="btn btn-primary" type="button">Apply</button>
                     </div>
                 </form>
