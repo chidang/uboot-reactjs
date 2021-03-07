@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect, useContext } from 'react';
 import DataTable from 'react-data-table-component';
 import SettingContext from '../../context/setting-context';
@@ -49,6 +50,19 @@ const ReactDataTable = () => {
   }, []);
   
   return (
+    <>
+    <nav aria-label="breadcrumb">
+        <ol className="breadcrumb ps-0 fs-base">
+        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+        <li className="breadcrumb-item"><span>Tables</span></li>
+        <li className="breadcrumb-item active" aria-current="page">React Data Table</li>
+        </ol>
+    </nav>
+    <div className="d-flex header justify-content-between mb-2">
+        <h1 className="header-title h3">
+        <i className="bi-table text-primary" /> React Data Table
+        </h1>
+    </div>
     <DataTable
       data={data}
       columns={columns}
@@ -57,6 +71,7 @@ const ReactDataTable = () => {
       theme={themeMode}
       customStyles={customStyles}
     />
+    </>
   )
 }
 

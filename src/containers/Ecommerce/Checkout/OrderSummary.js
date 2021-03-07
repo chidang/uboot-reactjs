@@ -53,7 +53,6 @@ const OrderSummary = () => {
                         </tbody>
                     </table>
                 </div>
-                {/* end table-responsive */}
                 <hr />
                 <form>
                     <div className="d-flex my-4">
@@ -81,7 +80,6 @@ const OrderSummary = () => {
                     </table>
                 </div>
             </div>
-            {/* end card-body*/}
         </div>
     );
 };

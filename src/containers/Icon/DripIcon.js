@@ -16,8 +16,8 @@ const DripIcon = () => {
         return list.filter(item => {
             return (
                 item.label
-                .toLowerCase()
-                .includes(searchValue.toLowerCase())
+                    .toLowerCase()
+                    .includes(searchValue.toLowerCase())
             );
         });
     };
@@ -33,14 +33,14 @@ const DripIcon = () => {
         <>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb ps-0 fs-base">
-                <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
-                <li className="breadcrumb-item"><span>Icons</span></li>
-                <li className="breadcrumb-item active" aria-current="page">Dripicons</li>
+                    <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+                    <li className="breadcrumb-item"><span>Icons</span></li>
+                    <li className="breadcrumb-item active" aria-current="page">Dripicons</li>
                 </ol>
             </nav>
             <div className="header mb-4">
                 <h1 className="header-title h3">
-                <i className="bi-gift text-primary" />
+                    <i className="bi-gift text-primary" />
                 Dripicons
                 </h1>
             </div>
@@ -48,11 +48,11 @@ const DripIcon = () => {
                 <Form id="search-icons" onSubmit={handleSubmit}>
                     <div className="input-group">
                         <Form.Control
-                        type="text"
-                        className="form-control"
-                        placeholder="Search"
-                        value={searchValue}
-                        onChange={(e) => handleSearchValue(e)}
+                            type="text"
+                            className="form-control"
+                            placeholder="Search"
+                            value={searchValue}
+                            onChange={(e) => handleSearchValue(e)}
                         />
                         <div className="input-group-append">
                             <Button className="btn btn-primary" type="submit"><i className="bi-search" /></Button>
@@ -62,17 +62,17 @@ const DripIcon = () => {
             </div>
             <div className="card">
                 <div className="card-body">
-                <div className="text-center">
-                    <ul id="icon-list" className="ps-0">
-                        { data.map((icon, _key) => (
-                            <IconItem
-                            key={_key}
-                            icon={icon}
-                            prefix="dripicons-"
-                            />
-                        ))} 
-                    </ul>
-                </div>
+                    <div className="text-center">
+                        <ul id="icon-list" className="ps-0">
+                            {data.map((icon, _key) => (
+                                <IconItem
+                                    key={_key}
+                                    icon={icon}
+                                    prefix="dripicons-"
+                                />
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

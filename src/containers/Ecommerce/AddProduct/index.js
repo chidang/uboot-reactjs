@@ -30,13 +30,9 @@ const AddProduct = () => {
                       <textarea className="form-control" id="product-description" rows={3} />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Media</h4>
@@ -58,9 +54,7 @@ const AddProduct = () => {
                   )}
                 </Dropzone>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Pricing</h4>
@@ -71,16 +65,13 @@ const AddProduct = () => {
                       <input className="form-control" type="text" id="product-price" />
                     </div>
                   </div>
-                  {/* end col */}
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
                       <label htmlFor="product-compare-price">Compare at price</label>
                       <input className="form-control" type="text" id="product-compare-price" />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
@@ -91,20 +82,15 @@ const AddProduct = () => {
                       </span>
                     </div>
                   </div>
-                  {/* end col */}
                   <div className="col-lg-6 d-flex align-items-center">
                     <label className="custom-checkbox">
                       <input type="checkbox" defaultChecked="checked" /> Charge tax on this product
                       <span />
                     </label>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Inventory</h4>
@@ -115,16 +101,13 @@ const AddProduct = () => {
                       <input className="form-control" type="text" id="product-sku" />
                     </div>
                   </div>
-                  {/* end col */}
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
                       <label htmlFor="product-bar-code">Barcode (ISBN, UPC, GTIN, etc.)</label>
                       <input className="form-control" type="text" id="product-bar-code" />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row pb-3">
                   <div className="col-12">
                     <label className="custom-checkbox">
@@ -139,7 +122,6 @@ const AddProduct = () => {
                     </label>
                   </div>
                 </div>
-                {/* end row */}
                 <h5 className="mt-3">QUANTITY</h5>
                 <div className="row">
                   <div className="col-lg-6">
@@ -148,7 +130,6 @@ const AddProduct = () => {
                       <input className="form-control" type="number" id="product-quantity" />
                     </div>
                   </div>
-                  {/* end col */}
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
                       <label htmlFor="product-backorder">Allow backorder</label>
@@ -159,9 +140,7 @@ const AddProduct = () => {
                       </select>
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
@@ -169,13 +148,9 @@ const AddProduct = () => {
                       <input className="form-control" type="number" id="product-threshold" />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4 className="mb-3">Shipping</h4>
@@ -203,7 +178,6 @@ const AddProduct = () => {
                     </div>
                   </div>
                 </div>
-                {/* end row */}
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="form-group mb-3">
@@ -215,9 +189,7 @@ const AddProduct = () => {
                   </div>
                 </div>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Variants</h4>
@@ -225,54 +197,39 @@ const AddProduct = () => {
                   <div className="form-group">
                     <label htmlFor="product-variant-1">Option 1</label>
                   </div>
-                  {/* end form-group */}
                   <div className="col-3">
                     <input className="form-control" type="text" placeholder="Size" id="product-variant-1" />
                   </div>
-                  {/* end col */}
                   <div className="col-9">
                     <input className="form-control" type="text" id="value-product-variant-1" placeholder="Separate options with a comma" />
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row mb-3">
                   <div className="form-group">
                     <label htmlFor="product-variant-2">Option 2</label>
                   </div>
-                  {/* end form-group */}
                   <div className="col-3">
                     <input className="form-control" type="text" placeholder="Color" id="product-variant-2" />
                   </div>
-                  {/* end col */}
                   <div className="col-9">
                     <input className="form-control" type="text" id="value-product-variant-2" placeholder="Separate options with a comma" />
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row pb-3">
                   <div className="form-group">
                     <label htmlFor="product-variant-3">Option 3</label>
                   </div>
-                  {/* end form-group */}
                   <div className="col-3">
                     <input className="form-control" type="text" placeholder="Style" id="product-variant-3" />
                   </div>
-                  {/* end col */}
                   <div className="col-9">
                     <input className="form-control" type="text" id="value-product-variant-3" placeholder="Separate options with a comma" />
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle me-2" />Add another option</button>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
           </div>
-          {/* end col */}
           <div className="col-lg-4">
             <div className="card">
               <div className="card-body">
@@ -284,9 +241,7 @@ const AddProduct = () => {
                       <input className="form-control" type="text" id="product-type" />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="form-group mb-3">
@@ -294,13 +249,9 @@ const AddProduct = () => {
                       <input className="form-control" type="text" id="product-vendor" />
                     </div>
                   </div>
-                  {/* end col */}
                 </div>
-                {/* end row */}
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Product categories</h4>
@@ -324,9 +275,7 @@ const AddProduct = () => {
                 </div>
                 <button className="btn btn-sm btn-outline-highlight" type="button"><i className="bi-plus-circle me-2" />Add new category</button>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body">
                 <h4>Product tags</h4>
@@ -348,21 +297,15 @@ const AddProduct = () => {
                   </div>
                 </form>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
             <div className="card">
               <div className="card-body d-flex justify-content-between">
                 <button className="btn btn-outline-highlight" type="button">Save Draft</button>
                 <button className="btn btn-primary" type="button"><i className="bi-save me-2" />Save</button>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
           </div>
-          {/* end col */}
         </div>
-        {/* end row */}
     </>
 }
 

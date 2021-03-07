@@ -13,7 +13,7 @@ const Faq = () =>
     <div className="d-flex header justify-content-between mb-4">
       <h1 className="header-title h3">
         <i className="bi-question-circle text-primary" /> FAQ
-    </h1>
+      </h1>
     </div>
     <div className="card">
       <div className="card-header justify-content-between">

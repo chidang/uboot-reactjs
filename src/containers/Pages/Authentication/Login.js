@@ -14,7 +14,7 @@ const Login = () => {
     resolver: yupResolver(SigninSchema),
   });
   const onSubmit = data => {
-      alert(JSON.stringify(data));
+    alert(JSON.stringify(data));
   };
 
   return <div className="container">
@@ -39,7 +39,7 @@ const Login = () => {
                   name="email"
                   className="form-control"
                   placeholder="Email address"
-                  ref={register} 
+                  ref={register}
                 />
               </div>
               {errors.email && <span className="text-danger">{errors.email.message}</span>}
@@ -65,7 +65,7 @@ const Login = () => {
                 <button
                   className="btn btn-warning btn-block text-white"
                   type="submit"
-                > 
+                >
                   <span>Sign In</span> <i className="fas fa-sign-in-alt"></i>
                 </button>
               </div>

@@ -76,14 +76,14 @@ const Register = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label className="custom-checkbox">
-                                        <input type="checkbox" id="acceptPolicy"  name="acceptPolicy" ref={register}/> I agree to <Link className="text-info" to="#">terms & conditions</Link>
+                                        <input type="checkbox" id="acceptPolicy" name="acceptPolicy" ref={register} /> I agree to <Link className="text-info" to="#">terms & conditions</Link>
                                         <span></span>
                                     </label>
                                     {errors.acceptPolicy && <p className="text-danger">{errors.acceptPolicy.message}</p>}
                                 </div>
                                 <div className="mb-3">
                                     <label className="custom-checkbox">
-                                        <input type="checkbox" id="newsletters" name="newsletters" ref={register}/> Sign up for newsletters
+                                        <input type="checkbox" id="newsletters" name="newsletters" ref={register} /> Sign up for newsletters
                                     <span></span>
                                     </label>
                                 </div>

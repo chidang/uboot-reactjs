@@ -11,7 +11,6 @@ const InfomationStep = (props) => {
                     <div className="col-lg-4">
                         <OrderSummary />
                     </div>
-                    {/* end col */}
                     <div className="col-lg-8">
                         <div className="card">
                             <div className="card-body">
@@ -36,7 +35,7 @@ const InfomationStep = (props) => {
                                                 <input className="form-control" type="text" id="billing-last-name" />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group mb-3">
@@ -50,7 +49,7 @@ const InfomationStep = (props) => {
                                                 <input className="form-control" type="email" id="billing-email-address" />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <h4 className="mt-2 mb-3">Shipping Address</h4>
                                     <div className="row">
                                         <div className="col-md-12">
@@ -59,7 +58,7 @@ const InfomationStep = (props) => {
                                                 <Select options={countries} />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="form-group mb-3">
@@ -67,7 +66,7 @@ const InfomationStep = (props) => {
                                                 <input className="form-control" type="text" placeholder="Street address, P.O. box, company name, c/o" id="shipping-address-1" />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="form-group mb-3">
@@ -75,7 +74,7 @@ const InfomationStep = (props) => {
                                                 <input className="form-control" type="text" placeholder="Apartment, suite, unit, building, floor, etc." id="shipping-address-2" />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
                                         <div className="col-md-4">
                                             <div className="form-group mb-3">
@@ -95,9 +94,9 @@ const InfomationStep = (props) => {
                                                 <input className="form-control" type="text" id="shipping-zip-postal" />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="form-group mb-3">
@@ -105,11 +104,11 @@ const InfomationStep = (props) => {
                                                 <textarea className="form-control" id="example-textarea" rows={3} placeholder="Write some note.." defaultValue={""} />
                                             </div>
                                         </div>
-                                    </div> {/* end row */}
+                                    </div>
                                     <div className="mt-2">
                                         <label className="custom-checkbox d-inline-block mr-3">
                                             <input id="checkout-remember-me" type="checkbox" /> Save this information for next time
-                            <span />
+                                            <span />
                                         </label>
                                     </div>
                                     <div className="row mt-4">
@@ -118,25 +117,20 @@ const InfomationStep = (props) => {
                                                 <i className="bi-chevron-double-left" />
                                                 Return to cart
                                             </Link>
-                                        </div> {/* end col */}
+                                        </div>
                                         <div className="col-6">
                                             <div className="text-end">
                                                 <button className="btn btn-danger" onClick={() => props.changeStep(2)}>
                                                     <i className="mdi mdi-truck-fast mr-1" /> Continue to Shipping </button>
                                             </div>
-                                        </div> {/* end col */}
-                                    </div> {/* end row */}
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
-                            {/* end card-body */}
                         </div>
-                        {/* end card */}
                     </div>
-                    {/* end col */}
                 </div>
-                {/* end row*/}
             </div>
-            {/* end tab-pane */}
         </>);
 };
 

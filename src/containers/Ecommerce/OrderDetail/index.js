@@ -72,7 +72,6 @@ const OrderDetail = () => {
                           </div>
                         </div>
                       </div>
-                      {/* end form-field */}
                       <div className="form-field mb-3">
                         <label htmlFor="order-status">Status:</label>
                         <Select
@@ -81,7 +80,6 @@ const OrderDetail = () => {
                           onChange={setStatusOption}
                         />                        
                       </div>
-                      {/* end form-field */}
                       <div className="form-field mb-3">
                         <label htmlFor="customer">Customer:</label>
                         <Select
@@ -90,10 +88,8 @@ const OrderDetail = () => {
                           onChange={selectCustomer}
                         />
                       </div>
-                      {/* end form-field */}
                     </form>
                   </div>
-                  {/* end order-data-column */}
                   <div className="col-xl-6 order-data-column">
                     <h4>Billing</h4>
                     <address className="mb-3">
@@ -109,9 +105,7 @@ const OrderDetail = () => {
                       <Link to="tel:04598xxx">04598xxx</Link>
                     </div>
                   </div>
-                  {/* end order-data-column */}
                 </div>
-                {/* end row order-data-column-container */}
                 <hr />
                 <div className="row order-data-column-container">
                   <div className="col-xl-6 order-data-column">
@@ -126,7 +120,6 @@ const OrderDetail = () => {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis enim volutpat, interdum odio vel, sagittis massa.
                     </div>
                   </div>
-                  {/* end order-data-column */}
                   <div className="col-xl-6 order-data-column">
                     <h4>Delivery Information</h4>
                     <address className="mb-3">
@@ -135,13 +128,9 @@ const OrderDetail = () => {
                       Payment Mode: COD<br />
                     </address>
                   </div>
-                  {/* end order-data-column */}
                 </div>
-                {/* end row order-data-column-container */}
               </div>
-              {/* end card-body order-detail */}
             </div>
-            {/* end card order-detail */}
             <div className="card order-items">
               <div className="card-body">
                 <div className="row">
@@ -175,9 +164,7 @@ const OrderDetail = () => {
                       </tbody>
                     </table>
                   </div>
-                  {/* end col-lg-12 */}
                 </div>
-                {/* end row */}
                 <div className="row">
                   <div className="col-6 ms-auto">
                     <div className="table-responsive">
@@ -202,13 +189,10 @@ const OrderDetail = () => {
                         </tbody>
                       </table>
                     </div>
-                    {/* end table-responsive */}
                     <p className="text-end">September 14, 2020 via Cash on delivery </p>
                   </div>
                 </div>
-                {/* end row */}
               </div>
-              {/* end card-body order-item */}
               <div className="card-footer justify-content-between">
                 <button type="button" className="btn btn-outline-highlight my-2">Refund</button>
                 <OverlayTrigger
@@ -226,9 +210,7 @@ const OrderDetail = () => {
                 </OverlayTrigger>
               </div>
             </div>
-            {/* end card order-item */}
           </div>
-          {/* end col-lg-8 */}
           <div className="col-lg-4">
             <div className="card other-action">
               <div className="card-header justify-content-between">
@@ -236,7 +218,6 @@ const OrderDetail = () => {
                   Order actions
                 </h4>
               </div>
-              {/* end card-header */}
               <div className="card-body">
                 <div className="d-flex align-items-center">
                   <Select
@@ -250,23 +231,19 @@ const OrderDetail = () => {
                   </button>
                 </div>
               </div>
-              {/* end card-body */}
               <div className="card-footer justify-content-between">
                 <button type="button" className="btn btn-primary"><i className="bi-save" /> Update</button>
                 <Link to="#" className="text-danger">
                   Move to Trash
                 </Link>
               </div>
-              {/* end card-footer */}
             </div>
-            {/* end card */}
             <div className="card order-note">
               <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">
                   Order notes
                 </h4>
               </div>
-              {/* end card-header */}
               <div className="card-body">
               <ul className="widget-order-notes">
                 <li className="note">
@@ -354,13 +331,9 @@ const OrderDetail = () => {
                   </div>
                 </form>
               </div>
-              {/* end card-body */}
             </div>
-            {/* end card */}
           </div>
-          {/* end col-lg-8 */}
         </div>
-        {/* end row */}
     </>
 }
 

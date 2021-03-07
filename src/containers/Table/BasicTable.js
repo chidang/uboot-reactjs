@@ -21,8 +21,7 @@ const BasicTable = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-2">
         <h1 className="header-title h3">
-        <i className="bi-table text-primary" />
-        Basic Table
+        <i className="bi-table text-primary" /> Basic Table
         </h1>
     </div>
     <div className="bd-callout bd-callout-highlight bg-highlight-100 d-flex align-items-center" role="alert">

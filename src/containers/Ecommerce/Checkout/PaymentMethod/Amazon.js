@@ -19,13 +19,15 @@ const Amazon = (props) => {
                         </label>
                     </div>
                 </div>
-                { !!props.selected ?
-                <div className="payment-gateway-content p-5 border-bottom flex-column justify-content-center align-items-center">
-                    <span className="payment-gateway-outsite" />
-                    <p className="mt-3">You will be asked to login with Amazon.</p>
-                </div>
+                { 
+                !!props.selected ?
+                    <div className="payment-gateway-content p-5 border-bottom flex-column justify-content-center align-items-center">
+                        <span className="payment-gateway-outsite" />
+                        <p className="mt-3">You will be asked to login with Amazon.</p>
+                    </div>
                 :
-                null }
+                    null
+                }
             </div>
         </>
     );
