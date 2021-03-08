@@ -11,8 +11,7 @@ const Starter = () =>
     </nav>
     <div className="d-flex header justify-content-between mb-4">
       <h1 className="header-title h3">
-        <i className="bi-star text-primary" />
-      Starter Page <sup className="badge bg-primary fw-300 fs-xs">ADDON</sup>
+        <i className="bi-star text-primary" /> Starter Page <sup className="badge bg-primary fw-300 fs-xs">ADDON</sup>
       </h1>
       <div className="header-right d-none d-md-block">
         <div className="d-flex">

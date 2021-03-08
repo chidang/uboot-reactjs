@@ -23,63 +23,63 @@ const HeatmapChart = props => {
 
   const data = [
     {
-      name: "Metric1",
+      name: "Item 1",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric2",
+      name: "Item 2",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric3",
+      name: "Item 3",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric4",
+      name: "Item 4",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric5",
+      name: "Item 5",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric6",
+      name: "Item 6",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric7",
+      name: "Item 7",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric8",
+      name: "Item 8",
       data: generateData(20, {
         min: 0,
         max: 90
       })
     },
     {
-      name: "Metric9",
+      name: "Item 9",
       data: generateData(20, {
         min: 0,
         max: 90

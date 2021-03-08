@@ -9,7 +9,7 @@ const DoughnutChart = props => {
     labels: ["Social", "Search Engines", "Direct", "Other"],
     datasets: [
       {
-        data: [260, 125, 54, 146],
+        data: [245, 543, 456, 456],
         backgroundColor: [
           theme.color.primary,
           theme.color.success,

@@ -8,15 +8,15 @@ const LineChart = props => {
   const data = [
     {
       name: "Session Duration",
-      data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+      data: [46, 56, 40, 28, 35, 56, 32, 25, 7, 5, 18, 15]
     },
     {
       name: "Page Views",
-      data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35]
+      data: [38, 44, 65, 46, 21, 20, 43, 21, 11, 77, 65, 56]
     },
     {
       name: "Total Visits",
-      data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47]
+      data: [100, 88, 77, 120, 55, 40, 72, 50, 88, 65, 77, 67]
     }
   ];
 
@@ -36,22 +36,22 @@ const LineChart = props => {
     },
     markers: {
       size: 0,
-      style: "hollow" // full, hollow, inverted
+      style: "full"
     },
     xaxis: {
       categories: [
-        "01 Jan",
-        "02 Jan",
-        "03 Jan",
-        "04 Jan",
-        "05 Jan",
-        "06 Jan",
-        "07 Jan",
-        "08 Jan",
-        "09 Jan",
-        "10 Jan",
-        "11 Jan",
-        "12 Jan"
+        "01 Jun",
+        "02 Jun",
+        "03 Jun",
+        "04 Jun",
+        "05 Jun",
+        "06 Jun",
+        "07 Jun",
+        "08 Jun",
+        "09 Jun",
+        "10 Jun",
+        "11 Jun",
+        "12 Jun"
       ]
     },
     tooltip: {

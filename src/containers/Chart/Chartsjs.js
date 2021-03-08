@@ -19,8 +19,7 @@ const Chartsjs = () =>
     </nav>
     <div className="header mb-4">
         <h1 className="header-title h3">
-        <i className="bi-gift text-primary" />
-        Chartjs
+        <i className="bi-gift text-primary" /> Chartjs
         </h1>
     </div>
     <div className="row">

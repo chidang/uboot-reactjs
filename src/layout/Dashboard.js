@@ -22,6 +22,7 @@ const Dashboard = props => {
                 color='#fff'
                 progress={progress}
                 onLoaderFinished={() => setProgress(0)}
+                height={4}
             />
             <div className="main-wrapper"
                 data-theme-sidebar-shrinked={settingContext.leftSidebarShrinked}

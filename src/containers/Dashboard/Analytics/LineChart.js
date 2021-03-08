@@ -1,9 +1,8 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import { Card } from 'react-bootstrap';
 
-const LineChart = props => {
-  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a' } };
+const LineChart = (props) => {
+  const defaultTheme = { color: { primaryColor: '#4285f4' } };
   const theme =  Object.assign( defaultTheme, props.theme);
   const data = {
     labels: [
@@ -25,20 +24,20 @@ const LineChart = props => {
         label: "Sales ($)",
         fill: true,
         backgroundColor: "transparent",
-        borderColor: theme.color.primary,
+        borderColor: theme.color.primaryColor,
         data: [
-          2342,
-          1368,
-          1789,
-          1893,
-          2764,
-          2346,
-          2897,
-          2567,
-          2789,
-          3565,
-          3423,
-          3452
+          3005,
+          1765,
+          1423,
+          1896,
+          1588,
+          2345,
+          2969,
+          2418,
+          3802,
+          4938,
+          3817,
+          4827
         ]
       },
       {
@@ -48,18 +47,18 @@ const LineChart = props => {
         borderColor: theme.tertiary,
         borderDash: [4, 4],
         data: [
-          879,
-          765,
-          654,
-          901,
-          897,
+          928,
+          734,
+          626,
+          893,
+          921,
+          1202,
+          1396,
           1232,
-          1567,
-          1573,
-          1298,
-          1643,
-          1567,
-          1983
+          1524,
+          2102,
+          1506,
+          1887
         ]
       }
     ]
@@ -93,7 +92,7 @@ const LineChart = props => {
       yAxes: [
         {
           ticks: {
-            stepSize: 500
+            stepSize: 1000
           },
           display: true,
           borderDash: [5, 5],
@@ -107,16 +106,7 @@ const LineChart = props => {
   };
 
   return (
-    <Card className="w-100">
-      <Card.Header>
-        <Card.Title tag="h5">Line Chart</Card.Title>
-      </Card.Header>
-      <Card.Body>
-        <div className="chart chart-sm">
-          <Line data={data} options={options} />
-        </div>
-      </Card.Body>
-    </Card>
+    <Line data={data} options={options} />
   );
 };
 

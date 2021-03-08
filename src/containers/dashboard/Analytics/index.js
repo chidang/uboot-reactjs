@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { Link } from "react-router-dom";
+import LineChart from "./LineChart";
 import BarChart from "./BarChart";
 import SettingContext from '../../../context/setting-context';
 import DoughnutChart from "./DoughnutChart";
@@ -23,7 +24,7 @@ const Analytics = () => {
               <div className="row">
                 <div className="col-xl-8 ps-0">
                   <div className="chart chart-sm">
-                  
+                  <LineChart theme={theme}/>
                   </div>
                 </div>
                 <div className="col-xl-4">
@@ -45,15 +46,6 @@ const Analytics = () => {
                 </div>
               </div>
             </div>
-              <div className="row row-border w-100 ms-0">
-                <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-around mb-3 mb-lg-0">
-                  <span className="d-inline-block ms-2 me-4">
-                    User Retention
-                  </span>
-                  <span className="compositebar">4,6,7,7,4,3,2,1,4</span>
-                  <span className="text-success ms-2"><i className="fas fa-arrow-up"></i> 19.27%</span>
-                </div>
-              </div>
           </div>
         </div>
       </div>

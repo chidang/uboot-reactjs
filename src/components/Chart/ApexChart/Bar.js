@@ -7,24 +7,24 @@ const BarChart = props => {
   const theme =  Object.assign( defaultTheme, props.theme);
   const data = [
     {
-      name: "Marine Sprite",
-      data: [44, 55, 41, 37, 22, 43, 21]
+      name: "Direct",
+      data: [45, 54, 44, 34, 28, 47, 34]
     },
     {
-      name: "Striking Calf",
-      data: [53, 32, 33, 52, 13, 43, 32]
+      name: "Affilliate",
+      data: [33, 44, 35, 56, 17, 46, 38]
     },
     {
-      name: "Tank Picture",
-      data: [12, 17, 11, 9, 15, 11, 20]
+      name: "Sponsored",
+      data: [14, 18, 15, 12, 19, 21, 28]
     },
     {
-      name: "Bucket Slope",
-      data: [9, 7, 5, 8, 6, 9, 4]
+      name: "Emails",
+      data: [7, 12, 25, 9, 11, 12, 15]
     },
     {
-      name: "Reborn Kid",
-      data: [25, 12, 19, 32, 25, 24, 10]
+      name: "Other",
+      data: [26, 21, 18, 34, 27, 28, 17]
     }
   ];
 

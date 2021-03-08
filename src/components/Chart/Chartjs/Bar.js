@@ -27,7 +27,7 @@ const BarChart = props => {
         borderColor: theme.color.primary,
         hoverBackgroundColor: theme.color.primary,
         hoverBorderColor: theme.color.primary,
-        data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+        data: [23, 45, 78, 74, 11, 22, 56, 75, 29, 88, 76, 57],
         barPercentage: 0.75,
         categoryPercentage: 0.5
       },
@@ -37,7 +37,7 @@ const BarChart = props => {
         borderColor: "#E8EAED",
         hoverBackgroundColor: "#E8EAED",
         hoverBorderColor: "#E8EAED",
-        data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+        data: [44, 52, 66, 83, 43, 38, 39, 59, 87, 86, 98, 90],
         barPercentage: 0.75,
         categoryPercentage: 0.5
       }

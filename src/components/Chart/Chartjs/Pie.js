@@ -3,18 +3,18 @@ import { Pie } from "react-chartjs-2";
 import { Card } from 'react-bootstrap';
 
 const PieChart = props => {
-  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a' } };
+  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a', danger: '#dc3545' } };
   const theme =  Object.assign( defaultTheme, props.theme);
   const data = {
     labels: ["Social", "Search Engines", "Direct", "Other"],
     datasets: [
       {
-        data: [260, 125, 54, 146],
+        data: [543, 234, 54, 342],
         backgroundColor: [
           theme.color.primary,
           theme.color.warning,
           theme.color.danger,
-          "#E8EAED"
+          theme.color.success,
         ],
         borderColor: "transparent"
       }

@@ -3,14 +3,14 @@ import { Polar } from "react-chartjs-2";
 import { Card } from 'react-bootstrap';
 
 const PolarChart = props => {
-  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a' } };
+  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a', danger: '#dc3545' } };
   const theme =  Object.assign( defaultTheme, props.theme);
   const data = {
-    labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency"],
+    labels: ["Reliability", "Comfort", "Safety", "Speed", "Efficiency"],
     datasets: [
       {
         label: "Model S",
-        data: [35, 38, 65, 70, 24],
+        data: [34, 43, 54, 53, 76],
         backgroundColor: [
           theme.color.primary,
           theme.color.success,
