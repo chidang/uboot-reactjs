@@ -5,6 +5,7 @@ import RightSidebar from './partials/RightSidebar';
 import SettingContext from '../context/setting-context';
 import Footer from './partials/Footer';
 import LoadingBar from 'react-top-loading-bar'
+import { isMobile } from "../shared/utility";
 
 
 const Dashboard = props => {
@@ -13,7 +14,10 @@ const Dashboard = props => {
     const dataThemeColor = `app-theme-${settingContext.themeColor.name}`;
 
     useEffect(() => {
-        setProgress(100)
+        setProgress(100);
+        if (isMobile() && settingContext.showMobileNav) {
+            settingContext.hideMobileNav()
+        }
     }, []);
 
     return (

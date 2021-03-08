@@ -172,6 +172,7 @@
     #left-sidebar {
       flex: $left-sidebar-shrinking-width;
       max-width: $left-sidebar-shrinking-width;
+      z-index: 50;
 
       ul {
         li {

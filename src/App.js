@@ -39,6 +39,10 @@ const App = () => {
     toggleLeftSidebarHandler();
   }
 
+  const hideMobileNavHandler = () => {
+    toggleMobileNav(false);
+  }
+
   const changeThemeModeHandler = (modeName) => {
     setConfig({ themeMode: modeName });
     changeThemeMode(modeName);
@@ -96,7 +100,8 @@ const App = () => {
         toggleMobileNav: toggleMobileNavHandler,
         toggleBoxedLayout: toggleBoxedLayoutHandler,
         toggleLeftSidebarFixed: toggleLeftSidebarFixedHandler,
-        resetSetting: resetSettingHandler
+        resetSetting: resetSettingHandler,
+        hideMobileNav: hideMobileNavHandler
       }}
     >
       <Routes />
