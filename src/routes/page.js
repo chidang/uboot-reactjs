@@ -14,7 +14,7 @@ const PageRoutes = {
     key: 'page',
     name: "Page",
     badgeColor: "primary",
-    badgeText: "9",
+    badgeText: "8",
     containsHome: false,
     icon: 'bi-book',
     children: [
@@ -58,11 +58,11 @@ const PageRoutes = {
         name: "Starter",
         component: AsyncStarter
       },
-      {
-        path: "/pages/project-structure",
-        name: "Project Structure",
-        component: AsyncProjectStructure
-      }
+      // {
+      //   path: "/pages/project-structure",
+      //   name: "Project Structure",
+      //   component: AsyncProjectStructure
+      // }
     ]
 };
 
