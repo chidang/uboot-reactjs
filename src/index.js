@@ -10,7 +10,7 @@ import './assets/scss/app.scss';
 import { BrowserRouter } from 'react-router-dom';
 import ecommerceReducer from './store/reducers/ecommerce';
 
-const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
+const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose : null;
 
 const rootReducer = combineReducers({
   ecommerce: ecommerceReducer
@@ -29,10 +29,10 @@ const app = (
 )
 
 ReactDOM.render(
-  //Fragment
-  <React.StrictMode>
+  //Fragment - StrictMode
+  <React.Fragment>
     {app}
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

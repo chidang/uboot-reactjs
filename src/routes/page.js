@@ -58,11 +58,11 @@ const PageRoutes = {
         name: "Starter",
         component: AsyncStarter
       },
-      // {
-      //   path: "/pages/project-structure",
-      //   name: "Project Structure",
-      //   component: AsyncProjectStructure
-      // }
+      {
+        path: "/pages/project-structure",
+        name: "Project Structure",
+        component: AsyncProjectStructure
+      }
     ]
 };
 
