@@ -8,6 +8,7 @@ import formRoutes from './form';
 import iconRoutes from './icon';
 import tableRoutes from './table';
 import chartRoutes from './chart';
+import mapRoutes from './map';
 
 const AsyncCalendar = AsyncComponent(() => import('../containers/Calendar'));
 const AsyncChat = AsyncComponent(() => import('../containers/Chat'));
@@ -73,6 +74,10 @@ export const charts = [
     chartRoutes
 ]
 
+export const maps = [
+    mapRoutes
+]
+
 export const routes = [
     dashboardRoutes,
     authRoutes,
@@ -84,5 +89,6 @@ export const routes = [
     formRoutes,
     tableRoutes,
     iconRoutes,
-    chartRoutes
+    chartRoutes,
+    mapRoutes
 ];

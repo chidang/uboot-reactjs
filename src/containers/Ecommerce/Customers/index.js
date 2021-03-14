@@ -6,7 +6,7 @@ const Customer = () => {
     return <>
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb ps-0 fs-base">
-            <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+            <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
             <li className="breadcrumb-item"><span>Ecommerce</span></li>
             <li className="breadcrumb-item active" aria-current="page">Customers</li>
           </ol>

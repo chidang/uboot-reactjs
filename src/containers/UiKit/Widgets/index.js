@@ -11,7 +11,7 @@ const Widgets = () =>
     <>
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb ps-0 fs-base">
-                <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+                <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
                 <li className="breadcrumb-item"><span>UI Kit</span></li>
                 <li className="breadcrumb-item active" aria-current="page">Widget</li>
             </ol>

@@ -32,7 +32,7 @@ const Unicon = () => {
         <>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb ps-0 fs-base">
-                    <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+                    <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
                     <li className="breadcrumb-item"><span>Icons</span></li>
                     <li className="breadcrumb-item"><span>Unicons</span></li>
                     <li className="breadcrumb-item active" aria-current="page">Line</li>
@@ -40,8 +40,7 @@ const Unicon = () => {
             </nav>
             <div className="header mb-4">
                 <h1 className="header-title h3">
-                    <i className="bi-gift text-primary" />
-            Unicons: Line
+                    <i className="bi-gift text-primary" /> Unicons: Line
             </h1>
             </div>
             <div className="form-group mb-3">

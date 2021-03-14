@@ -14,7 +14,7 @@ const ApexCharts = () =>
 <>
     <nav aria-label="breadcrumb">
         <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+        <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Charts</span></li>
         <li className="breadcrumb-item active" aria-current="page">Apex Charts</li>
         </ol>

@@ -28,7 +28,7 @@
 // font bootstrapicons
 @import "../fonts/bootstrapicons/scss/bootstrapicons";
 
-@import "../vendors/dropzone/dropzone.css";
+
 // Configuration
 @import "mixins";
 
@@ -54,6 +54,7 @@
 @import "custom_select2";
 @import "custom_datepicker";
 @import "dropdown";
+@import "dropzone";
 @import "dual_listbox";
 @import "ecommerce";
 @import "footer";

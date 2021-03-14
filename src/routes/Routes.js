@@ -12,8 +12,9 @@ import {
   forms as formRoutes,
   icons as iconRoutes,
   tables as tableRoutes,
-  charts as chartRoutes
- } from "./index";
+  charts as chartRoutes,
+  maps as mapRoutes
+} from "./index";
 
 import DashboardLayout from "../layout/Dashboard";
 import AuthLayout from "../layout/Auth";
@@ -52,8 +53,8 @@ class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        {appRoutes(DashboardLayout, dashboardRoutes)}
         {appRoutes(AuthLayout, authRoutes)}
+        {appRoutes(DashboardLayout, dashboardRoutes)}
         {appRoutes(DashboardLayout, calendarRoutes)}
         {appRoutes(DashboardLayout, chatRoutes)}
         {appRoutes(DashboardLayout, ecommerceRoutes)}
@@ -63,6 +64,7 @@ class Routes extends React.Component {
         {appRoutes(DashboardLayout, iconRoutes)}
         {appRoutes(DashboardLayout, tableRoutes)}
         {appRoutes(DashboardLayout, chartRoutes)}
+        {appRoutes(DashboardLayout, mapRoutes)}
         <Route path="/" render={props => (
           <DashboardLayout>
             <AsyncDashboardEcommerce {...props} />

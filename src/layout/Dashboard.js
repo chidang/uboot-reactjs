@@ -7,7 +7,6 @@ import Footer from './partials/Footer';
 import LoadingBar from 'react-top-loading-bar'
 import { isMobile } from "../shared/utility";
 
-
 const Dashboard = props => {
     const [progress, setProgress] = useState(0)
     const settingContext = useContext(SettingContext);

@@ -33,15 +33,14 @@ const FontAwesome = () => {
         <>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb ps-0 fs-base">
-                    <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+                    <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
                     <li className="breadcrumb-item"><span>Icons</span></li>
                     <li className="breadcrumb-item active" aria-current="page">Font Awesome</li>
                 </ol>
             </nav>
             <div className="header mb-4">
                 <h1 className="header-title h3">
-                    <i className="bi-gift text-primary" />
-            Font Awesome
+                    <i className="bi-gift text-primary" /> Font Awesome
             </h1>
             </div>
             <div className="form-group mb-3">

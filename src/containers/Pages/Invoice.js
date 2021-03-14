@@ -4,7 +4,7 @@ const Invoice = () =>
   <>
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb ps-0 fs-base">
-        <li className="breadcrumb-item"><Link to="#">Uboot</Link></li>
+        <li className="breadcrumb-item"><Link to="/">Uboot</Link></li>
         <li className="breadcrumb-item"><span>Page</span></li>
         <li className="breadcrumb-item active" aria-current="page">Invoice</li>
       </ol>
