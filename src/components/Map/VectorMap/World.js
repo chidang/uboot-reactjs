@@ -24,97 +24,47 @@ const WorldMap = props => {
             },
             markerStyle: {
                 initial: {
-                    r: 9,
+                    r: 13,
                     fill: theme.color.primaryColor,
-                    "fill-opacity": 0.9,
+                    "fill-opacity": 0.8,
                     stroke: "#fff",
-                    "stroke-width": 7,
+                    "stroke-width": 14,
                     "stroke-opacity": 0.4
                 },
                 hover: {
                     stroke: "#fff",
                     "fill-opacity": 1,
-                    "stroke-width": 1.5
+                    "stroke-width": 1.8
                 }
             },
             backgroundColor: "transparent",
             markers: [
-                {
-                    latLng: [31.230391, 121.473701],
-                    name: "Shanghai"
-                },
-                {
-                    latLng: [39.904202, 116.407394],
-                    name: "Beijing"
-                },
-                {
-                    latLng: [28.70406, 77.102493],
-                    name: "Delhi"
-                },
-                {
-                    latLng: [6.524379, 3.379206],
-                    name: "Lagos"
-                },
-                {
-                    latLng: [39.343357, 117.361649],
-                    name: "Tianjin"
-                },
-                {
-                    latLng: [24.860735, 67.001137],
-                    name: "Karachi"
-                },
-                {
-                    latLng: [41.00824, 28.978359],
-                    name: "Istanbul"
-                },
-                {
-                    latLng: [35.689487, 139.691711],
-                    name: "Tokyo"
-                },
-                {
-                    latLng: [23.12911, 113.264381],
-                    name: "Guangzhou"
-                },
-                {
-                    latLng: [19.075983, 72.877655],
-                    name: "Mumbai"
-                },
-                {
-                    latLng: [40.7127837, -74.0059413],
-                    name: "New York"
-                },
-                {
-                    latLng: [34.052235, -118.243683],
-                    name: "Los Angeles"
-                },
-                {
-                    latLng: [41.878113, -87.629799],
-                    name: "Chicago"
-                },
-                {
-                    latLng: [29.760427, -95.369804],
-                    name: "Houston"
-                },
-                {
-                    latLng: [33.448376, -112.074036],
-                    name: "Phoenix"
-                },
-                {
-                    latLng: [51.507351, -0.127758],
-                    name: "London"
-                },
-                {
-                    latLng: [48.856613, 2.352222],
-                    name: "Paris"
-                },
-                {
-                    latLng: [55.755825, 37.617298],
-                    name: "Moscow"
-                },
-                {
-                    latLng: [40.416775, -3.70379],
-                    name: "Madrid"
-                }
+                {latLng: [41.90, 12.45], name: 'Vatican City'},
+                {latLng: [43.73, 7.41], name: 'Monaco'},
+                {latLng: [-0.52, 166.93], name: 'Nauru'},
+                {latLng: [-8.51, 179.21], name: 'Tuvalu'},
+                {latLng: [43.93, 12.46], name: 'San Marino'},
+                {latLng: [47.14, 9.52], name: 'Liechtenstein'},
+                {latLng: [7.11, 171.06], name: 'Marshall Islands'},
+                {latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis'},
+                {latLng: [3.2, 73.22], name: 'Maldives'},
+                {latLng: [35.88, 14.5], name: 'Malta'},
+                {latLng: [12.05, -61.75], name: 'Grenada'},
+                {latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines'},
+                {latLng: [13.16, -59.55], name: 'Barbados'},
+                {latLng: [17.11, -61.85], name: 'Antigua and Barbuda'},
+                {latLng: [-4.61, 55.45], name: 'Seychelles'},
+                {latLng: [7.35, 134.46], name: 'Palau'},
+                {latLng: [42.5, 1.51], name: 'Andorra'},
+                {latLng: [14.01, -60.98], name: 'Saint Lucia'},
+                {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},
+                {latLng: [1.3, 103.8], name: 'Singapore'},
+                {latLng: [1.46, 173.03], name: 'Kiribati'},
+                {latLng: [-21.13, -175.2], name: 'Tonga'},
+                {latLng: [15.3, -61.38], name: 'Dominica'},
+                {latLng: [-20.2, 57.5], name: 'Mauritius'},
+                {latLng: [26.02, 50.55], name: 'Bahrain'},
+                {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
             ]
         });
     }
@@ -126,12 +76,10 @@ const WorldMap = props => {
     return (
         <Card className="flex-fill w-100">
             <Card.Header>
-                <Card.Title tag="h5">Dark Style</Card.Title>
+                <Card.Title tag="h5">World Map</Card.Title>
             </Card.Header>
             <Card.Body>
-                <div style={{ height: 300, width: "100%" }}>
-                    <div id="world_map" style={{ height: 340 }} />
-                </div>
+                <div id="world_map" style={{ height: 340 }} />
             </Card.Body>
         </Card>
     );

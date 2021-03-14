@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
-import { WorldMap } from '../../components/Map/VectorMap';
+import React, { useContext } from 'react';
+import SettingContext from '../../context/setting-context';
+import {
+    WorldMap,
+    UsaMap,
+    RegionLabel,
+    MapLegends,
+    GDP,
+    EuropeMap,
+    IndiaMap } from '../../components/Map/VectorMap';
 
 const VectorMaps = () => {
+    const settingContext = useContext(SettingContext);
+    let theme = { color: settingContext.themeColor  }
+
     return <>
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb ps-0 fs-base">
@@ -17,19 +29,31 @@ const VectorMaps = () => {
         </div>
         <div className="row">
             <div className="col-12 d-flex">
-                <WorldMap />
+                <WorldMap theme={theme} />
             </div>
         </div>
         <div className="row">
             <div className="col-lg-6 md-12 d-flex">
+                <UsaMap theme={theme} />
             </div>
             <div className="col-lg-6 md-12 d-flex">
+                <RegionLabel />
             </div>
         </div>
         <div className="row">
             <div className="col-lg-6 md-12 d-flex">
+                <MapLegends />
             </div>
             <div className="col-lg-6 md-12 d-flex">
+                <GDP />
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-lg-6 md-12 d-flex">
+                <EuropeMap theme={theme} />
+            </div>
+            <div className="col-lg-6 md-12 d-flex">
+                <IndiaMap theme={theme} />
             </div>
         </div>
     </>
