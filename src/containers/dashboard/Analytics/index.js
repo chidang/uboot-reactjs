@@ -22,12 +22,12 @@ const Analytics = () => {
             <div className="card-body px-4">
               <h4 className="mb-4 fs-base">Audience Overview</h4>
               <div className="row">
-                <div className="col-xl-8 ps-0">
+                <div className="col-12 col-md-6 col-xxl-9 ps-0">
                   <div className="chart chart-sm">
                   <LineChart theme={theme}/>
                   </div>
                 </div>
-                <div className="col-xl-4">
+                <div className="col-12 col-md-6 col-xxl-3 ">
                 <div style={{height: "220px"}}>
                   <DoughnutChart theme={theme} />
                 </div>
@@ -50,7 +50,7 @@ const Analytics = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+        <div className="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-1">
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">Sessions by device</h5>
@@ -60,9 +60,9 @@ const Analytics = () => {
                     <i className="far fa-ellipsis-v"></i>
                   </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <Link className>="dropdown-item" href="#">Action</Link>
-                    <Link className>="dropdown-item" href="#">Export</Link>
-                    <Link className>="dropdown-item" href="#">Profit</Link>
+                    <Link className="dropdown-item" href="#">Action</Link>
+                    <Link className="dropdown-item" href="#">Export</Link>
+                    <Link className="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -100,9 +100,9 @@ const Analytics = () => {
                     <i className="far fa-ellipsis-v"></i>
                   </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <Link className>="dropdown-item" href="#">Action</Link>
-                    <Link className>="dropdown-item" href="#">Export</Link>
-                    <Link className>="dropdown-item" href="#">Profit</Link>
+                    <Link className="dropdown-item" href="#">Action</Link>
+                    <Link className="dropdown-item" href="#">Export</Link>
+                    <Link className="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Analytics = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+        <div className="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-3">
           <div className="card w-100">
             <div className="d-flex justify-content-between p-3">
               <h5 className="card-title mb-0">How do you acquire users?</h5>
@@ -122,9 +122,9 @@ const Analytics = () => {
                     <i className="far fa-ellipsis-v"></i>
                   </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <Link className>="dropdown-item" href="#">Action</Link>
-                    <Link className>="dropdown-item" href="#">Export</Link>
-                    <Link className>="dropdown-item" href="#">Profit</Link>
+                    <Link className="dropdown-item" href="#">Action</Link>
+                    <Link className="dropdown-item" href="#">Export</Link>
+                    <Link className="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -146,9 +146,9 @@ const Analytics = () => {
                     <i className="far fa-ellipsis-v"></i>
                   </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <Link className>="dropdown-item" href="#">Action</Link>
-                    <Link className>="dropdown-item" href="#">Export</Link>
-                    <Link className>="dropdown-item" href="#">Profit</Link>
+                    <Link className="dropdown-item" href="#">Action</Link>
+                    <Link className="dropdown-item" href="#">Export</Link>
+                    <Link className="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>
@@ -247,9 +247,9 @@ const Analytics = () => {
                     <i className="far fa-ellipsis-v"></i>
                   </Link>
                   <div className="dropdown-menu dropdown-menu-right">
-                    <Link className>="dropdown-item" href="#">Action</Link>
-                    <Link className>="dropdown-item" href="#">Export</Link>
-                    <Link className>="dropdown-item" href="#">Profit</Link>
+                    <Link className="dropdown-item" href="#">Action</Link>
+                    <Link className="dropdown-item" href="#">Export</Link>
+                    <Link className="dropdown-item" href="#">Profit</Link>
                   </div>
                 </div>
               </div>

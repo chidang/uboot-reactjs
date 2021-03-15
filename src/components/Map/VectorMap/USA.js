@@ -11,6 +11,8 @@ require("../../../vendor/jvectormap/jquery-jvectormap-us-aea");
 
 const UsaMap = props => {
     var val = 2009;
+    const defaultTheme = { color: { primaryColor: '#4285f4' } };
+    const theme = Object.assign(defaultTheme, props.theme);
 
     const drawMap = () => {
         $("#usa_map").empty().vectorMap({ 
@@ -25,7 +27,7 @@ const UsaMap = props => {
             series: {
                 markers: [{
                     attribute: 'fill',
-                    scale: ['#FEE5D9', '#A50F15'],
+                    scale: ['#FEE5D9', theme.color.primaryColor],
                     values: data.metro.unemployment[val]
                 },{
                     attribute: 'r',
@@ -33,7 +35,7 @@ const UsaMap = props => {
                     values: data.metro.population[val]
                 }],
                 regions: [{
-                    scale: ['#DEEBF7', '#08519C'],
+                    scale: ['#DEEBF7', theme.color.primaryColor],
                     attribute: 'fill',
                     values: data.states[val]
                 }]
@@ -42,8 +44,8 @@ const UsaMap = props => {
     }
 
     useEffect(() => {
-        drawMap();
-    }, []);
+        drawMap(theme);
+    }, [theme]);
 
     return (
         <Card className="flex-fill w-100">

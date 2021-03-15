@@ -9,15 +9,17 @@ window.jQuery = jQuery;
 require("jvectormap-next")($);
 require("../../../vendor/jvectormap/jquery-jvectormap-world-mill");
 
-const GDP = () => {
-    const drawMap = () => {
+const GDP = props => {
+    const defaultTheme = { color: { primaryColor: '#4285f4' } };
+    const theme = Object.assign(defaultTheme, props.theme);
+    const drawMap = (theme) => {
         $("#world_gdp_map").empty().vectorMap({
             map: 'world_mill',
             backgroundColor: "transparent",
             series: {
                 regions: [{
                     values: gdpData,
-                    scale: ['#C8EEFF', '#0071A4'],
+                    scale: ['#C8EEFF', theme.color.primaryColor],
                     normalizeFunction: 'polynomial'
                 }]
             },
@@ -28,8 +30,8 @@ const GDP = () => {
     }
 
     useEffect(() => {
-        drawMap();
-    }, []);
+        drawMap(theme);
+    }, [theme]);
 
     return (
         <Card className="flex-fill w-100">

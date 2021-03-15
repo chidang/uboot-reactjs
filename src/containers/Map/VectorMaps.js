@@ -29,7 +29,7 @@ const VectorMaps = () => {
         </div>
         <div className="row">
             <div className="col-12 d-flex">
-                <WorldMap theme={theme} />
+                <GDP theme={theme} />
             </div>
         </div>
         <div className="row">
@@ -45,7 +45,7 @@ const VectorMaps = () => {
                 <MapLegends />
             </div>
             <div className="col-lg-6 md-12 d-flex">
-                <GDP />
+                <WorldMap theme={theme} />
             </div>
         </div>
         <div className="row">
