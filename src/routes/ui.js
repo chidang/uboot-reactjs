@@ -10,6 +10,7 @@ const AsyncNotifications = AsyncComponent(() => import('../containers/UiKit/Noti
 const AsyncSpinners = AsyncComponent(() => import('../containers/UiKit/Spinners'));
 const AsyncSweetAlert = AsyncComponent(() => import('../containers/UiKit/SweetAlerts'));
 const AsyncTabs = AsyncComponent(() => import('../containers/UiKit/Tabs'));
+const AsyncToastr = AsyncComponent(() => import('../containers/UiKit/Toastr'));
 const AsyncWidgets = AsyncComponent(() => import('../containers/UiKit/Widgets'));
 
 const uiKitRoutes = {
@@ -71,6 +72,11 @@ const uiKitRoutes = {
         path: "/ui/tabs",
         name: "Tabs",
         component: AsyncTabs
+      },
+      {
+        path: "/ui/toastr",
+        name: "Toastr",
+        component: AsyncToastr
       },
       {
         path: "/ui/widgets",

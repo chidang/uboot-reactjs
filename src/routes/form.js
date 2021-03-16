@@ -7,6 +7,7 @@ const AsyncInputGroups = AsyncComponent(() => import('../containers/Form/InputGr
 const AsyncRadios = AsyncComponent(() => import('../containers/Form/Radios'));
 const AsyncCustomSelect = AsyncComponent(() => import('../containers/Form/CustomSelect'));
 const AsyncValidations = AsyncComponent(() => import('../containers/Form/Validations'));
+const AsyncEditor = AsyncComponent(() => import('../containers/Form/Editor'));
 
 const formRoutes = {
     key: 'form',
@@ -45,6 +46,11 @@ const formRoutes = {
         path: "/forms/custom-select",
         name: "Custom Select",
         component: AsyncCustomSelect
+      },
+      {
+        path: "/forms/editor",
+        name: "Editor",
+        component: AsyncEditor
       },
       {
         path: "/forms/validations",
