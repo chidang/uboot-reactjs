@@ -4,28 +4,33 @@
 * Email: support@teachprod.com
 * File: Calendar
 */
+.fc .fc-toolbar {
+  .fc-button-primary {
+    background-color: var(--surface-background);
+    color: var(--contrast-background);
+    border-color: #dee2e6;
+  }
 
-.fc-button-primary {
-  background-color: var(--surface-background);
-  color: var(--contrast-background);
-  border-color: #dee2e6;
-}
-
-.fc-button-primary:not(:disabled):active, .fc-button-primary:not(:disabled).fc-button-active {
+  .fc-button-primary:not(:disabled):active, .fc-button-primary:not(:disabled).fc-button-active {
     background-color: var(--highlight);
     border-color: #dee2e6;
     color: $white;
-}
+  }
 
-.fc-button-primary:hover {
-  background-color: var(--wash);
-  border-color: #dee2e6;
-}
+  .fc-button-primary:hover {
+    background-color: var(--wash);
+    border-color: #dee2e6;
+  }
+  
+  .fc-button-primary:disabled:hover {
+      color: #fff;
+      background-color: #2C3E50;
+      border-color: #2C3E50;
+  }
 
-.fc-button-primary:disabled:hover {
-    color: #fff;
-    background-color: #2C3E50;
-    border-color: #2C3E50;
+  .fc-button-primary:not(:disabled):active:focus, .fc-button-primary:not(:disabled).fc-button-active:focus {
+    box-shadow: none;
+  }
 }
 
 .main-wrapper[data-theme-mode="dark-mode"] {
@@ -42,7 +47,15 @@
   .fc-button-primary:disabled {
     color: $white;
   }
+
+  .fc-button-primary:focus, .fc-button-primary:not(:disabled):active:focus, .fc-button-primary:not(:disabled).fc-button-active:focus {
+    box-shadow: none;
+  }
+
+  
 }
+
+
 
 .fc-toolbar h2, .fc-toolbar .h2 {
   font-size: 1.5rem;
@@ -61,9 +74,7 @@
   background-color: var(--wash);
 }
 
-.fc-button-primary:focus, .fc-button-primary:not(:disabled):active:focus, .fc-button-primary:not(:disabled).fc-button-active:focus {
-  box-shadow: none;
-}
+
 .fc-unthemed .fc-divider, .fc-unthemed .fc-popover .fc-header, .fc-unthemed .fc-list-heading td {
   background: transparent;
 }
