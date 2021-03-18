@@ -180,10 +180,10 @@ const Buttons = () =>
                             <Button variant="warning" className="btn-lg">
                                 <i className="bi-exclamation-triangle" /> <span>Warning</span>
                             </Button>
-                            <Button variant="info" className="mb-4">
+                            <Button variant="info">
                                 <span>Home</span> <i className="bi-house" />
                             </Button>
-                            <Button variant="danger" className="mb-4">
+                            <Button variant="danger">
                                 <span>Alarm</span> <i className="bi-alarm" />
                             </Button>
                             <hr />
