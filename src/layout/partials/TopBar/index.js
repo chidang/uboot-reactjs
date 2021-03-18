@@ -19,7 +19,7 @@ const Topbar = () => {
                 <div className="logo text-white me-5">
                     <h3>
                         <Link to="/">
-                            <span className="fw-700">Uboot</span> Admin
+                            <span className="fw-700">Uboot</span> React
                         </Link>
                     </h3>
                 </div>

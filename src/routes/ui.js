@@ -10,7 +10,7 @@ const AsyncNotifications = AsyncComponent(() => import('../containers/UiKit/Noti
 const AsyncSpinners = AsyncComponent(() => import('../containers/UiKit/Spinners'));
 const AsyncSweetAlert = AsyncComponent(() => import('../containers/UiKit/SweetAlerts'));
 const AsyncTabs = AsyncComponent(() => import('../containers/UiKit/Tabs'));
-const AsyncToastr = AsyncComponent(() => import('../containers/UiKit/Toastr'));
+// const AsyncToastr = AsyncComponent(() => import('../containers/UiKit/Toastr'));
 const AsyncWidgets = AsyncComponent(() => import('../containers/UiKit/Widgets'));
 
 const uiKitRoutes = {
@@ -20,7 +20,7 @@ const uiKitRoutes = {
     badgeColor: "primary",
     badgeText: "11",
     containsHome: false,
-    icon: 'bi-gem',
+    icon: 'bi-puzzle',
     header: 'COMPONENT',
     children: [
       {
@@ -73,11 +73,11 @@ const uiKitRoutes = {
         name: "Tabs",
         component: AsyncTabs
       },
-      {
-        path: "/ui/toastr",
-        name: "Toastr",
-        component: AsyncToastr
-      },
+      // {
+      //   path: "/ui/toastr",
+      //   name: "Toastr",
+      //   component: AsyncToastr
+      // },
       {
         path: "/ui/widgets",
         name: "Widgets",
