@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CustomDropdownToggle = React.forwardRef((props, ref) => (
     <a
-        href=""
+        href
         ref={ref}
         onClick={e => {
             e.preventDefault();

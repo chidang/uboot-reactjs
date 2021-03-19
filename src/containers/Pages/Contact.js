@@ -48,13 +48,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -93,13 +93,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -138,13 +138,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -185,13 +185,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -230,13 +230,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -275,13 +275,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -322,13 +322,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> City, State, Zip: Kokohead, Hawaii(HI), 96825</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -367,13 +367,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Napa, California(CA), 94559</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>
@@ -412,13 +412,13 @@ const Contact = () =>
                 <address className="fs-sm fw-400 mt-4 text-muted">
                   <i className="bi-map text-muted"></i> Grand Rapids, Michigan(MI), 49503</address>
                 <div className="d-flex flex-row justify-content-center">
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#3b5998" }}>
                     <i className="fab fa-facebook-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#38A1F3" }}>
                     <i className="fab fa-twitter-square"></i>
                   </Link>
-                  <Link to="javascript:void(0);" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
+                  <Link to="#" className="me-2 fs-xl" style={{ color: "#0077B5" }}>
                     <i className="fab fa-linkedin"></i>
                   </Link>
                 </div>

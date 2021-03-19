@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Modal, Col, Row, Container } from 'react-bootstrap';
+import { Button, Card, Modal } from 'react-bootstrap';
 
 const GridModal = () => {
     const [show, setShow] = useState(false);

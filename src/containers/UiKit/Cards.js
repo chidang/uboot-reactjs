@@ -208,7 +208,7 @@ const Cards = () =>
                 <div className="card-body">
                 <h5 className="card-title">Lorem ipsum dolor sit amet</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <Link to="javascript: void(0);" className="btn btn-danger">Go somewhere</Link>
+                <Link to="#" className="btn btn-danger">Go somewhere</Link>
                 </div>
             </div> {/* end card*/}
         </div> {/* end col*/}
@@ -231,7 +231,7 @@ const Cards = () =>
                 <h4 className="m-0 fw-700">Card title</h4>
                 </div>
                 <div className="card-body">
-                <Link to="javascript: void(0);" className="btn btn-warning">Go somewhere</Link>
+                <Link to="#" className="btn btn-warning">Go somewhere</Link>
                 </div>
                 <div className="card-footer text-muted"> Some text here</div>
             </div> {/* end card*/}
@@ -241,13 +241,13 @@ const Cards = () =>
         <div className="col-sm-6">
             <div className="card card-body">
                 <h5 className="m-0 fw-700">Lorem ipsum dolor sit amet</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="javascript: void(0);" className="btn btn-primary">Go somewhere</Link>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="#" className="btn btn-primary">Go somewhere</Link>
             </div> {/* end card*/}
         </div> {/* end col*/}
         <div className="col-sm-6">
             <div className="card card-body">
                 <h5 className="m-0 fw-700">Lorem ipsum dolor sit amet</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="javascript: void(0);" className="btn btn-primary">Go somewhere</Link>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <Link to="#" className="btn btn-primary">Go somewhere</Link>
             </div> {/* end card*/}
         </div> {/* end col*/}
     </div>

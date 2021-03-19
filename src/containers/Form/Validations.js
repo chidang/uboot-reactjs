@@ -21,7 +21,7 @@ const SignupSchema = yup.object().shape({
 });
 
 const Validations = () => {
-    const { register, handleSubmit, setValue, errors } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(SignupSchema),
     });
     const onSubmit = data => {
@@ -42,13 +42,13 @@ const Validations = () => {
             </h1>
             <p className="mt-2">
                 react-hook-form + yup node module
-        </p>
+            </p>
         </div>
         <div className="card">
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">
                     React hook form validation
-          </h4>
+                </h4>
                 <div className="card-widgets">
                     <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                     <Link className="btn btn-warning" to="#" data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
@@ -118,7 +118,7 @@ const Validations = () => {
                         <div className="col-12">
                             <label className="custom-checkbox custom-checkbox-solid">
                                 <input type="checkbox" name="acceptPolicy" ref={register} /> I Accept Terms and Conditions
-                    <span />
+                                <span />
                             </label>
                             {errors.acceptPolicy && <p className="text-danger">{errors.acceptPolicy.message}</p>}
                         </div>

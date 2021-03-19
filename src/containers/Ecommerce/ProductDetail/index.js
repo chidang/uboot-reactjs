@@ -24,7 +24,7 @@ const ProductDetail = () => {
             {/* begin col product-image */}
             <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
               <div className="product-image-box text-center mb-4 p-3 rounded">
-                <img id="product-img" src={product} className="img-fluid" alt="Product Image" />
+                <img id="product-img" src={product} className="img-fluid" alt="Product Detail" />
               </div>
               {/* begin product-gallery */}
               <div className="product-gallery d-flex justify-content-center">

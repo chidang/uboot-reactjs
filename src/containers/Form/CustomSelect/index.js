@@ -31,13 +31,13 @@ const CustomSelect = () =>
 
         <p>See the source or open the examples on codesandbox using the buttons that appear when you hover over each select below.</p>
 
-        <p>For complete docs, see the <a href="https://react-select.com/props" target="_blank" className="text-highlight fw-700">Props API</a> and <a href="https://react-select.com/advanced" target="_blank" className="text-highlight fw-700">Advanced Usage</a>.</p>
+        <p>For complete docs, see the <a href="https://react-select.com/props" target="_blank" rel="noreferrer" className="text-highlight fw-700">Props API</a> and <a href="https://react-select.com/advanced" target="_blank" rel="noreferrer" className="text-highlight fw-700">Advanced Usage</a>.</p>
 
-        <p>If you're coming from react-select v1, check out the <a href="https://react-select.com/upgrade-guide" target="_blank" className="text-highlight fw-700">Upgrade Guide</a>.</p>
+        <p>If you're coming from react-select v1, check out the <a href="https://react-select.com/upgrade-guide" target="_blank" rel="noreferrer" className="text-highlight fw-700">Upgrade Guide</a>.</p>
 
-        <p>To contribute, or open an issue, check out the <a href="https://github.com/JedWatson/react-select" target="_blank" className="text-highlight fw-700">source code on GitHub</a>.</p>
+        <p>To contribute, or open an issue, check out the <a href="https://github.com/JedWatson/react-select" target="_blank" rel="noreferrer" className="text-highlight fw-700">source code on GitHub</a>.</p>
         <p>
-          Guidelines, tutorials and more on React-select's <a href="https://react-select.com/" target="_blank" className="text-highlight fw-700">Official Documentation</a>
+          Guidelines, tutorials and more on React-select's <a href="https://react-select.com/" target="_blank" rel="noreferrer" className="text-highlight fw-700">Official Documentation</a>
         </p>
       </div>
     </div>

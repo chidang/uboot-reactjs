@@ -21,7 +21,7 @@ const Faq = () =>
           Default FAQ
       </h4>
         <div className="card-widgets">
-          <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+          <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
           <Link className="btn btn-warning" to="#" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
           <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
         </div>
@@ -86,7 +86,7 @@ const Faq = () =>
           Accodions FAQ
       </h4>
         <div className="card-widgets">
-          <Link className="btn btn-success" to="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+          <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
           <Link className="btn btn-warning" to="#" data-toggle="collapse" data-target="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i className="dripicons-minus" /></Link>
           <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
         </div>

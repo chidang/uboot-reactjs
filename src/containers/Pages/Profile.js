@@ -115,22 +115,22 @@ const Profile = () => {
                     <p className="fs-sm">Frontend developer</p>
                     <ul className="mb-0 list-inline">
                       <li className="d-inline me-2">
-                        <Link to="javascript:void(0);" className="fs-lg" style={{ color: '#3b5998' }}>
+                        <Link to="#" className="fs-lg" style={{ color: '#3b5998' }}>
                           <i className="fab fa-facebook" />
                         </Link>
                       </li>
                       <li className="d-inline me-2">
-                        <Link to="javascript:void(0);" className="fs-lg" style={{ color: '#38A1F3' }}>
+                        <Link to="#" className="fs-lg" style={{ color: '#38A1F3' }}>
                           <i className="fab fa-twitter" />
                         </Link>
                       </li>
                       <li className="d-inline me-2">
-                        <Link to="javascript:void(0);" className="fs-lg" style={{ color: '#db3236' }}>
+                        <Link to="#" className="fs-lg" style={{ color: '#db3236' }}>
                           <i className="fab fa-google-plus" />
                         </Link>
                       </li>
                       <li className="d-inline me-2">
-                        <Link to="javascript:void(0);" className="fs-lg" style={{ color: '#0077B5' }}>
+                        <Link to="#" className="fs-lg" style={{ color: '#0077B5' }}>
                           <i className="fab fa-linkedin-in" />
                         </Link>
                       </li>

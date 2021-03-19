@@ -15,7 +15,7 @@ const SignupSchema = yup.object().shape({
 });
 
 const Register = () => {
-    const { register, handleSubmit, setValue, errors } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(SignupSchema),
     });
     const onSubmit = data => {

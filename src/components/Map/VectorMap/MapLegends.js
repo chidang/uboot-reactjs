@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { Card } from 'react-bootstrap';
 import iconBank from "../../../assets/images/icon-bank.png";
 import iconFactory from "../../../assets/images/icon-factory.png";
-import bgRedGreen from "../../../assets/images/bg-red-green.png";
-import bgYellowBlue from "../../../assets/images/bg-yellow-blue.png";
 
 const jQuery = require("jquery");
 const $ = jQuery;
@@ -12,9 +10,7 @@ window.jQuery = jQuery;
 require("jvectormap-next")($);
 require("../../../vendor/jvectormap/jquery-jvectormap-us-aea");
 
-const MapLegends = props => {
-    var val = 2009;
-
+const MapLegends = () => {
     const drawMap = () => {
         $("#usa_map_legend").empty().vectorMap({
             map: "us_aea",

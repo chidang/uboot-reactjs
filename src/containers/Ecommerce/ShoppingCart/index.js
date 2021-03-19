@@ -50,7 +50,7 @@ const ShoppingCart = () => {
                                                 $19.99
                                             </td>
                                             <td>
-                                                <input type="number" min={1} placeholder={2} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
+                                                <input type="number" min={1} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
                                             </td>
                                             <td>
                                                 $39.98
@@ -74,7 +74,7 @@ const ShoppingCart = () => {
                                                 $21.99
                                             </td>
                                             <td>
-                                                <input type="number" min={1} placeholder={1} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
+                                                <input type="number" min={1} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
                                             </td>
                                             <td>
                                                 $21.99
@@ -98,7 +98,7 @@ const ShoppingCart = () => {
                                                 $26.99
                                             </td>
                                             <td>
-                                                <input type="number" min={1} placeholder={3} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
+                                                <input type="number" min={1} className="form-control" placeholder="Qty" style={{ width: '90px' }} />
                                             </td>
                                             <td>
                                                 $80.97
@@ -109,7 +109,7 @@ const ShoppingCart = () => {
                             </div>
                             <div className="card-note mt-3">
                                 <label htmlFor="add-note">Note</label>
-                                <textarea className="form-control" id="add-note" rows={3} placeholder="Write some note.." placeholder={""} />
+                                <textarea className="form-control" id="add-note" rows={3} placeholder="Write some note.." />
                             </div>
                         </div>
                     </div>

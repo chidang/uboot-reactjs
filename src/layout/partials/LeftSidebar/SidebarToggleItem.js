@@ -11,6 +11,7 @@ const SidebarToggleItem = ({ children, eventKey, callback, collapsed }) => {
 
     return (
       <a
+        href
         className={ isCurrentEventKey ? 'dropdown-toggle collapsed' : 'dropdown-toggle' }
         onClick={decoratedOnClick}
       >

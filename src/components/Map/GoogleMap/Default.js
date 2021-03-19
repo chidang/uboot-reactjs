@@ -3,8 +3,6 @@ import { Card } from 'react-bootstrap';
 import GoogleMapReact from "google-map-react";
 
 const Default = props => {
-  const defaultTheme = { color: { primary: '#4285f4' } };
-  const theme =  Object.assign( defaultTheme, props.theme);
   const defaultProps = {
     center: {
         lat: -33.8569,

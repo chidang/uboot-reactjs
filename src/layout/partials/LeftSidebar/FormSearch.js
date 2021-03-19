@@ -7,7 +7,7 @@ const SearchSchema = yup.object().shape({
 });
 
 const FormSearch = () => {
-    const { register, handleSubmit, setValue, errors } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(SearchSchema),
     });
     const onSubmit = data => {

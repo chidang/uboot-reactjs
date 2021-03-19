@@ -68,7 +68,7 @@ const OrderDetail = () => {
                             <span className="mx-2">@</span>
                             <input type="text" className="hour form-control me-2" style={{flex: '0 0 60px'}} placeholder="h" name="order-date-hour" min={0} max={23} step={1} pattern="([01]?[0-9]{1}|2[0-3]{1})" />
                             <span className="me-2">:</span>
-                            <input type="text" className="minute form-control" style={{flex: '0 0 60px'}} placeholder="m" name="order-date-minute" min={0} max={59} step={1} placeholder={27} pattern="[0-5]{1}[0-9]{1}" />
+                            <input type="text" className="minute form-control" style={{flex: '0 0 60px'}} name="order-date-minute" min={0} max={59} step={1} placeholder={27} pattern="[0-5]{1}[0-9]{1}" />
                           </div>
                         </div>
                       </div>

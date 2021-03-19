@@ -290,10 +290,10 @@ const AddProduct = () => {
                   </div>
                   <span className="fs-sm"><i>Separate tags with commas</i></span>
                   <div className="product-tags mt-2">
-                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> T-shirt</span>
-                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Christmas</span>
-                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Lorem</span>
-                    <span className="badge bg-primary me-2"><Link to="javascript:void(0);"><i className="bi-x" /></Link> Ipsum</span>
+                    <span className="badge bg-primary me-2"><Link to="#"><i className="bi-x" /></Link> T-shirt</span>
+                    <span className="badge bg-primary me-2"><Link to="#"><i className="bi-x" /></Link> Christmas</span>
+                    <span className="badge bg-primary me-2"><Link to="#"><i className="bi-x" /></Link> Lorem</span>
+                    <span className="badge bg-primary me-2"><Link to="#"><i className="bi-x" /></Link> Ipsum</span>
                   </div>
                 </form>
               </div>

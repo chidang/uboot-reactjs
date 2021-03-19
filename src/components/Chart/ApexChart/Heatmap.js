@@ -2,9 +2,7 @@ import React from "react";
 import Chart from "react-apexcharts";
 import { Card } from 'react-bootstrap';
 
-const HeatmapChart = props => {
-  const defaultTheme = { color: { primary: '#4285f4', success: '#7cb342', warning: '#f9b42a', danger: '#dc3545', info: '#17a2b8' } };
-  const theme =  Object.assign( defaultTheme, props.theme);
+const HeatmapChart = () => {
   const generateData = (count, yrange) => {
     var i = 0;
     var series = [];

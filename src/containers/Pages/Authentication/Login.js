@@ -10,7 +10,7 @@ const SigninSchema = yup.object().shape({
 });
 
 const Login = () => {
-  const { register, handleSubmit, setValue, errors } = useForm({
+  const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(SigninSchema),
   });
   const onSubmit = data => {

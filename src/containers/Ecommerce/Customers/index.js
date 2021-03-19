@@ -113,7 +113,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Megan Harrison</Link>
@@ -152,7 +152,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Zoe Tamayo</Link>
@@ -191,7 +191,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Paul G Conger</Link>
@@ -230,7 +230,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Sandra H Williams</Link>
@@ -269,7 +269,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Delores W Hartwell</Link>
@@ -308,7 +308,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Roderick A Jorgensen</Link>
@@ -347,7 +347,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Christian G Stone</Link>
@@ -386,7 +386,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Zoe Tamayo</Link>
@@ -425,7 +425,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Paul G Conger</Link>
@@ -464,7 +464,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Sandra H Williams</Link>
@@ -503,7 +503,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Delores W Hartwell</Link>
@@ -542,7 +542,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Roderick A Jorgensen</Link>
@@ -581,7 +581,7 @@ const Customer = () => {
                           </label>
                         </td>
                         <td>
-                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="user-image" className="rounded-circle" /></Link>
+                          <Link to="#"><img src={femaleAvatar} style={{height: '50px'}} alt="Customer Avatar" className="rounded-circle" /></Link>
                         </td>
                         <td>
                           <Link to="#">Christian G Stone</Link>

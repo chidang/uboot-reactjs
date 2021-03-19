@@ -44,8 +44,8 @@ const UsaMap = props => {
     }
 
     useEffect(() => {
-        drawMap(theme);
-    }, [theme]);
+        drawMap();
+    });
 
     return (
         <Card className="flex-fill w-100">

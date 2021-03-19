@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import InfomationStep from "./InfomationStep";
 import ShippingStep from "./ShippingStep";
@@ -36,7 +36,7 @@ const Checkout = () => {
     <div>
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb pl-0 fs-base">
-          <li className="breadcrumb-item"><a href="#">Uboot</a></li>
+          <li className="breadcrumb-item"><a href="/">Uboot</a></li>
           <li className="breadcrumb-item"><span>Ecommerce</span></li>
           <li className="breadcrumb-item active" aria-current="page">Checkout</li>
         </ol>
