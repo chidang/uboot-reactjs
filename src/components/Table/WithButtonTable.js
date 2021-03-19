@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const WithButtonTable = () => {
     return (
         <div className="table-responsive">
@@ -19,9 +21,9 @@ const WithButtonTable = () => {
                     <td>$1,000</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>
@@ -32,9 +34,9 @@ const WithButtonTable = () => {
                     <td>$1,368</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>
@@ -45,9 +47,9 @@ const WithButtonTable = () => {
                     <td>$2,999</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>
@@ -58,9 +60,9 @@ const WithButtonTable = () => {
                     <td>$5,000</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>
@@ -71,9 +73,9 @@ const WithButtonTable = () => {
                     <td>$699</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>
@@ -84,9 +86,9 @@ const WithButtonTable = () => {
                     <td>$8,999</td>
                     <td>
                     <ul className="list-unstyled table-actions">
-                        <li><a href="edit-product.html"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></a></li>
-                        <li><a href="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></a></li>
+                        <li><Link to="/ecommerce/add-product"><i className="bi-pencil" data-original-title="Edit" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-gear" data-original-title="Settings" data-toggle="tooltip" /></Link></li>
+                        <li><Link to="#"><i className="bi-trash" data-original-title="Archive" data-toggle="tooltip" /></Link></li>
                     </ul>
                     </td>
                 </tr>

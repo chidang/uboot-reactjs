@@ -24,9 +24,9 @@ const Avatars = () =>
             Sizing
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase1" className="card-body show">
@@ -68,9 +68,9 @@ const Avatars = () =>
             Shape
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase4" role="button" aria-expanded="false" aria-controls="cardCollpase4"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase4" className="card-body show">
@@ -96,9 +96,9 @@ const Avatars = () =>
             With status
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase5" role="button" aria-expanded="false" aria-controls="cardCollpase5"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase5" className="card-body show">

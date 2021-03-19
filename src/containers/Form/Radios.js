@@ -20,9 +20,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Bootstrap <span className="fw-300"><i>Radio</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                 <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBoostrapRadio" role="button" aria-expanded="false" aria-controls="cardBoostrapRadio"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardBoostrapRadio" className="card-body show">
@@ -60,9 +60,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Custom <span className="fw-300"><i>Radio</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                 <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCustomRadio" role="button" aria-expanded="false" aria-controls="cardCustomRadio"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardCustomRadio" className="card-body show">
@@ -129,9 +129,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Horizontal <span className="fw-300"><i>Form</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                 <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardHorizontalForm" role="button" aria-expanded="false" aria-controls="cardHorizontalForm"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardHorizontalForm" className="card-body show">
@@ -206,9 +206,9 @@ const Radios = () =>
             <div className="card-header justify-content-between">
                 <h4 className="fw-700 m-0 fs-base">Color <span className="fw-300"><i>Options</i></span></h4>
                 <div className="card-widgets">
-                <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                 <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardColorOptionRadio" role="button" aria-expanded="false" aria-controls="cardColorOptionRadio"><i className="dripicons-minus" /></Link>
-                <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardColorOptionRadio" className="card-body show">

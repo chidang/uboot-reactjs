@@ -38,9 +38,9 @@ const Orders = () => {
                   <i className="bi-pencil" /> <span className="d-none d-md-inline">Bulk Actions</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Delete</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Update Statuses</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Create Notes</Dropdown.Item>
+                  <Dropdown.Item to="#/action-1">Delete</Dropdown.Item>
+                  <Dropdown.Item to="#/action-2">Update Statuses</Dropdown.Item>
+                  <Dropdown.Item to="#/action-3">Create Notes</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -83,7 +83,7 @@ const Orders = () => {
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
                           <span className="d-block"><i>via Cash on delivery</i></span>
                         </td>
-                        <td><Link href="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
+                        <td><Link to="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -106,7 +106,7 @@ const Orders = () => {
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
                           <span className="d-block"><i>via Direct bank transfer</i></span>
                         </td>
-                        <td><Link href="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
+                        <td><Link to="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -129,7 +129,7 @@ const Orders = () => {
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
                           <span className="d-block"><i>via Credit Card (Stripe)</i></span>
                         </td>
-                        <td><Link href="#">-</Link></td>
+                        <td><Link to="#">-</Link></td>
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -152,7 +152,7 @@ const Orders = () => {
                         <td>Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019
                           <span className="d-block"><i>via Cash on delivery</i></span>
                         </td>
-                        <td><Link href="#">Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019, US(United States)</Link></td>
+                        <td><Link to="#">Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019, US(United States)</Link></td>
                         <td>$24,960</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -175,7 +175,7 @@ const Orders = () => {
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
                           <span className="d-block"><i>via Cash on delivery</i></span>
                         </td>
-                        <td><Link href="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
+                        <td><Link to="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -198,7 +198,7 @@ const Orders = () => {
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
                           <span className="d-block"><i>via Direct bank transfer</i></span>
                         </td>
-                        <td><Link href="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
+                        <td><Link to="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -221,7 +221,7 @@ const Orders = () => {
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
                           <span className="d-block"><i>via Credit Card (Stripe)</i></span>
                         </td>
-                        <td><Link href="#">-</Link></td>
+                        <td><Link to="#">-</Link></td>
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -244,7 +244,7 @@ const Orders = () => {
                         <td>Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019
                           <span className="d-block"><i>via Cash on delivery</i></span>
                         </td>
-                        <td><Link href="#">Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019, US(United States)</Link></td>
+                        <td><Link to="#">Chery R Nicholes, 3259 Rosewood Lane, New York, New York(NY), 10019, US(United States)</Link></td>
                         <td>$24,960</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -267,7 +267,7 @@ const Orders = () => {
                         <td>Michael H Hubble, Kinsman, Ohio(OH), 44428, South Africa
                           <span className="d-block"><i>via Direct bank transfer</i></span>
                         </td>
-                        <td><Link href="#">Michael Hubble, Kinsman, Ohio(OH), 44428, United States (US)</Link></td>
+                        <td><Link to="#">Michael Hubble, Kinsman, Ohio(OH), 44428, United States (US)</Link></td>
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -290,7 +290,7 @@ const Orders = () => {
                         <td>Paul G Conger, SAXS, 1157 Goldcliff Circle, Washington, Washington DC(DC), 20005
                           <span className="d-block"><i>via Credit Card (Stripe)</i></span>
                         </td>
-                        <td><Link href="#">-</Link></td>
+                        <td><Link to="#">-</Link></td>
                         <td>$1,410</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -313,7 +313,7 @@ const Orders = () => {
                         <td>Megan Harrison, Patterson Fletcher, 47 City Wall RD, Clifton Upon Teme, WR6 6NG, United Kingdom (UK)
                           <span className="d-block"><i>via Cash on delivery</i></span>
                         </td>
-                        <td><Link href="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
+                        <td><Link to="#">Schirsten Vander, Tech Prod, Shed 4 25 Cessna Crescent, Ballina, AK 2478, United States (US)</Link></td>
                         <td>$6,200</td>
                         <td>
                           <ul className="list-unstyled table-actions">
@@ -336,7 +336,7 @@ const Orders = () => {
                         <td>Zoe Tamayo, SAXS, 164 Bo Meul St, Wood Stock, Western Cape, 7925, South Africa
                           <span className="d-block"><i>via Direct bank transfer</i></span>
                         </td>
-                        <td><Link href="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
+                        <td><Link to="#">Zoe Tamayo, Al, 2161 Rose Street, Oak Park, Illinois(IL), 60300, United States (US)</Link></td>
                         <td>$510</td>
                         <td>
                           <ul className="list-unstyled table-actions">

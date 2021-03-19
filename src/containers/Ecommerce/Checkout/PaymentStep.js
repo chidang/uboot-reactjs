@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import OrderSummary from './OrderSummary';
 import BillingSection from './BillingSection';
 import PaymentMethod from './PaymentMethod';
@@ -18,17 +19,17 @@ const PaymentStep = (props) => {
                                         <tbody><tr className="border-bottom">
                                             <td>Contact</td>
                                             <td>donnie1973@hotmail.com</td>
-                                            <td><a href="#" className="text-primary">Change</a></td>
+                                            <td><Link to="#" className="text-primary">Change</Link></td>
                                         </tr>
                                             <tr className="border-bottom">
                                                 <td>Ship to</td>
                                                 <td>3363 Cook Hill Road, Wallingford, Connecticut(CT), 06492, Wallingford CT 06492, United States</td>
-                                                <td><a href="#" className="text-primary">Change</a></td>
+                                                <td><Link to="#" className="text-primary">Change</Link></td>
                                             </tr>
                                             <tr>
                                                 <td>Method</td>
                                                 <td>FedEx Ground · $8.73</td>
-                                                <td><a href="#" className="text-primary">Change</a></td>
+                                                <td><Link to="#" className="text-primary">Change</Link></td>
                                             </tr>
                                         </tbody></table>
                                 </div>
@@ -67,8 +68,9 @@ const PaymentStep = (props) => {
                                     </div>
                                     <div className="col-6">
                                         <div className="text-end">
-                                            <a href="#" className="btn btn-danger">
-                                                <i className="mdi mdi-truck-fast mr-1" /> Complete order </a>
+                                            <Link to="#" className="btn btn-danger">
+                                                <i className="mdi mdi-truck-fast mr-1" /> Complete order
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

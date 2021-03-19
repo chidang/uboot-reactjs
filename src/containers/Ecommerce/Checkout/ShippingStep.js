@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import OrderSummary from "./OrderSummary"
 
 const ShippingStep = (props) => {
@@ -16,12 +17,12 @@ const ShippingStep = (props) => {
                                         <tbody><tr className="border-bottom">
                                             <td>Contact</td>
                                             <td>donnie1973@hotmail.com</td>
-                                            <td><a href="#" className="text-primary">Change</a></td>
+                                            <td><Link to="#" className="text-primary">Change</Link></td>
                                         </tr>
                                             <tr>
                                                 <td>Ship to</td>
                                                 <td>3363 Cook Hill Road, Wallingford, Connecticut(CT), 06492, Wallingford CT 06492, United States</td>
-                                                <td><a href="#" className="text-primary">Change</a></td>
+                                                <td><Link to="#" className="text-primary">Change</Link></td>
                                             </tr>
                                         </tbody></table>
                                 </div>

@@ -19,7 +19,7 @@ const InfomationStep = (props) => {
                                         <h4>Contact Information</h4>
                                         <div>
                                             <span aria-hidden="true">Already have an account?</span>
-                                            <a className="text-primary ms-2" href="#">Login</a>
+                                            <Link className="text-primary ms-2" to="#">Login</Link>
                                         </div>
                                     </div>
                                     <div className="row">

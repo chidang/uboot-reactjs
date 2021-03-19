@@ -22,9 +22,9 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>Basic</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                     <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb1" role="button" aria-expanded="false" aria-controls="cardBreadcrumb1"><i className="dripicons-minus" /></Link>
-                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb1" className="card-body show">
@@ -43,9 +43,9 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>Outlines</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                     <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb2" role="button" aria-expanded="false" aria-controls="cardBreadcrumb2"><i className="dripicons-minus" /></Link>
-                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb2" className="card-body show">
@@ -103,9 +103,9 @@ const BreadCrumbs = () =>
                     Breadcrumb <span className="fw-300"><i>With Icon</i></span>
                     </h4>
                     <div className="card-widgets">
-                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                     <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardBreadcrumb3" role="button" aria-expanded="false" aria-controls="cardBreadcrumb3"><i className="dripicons-minus" /></Link>
-                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                     </div>
                 </div>
                 <div id="cardBreadcrumb3" className="card-body show">

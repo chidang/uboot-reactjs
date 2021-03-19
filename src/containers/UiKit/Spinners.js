@@ -25,9 +25,9 @@ const Spinners = () =>
             Border spinner
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase0" role="button" aria-expanded="false" aria-controls="cardCollpase0"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase0" className="card-body show">
@@ -49,9 +49,9 @@ const Spinners = () =>
             Growing spinner
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase1" className="card-body show">
@@ -75,9 +75,9 @@ const Spinners = () =>
             Alignment
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase4" role="button" aria-expanded="false" aria-controls="cardCollpase4"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase4" className="card-body show">
@@ -98,9 +98,9 @@ const Spinners = () =>
             Placement
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase5" role="button" aria-expanded="false" aria-controls="cardCollpase5"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase5" className="card-body show">
@@ -120,9 +120,9 @@ const Spinners = () =>
             Size
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase6" role="button" aria-expanded="false" aria-controls="cardCollpase6"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase6" className="card-body show">
@@ -155,9 +155,9 @@ const Spinners = () =>
             Buttons spinner
           </h4>
           <div className="card-widgets">
-            <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+            <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
             <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardCollpase7" role="button" aria-expanded="false" aria-controls="cardCollpase7"><i className="dripicons-minus" /></Link>
-            <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+            <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
           </div>
         </div>
         <div id="cardCollpase7" className="card-body show">

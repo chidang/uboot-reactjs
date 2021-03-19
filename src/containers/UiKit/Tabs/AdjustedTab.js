@@ -9,9 +9,9 @@ const AdjustedTab = () => {
                     Adjusted <span className="fw-300"><i>Tabs</i></span>
                 </h4>
                 <div className="card-widgets">
-                    <Link className="btn btn-success" href="javascript:;" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
+                    <Link className="btn btn-success" to="#" data-action="fullscreen"><i className="bi-fullscreen" /></Link>
                     <Link className="btn btn-warning" data-toggle="collapse" data-target="#cardAdjustTab" role="button" aria-expanded="false" aria-controls="cardAdjustTab"><i className="dripicons-minus" /></Link>
-                    <Link className="btn btn-danger" href="#" data-toggle="remove"><i className="bi-x" /></Link>
+                    <Link className="btn btn-danger" to="#" data-toggle="remove"><i className="bi-x" /></Link>
                 </div>
             </div>
             <div id="cardAdjustTab" className="card-body show">

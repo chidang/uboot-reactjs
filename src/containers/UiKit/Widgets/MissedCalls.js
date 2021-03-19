@@ -1,4 +1,4 @@
-import avatar from "../../../assets/images/avatar.jpg";
+import { Link } from "react-router-dom";
 import maleAvatar from "../../../assets/images/default-male-avatar.jpg";
 import femaleAvatar from "../../../assets/images/default-female-avatar.jpg";
 
@@ -18,8 +18,8 @@ const MissedCalls = () => {
                                     <span className="m-0 fs-sm">+04284759494984</span>
                                 </div>
                                 <div className="position-absolute pos-right show-on-hover-parent">
-                                    <a href="#" className="me-2 icon-sm bg-success rounded-circle"><i className="bi-telephone fs-md" /></a>
-                                    <a href="#" className="icon-sm bg-danger rounded-circle"><i className="bi-trash fs-md" /></a>
+                                    <Link to="#" className="me-2 icon-sm bg-success rounded-circle"><i className="bi-telephone fs-md" /></Link>
+                                    <Link to="#" className="icon-sm bg-danger rounded-circle"><i className="bi-trash fs-md" /></Link>
                                 </div>
                             </div>
                         </li>
@@ -32,8 +32,8 @@ const MissedCalls = () => {
                                     <span className="m-0 fs-sm">+04246335365753</span>
                                 </div>
                                 <div className="position-absolute pos-right show-on-hover-parent">
-                                    <a href="#" className="me-2 icon-sm bg-success rounded-circle"><i className="bi-telephone fs-md" /></a>
-                                    <a href="#" className="icon-sm bg-danger rounded-circle"><i className="bi-trash fs-md" /></a>
+                                    <Link to="#" className="me-2 icon-sm bg-success rounded-circle"><i className="bi-telephone fs-md" /></Link>
+                                    <Link to="#" className="icon-sm bg-danger rounded-circle"><i className="bi-trash fs-md" /></Link>
                                 </div>
                             </div>
                         </li>
