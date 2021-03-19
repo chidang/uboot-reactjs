@@ -6,6 +6,7 @@ const AsyncButtons = AsyncComponent(() => import('../containers/UiKit/Buttons'))
 const AsyncCards = AsyncComponent(() => import('../containers/UiKit/Cards'));
 const AsyncDualListbox = AsyncComponent(() => import('../containers/UiKit/DualListBoxes'));
 const AsyncImageCropper = AsyncComponent(() => import('../containers/UiKit/ImageCropper'));
+const AsyncModals = AsyncComponent(() => import('../containers/UiKit/Modals'));
 const AsyncNotifications = AsyncComponent(() => import('../containers/UiKit/Notifications'));
 const AsyncSpinners = AsyncComponent(() => import('../containers/UiKit/Spinners'));
 const AsyncSweetAlert = AsyncComponent(() => import('../containers/UiKit/SweetAlerts'));
@@ -52,6 +53,11 @@ const uiKitRoutes = {
         path: "/ui/image-cropper",
         name: "ImageCropper",
         component: AsyncImageCropper
+      },
+      {
+        path: "/ui/modals",
+        name: "Modals",
+        component: AsyncModals
       },
       {
         path: "/ui/notifications",

@@ -127,7 +127,7 @@ const Faq = () =>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="3" className="text-info">
                 What is Lorem Ipsum?
-          </Accordion.Toggle>
+              </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="3">
               <Card.Body>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Card.Body>
@@ -157,7 +157,7 @@ const Faq = () =>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="6" className="text-info">
                 What is Lorem Ipsum?
-          </Accordion.Toggle>
+              </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="6">
               <Card.Body>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Card.Body>
