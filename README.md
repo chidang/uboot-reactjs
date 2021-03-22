@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Browser Support
+
+At present, we officially aim to support the last two versions of the following browsers: chrome, firefox, edge, safari, opera.
+
+## Hire us
+
+If you need assistance with your project?
+
+Contact us of highly skilled individuals in the following technologies will get back to you shortly.
+
+1. HTML/CSS/JS
+2. ReactJS
+3. VueJS
+4. Laravel
+5. WordPress
+6. Ruby
+7. ASP.NET
+8. Node.js
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product - please don't hesitate to reach out to support@teachprod.com or teachprod102@gmail.com.
+
+## Fast support:
+
+Skype: minhchidh
+
+## Social Media
+
+Facebook: <https://www.facebook.com/Teachprod>
+
+## Copyright and license
+
+Code released under the [ThemeForest](https://themeforest.net/licenses/terms/regular) License.
+
+Development credit: [TEachProd](https://teachprod.com/)

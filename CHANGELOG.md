@@ -1,7 +1,7 @@
 # Change Log
 
 ## Mar 22, 2021
-- Fix redux dev tool: isse on production
+- Fix redux dev tool: issue on production
 
 ## Mar 19, 2021
 - Adding Bootstrap modals
