@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,15 +11,13 @@ import './assets/scss/app.scss';
 import { BrowserRouter } from 'react-router-dom';
 import ecommerceReducer from './store/reducers/ecommerce';
 
-const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose : null;
-
 const rootReducer = combineReducers({
   ecommerce: ecommerceReducer
 });
 
 const sagaMiddleware = createSagaMiddleware();
 
-const store = createStore(rootReducer, composeEnhancers(
+const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(sagaMiddleware)
 ));
 

@@ -14,8 +14,8 @@ const Topbar = () => {
     return (
         <nav id="nav-topbar" className="navbar topbar px-2">
             <div className="sidebar-header">
-                <Link to="#" className="sidebar-toggle-btn" onClick={settingContext.toggleLeftSidebar}>
-                </Link>
+                <span className="sidebar-toggle-btn" onClick={settingContext.toggleLeftSidebar}>
+                </span>
                 <div className="logo text-white me-5">
                     <h3>
                         <Link to="/">

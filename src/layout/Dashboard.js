@@ -17,7 +17,7 @@ const Dashboard = props => {
         if (isMobile() && settingContext.showMobileNav) {
             settingContext.hideMobileNav()
         }
-    }, [settingContext]);
+    }, []);
 
     return (
         <>
