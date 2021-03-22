@@ -48,7 +48,7 @@
 - Updating page order detail
 
 ## Feb 25, 2021
-### Upgrade to Bootstrap 5 beta2 and add more Charts
+- Upgrade to Bootstrap 5 beta2 and add more Charts
 
 ## Feb 16, 2021
 ### Adding new pages
@@ -81,17 +81,16 @@
 - Adding Calendar
 
 ## Aug 5, 2020
-### Add Card Component
+- Add Card Component
 
 ## Dec 19, 2020
-### Right Sidebar
 - Adding settings
 - Adding Light & dark mode
 
 ## Nov 20, 2020
-### Adding accordion on left menu
-### Add Dropdown on Topbar
-### Restructuring and Add Dashboard Layout
+- Adding accordion on left menu
+- Add Dropdown on Topbar
+- Restructuring and Add Dashboard Layout
 
 ## Commits on Nov 19, 2020
 - Config routes
