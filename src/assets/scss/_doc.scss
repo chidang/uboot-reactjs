@@ -56,8 +56,8 @@
   background: var(--thirtary-background)
 }
 
-.bd-example>.btn, .bd-example>.btn-group {
-  margin: .25rem .125rem;
+.bd-example>.btn, .bd-example>.btn-group, .bd-example .reactive-btn-wrapper {
+  margin: .25rem;
 }
 
 .bd-example-row .row>.col, .bd-example-row .row>[class^="col-"] {
